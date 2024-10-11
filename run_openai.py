@@ -37,6 +37,11 @@ parser.add_argument(
 	"--dataset",
 	help="benchmark dataset",
 )
+parser.add_argument(
+	"-s",
+	"--style",
+	help="benchmark style",
+)
 parser.add_argument("-a", "--api", help="api key")
 parser.add_argument("-m", "--model", help="Model name")
 parser.add_argument(
@@ -59,6 +64,8 @@ args = parser.parse_args()
 config = toml.load(open(args.config))
 if args.url:
 	config["server"]["url"] = args.url
+if args.style:
+	config["inference"]["style"] = args.style
 if args.api:
 	config["server"]["api_key"] = args.api
 if args.model:
@@ -202,6 +209,16 @@ def multi_chat_prompt(cot_examples, question, options):
 	messages.append({"role": "user", "content": example})
 	return messages
 
+def multi_chat_prompt_zeroshot(question, options):
+	messages = [
+		{
+			"role": "system",
+			"content": config["inference"]["system_prompt"],
+		},
+	]
+	example, cot_content = format_example(question, options)
+	messages.append({"role": "user", "content": example})
+	return messages
 
 def single_chat_prompt(cot_examples, question, options):
 	messages = [
@@ -282,6 +299,9 @@ def run_single_question(single_question, cot_examples_dict, exist_result):
 			response = get_chat_completion(prompt)
 		elif config["inference"]["style"] == "multi_chat":
 			prompt = multi_chat_prompt(cot_examples, question, options)
+			response = get_chat_completion(prompt)
+		elif config["inference"]["style"] == "multi_chat_zeroshot":
+			prompt = multi_chat_prompt_zeroshot(question, options)
 			response = get_chat_completion(prompt)
 		elif config["inference"]["style"] == "no_chat":
 			prompt = no_chat_prompt(cot_examples, question, options)
