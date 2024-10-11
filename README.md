@@ -1,4 +1,15 @@
-# Ollama-MMLU-Pro
+# MMLU-Pro & MMMLU
+
+Here we mainly use there dataset:
+- IGER-Lab/MMLU-Pro only `--category` 'computer science' (run_openai.py)
+- sam-paech/mmlu-pro-nomath-sml (run_openai.py)
+- openai/MMMLU  `--category` ZH_CN/PT_BR/FR_FR/ES_LA/DE_DE (run_openai-mmmlu.py)
+
+```bash
+python dataset.py
+```
+
+---
 
 This is a modified version of run_gpt4o.py from [TIGER-AI-Lab/MMLU-Pro](https://github.com/TIGER-AI-Lab/MMLU-Pro), and it lets you run [MMLU-Pro](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro) benchmark via the OpenAI Chat Completion API. It's tested on Ollama and Llama.cpp, but it should also work with LMStudio, Koboldcpp, Oobabooga with openai extension, etc.
 

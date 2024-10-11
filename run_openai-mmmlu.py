@@ -16,6 +16,14 @@ import queue
 import numpy as np
 import copy
 
+LANG = {
+    "ZH_CN": "Chinese",
+    "PT_BR": "Portuguese",
+    "FR_FR": "French",
+    "ES_LA": "Spanish",
+    "DE_DE": "German",
+    }
+
 parser = argparse.ArgumentParser(
 	prog="python3 run_openai.py",
 	description="Run MMLU Pro Benchmark for  a local LLM  via  OpenAI Compatible API.",
@@ -36,11 +44,6 @@ parser.add_argument(
 	"-d",
 	"--dataset",
 	help="benchmark dataset",
-)
-parser.add_argument(
-	"-s",
-	"--style",
-	help="benchmark style",
 )
 parser.add_argument("-a", "--api", help="api key")
 parser.add_argument("-m", "--model", help="Model name")
@@ -64,8 +67,6 @@ args = parser.parse_args()
 config = toml.load(open(args.config))
 if args.url:
 	config["server"]["url"] = args.url
-if args.style:
-	config["inference"]["style"] = args.style
 if args.api:
 	config["server"]["api_key"] = args.api
 if args.model:
@@ -154,99 +155,48 @@ def get_completion(prompt):
 		return get_completion(prompt)
 
 
-def load_mmlu_pro():
-	dataset = load_dataset(args.dataset)
-	test_df, val_df = dataset["test"], dataset["validation"]
-	test_df = preprocess(test_df)
-	val_df = preprocess(val_df)
-	return test_df, val_df
+def load_mmlu_pro(subject):
+    # openai/MMMLU
+	dataset = load_dataset(args.dataset, subject)
+	test_df = dataset["test"]
+	test_df = preprocess(test_df, subject)
+	return test_df
 
 
-def preprocess(test_df):
+def preprocess(test_df, subject):
 	res_df = []
 	for each in test_df:
-		options = []
-		for opt in each["options"]:
-			if opt == "N/A":
-				continue
-			options.append(opt)
-		each["options"] = options
+		each["options"] = [each["A"], each["B"], each["C"], each["D"]]
+		each["category"] = subject
+		each["answer_index"] = ['A', 'B', 'C', 'D'].index(each["Answer"])
 		res_df.append(each)
 	res = {}
 	for each in res_df:
-		if each["category"] not in res:
-			res[each["category"]] = []
-		res[each["category"]].append(each)
+		if each["Subject"] not in res:
+			res[each["Subject"]] = []
+		res[each["Subject"]].append(each)
 	return res
 
 
-def format_example(question, options, cot_content=""):
-	if cot_content == "":
-		cot_content = "Let's think step by step."
-	if cot_content.startswith("A: "):
-		cot_content = cot_content[3:]
+def format_example(question, options):
 	example = "Question: {}\nOptions: ".format(question)
-	choice_map = "ABCDEFGHIJ"
+	choice_map = "ABCD"
 	for i, opt in enumerate(options):
 		example += "{}. {}\n".format(choice_map[i], opt)
-	return example.strip(), cot_content.strip()
+	return example.strip()
 
 
-def multi_chat_prompt(cot_examples, question, options):
+def chat_prompt_zeroshot(question, options, subject):
+	system_prompt = config["inference"]["system_prompt"]
 	messages = [
 		{
 			"role": "system",
-			"content": config["inference"]["system_prompt"],
+			"content": system_prompt.replace("{subject}", subject),
 		},
 	]
-	for each in cot_examples:
-		example, cot_content = format_example(
-			each["question"], each["options"], each["cot_content"]
-		)
-		messages.append({"role": "user", "content": example})
-		messages.append({"role": "assistant", "content": "Answer: " + cot_content})
-	example, cot_content = format_example(question, options)
+	example = format_example(question, options)
 	messages.append({"role": "user", "content": example})
 	return messages
-
-def multi_chat_prompt_zeroshot(question, options):
-	messages = [
-		{
-			"role": "system",
-			"content": config["inference"]["system_prompt"],
-		},
-	]
-	example, cot_content = format_example(question, options)
-	messages.append({"role": "user", "content": example})
-	return messages
-
-def single_chat_prompt(cot_examples, question, options):
-	messages = [
-		{
-			"role": "system",
-			"content": config["inference"]["system_prompt"],
-		},
-	]
-	prompt = no_chat_prompt(cot_examples, question, options, no_system=True)
-	messages.append({"role": "user", "content": prompt})
-	return messages
-
-
-def no_chat_prompt(cot_examples, question, options, no_system=False):
-	prompt = config["inference"]["system_prompt"] + "\n\n"
-	if no_system:
-		prompt = ""
-	for each in cot_examples:
-		example, cot_content = format_example(
-			each["question"], each["options"], each["cot_content"]
-		)
-		prompt += example + "\n"
-		prompt += "Answer: " + cot_content + "\n\n"
-	example, cot_content = format_example(question, options)
-	prompt += example + "\n"
-	prompt += "Answer: " + cot_content
-	return prompt
-
 
 def extract_answer(text):
 	pattern = r"answer is \(?([ABCDEFGHIJ])\)?"
@@ -277,41 +227,18 @@ def extract_final(text):
 		return None
 
 
-def run_single_question(single_question, cot_examples_dict, exist_result):
-	exist = True
-	q_id = single_question["question_id"]
-	for each in exist_result:
-		if (
-			q_id == each["question_id"]
-			and single_question["question"] == each["question"]
-		):
-			if config["log"]["verbosity"] >= 1:
-				print("already exists, skipping.")
-			return None, None, None, exist
-	exist = False
-	category = single_question["category"]
-	cot_examples = cot_examples_dict[category]
-	question = single_question["question"]
+def run_single_question(single_question):
+	question = single_question["Question"]
 	options = single_question["options"]
+	subject = single_question["Subject"]
 	try:
-		if config["inference"]["style"] == "single_chat":
-			prompt = single_chat_prompt(cot_examples, question, options)
-			response = get_chat_completion(prompt)
-		elif config["inference"]["style"] == "multi_chat":
-			prompt = multi_chat_prompt(cot_examples, question, options)
-			response = get_chat_completion(prompt)
-		elif config["inference"]["style"] == "multi_chat_zeroshot":
-			prompt = multi_chat_prompt_zeroshot(question, options)
-			response = get_chat_completion(prompt)
-		elif config["inference"]["style"] == "no_chat":
-			prompt = no_chat_prompt(cot_examples, question, options)
-			response = get_completion(prompt)
+		prompt = chat_prompt_zeroshot(question, options, subject)
+		response = get_chat_completion(prompt)
 	except Exception as e:
 		print("error", e)
-		return None, None, None, exist
+		return None, None, None
 	pred = extract_answer(response)
-	return prompt, response, pred, exist
-
+	return prompt, response, pred
 
 def update_result(output_res_path, lock):
 	category_record = {}
@@ -337,7 +264,7 @@ def update_result(output_res_path, lock):
 								else:
 									category_record[category]["wrong"] += 1
 									category_record["random"]["wrong"] += 1
-							elif each["pred"] == each["answer"]:
+							elif each["pred"] == each["Answer"]:
 								category_record[category]["corr"] += 1
 							else:
 								category_record[category]["wrong"] += 1
@@ -348,39 +275,37 @@ def update_result(output_res_path, lock):
 
 
 def evaluate(subjects):
-	test_df, dev_df = load_mmlu_pro()
-	if not subjects:
-		subjects = list(test_df.keys())
 	print("assigned subjects", subjects)
 	lock = threading.Lock()
-	system_prompt = config["inference"]["system_prompt"]
 	for subject in subjects:
+		test_df = load_mmlu_pro(subject)
 		start = time.time()
 		print(f"Testing {subject}...")
+		system_prompt = config["inference"]["system_prompt"]
 		config["inference"]["system_prompt"] = system_prompt.replace(
-			"{subject}", subject
+			"{subject}", "{subject} in " + LANG[subject]
 		)
-		test_data = test_df[subject]
+		test_data = []
+		for k in test_df:
+			# select the last 10 questions from each Subject
+			last_10 = len(test_df[k]) - 10
+			test_data += test_df[k][last_10:]
 		output_res_path = os.path.join(output_dir, subject + "_result.json")
 		output_summary_path = os.path.join(output_dir, subject + "_summary.json")
-		res, category_record = update_result(output_res_path, lock)
-		if os.path.exists(output_res_path):
-			os.remove(output_res_path)
-
+		category_record = {}
+		res = []
 		with ThreadPoolExecutor(max_workers=config["test"]["parallel"]) as executor:
 			futures = {
-				executor.submit(run_single_question, each, dev_df, res): each
+				executor.submit(run_single_question, each): each
 				for each in test_data
 			}
 			for future in tqdm(
 				as_completed(futures), total=len(futures), smoothing=0.0, ascii=True
 			):
 				each = futures[future]
-				label = each["answer"]
+				label = each["Answer"]
 				category = subject
-				prompt, response, pred, exist = future.result()
-				if exist:
-					continue
+				prompt, response, pred = future.result()
 				if response is not None:
 					res, category_record = update_result(output_res_path, lock)
 					if category not in category_record:
@@ -392,11 +317,11 @@ def evaluate(subjects):
 					res.append(each)
 					if config["log"]["verbosity"] >= 2:
 						log_json = {
-							"id": each["question_id"],
-							"question": each["question"],
+							"id": each["Unnamed"],
+							"question": each["Question"],
 							"response": each["response"],
 							"pred": each["pred"],
-							"answer": each["answer"],
+							"answer": each["Answer"],
 						}
 						print("\n" + json.dumps(log_json, indent="\t"))
 					if pred is not None:
@@ -415,15 +340,6 @@ def evaluate(subjects):
 
 
 def save_res(res, output_res_path, lock):
-	temp = []
-	exist_q_id = []
-	for each in res:
-		if each["question_id"] not in exist_q_id:
-			exist_q_id.append(each["question_id"])
-			temp.append(each)
-		else:
-			continue
-	res = temp
 	with lock:
 		with open(output_res_path, "w") as fo:
 			fo.write(json.dumps(res, indent="\t"))
