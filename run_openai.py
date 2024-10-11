@@ -32,6 +32,11 @@ parser.add_argument(
 	"--url",
 	help="server url",
 )
+parser.add_argument(
+	"-d",
+	"--dataset",
+	help="benchmark dataset",
+)
 parser.add_argument("-a", "--api", help="api key")
 parser.add_argument("-m", "--model", help="Model name")
 parser.add_argument(
@@ -143,7 +148,7 @@ def get_completion(prompt):
 
 
 def load_mmlu_pro():
-	dataset = load_dataset("TIGER-Lab/MMLU-Pro")
+	dataset = load_dataset(args.dataset)
 	test_df, val_df = dataset["test"], dataset["validation"]
 	test_df = preprocess(test_df)
 	val_df = preprocess(val_df)
