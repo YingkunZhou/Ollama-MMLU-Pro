@@ -294,6 +294,8 @@ def evaluate(subjects):
 		output_summary_path = os.path.join(output_dir, subject + "_summary.json")
 		category_record = {}
 		res = []
+		if os.path.exists(output_res_path):
+			os.remove(output_res_path)
 		with ThreadPoolExecutor(max_workers=config["test"]["parallel"]) as executor:
 			futures = {
 				executor.submit(run_single_question, each): each

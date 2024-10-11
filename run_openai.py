@@ -363,7 +363,8 @@ def evaluate(subjects):
 		test_data = test_df[subject]
 		output_res_path = os.path.join(output_dir, subject + "_result.json")
 		output_summary_path = os.path.join(output_dir, subject + "_summary.json")
-		res, category_record = update_result(output_res_path, lock)
+		category_record = {}
+		res = []
 		if os.path.exists(output_res_path):
 			os.remove(output_res_path)
 
