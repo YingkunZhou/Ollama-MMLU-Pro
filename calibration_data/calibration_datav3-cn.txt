@@ -1,0 +1,2483 @@
+除了 IOE 组肝脂积累显著减少，通过丙酸富集抑制能量摄入外，IOP 组小鼠的肝脂也显著减少，该组主要富含丁酸。与 IOE 组相比，IOP 对肝脏代谢和甘油三酯代谢的调节作用更强，宿主中的三羧酸循环水平更高。此外，丁酸具有促进白色脂肪组织（WAT）向棕色脂肪组织（BAT）褐化的能力。[参考文献 39]，[参考文献 40]。WAT 储存能量，而 BAT 用于产热，因此宿主能量消耗增加。[参考文献 41]，[参考文献 42]。然而，WAT 褐化后脂肪组织重量不会改变。[参考文献 43]。因此，IOP 组小鼠的脂肪组织重量（以丁酸为主）大于 IOE 组小鼠的脂肪组织重量（以丙酸为主）。
+
+总结来说（图 7[7](#fig7){ref-type="fig"}](#fig7){ref-type="fig"}C），小鼠肥胖状况的改善归因于*I. obliquus*提取物对肠道微生物群和短链脂肪酸（SCFA）谱的影响。IOE 增加了高脂饮食（HFD）喂养小鼠盲肠中产丙酸菌*Bacteroides*和*Akkermansia*的水平，导致丙酸富集。丙酸通过抑制能量摄入减少小鼠体重增加。IOP 增加了高脂饮食喂养小鼠盲肠中与丁酸生产相关的细菌*Lactobacillus*和*Bacteroidales* S24-7 组的水平，导致丁酸富集。丁酸通过促进线粒体解偶联增加小鼠的能量消耗、三羧酸循环水平以及碳水化合物和脂质的降解。
+
+结论 {#sec4}
+===========
+
+IOE 和 IOP 通过调节肠道微生物代谢的差异性效应改善了小鼠由高脂饮食诱导的肥胖状况。此外，我们发现盲肠丁酸（而非丙酸）与小鼠的化学物质之间存在联系，包括 TCA 循环的四种代谢物和其他与代谢相关的化学物质。
+
+材料与方法 {#sec5}
+=====================
+
+IOE/IOP 准备 {#sec5.1}
+----------------------
+
+干燥并磨成粉的*I. obliquus*（1.0 kg）用超纯水（30 L）在 90°C 下提取 3 小时并浓缩。上清液在 45°C 下真空蒸发，然后用 4 倍体积的乙醇提取得到粗提物。粗提物通过 Sevage 方法脱蛋白五次。上清液在真空下干燥并冷冻干燥得到 IOP（62.5 g）。在*I. obliquus*用水提取后，残渣用 80%乙醇在 80°C 水浴中提取 2 小时。上清液在真空下干燥并冷冻干燥得到 IOE（30.9 g）。
+
+动物实验设计 {#sec5.2}
+--------------------------
+
+实验方案已获得吉林大学动物伦理委员会批准，并符合国家法律。5 周龄的 C57BL/6J 雄性小鼠（体重 15-17 克）分为四组，每组 12 只。NCD 组的小鼠喂食普通饲料，而 HFD 组、IOE 组和 IOP 组的小鼠喂食高脂饮食。小鼠饲料的成分见[表 S4 和 S5](http://pubs.acs.org/doi/suppl/10.1021/acsomega.0c01566/suppl_file/ao0c01566_si_001.pdf)。根据先前研究，IOP 组的小鼠每天灌胃 1000 毫克/千克的 IOP，^[@ref44]^而 IOE 组的小鼠根据 IOE/IOP 的提取率和 IOP 的剂量，每天灌胃 500 毫克/千克的 IOE。经过 14 周的治疗后，对小鼠进行安乐死以获取样本。
+
+口服葡萄糖耐量试验（OGTT）{#sec5.3}
+----------------------------------
+
+口服葡萄糖耐量试验采用了一种先前描述的方法。^[@ref45]^
+
+血清生化分析 {#sec5.4}
+--------------------------
+
+血清和肝脂使用从南京建城生物工程研究所（南京，中国）获得的试剂盒进行测量。
+
+RNA 制备和定量 PCR 分析 {#sec5.5}
+---------------------------------------------
+
+总 RNA 提取和基因表达的逆转录（RT）-qPCR 分析采用先前描述的方法进行。靶向小鼠基因的引物序列显示在[表 S6](http://pubs.acs.org/doi/suppl/10.1021/acsomega.0c01566/suppl_file/ao0c01566_si_001.pdf)中。
+
+样本收集 {#sec5.6}
+-----------------
+
+尿液在第十四周使用代谢笼收集，并向每个尿液样本中加入 50 μL 的叠氮化钠溶液（0.1% w/w）。盲肠内容物从盲肠中用含有 1.0 mL 冷磷酸盐缓冲盐水（PBS）（pH 7.4）的 2 mL Eppendorf 管冲洗。然后，所有样本随后储存在-80 °C 的冰箱中，以备后续分析。
+
+所有样本均在室温下解冻。血清通过将每个样本的 100 μL 与 500 μL 的 D~2~O（含有 3-(三甲基硅基)丙酸-2,2,3,3-*d*4 酸钠盐（TSP）的 PBS 溶液）混合制备。然后，将 200 μL 的盲肠内容物渗出物与 400 μL 的 D~2~O（含有 TSP）的 PBS 溶液混合。在离心（15 000 rpm，15 min，4 °C）并通过 0.22 μm 膜过滤器后，将上清液（550 μL）移入 NMR 分析管中。对于每个尿液样本，将 400 μL 的样本与 200 μL 的 H~2~O 的 PBS 溶液混合。然后，在离心（15 000 rpm，5 min，4 °C）后，将 500 μL 的上清液移入 NMR 分析管中，并每管加入 50 μL 含有 TSP 的 D~2~O。D~2~O 提供场频锁定，TSP 提供化学位移参考（^1^H，δ 0.0）。
+
+核磁共振数据采集与处理 {#sec5.7}
+-----------------------------------
+
+所有样品均由 AVANCE III 600M MHz 核磁共振波谱仪在 298.2 K 下进行分析。^1^H 核磁共振波谱采用一维（1D）CPMG（血清样品）和 noesyphpr（尿液和盲肠样品）脉冲序列，在 3 秒弛豫延迟期间进行水抑制，混合时间为 0.1 秒。收集了 64 个自由感应衰减，共 64 K 数据点，光谱宽度为 7812.5 Hz（血清样品）和 8417.5 Hz（尿液和盲肠样品），采集时间为 2 秒。自由感应衰减（FID）在傅里叶变换之前被零填充到 64 K。
+
+代谢物鉴定是通过使用人类代谢组数据库（HMDB）和先前研究，^[@ref47]^ 基于氢化学位移和峰多重性（[图 S5--S7 和表 S7](http://pubs.acs.org/doi/suppl/10.1021/acsomega.0c01566/suppl_file/ao0c01566_si_001.pdf)）来确认的。
+
+所有光谱均在软件 MestreNova 12.0（Mestre-lab Research SL）中手动相位校正和基线校正。每个光谱被分割成宽度为 0.005 ppm 的区域，范围在δ 9.6 到 0.4 之间。尿液中光谱的δ 5.48--6.20 区域和所有光谱中的δ 4.72--5.20 区域被排除，以消除尿素信号和水抑制的影响。然后，将光谱的剩余区域归一化到积分光谱面积的总和，以减少任何显著浓度差异。
+
+测序、盲肠微生物多样性分析和功能预测 {#sec5.8}
+---------------------------------------------------------------------------
+
+DNA 提取、测序和数据处理采用了一种先前描述的方法。^[@ref48]^
+
+四个α多样性的参数被用来全面评估整体多样性。Ace 和 Chao 指数（仅考虑物种的存在/不存在）确定群落中的丰富度，而 Shannon 和 Simpson 指数（此外还考虑每个物种被观察到的次数）确定群落的丰富度和/或均匀度。此外，较高的 Shannon 指数或较低的 Simpson 指数表示群落多样性较高。与α多样性不同，β多样性被用来衡量两个或更多群落之间多样性的差异。微生物群落通常使用基于差异的β多样性度量来表征，以确定两个或更多群落是否显著不同。
+
+我们使用了 PICRUSt（通过重建未观察状态进行群落系统发育调查）进行功能预测。PICRUSt 利用 IMG 数据库中测序基因组的注释，从 16S rRNA 数据生成宏基因组预测。此外，还使用了京都基因与基因组百科全书（KEGG）数据库进行功能分类。^[@ref49]^
+
+统计分析 {#sec5.9}
+--------------------
+
+数据以平均值±标准误差（SEM）表示。为了识别四个组之间的显著差异，进行了单因素方差分析（ANOVA），随后进行了指定的事后检验（麦角酸二乙酰胺（LSD）比较测试）。除非图中有其他说明，否则认为*P*-值小于 0.05 的结果具有统计学意义。使用非配对双尾*t*-测试分析两组独立样本的*P*-值。代谢组学数据使用 SIMCA 14.0 软件（Umetrics，瑞典）进行 OPLS-DA 分析，并用于构建多元统计分析模型。使用 Spearman 的*r*系数计算双变量相关性。使用 Excel 2016 构建热图。
+
+登记号 {#sec5.10}
+----------------
+
+高通量测序数据已提交至 NCBI 序列读取档案（SRA），登录号为 PRJNA576716。
+
+支持信息免费提供，请访问[https://pubs.acs.org/doi/10.1021/acsomega.0c01566](https://pubs.acs.org/doi/10.1021/acsomega.0c01566?goto=supporting-info)。OPLS-DA 分类的 3D 得分图；OPLS-DA 的 VIP 图；基于不同代谢物的通路分析；IOE/IOP 对肠道微生物多样性的影响；小鼠血清、尿液和盲肠内容物的^1^H NMR 光谱（图 S1-S7）；血清、尿液和盲肠内容物的主要代谢物；NCD 和 HFD 的组成；扩增片段的引物序列；以及代谢物鉴定（表 S1-S7）([PDF](http://pubs.acs.org/doi/suppl/10.1021/acsomega.0c01566/suppl_file/ao0c01566_si_001.pdf))
+
+补充材料
+======================
+
+######
+
+ao0c01566_si_001.pdf
+
+概念化，J.Y.，H.X.，和 Q.X.；调查，J.Y.；指导和资源，H.X.和 Q.X.；写作-初稿，J.Y.和 J.-Y.X.
+
+作者声明不存在任何利益冲突。
+
+这项工作得到了中国吉林省科学技术研究院的支持（编号：20180201078YY）。
+
+TC
+
+:  总胆固醇
+
+TG
+
+:  甘油三酯
+
+HDL
+
+:  高密度脂蛋白胆固醇
+
+LDL
+
+:  低密度脂蛋白胆固醇
+
+TSP
+
+:  3-(三甲基硅基)丙酸-2,2,3,3-四氘酸钠盐
+
+PBS
+
+:  磷酸盐缓冲盐水
+
+Chrebp
+
+:  碳水化合物响应元件结合蛋白
+
+GK
+
+:  葡萄糖激酶
+
+PK
+
+:  丙酮酸激酶
+
+PEPCK
+
+:  磷酸烯醇式丙酮酸羧激酶
+
+PC
+
+:  丙酮酸羧化酶
+
+FBPase
+
+:  果糖-1,6-二磷酸酶
+
+G6P
+
+:  葡萄糖-6-磷酸酶
+
+Ppar-γ
+
+:  过氧化物酶体增殖激活受体γ
+
+Srebp1c
+
+:  甾醇调节元件结合蛋白-1c
+
+Fas
+
+:  脂肪酸合酶
+
+Acl
+
+:  ATP-柠檬酸裂解酶
+
+Scd1
+
+:  硬脂酰辅酶 A 脱饱和酶 1
+
+Acc
+
+:  乙酰辅酶 A 羧化酶
+
+Acox
+
+:  酰基辅酶 A 氧化酶
+
+Ppar-α
+
+:  过氧化物酶体增殖激活受体α
+
+Cpt1
+
+:  肉碱棕榈酰转移酶 I
+
+Mcad
+
+:  中链酰基辅酶 A 脱氢酶
+
+Dgat1
+
+:  二酰甘油酰基转移酶 1
+
+Dgat2
+
+:  二酰甘油酰基转移酶 2
+
+Gpat
+
+:  甘油-3-磷酸酰基转移酶
+
+VIP
+
+:  投影变量的重要性
+
+OPLS-DA
+
+:  正交偏最小二乘判别分析
+
+CoA
+
+:  辅酶 A
+
+SCFA
+
+:  短链脂肪酸
+
+描述
+
+《麻辣教师 GTO》海外预告片
+
+经过七年电视上的持续受欢迎，Gokusen 终于迎来了银屏首映。赢得了数百万观众的喜爱，成为国民英雄，中川郁子重新扮演了角色，即山口久美子（Yankumi）。穿着运动衫、戴眼镜和扎着小辫子，这位朴素的中学教师成为了 3D 班顽皮不良学生的班主任。乍一看，久美子似乎很容易被吓倒，但出乎所有人的意料，她对学生的恶作剧毫不在意。她的勇气和纪律来自于一个也是令人畏惧的黑帮家族的抚养。凭借她强烈的正义感和激烈的格斗能力，久美子遵循自己的原则，维护荣誉，解决困扰学生的各种问题。
+---
+摘要：|
+  我们设计了一种新的、快速的学习一元概率分布的算法，其密度可以用分段多项式函数很好地近似。 设$f$为任意一元分布的密度函数，并且假设$f$在$L_1$距离上与一个未知的具有$t$个区间和$\pdeg$次的多项式函数$\OPT$接近。我们的算法从$f$中抽取$n = O(t(\pdeg+1)/\eps^2)$个样本，运行时间为$\Otilde (n \cdot \poly (\pdeg))$，并且以至少$9/10$的概率输出一个$O(t)$-分段$\pdeg$次假设$h$，该假设与$f$的距离为$4 \cdot \OPT +\eps$。
+
+  我们的通用算法以统一的方式为连续和离散域上的广泛结构化分布族提供（几乎）样本最优和[*近线性时间*]{}估计量。对于我们的大多数应用，这些是文献中[*首次*]{}样本最优和近线性时间估计量。因此，我们的工作通过单个“元算法”解决了广泛类推理任务的样本和计算复杂性。此外，我们通过实验证明，我们的算法在实际应用中表现非常出色。
+
+  我们的算法由三个“级别”组成：（i）在最高级别，我们使用迭代贪婪算法来寻找将实数线划分为分段多项式片段的良好划分。（ii）对于每个片段，我们表明在当前区间上找到良好多项式拟合的子问题可以使用分离算子方法有效地解决。（iii）我们将寻找分离超平面的任务降低为一个组合问题，并给出该问题的有效算法。结合这三个过程，给出一个具有所声称保证的密度估计算法。
+作者：
+- |
+    Jayadev Acharya[^1]\
+    EECS, MIT
+- |
+    Ilias Diakonikolas[^2]\
+    信息学，爱丁堡大学
+- |
+    Jerry Li[^3]\
+    EECS, MIT
+- |
+    Ludwig Schmidt[^4]\
+    EECS, MIT
+文献引用：
+- 'allrefs.bib'
+标题：'近线性时间内的样本最优密度估计'
+---
+
+附录 {#附录 .未编号}
+========
+
+[^1]：由麻省理工学院-壳牌能源倡议资助。
+
+[^2]：由玛丽居里 CIG 项目、EPSRC 资助 EP/L021749/1 和 SICSA 资助支持。
+
+[^3]：由 NSF 资助项目 CCF-1217921 和 DOE 资助项目 DE-SC0008923 支持。
+
+支持 MADALGO 和 MIT-Shell 能源倡议的资助。
+
+外周解剖主动脉旁路术用于青少年和成人复杂（再）缩窄和发育不良的主动脉弓。
+已提出各种手术方法用于复杂（再）缩窄和主动脉弓发育不良（AAH）。我们报告了 7 名患者（平均年龄 19.6±9.5 岁）在 1995 年至 2002 年间通过胸骨切开成功接受外周解剖升主动脉至降主动脉旁路术（ADB）治疗复杂缩窄或再缩窄和 AAH，术后早期及随访 24±29（0.2-84）个月无死亡和并发症。因此，对于需要同时进行升主动脉或心脏手术的（再）缩窄和 AAH 患者，以及 DHCA 下主动脉弓狭窄和并发症风险增加的患者，可以考虑使用 ADB。
+本发明一般涉及在多根或导体电缆（如电话电缆）中形成气密压力块，以实现此类电缆部分的压力充气。 特别地，这项发明在保持电缆在野外服务或安装过程中单点多次注射时压力块形成复合物的流体压力方面很有用。
+美国专利号 3,823,250，其披露内容已通过引用纳入本发明，公开了一种适合与下文所述阀门一起使用的活接件。简而言之，该活接件包括一个弯曲的基板，用于放置在电缆护套上切割的开口上，以及与基板整体形成并从中突出的注射口，该口包括形成压力密封覆盖物的手段，如端口口部的螺纹。
+正如该领域众所周知，对电力和电话电缆的某些部分进行气压充气可以防止水分或湿气渗入电缆，从而防止通信和电力电路中的噪声和干扰。通过注入自固化液体化合物，在电缆长度上的间歇点形成形成水坝的压力块，该化合物硬化并填充足够长度的电线周围的空隙，以保持气压。 为了形成这样的压力块，需要在电缆护套上开一个通向内部的孔，然后提供一个外部定位的配件，通过该配件可以将液体填充化合物注入。为此，使用一个流体注射器。通常，流体注射器包括一个含有一定量填充化合物的腔室，一个在腔室内操作的加压柱塞，以及一个与腔室流体连通的喷嘴，通过喷嘴将流体在柱塞对化合物压缩运动响应时喷射出来。通过将流体注射器的喷嘴螺纹连接到阀门配件并压缩柱塞，将流体化合物注入电缆内部。
+当需要大量化合物填充电缆内部到所需程度，即超过注射器腔室通常包含的量时，必须中断连续注射操作，以便重新填充或充电注射器腔室。 在注射操作过程中重新充电，需要释放流体注射器的活塞压力，并将活塞拉出，以便进入注射器室进行填充。
+在电缆填充过程中进行重新充电，对于形成块状操作存在一些缺点。由于电缆中存在残余压力，部分液体化合物会通过旋塞接头和电缆内部压力正常丢失。为了克服这些问题，已经设计出在流体注射器和电缆内部之间插入的截止阀。这种截止阀允许通过接头向电缆内部注入流体，同时阻止加压流体化合物的逃逸。例如，明尼苏达州明尼阿波利斯市的 3M 公司在其“SCOTCHCAST 品牌 R.P.S.”商标下销售一种树脂压力连接系统。3M 系统包括一个单向阀，该阀在允许注入阻塞性化合物时打开，并在残余背压下关闭，以防止阻塞性化合物的逃逸。
+此类先验艺术阀门存在相当大的缺点，尤其是在流体注射器的喷嘴适应与导管（包括阀门）密封连接到电缆内部的情况下。例如，由于注射喷嘴和阀门之间的压力密封，很难释放流体注射器的柱塞，因为任何尝试这样做都会在流体注射器内部产生真空。这使得在喷嘴连接件上安装时很难重新装填流体注射器。
+/*
+ * 版权所有 2000-2009 JetBrains s.r.o.
+ *
+ * 根据 Apache License 2.0（“许可证”）；
+ * 除非遵守许可证，否则不得使用此文件。
+ * 您可以在以下位置获得许可证副本：
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * /
+
+package com.intellij.refactoring.safeDelete.usageInfo;
+
+import com.intellij.util.IncorrectOperationException;
+
+/**
+ * @author yole
+ */
+public interface SafeDeleteCustomUsageInfo {
+  void performRefactoring() throws IncorrectOperationException;
+}
+
+这里是函数的详细解释：1. 使用`def`关键字定义函数，后跟函数名`sum_two_numbers`。函数名遵循蛇形命名约定，这是 Python 中函数命名的推荐风格。2. 函数接受两个参数，`num1`和`num2`，它们都使用`int`类型提示进行注释，表示它们应该是整数。类型提示是可选的，但提供了关于参数预期类型的清晰信息。3. 函数的返回类型也使用`int`进行注释，通过`->`语法表示该函数将返回一个整数值。 函数有一个包含在三个引号内的文档字符串(`"""`)，它提供了函数功能的简要描述。文档字符串遵循 PEP 257 规范。5. 在函数内部，使用加号运算符(`+`)将`num1`和`num2`的和赋值给`result`变量。这一行执行实际的计算。6. 最后，使用`return`语句返回`result`，将计算出的总和发送回函数的调用者。代码按照 Python 风格指南（PEP 8）正确缩进，每个缩进级别使用 4 个空格。
+
+为什么气候变化没有让更多参议员今晚睡不着觉？
+
+通宵达旦通常是没做作业的结果，但今晚将有 28 位美国参议员因为截然相反的原因而熬夜。在阅读了关于气候变化的最新科学报告后，他们将通宵发表演讲，呼吁采取全面行动应对这一威胁。
+
+这是一种不寻常的策略，但真正的问题不是为什么有 28 个人整夜在谈论，而是为什么面对如此严重的挑战时，其他 72 名参议员却在睡觉。所有主要的美国科学组织多年来一直在警告我们关于气候变化的现实和严重性。虽然这可能发生得很慢，但这不会让它变得任何便宜或破坏性减少。如果纳税人喜欢为飓风桑迪造成的损失付费，或者为西部和中西部的干旱和野火付费，那么随着影响的增强，他们将在未来的几年里玩得很开心。
+
+那么，为什么沉睡的 72 人忽视对我们经济和环境的严重威胁呢？
+
+我国并不流行支持气候变化科学。69%的美国民众认为有“确凿证据”表明气候正在变化（皮尤，2013 年）。但几乎总是如此，国会议员们对普通美国民众的看法关心得远不如对他们所在州或选区的选民的看法关心得多。更具体地说，这意味着要警惕采取可能疏远你党派核心支持者或“可争取”温和派立场的立场。
+
+因此，许多来自坚定保守选区的众议院成员和摇摆州的参议员都害怕在气候变化等议题上采取行动。不必考虑现在谨慎的行动将长期为他们的选民节省金钱，并保护未来一代免受毁灭性风暴、干旱和健康影响。如果政治前景看起来令人担忧，他们宁愿今晚好好睡一觉。
+
+但政治有趣的地方在于我们常常做错。就像在体育比赛中，有时最糟糕的事情就是不想输——避免风险，试图保持领先，希望它能持续。显然，有很多现任者计算过，否认气候科学的明显真相可以保护他们免受不必要的政治风险。但从长远来看，这可能是一种失败的政治策略。80%的 35 岁以下的选民希望采取行动应对气候变化。对那些害怕这个问题的政治家来说更重要的是，56%的年轻选民虽然通常不赞成奥巴马总统的工作表现，但支持采取行动（GS 策略集团，本森策略集团，2013 年）。而且不仅仅是长远来看。甚至在 2014 年，在那波人口浪潮席卷我们之前，对气候变化持明智立场（它是真实的，我们应该谨慎行事）是向摇摆选民发出温和信号的好方法。
+
+参议员们当然比我们这些局外人更了解他们所在州的政情。但其中大多数人也知道，他们之所以能获得这份工作，是因为在某个时刻打破了现状——击败了现任者，出乎意料地击败了领跑者，抓住了一个被遗忘的问题并动员了公众。在商业和政治中，新思想都是具有颠覆性的。如果“沉睡的 72 人”想要避免成为政治界的柯达或百老汇，他们最好意识到气候变化带来的威胁。
+
+基思·加比
+
+通过电子邮件获取新帖子
+
+评论
+
+迈克尔·阿什利
+
+2014 年 3 月 10 日晚上 7:22（美国东部时间）
+
+如果人们关注到政治家们追随金钱而非选民，他们可能会发现这是开始一个绿色社会主义/资本主义政党（我知道——这只是个幻想）的最佳时机
+
+薇薇安·蒂塞维奇
+
+2014 年 3 月 10 日晚上 9:17（美国东部时间）
+
+嗯，想知道为什么今晚没有代表俄亥俄州？除非我错过了看到布朗参议员和波特曼参议员的姓名，如果是这样，我道歉。我明白还有很多其他问题需要我的代表们忙于处理，比如努力修改《印第安人儿童福利法》，我今天已经和他们联系过了，但拜托，气候或是在保留地绑架儿童的问题甚至排在他们前十位的问题列表上吗？这对我很重要，尽管我只是一个小小的俄亥俄州的投票者。当我们知道得更多，我们就能做得更好。今晚在场的你们选择了做得更好。谢谢！
+
+到气候变化真正明显的效果显现时，这些参议员中的大多数将不再任职或因年老去世。我们现在经历的极端天气很容易被归咎于自然变化，没有人能说风暴 x 是由气候变化引起的。任何人都很难对某件事做出反应，除非它就摆在他们面前。等到它摆在我们面前时，就已经太晚了。世界不会终结，但它将永远改变。
+为大型体育赛事训练从来都不容易，无论是第一次 5 公里跑还是第五次超级马拉松，但 Tinké就在这里提供帮助！跟随 Chris Small 和 James Rotheram 两位首次使用 Tinké的用户，看看他们如何利用这个巧妙的设备为攀登京那巴鲁山做准备。
+
+为这场盛大的活动做准备，不应与您生活中任何其他重要场合的准备有所不同。身体和心理的准备对于确保您在活动期间能够发挥出最佳水平至关重要。Tinké随后帮助您跟踪您的健康和福祉水平，以确保您能够发挥出最佳表现。
+
+Tinké通过测量心率、呼吸率、血氧饱和度和心率变异性来解读您的健康和压力指数。Zensorium 应用程序和仪表板随后存储这些读数并跟踪随时间的变化。
+
+詹姆斯和我有一段时间没有做追踪了，他提出了这个主意。所以我们打算一起攀登京那巴鲁山，28 岁的克里斯·斯莫尔说。
+
+“Tinké对于那（帮助准备攀登）很有帮助，”35 岁的詹姆斯·罗瑟姆补充道。
+
+开始时，这对搭档决定尝试使用低氧舱来观察他们的身体在外部条件下会如何表现，这与他们在攀登京那巴鲁山时可能遇到的情况相似。在进行了一些简单的锻炼后，克里斯惊讶地看到他的 Vita 读数只有 47/99。
+
+现实感检查，我并没有我想象的那么健康，”克里斯说。
+
+这对搭档知道他们必须快速提高自己的健康、体能和耐力。作为准备的一部分，两位朋友在攀登前两周练习瑜伽，以放松身心。
+
+“在这个项目上，无论走到哪里，大家都说我们需要提高我们的呼吸。瑜伽确实是做到这一点的好方法，”詹姆斯说。
+
+作为试运行，这对搭档在攀登京那巴鲁山的前两天攀登了武吉知马山。
+
+在攀登当天，尽管詹姆斯和克里斯都对上个月取得的进步感到满意，但他们是否能完成攀登京那巴鲁山仍然不确定。克里斯看起来比詹姆斯更健壮，詹姆斯担心自己会成为克里斯的负担。
+
+我认为我们现在比以前处于更好的位置。我们花了两周时间进行训练，准备了我们需要的所有装备，我们做了瑜伽，我们练习了呼吸，放松了我们的身心，我们还进行了大量的体能训练。我想经过这一切，我们比最初准备得更充分了。在 Tinké上，我的分数相当不错，”克里斯说。
+
+我今早 Tinké上的分数并不出色，但这并不能说明我的身体状况，但我们需要去徒步看看身体如何反应，詹姆斯担忧地说。
+
+尽管攀登本身是一次令人畏惧的经历，但两位朋友都坚持了下来，到达了山顶，可能是东南亚所能达到的最高点。
+
+这很艰难。这真的很艰难。我是为此而生吗？也许现在吧？但一个月前，我们还在进行训练？不。所有这一切都发挥了作用，帮助我为此次攀登做好准备，”克里斯说。
+
+使用 Tinké一个月，Chris 和 James 能够提升他们的 Vita 和 Zen 指数，成功征服了京那巴鲁山。这次旅程本身不会容易，但与 Tinké训练可以使整个过程变得简单得多。
+
+推荐文章：
+
+Zensorium | 5 个回归基础的运动
+
+Zensorium | 5 个成为更好的跑者的方法
+
+Zensorium | 为何跑步对你有益？
+
+关注我们：
+
+Zensorium，Tinké和 Being 的制造商。
+优点：
+
+缺点：
+
+《蚯蚓》系列游戏一直有点歪斜。在其最初的版本中，作为一款时间敏感的 2D 回合制策略游戏，蚯蚓将可爱的小动画地球吞噬者相互对抗，在明亮、多彩的环境中展开战斗，武器和增益道具众多，过程中环境被炸得粉碎。随着粉丝们热切期待明年系列的第一款 3D 版本，Team 17 创造了一款不同寻常的衍生作品来让我们保持忙碌和愉快：相当上瘾且高度活跃的战斗解谜游戏，《蚯蚓爆破》。
+
+破坏虫？
+
+尽管 Blast 看起来像是一款《Worms》游戏，但游戏玩法却完全不同。它更像是带有拼图元素的《Bust-a-Move》，需要玩家射击从天而降的拼图碎片。在这款游戏中，你控制一个装备有火箭筒的小船员角色，可以发射颜色编码的导弹。你可以左右移动，上下倾斜炮管来改变轨迹，并通过用同色导弹摧毁拼图碎片来收集其他武器和升级箱。
+
+由于你的角色在船上，你还得应对涨潮、恶劣的天气条件、海怪以及其他深海中的危险，同时你还要为生存而战。在大多数挑战中，无论你是否射击它们，拼图碎片都会逐渐下沉到水中，因此重要的是要不断清理拼图碎片，以免被推到水下。此外，涨潮必须通过收集下落的星星来平息，这些星星也是拼图碎片之一。如果你的瞄准非常不准，而且什么都没打中，来自天空的卡通物品，如铁砧、冰箱和炮弹将会落下，旨在击中你的头部并损害你的健康。这与原始游戏中的“你轮到我轮”的整体格式大相径庭。
+
+虫虫大作战提供了多种游戏模式。有许多全屏挑战，你可以独自面对谜题，还有多种面对面模式，你可以通过分屏与其他玩家或 CPU 对战。先玩一些单人挑战是个好主意——它们就像一种训练营，在那里你会学习所有谜题战斗的基础（虽然听起来可能有些奇怪）。随着你在这些单人任务中的进步，你偶尔会解锁新模式。
+
+在一个挑战中，你有六枚导弹和六个难以命中的目标，但你有很多时间来击中它们。在另一个挑战中，由拼图碎片组成的 UFO 向水面飞来，你必须尽可能多地直接击中它们的腹部，在计时器耗尽之前。另一个挑战涉及快速连续击中屏幕两侧交替下降的目标，每次成功射击都会为计时器增加几秒钟。每个模式中的变化太多，无法在此一一列举，这倒是好事。有些挑战令人沮丧，但它们相当多样化，最终是值得的。
+
+定时目标射击是你在解谜模式中面临众多激烈挑战之一。
+
+你的主要谜题模式进度会沿途保存，所以一旦你通过了特别艰难的挑战，你就有选择不再回顾的机会。你也可以回到你喜欢的挑战，或者继续剩余的挑战，选择任何你喜欢的角色。这些角色（奇怪的是，并不局限于虫子）对伤害的阈值各不相同，他们的船在大小和速度方面也有所不同。还有一个锦标赛模式，在这个模式中，你需要在特定的挑战中尽可能长时间地生存，其中大多数挑战都是谜题模式中引入的挑战的微妙变化。
+
+当我发现我最喜欢的冰淇淋店关门了 🍦😭，我感到😡和😢交织。
+
+工作了一整天后，我给自己泡了个泡泡浴🛁🌸，感觉纯粹的幸福😌。
+
+当我所在的团队赢得冠军比赛时🏆🎉，我无法停止微笑😁。
+
+Q:
+
+как передать json на сервер
+
+Здравствуйте, у меня есть 2 json объекта, находящиеся в javascript. Каким образом мне хранить их на сервере, файлами или в запросе передавать? Пожалуйста, с примерами кода.
+Бэкэнд на ASP.NET 4.5
+
+A:
+
+На клиенте конвертировать его в string:
+myStringObj = JSON.stringify(myObj);
+
+Дальше отправить его любым способом на сервер (xhr, form submit);
+Процесс здесь
+А как хранить вам виднее, либо база данных, либо статичный json, зависит от того что делаете
+
+类别：控制台
+
+我们都清楚，微软正在开发一个名为“天蝎座计划”的项目，这是 Xbox 游戏机的下一代产品。2016 年，微软在 E3 大会上宣布了他们的下一个项目，代号为“天蝎座计划”。当时他们宣布该游戏机将于 2017 年推出。现在已经到了 2017 年，我们直到现在还没有听到关于 Xbox 2 发布日期的太多消息。关于天蝎座发布日期的新传闻层出不穷，我们将在本文中讨论这个问题。
+
+当前 Xbox One 的控制器已于 2013 年 11 月 22 日在美国发布，显然赢得了人们的喜爱。因此，当 Xbox 粉丝首次听说这个项目时，他们真的非常兴奋。但人们心中唯一的问题就是微软究竟计划何时推出他们的产品。当然，他们说过 Xbox 2 将在 2017 年发布，但我们已经过了今年的一半，已经五个月了，还没有真正的确认。粉丝们一直在想知道发布日期是否已经推迟，我们现在有了答案。
+
+新传闻基本上对粉丝来说是个好消息，他们几乎可以期待在圣诞节期间买到这台游戏机。这正是我们自项目宣布以来一直期待的那种新闻。这是在 2017 年 E3 游戏展前夕出现的传闻。最令人兴奋的事实是，这条消息来自无人不知的 Xbox 负责人菲尔·斯宾塞，当他在推特上被问及 Xbox 2 发布日期是否有变动时，他回答说：“目前时间表看起来非常好，没有问题。”正是这条消息促使粉丝和技术专家相信，这款游戏机将在第二年推出，而圣诞节假期是最方便的推出时机，这也是让产品销售额飙升的好时机。
+
+我们预计微软将在 E3 游戏展上宣布发布日期，并且有预期他们也可能最终公布游戏机的价格，以便人们在 Xbox 2 真正上市时能够充分准备应对钱包的“烧灼”。
+
+有很多关于 Xbox 2 的讨论和许多关于这款游戏机将带来哪些新事物的传言。有报道称将会有语音控制设置，这将使这款游戏机在游戏行业中成为真正的赢家。人们期待这款游戏机能够带来现代科技所拥有的所有新和先进的技术。还有传言称，Xbox 2 将配备定制的游戏专用控制器，至少可以说是个好消息。各位，这就是我们所知道的关于即将推出的游戏机的所有信息，但关于这些信息没有官方确认，所以你们真的应该对这些传言持保留态度。
+Katabexin，Medichrom
+
+该药物品牌名为 Katabexin，含有通用盐-Betahistine Hydrochloride，由 Medichrom 生产。Katabexin 主要与症状和适应症相关——国际疾病分类（ICD）- N07CA01-Betahistine。
+
+通用盐
+
+盐酸倍他司汀
+
+可用药物类型
+
+N / A
+
+医学类别
+
+人类抗眩晕药物
+
+使用-疾病
+
+N07CA01-倍他司汀制造商
+
+美迪铬
+
+更多药物
+
+该药物品牌名为 Kasmucol，含有通用盐-阿奇霉素，由 Teva 公司生产。Kasmucol 主要与症状和适应症-国际疾病分类（ICD）-ATC 相关。
+
+通用盐
+
+该药物品牌名为 Kas，含有通用盐-肠内营养制剂，由 Nutricia-Bago 生产。Kas 主要与症状和适应症-国际疾病分类（ICD）-ATC 相关。
+
+Ge...
+
+该药品品牌名为 Kastair EZ，含有通用盐-Montelukast Sodium，由 Pediatrica 生产。Kastair EZ 主要与症状和适应症相关——国际疾病分类（ICD）- R03DC03-Montelukast。
+
+该药物品牌名为 Kast，含有通用盐-Montelukast，由 RND 实验室生产。Kast 主要与症状和适应症相关——国际疾病分类（ICD）- R03DC03-Montelukast。
+
+基因...
+
+该药物品牌名为 Kastorion，含有通用盐-Montelukast Sodium，由 OEP 菲律宾公司生产。Kastorion 主要与症状和适应症相关——国际疾病分类（ICD）- R03DC03-Montelukast...
+
+该药物品牌名为 Katabios，含有通用盐-多种维生素，由 Specialita Igienico Terapeutiche 生产。Katabios 主要与症状和适应症相关——国际疾病分类（ICD）- A11BA-Mu...
+
+该药物品牌名为 Katagrip，含有通用盐-对乙酰氨基酚，由 Angelini 公司生产。Katagrip 主要与症状和适应症相关——国际疾病分类（ICD）- ATC。
+
+通用盐
+
+该药物品牌名为 Katapekt，含有通用盐氯化铵，由 Vitabalans 生产。Katapekt 主要与症状和适应症相关——国际疾病分类（ICD）- N02AA59-可待因，复合...
+
+该药物品牌名为 Katar，含有通用盐-棒状杆菌假白喉杆菌，由意大利血清研究所生产。Katar 主要与症状和适应症相关——国际疾病分类（ICD）——...
+
+该药物品牌名为 Katasuccin，含有通用盐-琥珀酸，由未知的制药公司生产。Katasuccin 主要与症状和适应症相关——国际疾病分类（ICD）- A...
+
+该药物品牌名为 Katen，含有通用盐酸盐-Mexiletine Hydrochloride，由 Zentiva 生产。Katen 主要与症状和适应症相关——国际疾病分类（ICD）- C01BB02-Mexiletine。
+
+该药物品牌名为 Kathro，含有通用盐-胆固醇，由未知的制药公司生产。Kathro 主要与症状和适应症相关——国际疾病分类（ICD）- ATC。
+
+该药物品牌名为 Katin，含有通用盐胆盐，由 Instituto Sanitas 生产。Katin 主要与症状和适应症相关——国际疾病分类（ICD）- ATC。
+
+通用盐
+
+该药物品牌名为 Kativ N，含有通用盐分-维生素 K1（叶酸纳）并由未知的制药公司生产。Kativ N 主要与症状和适应症相关——国际疾病分类（IC...
+
+该药物品牌名为 Katogel，含有通用盐-润肤剂，由 Deverge Medicina e Medicalizzazione 生产。Katogel 主要与症状和适应症相关——国际疾病分类（ICD）- D02AX-其他...
+本公开涉及计算机系统，特别是管理部署在虚拟化计算机环境中的应用程序文件访问。
+虚拟化计算机环境可能包括云计算系统、复合信息技术系统和计算机集群系统，用于向最终用户提供计算机资源或其他计算资源。在云计算环境中，物理硬件配置对最终用户是隐藏的。云计算系统可能包括服务器、网络存储设备、路由器、网关、通信链路、软件（例如，应用程序、操作系统、网络服务等）和其他设备。 然而，由于云计算系统所实现的物理硬件和软件平台隐藏在“云”中，系统管理员可以在客户不知情或不受影响的情况下对其进行管理、升级、更换或进行其他更改。
+计算机集群，也称为集群，可以被视为一种云计算环境，可能包括一组松散连接的计算机，这些计算机可能通过本地网络相互连接。
+在典型的云计算环境中，应用程序可以在虚拟机或设备上执行，这些虚拟机或设备是在主机系统中安装的客户端操作系统，并具有可选的预设配置和结构（例如，操作系统和 Web 服务器的组合）。虚拟机通常通过软件仿真、硬件虚拟化或两者兼而有之来实现。单个硬件和/或软件平台可以托管多个虚拟机，每个虚拟机都可以访问平台资源的一部分，例如处理资源、存储资源等。
+因为部署在云计算环境中的不同应用程序可能需要访问文件，这些文件在不同应用程序和/或应用程序实例之间可能不一致，除非提供共享位置，这可能会给应用程序的安装和维护带来不必要的额外复杂性。此外，如果两个不同的应用程序和/或应用程序实例在重叠的时间段内访问同一文件，可能会出现意外的结果。更进一步，在云计算环境中，多个应用程序和/或应用程序实例使用的文件同步可能存在问题。
+La campagna svizzera di Suvorov si svolse in territorio elvetico tra il settembre e l'ottobre del 1799 durante la guerra della seconda coalizione. Le truppe russo-austriache, che avevano già sconfitto ripetutamente tra aprile e agosto i francesi in Italia, attraversarono il San Gottardo al comando del feldmaresciallo Aleksandr Vasil'evič Suvorov, con l'ordine di marciare contro il generale Andrea Massena per scacciarlo dalla Repubblica Elvetica.
+
+Dopo le importanti vittorie dei mesi precedenti durante la campagna in Italia, Suvorov era rimasto padrone della situazione nella parte settentrionale della penisola e sembrava imminente una sconfitta definitiva dei francesi con il generale russo deciso a marciare addirittura verso la Francia, ma le divisioni e le rivalità delle potenze coalizzate avrebbero ben presto favorito la ripresa delle armate rivoluzionarie: per timore che l'influenza della Russia diventasse troppo grande, gli alleati, facendo anche leva sulle ambizioni dello zar Paolo I di presentarsi come liberatore della Svizzera, riuscirono a ottenere che le truppe russe interrompessero le loro operazioni in Italia e venissero rischierate nella Confederazione, lasciando l'iniziativa nella penisola agli austriaci. A Suvorov fu quindi ordinato di portarsi con il suo esercito verso nord e marciare attraverso il San Gottardo per congiungersi alle truppe russe appena condotte sulla Limmat dal generale Aleksandr Michajlovič Rimskij-Korsakov.
+
+Jimmy Wales nació en Huntsville, Estados Unidos. Su padre, Jimmy, trabajaba como gerente en una tienda de comestibles, mientras que su madre, Doris, y su abuela, Emma, dirigían una escuela privada agrupada, donde Jimmy Wales hizo sus primeros estudios. Él y otros cuatro niños formaban su curso, así que en su aula recibían clase todos los alumnos de primero a cuarto curso y de quinto a octavo. Cuando terminó octavo, Wales asistió a la escuela Randolph School, una secundaria en Huntsville. Wales ha dicho que la escuela era costosa para su familia, pero considera esa educación importante: «La educación fue siempre una pasión en mi hogar... sabes, el tan tradicional apremio por el conocimiento y el aprendizaje, estableciendo eso como una base para una buena vida».nota 1​
+Recibió el título de licenciado en Finanzas de la Universidad de Auburn y entró en el programa de financiación del doctorado en Finanzas de la Universidad de Alabama antes de dejarla con un título de máster. Prosiguió los estudios gracias a un préstamo para obtener el título de Doctorado en Finanzas de la Universidad de Indiana. Enseñó en ambas universidades durante sus estudios de postgrado, pero no escribió la tesis para finalizar el doctorado, algo que él mismo atribuye al aburrimiento.
+
+“太阳从地平线升起，将温暖的光芒洒在露水滋润的草地上。🌅 鸟儿鸣叫着早晨的问候，世界带着微笑醒来。☀️ 咖啡在厨房里煮着，空气中弥漫着其浓郁的香气。☕️”
+“她带着一颗充满喜悦的心舞动人生，像🌸一样在风中旋转。她的笑声像气泡饮料一样冒泡，她的眼睛像✨一样闪烁。月亮从云层后面探出头来，顽皮地对她眨眼。🌙”
+“他的笑声在房间里回荡，像🎶合唱一样具有传染性。朋友们加入进来，拍手跺脚，随着节奏摇摆。🕺💃 猫懒洋洋地伸展在窗台上，它的尾巴像节拍器一样摇摆。🐾”
+Q:
+
+在 sqlalchemy 中插入一行，包含默认值列
+
+我正在编写一个程序，该程序使用 sqlalchemy 作为客户端的数据库。
+以下是我的其中一个表类：
+class DownloadRecord(Base):
+    __tablename__ = "DownloadRecords"
+    id = Column("Id", Integer, primary_key=True, autoincrement=True)
+
+    download_name = Column("DownloadName", Unicode, nullable=False)
+    download_date = Column(
+        "DownloadDate", DateTime, default=datetime.datetime.utcnow, nullable=False
+    )
+
+列 download_date 在此处以及服务器端表中都定义为具有默认值。以下是 mssql 服务器上该列的定义：
+DownloadDate DATETIME NOT NULL DEFAULT GETDATE()
+
+然而，无论我尝试添加记录 DownloadRecord(download_name="new_download_name")，我都遇到了以下异常。
+
+sqlalchemy.exc.IntegrityError: (pyodbc.IntegrityError) ('23000',
+  "[23000] [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot
+  insert the value NULL into column 'DownloadDate', table
+  'DownloadRecords'; column does not allow nulls. INSERT fails. (515)
+  (SQLExecDirectW); [23000] [Microsoft][SQL Server Native Client
+  11.0][SQL Server]The statement has been terminated. (3621)") [SQL: INSERT INTO [DownloadRecords] ([DownloadName], [DownloadDate]) OUTPUT
+  inserted.[Id] VALUES (?, ?)] [parameters: ("new_download_name", None)]
+
+我也尝试将这个列设置为可空，但当我添加新行时，DownloadDate 列是空的。
+我该如何让它自动使用默认值？
+
+A:
+
+问题在于列类型 DownloadDate 与您在客户端为其默认值指定的值类型不兼容。
+您使用的类型是 DateTime（在服务器端和客户端都是）。
+然而，在以下代码中：
+Column("DownloadDate", DateTime, default=datetime.datetime.utcnow, nullable=False)
+
+datetime.datetime.utcnow()的返回值是一个时区感知的对象，而 SQL Server 的 DateTime 不是。
+我看到了两种可能的解决方案：
+
+将默认值更改为一个返回非时区感知 datetime 对象的调用。
+将 DownloadDate 列的类型更改为时区感知类型。您可以在服务器端使用 SQL Server 的 datetimeoffset，在客户端使用 SQLAlchemy 的 DATETIMEOFFSET。
+
+查看微软关于日期和时间类型的文档以获取完整参考。
+另一方面，考虑采用先代码后设计的方法，在该方法中，您在一个地方定义您的模式。
+
+
+活着，让爱自由
+
+尽管 Willow Pierce 自两年前丈夫去世以来已经向前迈进，但她无法忽视她的第六感，认为 Jack 还活着。当新来的 Con Russo 来到镇上时，Willow 坚信他就是 Jack。她永远不会忘记他的眼睛。Willow 决心查明 Con 的身份——甚至... 全部描述
+氯和有机物质在游泳池中的命运。
+通过使用一个 2.2 立方米的水池模型，研究了游泳池用户引入的有机氮和碳的命运。该研究利用了一种体液模拟物（BFA），其中包含主要的内源性有机氨基酸化合物，以及由腐殖酸（HA）代表的污染模拟物。该系统用于检验有机负荷和有机碳（OC）来源（即氨基酸或 HA）在类似全规模游泳池操作条件下的水平和对三卤甲烷（THMs）和氯胺等关键氯化消毒副产品的种类的影响。结果表明，OC、氯胺和 THMs 在运行 200-500 小时后均达到稳态水平，反映了投加的 OC 的矿化。 OC 的稳态水平在调查的操作条件范围内大致与剂量率呈线性相关，并且与记录的氯胺水平一样，与全规模游泳池报道的水平基本一致。记录的 THM 水平略低于实际游泳池中的水平，并且取决于 pH 和碳源：溶解模拟物的 THM 形成倾向约为 BFA 的八倍。在测定的副产物中，只有硝酸盐被发现积累，占投加氨基酸氮的 4-28%。与基于亨利定律应用的前期假设相反，只有微量的挥发性副产物被发现损失到大气中。
+Q:
+
+textbf 与 txfonts 包不兼容
+
+如果编译这个，它不会工作 - 文本不会加粗。
+\documentclass[9pt, a4paper]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[IL2]{fontenc}
+\usepackage{txfonts}
+\begin{document}
+\textbf{Something}
+\end{document}
+
+如果我移除包的使用，它就能工作，但我确实需要它。我该怎么办？
+
+A:
+
+日志文件告诉您 LaTeX 字体警告：
+LaTeX Font Warning: Font shape `IL2/txr/m/n' undefined
+(Font)              using `IL2/cmr/m/n' instead on input line 5.
+
+LaTeX Font Warning: Font shape `IL2/txr/bx/n' undefined
+(Font)              using `IL2/txr/m/n' instead on input line 6.
+
+这意味着 txfonts 不支持 IL2 编码（只有少数字体支持）因此使用标准 Computer Modern 字体代替。
+
+凯文：是的，很可能就是这样，我同意。那么你应该打开警告灯，慢慢地开车到标线处，然后停在那里。我以前和父母有过类似的经历。我父亲忘记加油了，突然发动机里没油了，车速就慢了下来。那是一个危险的情况，但我父亲还是把车平稳地开到了路边。
+
+佐伊：哇，听起来真的很可怕！幸运的是，你爸爸设法处理得很好。但是的，总是为这类情况做好准备会更好。也许你应该给他买一个汽车保养套餐之类的？ :)
+
+凯文：实际上是一辆租来的车，我爸爸看不懂油表，因为它是数字的 xD 这些汽车保养套餐包括汽油吗？还是只是用来洗车的用品？
+
+Zoe：哈哈，哦不！嗯，通常它们包括像蜡、 detailing 套件，甚至可能还有更换机油或洗车的礼品卡。但如果你想让他笑，也可以包括一个有趣的杯子或类似的东西。; )
+
+凯文：是啊，那些杯子很有趣。我敢打赌有商店可以定制它们。×D 给我爸的这种杯子上印什么有趣的笑话比较好呢？
+
+佐伊：如何“世界最现代的父亲……但仍在学习如何读取数字油表” lmmaooo
+
+凯文：哈哈 XD 真好
+
+Zoe：我在这里帮你解决所有双关语和笑话需求，凯文！；)
+
+凯文：好的，我不想用另一种方式，佐伊：D
+
+Zoe：很高兴我们在这方面看法一致！现在，你准备好睡觉了吗？
+
+愿景
+
+我们的愿景
+
+发展和维持一个全国公认的社区健身和健康模式；
+
+维护一个服务于 3000 多名不同成员的健康校园，提供综合性的项目；
+
+运营应具备财务和组织可持续性。
+
+佛蒙特州的未来繁荣取决于我们为公民提供坚实的健康和体能基础的能力。一个健康的人口成为社区和经济发展的基础，因为健康的公民也是生产性员工、有贡献的社区成员、培养孩子的父母以及我们教育体系中的积极参与者。健康人口的关键是一个多维度的健身环境，它提供了社会和家庭体验的机会，通过体育技能建设，以及可持续追求健身或运动表现目标。
+
+佛蒙特人长期以来一直致力于将我们的景观用于休闲，对创新休闲商业社区进行深思熟虑的投资，以及设计前沿的设备和项目，旨在让各个年龄段和能力的个人参与健康和体能锻炼，追求运动表现。作为社区体育中心，“交汇点”在确保成年人、青年和儿童能够获得这些投资和创新，以克服我们社区面临的挑战方面发挥着独特的作用。我们共同努力，可以推动一个健康人口、有回报的休闲遗产和可持续经济未来的愿景。
+
+88 N.Y.2d 925 (1996)
+669 N.E.2d 1111
+646 N.Y.S.2d 789
+纽约州人民，被告，
+v.
+约翰·A·塞雷索利，上诉人。
+纽约州上诉法院。
+辩论日期：1996 年 6 月 6 日。
+判决日期：1996 年 6 月 28 日。
+弗兰克·波利塞利，尤蒂卡，代表上诉人。
+迈克尔·A·阿库里，奥内达县检察官，尤蒂卡（蒂莫西·P·法齐特为法律顾问），代表被告。
+首席法官凯伊和法官西蒙斯、蒂托内、贝拉科萨、史密斯、莱文和西帕里克一致同意。
+备忘录。
+上诉法院的命令应予维持。
+*926 被告被控犯有持有伪造文书的犯罪行为，以及从纽约罗马的私人社交俱乐部 Toccolana Club 盗窃 3500 美元。在因第四度重大盗窃罪（刑法第 155.30 条）被判有罪后，被告根据 CPL 330.30 提出动议，以涉及单个坐席陪审员的不当行为为由撤销判决。 在审前调查中，这位居住在罗马的陪审员被问及他是否“熟悉托科拉诺俱乐部的成员”。陪审员回答：“我只知道它在哪儿，不是真的，没有。”后来查明，这位陪审员在几十年前曾是该俱乐部的名义成员，他的两位亲属曾是或曾是该俱乐部的成员。
+在审理被告的动议后，审判法院认为陪审员的行为没有不当行为，并且陪审员的行为“没有影响被告的重大权利”（CPL 330.30 [2]）。上诉法院维持原判。审判法院未受干扰的事实认定在记录中得到支持，并且，与被告刑罚的所谓过度性一样，超出了我们的审查范围。
+以备忘录形式维持原判。
+
+作为我提出的 FOLIO 类型，是_Sperm Whale_；OCTAVO 类型的是_Grampus_；DUODECIMO 类型的是_Porpoise_。FOLIOS。在这些中，我这里包括以下章节：—I. _Sperm Whale_；II. _Right Whale_；III. _Fin-Back Whale_；IV. _Hump-backed Whale_；V. _Razor Back Whale_；VI. _Sulphur Bottom Whale_。第一卷（_Folio_），第一章（_Sperm Whale_）。—这种鲸，在古英语中模糊地被称为 Trumpa 鲸、Physeter 鲸和 Anvil Headed 鲸，现在在法国被称为 Cachalot，在德国被称为 Pottsfich，在长词中被称为 Macrocephalus。毫无疑问，它是地球上最大的居民；遇到的所有鲸中最可怕的；外观上最庄严的；最后，在商业上最有价值的，因为它是从唯一能够获得这种宝贵物质——鲸脑油——的生物那里获得的。它的所有特殊性将在许多其他地方详细说明。我现在主要处理的是它的名字。从语言学角度来看，这是荒谬的。 几个世纪以前，当抹香鲸几乎完全以其个体特性而闻名，而其油只是偶然从搁浅的鱼中获取时；在那些日子里，人们普遍认为鲸脑油是从与当时在英国被称为格陵兰鲸或右鲸的动物相同的生物中提取的。这种想法也是，这种鲸脑油正是格陵兰鲸那种赋予其活力的体液，这个词的第一个音节在字面上表达了这一点。在那个时代，鲸脑油极其稀缺，不是用作照明，而只是作为药膏和药物。它只能从药剂师那里买到，就像你现在买一盎司大黄一样。当我认为，随着时间的推移，鲸脑油的真正性质变得众所周知时，经销商仍然保留了它的原始名称；毫无疑问，这是为了通过这种奇特而具有象征意义的稀缺观念来提高其价值。因此，这个名称最终必须被赋予真正提取这种鲸脑油的鲸鱼。第一卷（卷轴），第二章。 右鲸。——在某个方面，它是所有巨鲸中最受尊敬的，因为它是人类最早定期猎捕的鲸类。它提供了一种通常被称为鲸骨或鲸须的商品；以及一种特别被称为“鲸油”的油，在商业上是一种低级商品。在渔民中，它被以下所有名称无差别地称呼：鲸鱼；格陵兰鲸；黑鲸；大鲸；真鲸；右鲸。关于这些名称众多物种的识别存在很多模糊之处。那么，我把我《卷轴》的第二种鲸类包括的是什么鲸呢？它是英国自然学家所说的“大神秘鲸”；英国捕鲸人所说的“格陵兰鲸”；法国捕鲸人所说的“普通鲸须”；瑞典人所说的“格罗兰德鲸鱼”。它是过去两个多世纪以来在北极海域被荷兰人和英国人猎捕的鲸；它是美国渔民长期以来在印度洋、巴西海岸、西北海岸以及世界其他地方追逐的鲸，他们称之为“右鲸巡航区”。 有些人假装看到英国格陵兰鲸和美国鲸之间的区别。但它们在所有重大特征上完全一致；还没有提出任何确凿的事实来作为根本区别的基础。正是通过基于最不具说服力的差异的无尽细分，一些自然历史部门变得如此令人厌恶的复杂。关于鲸鱼将在其他地方详细讨论，以阐明抹香鲸。第一卷（卷轴），第三章（鳍背）。——在这个标题下，我指的是一个被称为鳍背、高喷气孔和长须的怪物，几乎在每一个海洋都被看到，通常是乘客在穿越大西洋时经常看到的远距离喷射的鲸鱼。在长度和鲸须上，鳍背与鲸鱼相似，但体型较瘦，颜色较浅，接近橄榄色。它的大嘴唇呈现出类似电缆的外观，由大型皱纹的斜向交织折叠形成。 他的显著特征，即鳍，是他名字的由来，通常是一个显眼的物体。这个鳍大约有三四英尺长，从背部后部垂直生长，形状呈角状，末端非常尖锐。即使这个生物的其他部分一点也看不见，这个孤立的鳍有时也会清楚地从表面突出。当海面相对平静，略微带有球形波纹，这个像日晷一样的鳍竖立起来，在波纹表面投下阴影时，可以想象，围绕它的水圈在某种程度上类似于一个日晷，上面刻有指针和波浪般的时针。在那个亚哈兹日晷上，影子经常倒退。
+
+肯尼迪表示，如果沃伦被提名为副总统，他会考虑参议院竞选
+
+一个肯尼迪参议员？你肯定是在开玩笑吧。
+
+获取令人着迷的长篇阅读和必备生活方式小贴士，每周日上午直送您的邮箱——与咖啡更配！
+
+自上次我们在参议院看到肯尼迪家族成员以来已经过去了七年。在民主党总统候选人希拉里·克林顿的一点点推动下，这种情况可能很快就会改变。
+
+美国国会众议员乔·肯尼迪三世在周四晚录制其节目《On the Record》时告诉 WCVB 的珍妮特·吴，如果她被选中作为克林顿的竞选伙伴，他将考虑竞选伊丽莎白·沃伦的参议院席位。
+
+泰德·肯尼迪在 1962 年的一次特别选举中赢得了席位，在他哥哥约翰·F·肯尼迪当选总统后。他一直担任这个席位 47 年，直到 2009 年去世。乔·肯尼迪在 2006 年为他伟大的叔叔竞选连任工作，然后在哈佛法学院入学，沃伦在那里教了近 20 年。
+
+宇宙中心页斯科特·布朗在 2010 年特别选举中获胜，击败了总检察长玛莎·科克利。布朗只服务了两年，就被沃伦取代，沃伦成为了马萨诸塞州的第一位女参议员。在在新罕布什尔州的参议院竞选失败后，布朗现在花时间打电话到《先驱电台》并跟随唐纳德·特朗普。
+
+吴的采访将于周日上午 11 点播出。
+对蚯蚓中抗原识别有限特异性的描述。
+外源性蛋白质的静脉注射导致蚯蚓中抗原结合蛋白（ABP）水平显著增加。蚯蚓（蚯蚓属和粪蚯蚓属；寡毛纲，环节动物门）被不同的蛋白质刺激，并通过抗-ABP 单克隆抗体和所有用于刺激的蛋白质的生物素偶联物进行配体测定来追踪 ABP 反应。无论糖基化的大小和程度如何，刺激不同蛋白质后 ABP 水平均增加。ABP 分子的摩尔质量始终相同，在蚯蚓属中为 56 kDa，在粪蚯蚓属中为 60 kDa。与免疫球蛋白相比，特异性的水平明显较低，因为 ABP 不仅与用于刺激的蛋白质反应，而且与相关蛋白质也有一定程度的反应。
+
+Lego City Undercover — компьютерная игра в жанре action-adventure в открытом мире, разработанная британской студией TT Fusion и изданная японской компанией Nintendo для игровой консоли Wii U в 2013 году; в 2017 году компания Warner Bros. Interactive Entertainment выпустила её на Nintendo Switch, Windows, PlayStation 4 и Xbox One. Игра основана на серии конструкторов Lego City[англ.] и рассказывает об офицере полиции Чейзе Маккейне, вернувшемся в Лего-Сити и преследующем сбежавшего преступника по кличке Бешеный Рекс. Игровой процесс построен на исследовании Лего-Сити, который полностью открыт игроку, и прохождении автономных уровней с головоломками и боевой системой.
+
+После удовлетворительных технических достижений и завершения разработки других игр в стиле Lego по уже существующей интеллектуальной собственности, в 2010 году был создан первый прототип Lego City Undercover. В 2011 году началась полноценная разработка Lego City после того, как Nintendo обратилась к материнской студии TT Games с просьбой создать эксклюзивную игру для Wii U. На момент начала разработки Undercover должна была стать первой игрой в сеттинге Lego с полноценным озвучиванием и первой игрой, которая не зависела от лицензии на сторонние фильмы или комиксы. Сценарист Грэм Горинг использовал огромное количество отсылок и пародий на фильмы и сериалы. Город Лего-Сити основан на нескольких реально существующих городах. Сама Nintendo в процессе разработки непосредственного участия не принимала, но предлагала изменения и получала обновления.
+
+<?php
+/**
+ * Zend Framework
+ *
+ * LICENSE
+ *
+ * This source file is subject to the new BSD license that is bundled
+ * with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://framework.zend.com/license/new-bsd
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@zend.com so we can send you a copy immediately.
+ *
+ * @category   Zend
+ * @package    Zend_Search_Lucene
+ * @subpackage Document
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @version    $Id: OpenXml.php 24593 2012-01-05 20:35:02Z matthew $
+ */
+
+/** Zend_Search_Lucene_Document */
+require_once 'Zend/Search/Lucene/Document.php';
+
+/**
+ * OpenXML document.
+ *
+ * @category   Zend
+ * @package    Zend_Search_Lucene
+ * @subpackage Document
+ * @copyright  Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ */
+abstract class Zend_Search_Lucene_Document_OpenXml extends Zend_Search_Lucene_Document
+{
+    /**
+     * Xml Schema - Relationships
+     *
+     * @var string
+     */
+    const SCHEMA_RELATIONSHIP = 'http://schemas.openxmlformats.org/package/2006/relationships';
+
+    /**
+     * Xml Schema - Office document
+     *
+     * @var string
+     */
+    const SCHEMA_OFFICEDOCUMENT = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument';
+
+    /**
+     * Xml Schema - Core properties
+     *
+     * @var string
+     */
+    const SCHEMA_COREPROPERTIES = 'http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties';
+
+    /**
+     * Xml Schema - Dublin Core
+     *
+     * @var string
+     */
+    const SCHEMA_DUBLINCORE = 'http://purl.org/dc/elements/1.1/';
+
+    /**
+     * Xml Schema - Dublin Core Terms
+     *
+     * @var string
+     */
+    const SCHEMA_DUBLINCORETERMS = 'http://purl.org/dc/terms/';
+
+    /**
+     * Extract metadata from document
+     *
+     * @param  ZipArchive $package ZipArchive OpenXML package
+     * @return array      Key-value pairs containing document meta data
+     */
+    protected function extractMetaData(ZipArchive $package)
+    {
+        // Data holders
+        $coreProperties = [];
+
+        // Read relations and search for core properties
+        $relations = simplexml_load_string($package->getFromName("_rels/.rels"));
+        foreach ($relations->Relationship as $rel) {
+            if ($rel["Type"] == Zend_Search_Lucene_Document_OpenXml::SCHEMA_COREPROPERTIES) {
+                // Found core properties! Read in contents...
+                $contents = simplexml_load_string(
+                    $package->getFromName(dirname($rel["Target"]) . "/" . basename($rel["Target"]))
+                );
+
+                foreach ($contents->children(Zend_Search_Lucene_Document_OpenXml::SCHEMA_DUBLINCORE) as $child) {
+                    $coreProperties[$child->getName()] = (string)$child;
+                }
+                foreach ($contents->children(Zend_Search_Lucene_Document_OpenXml::SCHEMA_COREPROPERTIES) as $child) {
+                    $coreProperties[$child->getName()] = (string)$child;
+                }
+                foreach ($contents->children(Zend_Search_Lucene_Document_OpenXml::SCHEMA_DUBLINCORETERMS) as $child) {
+                    $coreProperties[$child->getName()] = (string)$child;
+                }
+            }
+        }
+
+        return $coreProperties;
+    }
+
+    /**
+     * Determine absolute zip path
+     *
+     * @param  string $path
+     * @return string
+     */
+    protected function absoluteZipPath($path)
+    {
+        $path = str_replace(['/', '\\'], DIRECTORY_SEPARATOR, $path);
+        $parts = array_filter(explode(DIRECTORY_SEPARATOR, $path), 'strlen');
+        $absolutes = [];
+        foreach ($parts as $part) {
+            if ('.' == $part) {
+                continue;
+            }
+            if ('..' == $part) {
+                array_pop($absolutes);
+            } else {
+                $absolutes[] = $part;
+            }
+        }
+
+        return implode('/', $absolutes);
+    }
+}
+
+从前，有一只名叫汤姆的灰色猫。汤姆和它的好朋友蒂姆住在一座大房子里。有一天，蒂姆和汤姆在后院发现了一张大床垫。他们想玩个有趣的游戏。
+“我们像船一样在床垫上航行吧！”蒂姆说。汤姆喜欢这个主意，于是他们俩跳上了床垫。他们假装在大海上航行，前往遥远的地方。他们看到了鱼、鸟，甚至还有一头大鲸鱼。他们向他们看到的所有动物挥手。
+当他们航行时，天空变得黑暗，开始下雨。蒂姆和汤姆决定回家。他们向海洋和动物们告别。回到家后，他们又湿又累。他们洗了个热水澡，然后上床睡觉，梦见他们在床垫船上下一次的冒险。
+
+一天，一个名叫蒂姆的男孩在他的玩具箱里发现了一盏旧手电筒。他非常高兴，想要向他的朋友山姆炫耀。于是，蒂姆和山姆决定用手电筒在黑暗中玩一个游戏。
+蒂姆说：“让我们像大士兵一样拿着手电筒行军！”他们开始在房间里行军，用手电筒照着墙壁和地板。随着他们的行军，灯光在墙上和地板上形成了有趣的形状。
+当他们行军时，他们没有看到地板上的大玩具车。蒂姆踩到了车上，摔倒了。手电筒摔成了碎片。蒂姆和山姆非常难过，因为他们不能再用手电筒玩了。
+
+从前，有一个名叫苏的小女孩。苏喜欢帮助她的爸爸妈妈。有一天，苏的妈妈告诉她，他们要去一个遥远的地方旅行。苏非常兴奋！
+在他们出发之前，苏的妈妈需要找到她的护照。她找来找去，但就是找不到。苏想帮忙，于是问：“妈妈，你最后一次看到你的护照在哪里？”她妈妈想了一会儿，说：“我想我最后一次看到它在大抽屉里。”
+苏走到大抽屉前，开始寻找护照。她移动了一些东西，最后找到了！她很高兴能帮到妈妈。她跑到妈妈那里说：“妈妈，这是你的护照！现在我们可以出发旅行了！”苏的妈妈为她感到非常骄傲，并感谢她的帮助。他们收拾好行李，出发去那个遥远的地方旅行。苏玩得很开心，交了很多新朋友。她知道帮助妈妈找到护照让他们的旅行变得更加特别。
+
+汤姆和米娅正在客厅里玩耍。他们有很多玩具和书来娱乐。他们还喜欢看壁炉，那里他们的爸爸已经生起了温暖的火。火焰是橙色和黄色的，发出噼啪声。
+但汤姆感冒了。他鼻子和喉咙发痒。他试图忍住，但做不到。他大声打了个喷嚏。“啊嚏！”这个喷嚏太强烈了，吹灭了一些火焰。火焰变得小了，弱了。
+米娅看到了发生的事情。她很害怕。她不想火熄灭。她喜欢火。它让房间变得温馨而明亮。她跑到厨房里的爸爸那里。她说：“爸爸，爸爸，汤姆打了个喷嚏，火要熄灭了！”
+爸爸听到米娅的话，来到客厅。他看到火焰和汤姆。他没有生气。他知道汤姆生病了，并不是故意打喷嚏的。他说：“别担心，米娅。火不会熄灭的。它只是变小了。我可以让它重新变大。看。”他拿了一些更多的木头放在火上。他用火柴点燃了它。火焰又变大变强了。
+汤姆和米娅很高兴。他们感谢他们的爸爸，拥抱了他。他们又回到客厅里继续玩耍。 他们远离了壁炉，但享受着它的温暖和光明。他们希望汤姆很快就会好转，停止打喷嚏。
+
+从前，有一只叫斯波特懒惰的狗。斯波特喜欢整天睡觉和吃美味的香肠。他和一个快乐的家庭住在一所小房子里。
+有一天阳光明媚，斯波特的家人举行了一场大烧烤。他们做了很多美味的香肠。斯波特闻到了香肠的味道，口水直流。他想把它们都吃掉，但他太懒了，不想起床。
+斯波特的伙伴，一只名叫胡须的有趣猫，看到斯波特躺在那里。胡须喜欢开玩笑和玩耍。胡须说：“斯波特，如果你不起床，我就把所有的香肠都吃了！”斯波特笑了，因为他知道胡须在开玩笑。但后来，斯波特想到了香肠，决定起床加入乐趣。
+
+山姆喜欢读书。每天早上，他都会醒来，在阳光下阅读。他喜欢在阅读时看到日出。有一天，他决定读得更高，于是他爬上了院子里的大树。他坐在一个高高的树枝上开始阅读。
+突然，一阵强风刮过。山姆失去了平衡，从树上滚了下来。他砰地一声摔在地上。他感到非常、非常难过。
+医生看了看山姆的胳膊，说他骨折了。现在他很长时间都不能读书了。山姆非常难过，从此再也没有尝试过在高处阅读。
+
+从前，有一个名叫莎莉的小女孩。她喜欢星期天，因为那是一个特殊的日子。她总是期待星期天，因为那是她可以和朋友比赛的时候。
+莎莉非常竞争，想要赢得每一场比赛。她总是盯着她的朋友看他们在做什么。她想要确保自己比他们更好。
+有一天星期天，莎莉和她的朋友们在玩捉迷藏。莎莉开始比其他所有孩子跑得更快。很快，她就成了大家追逐的目标！但然后莎莉踩到了一根树枝上，摔倒了。
+莎莉生气了，感到尴尬。她躺在地上，仰望天空。突然，一道明亮的彩虹划过天空，停在了莎莉面前。她感到惊讶，又重新开心起来。她不敢相信。然后她跳起来，跑回游戏里。
+
+بسعر 52 4 ألف يورو أوبل تطلق الكهربائية سيارة أوبل الكهربائية تتوفر السيارة بثلاثة أطوال من 4 60 إلى 5 30 متر مع 9 مقاعد بينما تصل سعة صندوق الأمتعة إلى 4500 لتر أعلنت شركة أوبل عن إطلاق سيارتها الكهربائية في الأسواق بسعر يبدأ من 52 ألفا و444 يورو وأوضحت الشركة الألمانية أن الفان الجديدة تعتمد على سواعد محرك كهربائي بقوة 100 كيلووات 136 حصانا بينما يبلغ عزم الدوران الأقصى 260 نيوتن متر وبفضل هذه القوة تنطلق السيارة بسرعة قصوى 130 كلم س موكا 2021 لغة أوبل الجديدة في التصميم انسجنيا الجديدة أيقونة أوبل تحمل خبرا سيئا لمحطات الوقود ويتوفر للسيارة بطارية بسعة 50 كيلووات ساعة وأخرى بسعة 75 كيلووات ساعة مع مدى سير يبلغ 230 كلم أو 330 كلم وتتوفر السيارة بثلاثة أطوال من 4 60 إلى 5 30 متر مع مقاعد يصل عددها إلى تسعة مقاعد بينما تصل سعة صندوق الأمتعة إلى 4500 لتر وتزخر السيارة بالعديد من الأنظمة المساعدة مثل النوافذ الكهربائية ومساعد جزئي متوائم للحفاظ على السرعة ومساعد الحفاظ على حارة السير مع شاشة لمسية قياس 7 بوصة لنظام الملتيميديا وأنظمة دمج الهواتف الذكية أبل كار بلاي وأندرويد أوتو أوبل تطرح الكهربائي ب 30 ألف يورو أوبل تزيح الستار عن النسخة الأحدث لعام 2020 أوبل تطرح انسجنيا الجديدة بناقل أوتوماتيكي من 9 سرعات أوبل تقود أكبر تحالف أوروبي لإنتاج بطاريات السيارات الكهربائية حزب القوات اللبنانية ينفي ادعاء حزب الله أن جماعته خططت للعنف الذي وقع يوم الخميس الشرطة البريطانية تصنف عملية طعن النائب المحافظ ديفيد أميس كحادث إرهابي التحالف العربي بقيادة السعودية الدفاعات الجوية تعترض وتدمر مسيرة مفخخة أطلقها الحوثيون باتجاه مدينة جازان تنظيم داعش يتبنى الهجوم على مسجد في مدينة قندهار الأفغانية ثورة المعلمين إيران تعتقل قياديا نقابيا تعرف على سعر اليورو في مصر اليوم السبت 16 أكتوبر 2021 سعر الريال السعودي في مصر اليوم السبت 16 أكتوبر 2021 سعر الدولار في مصر اليوم السبت 16 أكتوبر 2021 مقتل جنديين تركيين وإصابة 4 آخرين في تفجير شمالي سوريا إيران الحرة تدين مقتل أميس تداعيات طعن النائب البريطاني بوتين يحذ ر من احتشاد عناصر داعش في أفغانستان جيش الصومال ينفذ عملية أمنية ضد الشباب جنوبي البلاد اشترك في النشرة الإخبارية لدينا لمتابعة كل المستجدات وقت حدوثها جميع الحقوق محفوظة لمؤسسة بوابة العين الاخبارية للاعلام والدراسات 2021 هذا الموقع يستخدم ملفات تعريف الارتباط وذلك لتحسين تجربتك في التصفح الشروط والأحكام
+
+Das Sonnensystem besteht aus der Sonne und allen kleineren Gestirnen, die sie umkreisen. Abgesehen von der Sonne sind die acht größeren Planeten die größten Mitglieder des Sonnensystems. Die nächsten Nachbarn der Sonne sind vier recht kleine Steinplaneten: Merkur, Venus, Erde und Mars.
+
+Hinter dem Mars befindet sich der Asteroidengürtel - eine Region, die Millionen von Felskörpern beherbergt. Dabei handelt es sich um Gebilde, die bei der Entstehung der Planeten vor 4,5 Milliarden Jahren übrig geblieben sind.
+
+Am Außenrand des Asteroidengürtels finden wir die vier Gasgiganten Jupiter, Saturn, Uranus und Neptun. Diese Planeten sind zwar wesentlich größer als die Erde, aber für ihre Größe sehr leicht. Sie bestehen größtenteils aus Wasserstoff und Helium. Bis vor kurzem war die Eiswelt namens Pluto der am weitesten entfernte uns bekannte Planet. Doch Pluto ist ein Zwerg gegenüber dem Mond unserer Erde und einige Himmelsforscher sind der Meinung, er sei sogar zu klein, um als wirklicher Planet bezeichnet werden zu können.
+
+2005 wurde in sehr großer Entfernung zur Sonne ein Objekt entdeckt, das mindestens so groß ist wie Pluto und den Namen Eris erhielt. In den letzten Jahren hat man mehr als 1000 Eiswelten wie Eris jenseits des Pluto entdeckt. Diese werden Kuipergürtelobjekte genannt. Die Internationale Astronomische Union entschied im Jahr 2006, dass Pluto und Eris als „Zwergplaneten“ bezeichnet werden müssen.
+
+Noch weiter entfernt finden wir die Kometen der Oortwolke. Ihre Entfernung macht sie sogar für die größten Teleskope unsichtbar. Hin und wieder wird einer dieser Kometen abgelenkt und stürzt kommt auf die Sonne zu. Dadurch wird er im Nachthimmel sichtbar.
+
+AE Works 获得升级脊髓损伤中心的工程设计
+
+美国努力领导旨在扩大该国最大的脊髓损伤中心之一的设计工作
+
+匹兹堡总部建筑设计及工程公司 AE Works 最近获得了一份合同，为弗吉尼亚州里士满的亨特·霍姆斯·麦圭尔 VA 医疗中心现有的脊髓损伤与疾病卓越中心（SCI&D COE）进行改造和扩建，提供设计和工程服务。为脊髓损伤的退伍军人提供关键护理，里士满设施是 VA 医疗中心系统中 25 个脊髓损伤中心中最大的之一。
+
+预测未来需求，退伍军人管理局医疗中心的工作人员开始了主动规划工作，以满足为五个州和哥伦比亚特区的不断增长的退伍军人群体提供关键医疗保健服务的需求。这些规划工作的结果，该项目将翻新现有设施的目标区域，并新增一个 2 万平方英尺的扩建部分，以优化这些专业临床服务的提供。
+
+支持美国退伍军人事务部致力于以患者为中心的护理模式，该模式侧重于在温馨、疗愈的环境中提供世界级的护理，设计还将关注基础设施效率，提升患者体验，并丰富医院众多临床医生、教师和研究人员之间的协作机会。
+
+作为一家服务残疾退伍军人拥有的小型企业，此类扩张项目对 AE Works 尤为重要。
+
+我们的工作围绕着人们，医疗设施的设计更是将这一点凸显出来。我们感到非常幸运能参与这个项目，有机会在改善退伍军人医疗保健方面发挥作用，”迈克尔·切洛克，PE，AE Works 总裁兼所有者分享道。
+
+关于 AE Works 的更多信息，请访问 www.ae-works.com 或拨打 Carly Khanna 的电话 301-332-9780。
+
+AE Works 有限公司，总部位于宾夕法尼亚州匹兹堡，在宾夕法尼亚州州立学院和华盛顿特区设有卫星办公室，专注于建筑设计、机电工程、电信和安防设计服务。AE Works 有限公司是一家经美国退伍军人事务部认证的 CVE 验证服务残疾退伍军人拥有小型企业（SDVOSB）。
+
+关于西方宾夕法尼亚州医疗新闻团队
+
+全年，我们的作家为超过 40,000 名医疗保健领导者和专业人士提供新鲜、深入和相关的信息。作为一家医疗保健商业出版物，我们珍视与整个医疗保健行业的联系，包括管理人员、护士、医生、物理治疗师、药剂师等。我们涵盖从医院到医疗办公室、门诊服务、眼科手术中心到大学环境等广泛领域。我们专注于康复、养老院、家庭护理、临终关怀以及男性健康、女性健康和儿科。
+自由
+
+2011 年 4 月 22 日
+
+我正在服用的药物让我有点难以集中注意力，
+但我会这么说：
+
+无论你对医疗保健有何看法，
+谁可以得到它，它是如何支付的，以及我们在这里如何处理它，
+我所知道的就是医疗体系没有让我失望。
+没有它，我现在可能已经死了。
+
+有几个例子，我几乎做到了。
+
+别误会，
+那简直是地狱（以下为证据）。而且现在还是，因为我已经把所有事情都做完了。
+有过一些时候，我感觉被忽视，被遗忘，
+就像没有人愿意听我说。
+
+但是！
+我在这里。
+并且感激。
+
+正如我说的，
+药物让做正常事情变得困难。康复也让做正常事情变得困难。
+
+但在这接下来的几天里，
+我为你准备了些柔软的乐趣。
+跟我一起，宝贝们。
+
+主要想说的是谢谢。
+感谢所有读者、编织爱好者和朋友们
+的美好祝愿、良好祝愿、评论和祈祷，
+感谢来自全球的推文、短信、访问和正能量。
+
+很高兴听到你回家了。祝你早日康复。在我上次的手术（双膝置换）之后，我以为我会读很多书。在服用药物的一个月里，我无法集中精力读一整段。多么失望啊！放轻松，对你的康复要有耐心。你的身体受到了很大的冲击！Donna
+
+我只是在想你。很高兴听到你在恢复。住在医院真的很糟糕。是的，他们有防止死亡惊人的能力，但仍然，这不是一个受欢迎的地方。很高兴你回家了。希望你能快速康复。（而且我确实希望你能至少织东西。）
+
+另一位潜伏者，希望你有好药，早日康复。当你感觉足够好，能自己演唱 Sir Elton 的“I’m Still Standing”（或另一首“历经磨难，现在导游”的歌曲）时，一定要发个视频。
+
+不必关心那毛线般的美好，很高兴看到你回到了活人的世界！医院是拯救生命的奇迹，但家才是你疗愈的地方……
+这个活动甚至让我成为了你的推特粉丝，这话说得有点意思，因为我没有手机！
+放松，保持积极的思想，尽情享受许多美好的毛线吧！
+
+我不是宗教信徒，但感谢上帝你没事。好男人是不会被打倒的，这就是我的看法……我在想医学/医生。很多人说——哦，我不喜欢吃药，让身体自己恢复，等等。这些人从未经历过严重的疾病。一旦你经历过，生活/态度就会改变。
+就像爱丽丝梦游仙境的经历，严重生病时。或者，就像一场 crap shoot。
+但是，嘿，我很高兴，非常高兴，你正在康复的道路上。你真是个伟大的人！
+Nancy Paris
+
+隐身发言，我很高兴你回家了，正在康复。当你一直自给自足时，依赖别人是可怕的……医院似乎也不是疗伤的地方……你真的很需要“家”来疗伤。给自己充足的时间，不要过度劳累。
+在 2 月 18 日和 19 日在肯塔基州福克斯克诺斯举行的“勇敢领导者挑战赛”中获得第一名后，该队有资格参加在美军西点军校举行的桑德赫斯特军事技能竞赛。
+
+桑德赫斯特是西点军校之间的公司竞赛。不仅西点军校的队伍之间相互竞争，他们还与来自同联邦服务学院的队伍、美国陆军预备役军官训练团（ROTC）的精选队伍、美国军事学院预备学校队伍以及国际队伍竞争。将有 55 支队伍参加桑德赫斯特，包括来自英国、澳大利亚、阿富汗和中国等国的国际参赛者。
+
+这是超过十年以来，塞提尔队首次在桑赫斯特参赛。
+
+我们有一支非常出色的年轻男女团队，将代表西点军校，”西点军校帕尔梅托营营长劳伦斯·胡托上校说。“我们很高兴能够首次在近年来在这个水平上竞争。这是对我们学员和帕尔梅托营教官们的承诺、训练和领导力的证明。”
+
+帕尔梅托营 Ranger Challenge 队每周训练七天，同时保持良好的学术要求和学员职责。他们在八英里路线上进行一系列快速、计时军事任务的竞赛。
+
+帕尔梅托营 Ranger Challenge 队每周训练七天，同时保持良好的学术要求和学员职责。他们在八英里路线上进行一系列快速、计时的军事任务比赛。获胜的小组由完成课程所需的总时间和两天内获得的总分决定。
+由于兴趣，这使得它成为一项每周活动。自备饮料
+
+现在已经描述了亚哈习惯于在甲板上踱步，轮流在船尾和主桅杆之间来回走动；但在众多需要叙述的其他事情中，并未提及有时在这些散步中，当他最沉浸在自己的情绪中时，他会轮流在每个地方停下来，奇怪地盯着眼前的特定物体。当他站在罗经仪前，目光紧盯着指向尖针时，那目光像标枪一样，带着他坚定的目的，尖锐而集中；当他继续散步时，他又在主桅杆前停下，然后，当同样的专注目光落在那里固定的金币上时，他仍然保持着同样的坚定表情，只是增添了一种狂野的渴望，如果不是希望。但有一天，当他转身要越过金币时，他似乎被金币上奇怪的图案和铭文所吸引，仿佛现在才开始以一种偏执的方式为自己解读其中可能隐藏的任何意义。 某些事物中隐藏着某种特定的意义，否则所有事物都微不足道，而圆球本身不过是一个空洞的密码，除非像他们在波士顿周围卖山一样，用车载来卖，以填满银河系中的某个沼泽。现在，这枚双鹰金币是纯金，是从壮丽的山丘深处挖掘出来的，从那里，东西两侧，金色的沙滩上，许多帕克托洛斯河的源头流淌而过。尽管现在它被钉在满是铁锈的螺栓和铜钉的绿色铜锈中，但它仍然保持着自己的基多光泽。尽管它被放在一群无情的船员中间，每小时都经过无情的手，整夜被厚厚的黑暗笼罩，这黑暗足以掩盖任何偷窃的企图，但每个日出都发现双鹰金币仍然在日落时留下的地方。因为它是为了一个令人敬畏的目的而被分开和圣化的；尽管他们在航海方式上放荡不羁，但每个人都敬畏它，就像白鲸的护身符一样。有时他们在夜晚疲惫的值班时谈论它，想知道最后会是谁的，他是否能够活到花掉它。 现在，这些南美洲的崇高金色硬币如同太阳和热带的纪念币。这里有棕榈树、羊驼和火山；太阳圆盘和星星；黄道带、丰饶角和丰富的旗帜飘扬，都被印制得如此繁盛；以至于珍贵的黄金似乎通过那些充满西班牙诗意的幻想铸币厂，获得了额外的珍贵和增色的荣耀。碰巧，白鲸号上的双鹰币是这些事物的最富有的例子。在其圆形边缘上，它刻有字母，厄瓜多尔共和国：基多。因此，这枚明亮的硬币来自一个位于世界中心的国度，在大赤道之下，并以它命名；它曾在安第斯山脉中段铸造，那里的气候永不凋零。你通过这些字母看到了安第斯山脉三个高峰的轮廓；一个上面有火焰；另一个上面有塔楼；第三个上面有啼鸣的公鸡；而在所有这一切之上，是分割的黄道带的一部分，所有的符号都标有它们通常的神秘符号，而太阳的基石进入天秤座秋分点。在面前这枚赤道币前，亚哈，并未被他人忽视，现在正在停下来。 山顶和塔楼，以及其他所有宏伟和高贵的事物，都带有一种永恒的自我中心。看这里——三座山峰，骄傲得如同路西法。坚固的塔楼，那是亚哈；火山，那是亚哈；勇敢的、无畏的、胜利的鸟儿，那也是亚哈；所有都是亚哈；而这圆形的金币，不过是更圆的地球的映像，就像魔术师的镜子，依次映照出每个人的神秘自我。那些向世界寻求解答的人，付出了巨大的努力，却只得到微小的收获；世界无法自我解答。我觉得现在这个铸币的太阳戴上了红润的面容；但是看！是的，它进入了风暴的征兆，春分！而且就在六个月前，它刚刚从白羊座的前一个春分旋转出来！从风暴到风暴！就这样吧。在痛苦中诞生，人应该生活在痛苦中，死在痛苦中！就这样吧！这里有足够坚韧的物质供悲伤去折磨。就这样吧。” “没有仙人的手指能压出这金币，但魔鬼的爪子肯定从昨天起就在那里留下了痕迹，”斯塔巴克自言自语，靠在船舷上。“老人似乎在解读贝尔沙扎的可怕文字。我从未仔细检查过这枚硬币。” 他走下坡去；让我看看。在三个雄伟、天庭般的高峰之间，几乎像是三位一体，在某种微弱的地上象征。因此，在这个死亡之谷，上帝将我们围住；在我们所有的忧郁之上，正义的太阳仍然闪耀着灯塔和希望之光。如果我们低下眼睛，黑暗的山谷显示出她发霉的土壤；但如果我们抬起它们，明亮的太阳在半路上迎接我们的目光，以慰藉。然而，哦，伟大的太阳不是固定不变的；如果我们想在午夜时分从他那里抢夺一些甜蜜的慰藉，我们将徒劳地寻找！这枚硬币对我而言，明智、温和、真诚，但仍然悲哀。我将放弃它，以免真理错误地动摇我。” “现在那是老莫卧儿，”斯图布在熔炉旁独白，“他一直在观察；斯塔巴克也从那里离开，两人都带着我可以说可能在九英寻长的脸上。这一切都源于看一块金子，如果我现在在黑人山或科尔莱尔钩上，我不会花很长时间就花掉它。哼！在我微不足道、无足轻重的看法中，我认为这很奇怪。” 我以前在航海中见过双币；你们旧西班牙的双币，你们的秘鲁双币，你们的智利双币，你们的玻利维亚双币，你们的波帕扬双币；还有大量的金币、银币、半银币和四分之一银币。那么，这个赤道双币有什么如此令人惊叹的呢？天哪！让我先读一遍。嘿！这里确实有迹象和奇迹！现在，这就是老鲍迪奇在他的《摘要》中称之为黄道，而我下面的日历称之为同样的事情。我要拿日历，因为我听说可以用达博尔的算术召唤魔鬼，我要尝试用这些奇怪的曲线在这里用马萨诸塞州日历中召唤出一个意义。这里有这本书。现在看看。迹象和奇迹；太阳总是在他们中间。哼，哼，哼；这里他们来了——他们走了——都活灵活现：白羊座，或公羊；金牛座，或公牛和吉米米！这里是双子座本身，或双胞胎。好吧；太阳在他们中间旋转。是的，在这枚硬币上，他刚刚穿过十二个环形房间之间的门槛。书！你躺在那里；事实上，你们这些书必须知道你们的位置。 您将提供给我们赤裸裸的词汇和事实，但我们进来是为了提供思想。这是我到目前为止在马萨诸塞州日历、鲍迪奇航海员和达博尔算术方面的微小经验。奇迹和征兆，嗯？如果征兆中没有奇迹，而奇迹中也没有意义，那真是太遗憾了！某个地方有一个线索；稍等一下；嘘——听！天哪，我找到了！看吧，杜布隆，你这里的黄道是人生的一章；现在我将直接从书中读出来。来吧，年鉴！开始吧：有白羊座，或公羊——好色的狗，它孕育了我们；然后是金牛座，或公牛——它首先撞了我们；接着是双子座，或双胞胎——即美德与邪恶；我们试图达到美德，突然！巨蟹座螃蟹来了，把我们拉回；在这里，从美德走向狮子座，一只咆哮的狮子躺在路上——它用爪子给了我们几口凶猛的咬和生气的拍打；我们逃脱了，欢呼处女座，纯洁的处女！这是我们第一次的爱；我们结婚，以为会永远幸福，当天秤座，或天平出现了——幸福被衡量，却觉得不足；而当我们非常悲伤的时候，天哪！ 我们突然跳跃，就像天蝎座或蝎子从后面蛰了我们一下；我们在治愈伤口时，箭矢四面八方飞来；射手座或弓箭手在自娱自乐。当我们拔出箭矢时，站到一边！这是冲角，摩羯座或山羊；他全速冲来，我们被猛地抛掷；当水瓶座或水瓶座倒出他全部的洪水并将我们淹没；最后，双鱼座或鱼儿，我们沉睡。现在，有一个高悬天际的布道，太阳每年都会穿过它，而且总是活着、充满活力地出来。他在高处愉快地旋转着，穿越劳苦和烦恼；同样，愉快的斯塔布在这里。哦，愉快是永恒的词！再见了，双鹰币！但是等等；小国王柱来了；现在绕过熔炉，听听他要说什么。看，他站在那里；他很快就会说出些什么。所以，所以；他开始说了。“我看到这里只有一件金制的圆形东西，而且无论谁举起一只特定的鲸鱼，这个圆形东西就属于他。那么，这一切盯着看是为了什么？” 它值十六美元，这是真的；每支雪茄两美分，那就是九百六十支雪茄。我不会像斯图布那样抽脏烟斗，但我喜欢雪茄，这里有九百六十支；所以，弗拉斯克就上去侦察一下了。”
+
+官方规则在此（http://austinpoker.totallyimba.com/?page_id=11）
+
+迈克尔：*他推开沉重的木门，铰链发出抗议的吱嘎声。昏暗的光线在房间里投下阴影，揭示出角落里一个破旧的点唱机。迈克尔的眼神扫过这个地方，注意到磨损的皮酒吧椅和褪色的、早已被遗忘的乐队的海报。*
+梅丽莎：*她从半满的威士忌杯抬起头，手指沿着杯口划过。她的目光停留在迈克尔身上，评估着他——他那蓬乱的胡须，他站立时略微偏离中心，仿佛还在寻找平衡。*
+迈克尔：*他清了清喉咙，声音在安静的酒吧里回荡。他走近柜台时，脚步声回响，地板在他的重量下呻吟。他靠在疤痕累累的木头上，研究着梅丽莎。*“你好？”*他的声音低沉，谨慎。
+梅丽莎：*她歪了歪头，眼睛微微眯起。*“嗨。”*她的手指在酒吧上敲打出节奏，与点唱机遥远的节拍相呼应。*“刚搬到镇上？”
+迈克尔：*他点了点头，手指沿着 coaster 的边缘划过。*“是的，”*他承认道。*“几天前才搬来这里。”* 名字叫迈克尔。”*他的握手坚定有力，手上有茧——这是长期用手工作的人的标志。*
+梅丽莎：*她微笑着，露出左脸颊上的酒窝。*“梅丽莎，”*她说。*“很高兴认识你，迈克尔。”*她的目光闪向窗外，雨以不规则的线条流淌下来。*“你为什么会来这家小酒吧？”
+迈克尔：*他笑了笑，看向剥落的壁纸。*“说实话？外面的霓虹灯吸引了我的注意。”*他指向闪烁的字母，拼写出“干杯”。*“而且我听说他们做的老式鸡尾酒很棒。”
+梅丽莎：*她挑起一边眉毛，手指沿着玻璃杯边缘划过。*“啊，一个有品味的人，”*她打趣道。*“嗯，你找对地方了。这里的酒保很会调酒。”
+迈克尔：*他靠回椅背，眼睛从未离开过她。*“至于你，梅丽莎，你是常客吗？”
+梅丽莎：*她耸了耸肩，目光显得遥远。*“你可以这么说。”*她的手指轻轻触碰着藏在毛衣袖子下的手腕上的疤痕。*“这是下班后放松的好地方。” 此外，我喜欢观察人们。”
+迈克尔：*他微笑着，身体稍微向前倾。“那么，到目前为止你对我有什么了解？”
+梅丽莎：*她也向前倾身，她的呼吸温暖地拂过他的脸颊。“嗯，让我想想。”*她的眼睛闪烁着顽皮的光芒。“你是新来的，喜欢经典的鸡尾酒，眼里带着好奇的光芒。”*她向后靠，微笑中带着神秘。“也许你是在逃避什么——或者某个人。”
+迈克尔：*他笑着，紧张感缓解了。“福尔摩斯般的推理，了不起。”*他喝了一口饮料。“但不是，没有戏剧性的背景故事。只是需要换换环境。”
+梅丽莎：*她把她的酒杯碰了一下。“那么，欢迎来到我们这个小世界的角落，迈克尔。愿你的老式鸡尾酒浓烈，你的秘密保持安全。”
+
+摘要：
+
+
+
+6-14 人：
+
+
+
+20 美元买入德州扑克锦标赛获得 10,000 筹码
+
+
+
+1 重新购买 XOR 1 增加包，直至 10,000 次中断
+
+
+
+15-20 人：
+
+
+
+20 美元买入德州扑克锦标赛获得 5,000 筹码
+
+
+
+1 重新购买 XOR 1 增加包，直至达到 5,000 的突破
+
+
+
+盲注级别将根据芯片数量减少进行调整。这是由于可用于游戏的物理芯片数量有限。
+
+
+
+10 元现金游戏（比赛后可随时加注，直到主持人宣布结束）
+
+
+
+目前我们将默认选择 Will 的住处，但如果小组决定浮动，我们将至少提前一天决定。
+对慢性成瘾个体的急诊室外展服务。一项试点研究。
+缺乏文献描述经常使用急诊医疗服务的物质滥用或慢性精神疾病无家可归者的治疗需求。这个无家可归的子集代表了更大无家可归社区中的一个独立群体。我们描述了一个由当地县公共资金支持并由当地非营利社会工作机构实施的试点项目，该项目旨在为这样的群体提供密集的案件管理服务。外展和案件管理活动导致客户与广泛的权益和社区服务联系起来。在接受了外展和案件管理服务的那些人（n = 10）中，与转介前一年相比，在转介后一年紧急服务减少了 58%（p <.03）。本研究中紧急服务的定义包括救护车响应和转运，随后是急诊室入院和治疗。 那些在可比对照组（n = 8）中的人没有减少使用紧急服务。这些结果表明，此类基于社区的推广项目可以显著改善患者结果，并为地方政府和医院节省大量成本。
+2011 年，罗伯特试图在 365 天内喝 365 瓶啤酒，他做到了！接下来他会做什么？
+
+周六，2015 年 8 月 29 日
+
+2015 年 8 月 22 日
+
+193/1467) 家：安大略省阿姆斯特丹酿酒厂的纯天然金发；5%，这显示了“淡”的定义变得越来越灵活；有颗粒感的鼻子；平淡——在结束时只有一点水果味；我想它确实能付房租
+
+194/1468) 家：美国康涅狄格州 Eviltwin Brewing 的 Molotov Lite：**1/2；8.5%帝国印度淡色啤酒；不透明，有松软的头；橙黄色；闻起来有土质和树脂味，带有一点柑橘味；土质和树脂味，带有苦涩的后味；
+此类阀门用于调整和修改流体通过流体通道的流量。在此背景下，已知流体通过通道的流量是通过在形成流体通道的管子上施加外部压力来控制的，这样压力就作为流体通过通道的期望流量的函数进行调整。
+在医疗技术中，通过微阀门或直接通过相应的泵（对要分配的流体施加压力）进行体积流量的分配。阀门在医学和化妆品领域得到应用，例如，在注射医学和化妆品活性物质时使用。 除了用于减脂或注射到皱纹下的物质注射外，在美容领域应用纹身墨水或永久化妆时，也需要对物质进行剂量分发。除了各种疫苗接种外，医疗应用还包括，例如，微针治疗。在这些应用中，除了简单应用介质外，还提供多种介质的同步应用，以便介质在应用后相互反应。
+液体的剂量可以通过接触方法或非接触方法进行。因此，液体分发装置要么与皮肤接触，要么不接触皮肤。非接触装置也被称为所谓的分配器。输送液体的过程本身被称为分配、喷射或脉冲。这种剂量用于将物质应用于皮肤或后续的物质输送系统（例如，参照 EP 1 882 491）。接触可以理解为在表面或通过表面进行剂量分配。
+所有这些应用都有一个共同点，即需要精确的剂量。 问题通常由化学或流体性质、粒子或变量介质引起。
+文件 DE 103 37 484 B4 描述了一种非接触式计量系统，其中管子在高速下被挤压，从而形成一个自由飞行的液滴。可以通过这种方式实现 50 赫兹的计量频率。这里的设计是一个无预压的开放式系统。液体由于毛细力而填充管子，但最大计量量和计量频率受此设计限制。如果有背压，功能非常有限或不可能。
+文件 DE 693 25 591 T2 描述了一种用于通过柔性管道切换流量的阀门系统。通过可转动的杠杆选择两个位置（双稳态开/关）。液体应通过该结构的耦合法兰处的阀门流动，该结构是通过铸造和焊接制造的。无法防止液体的可能污染，也不能将此原理用作一次性部件或用于更高频率（>1 赫兹）。
+文档 EP 1 699 560 B1 描述了一种抽取极小量液体的可能性，但基本上是基于传统抽取系统和已知的 PipeJet 方法（即管子变形，在本例中体现为吸管尖端）。因此，在这里只能抽取极小的颗粒，这些颗粒飞向目的地。这种方法不能用于注射，因为在背压下无法工作。
+文档 DE 197 06 513 C2 描述了一种基于压力室（具有储液连接和流体出口）的微剂量方法。通过位移机构减小压力室的大小，迫使流体流向出口。检测位移机构位置的装置在这里是必不可少的。
+文档 US 2010/0030152 A1 描述了一种治疗性微针系统，其中使用多个针管而不是一个针管。
+
+凯伦：凯伦坐在昏暗的咖啡馆里，她的手指紧张地在破旧的咖啡杯上敲击。她已经等了斯莱恩，她的神秘网络笔友，几周了。他们的对话充满了谜语和秘密。她想知道斯莱恩这次是否会出现，还是会像幽灵一样消失。
+
+斯莱伦：门吱呀一声打开，一个高大的身影走了进来。斯莱伦穿着一件长长的黑色外套，兜帽低低地拉在脸上。然而，他们的眼睛却闪烁着好奇，扫视着房间。卡伦的心跳加速。这是斯莱伦吗？她不敢确定。
+
+凯伦：“斯莱伦？”凯伦低声说道，她的声音几乎被背景中的爵士乐淹没。斯莱伦点头，滑入她对面的座位。他们的目光交汇，凯伦感到一种奇怪的结合了恐惧和兴奋的情绪。“为什么这么保密？”
+
+斯莱伦：斯莱伦倾身向前，他们的呼吸拂过卡伦的脸颊。“因为有些秘密是危险的，卡伦。你撞上了你不该发现的东西。”他们把一张折叠好的纸滑过桌子。“读一读。”
+
+凯伦：凯伦展开那张纸。那是一张地图，上面布满了神秘的符号。“这是什么？”
+
+斯莱伦说：“通往失落图书馆的道路，”斯莱伦说。“一个藏有禁断知识的地方。但小心，卡伦。图书馆会严守其秘密。”
+
+凯伦：凯伦的脉搏加速。“你为什么告诉我这些？”
+
+斯莱伦：“因为你被选中了，”斯莱伦回答道。“只有你能解读这些符号并打开图书馆的门。但这是有代价的。”
+
+凯伦：“什么价格？”凯伦问道，她的思绪飞快。她一直对神秘事物感兴趣，但这次超出了她的想象。
+
+斯莱伦：斯莱伦的眼睛变暗了。“你的记忆。图书馆以它们为代价。你珍视的一切——都被遗忘。”
+
+凯伦：凯伦犹豫了。她童年的记忆、她的初恋、祖母的故事——都消失了？但禁果知识的诱惑紧紧地拉扯着她。“里面是什么？”
+
+斯莱伦：“答案，”斯莱伦说，“是你从未敢问的问题的答案。宇宙的真相，存在的目的，以及不朽的关键。”
+
+凯伦：凯伦看了看地图。“如果我拒绝呢？”
+
+斯莱伦：斯莱伦靠得更近。“那么世界将陷入黑暗。平衡倾斜，混乱统治。”
+
+凯伦：凯伦的思绪飞快。她能为了更大的利益牺牲自己的记忆吗？她看着斯莱伦，眼中充满了悲伤和希望。“好吧，我愿意。”
+
+斯莱伦：斯莱伦微笑着，露出了锋利的牙齿。“勇敢的选择，卡伦。今晚在十字路口见我。我们将开始这段旅程。”
+问：
+
+如何检查元素可见性而不依赖于父元素可见性（jQuery 或非 jQuery）
+
+我的第一个问题，请耐心。我有一个容器，里面包含不同数量的子元素，如下所示：
+<div class="parent">
+    <div class="element">content</div>
+    <div class="element">content</div>
+    <div class="element">content</div>
+</div>
+
+快速问题：
+有没有一种使用 jQuery 或纯 JavaScript 的方法来检查一个元素容器是否可见，而不考虑其父元素是否可见？
+简单地说，就是询问
+jQuery('.parent .element:visible').length
+
+不工作。
+背景：父容器可以切换，子元素的内容通过 ajax 请求获取，并在响应到达时填充。在每次响应中，子容器都会获得特定的类，以指示响应的类型，例如可用、不可用等。因此，生成的 DOM 可能看起来像这样：
+<div class="parent">
+    <div class="element available">content</div>
+    <div class="element unavailable">content</div>
+    <div class="element unavailable">content</div>
+</div>
+
+这是一个模块，在多个 CSS 文件中使用。因此，我无法控制 CSS 实现是否实际隐藏了不可用元素，因为这仅在 CSS 中完成。容器可以打开，但不必打开。但我必须知道在不打开容器的情况下，容器内是否有可见元素。这是可能的吗？
+提前感谢！
+
+A:
+
+我不确定为什么你需要这样做，如果你有可用或不可用的类。但这是我会的做法（这样实际的可见性不会干扰子元素的可见性）：
+if (
+    $('.element').css('display') != 'none' &&
+    $('.element').css('visibility') != 'hidden'
+) {
+    // ...
+}
+
+在行动：
+http://jsfiddle.net/EbaMY/2/
+
+
+本发明涉及催化剂的再活化，尤其是涉及含氧化锡的催化剂的再活化。
+正在研究新的方法以延长在广泛应用中使用的激光器的使用寿命。该领域快速进步的一个方面是，正在研究用于高脉冲能量、常见和稀有同位素、闭式循环 CO2 激光器在长期空间应用中的新技术。高能脉冲 CO2 激光器必须闭式循环运行以节约气体，特别是如果使用稀有同位素气体。如 C18O2 之类的稀有同位素气体用于改善大气中激光束的传输。
+电放电 CO2 激光器中的电子导致某些 CO2 分解为 O2 和 CO，并附着在电负性分子如 O2 上，形成负 O2-离子，以及通过碰撞与 CO 或其他分子形成更大的负离子团簇。 对于闭式循环、密封 CO2 激光器操作，负离子/团簇的浓度可能足够高，从而形成放电不稳定性，这最终可能破坏 CO2 激光器操作。由于分解成 CO 和 O2 而导致的 CO2 浓度下降将降低平均重复脉冲或连续波激光功率，即使没有破坏性的负离子不稳定性发生。
+因此，本发明的首要目标是延长用于结合激光放电中形成的 CO 和 O2 产物的催化剂的使用寿命。
+本发明的另一个目标是简单且经济地实现首要目标。
+以下规格中将明显体现其他目标和优点。
+攻击伊朗：希特勒式的侵略行为
+
+伊朗相关必读文章，作者：托尼·卡塔卢奇
+
+2011 年 11 月 6 日 - 随着针对伊朗的战争言辞开始升级，先是上演了 DEA-沙特炸弹阴谋，现在又有一份即将发布的 IAEA 报告据说“揭露”伊朗的核武器野心，重新阅读那些推动战争的企业法西斯利益背后的签署供述是很重要的，其中承认：
+
+1. 伊朗对美国国家安全不构成威胁——即使他们获得了核武器——相反，伊朗威胁着美国在中东的利益，跨越半个地球。2.伊朗迫切希望避免与以色列和西方的武装冲突，并将核武器仅作为防御性威慑手段使用。3.美国和以色列正在积极寻求通过在伊朗内部进行秘密支持以破坏稳定、支持被列为恐怖组织的行动以及有限的单方面军事先发制人打击来激怒伊朗，以引发伊朗的回应，从而为更广泛的军事对抗提供正当理由。
+
+所有这些都在由企业金融家资助的布鲁金斯学会报告《通往佩里萨之路》中惊人地详细阐述。每个美国人、欧洲人和以色列人都必须阅读，了解全球主义精英是多么恶意、冷漠和渴望引发一场与伊斯兰共和国的灾难性战争，仅仅是为了保护华尔街和伦敦在中东的霸权。
+
+以下是一些详细阐述这场日益加剧的战争叫嚣的关键方面、背后关键人物（包括资助这一议程的公司）以及展示这些设计的不可辩驳的证据的链接，这些设计在 2009 年就已经开始展开。
+
+阅读这些信息后，人们会惊恐地意识到，华尔街和伦敦的金融利益集团在向伊朗发动战争的运动中是多么耐心和坚持不懈，以及他们为了推进这一进程愿意多么地撒谎。人们必须明白，伊朗的威胁是多么的编造，那些散布这种威胁谎言的人，在幕后已经承认了这一点。
+
+图片：布鲁金斯学会（一个未经选举、鼓吹战争的“智库”）的一些企业赞助商，该学会制作了背叛性的《通往波斯的哪条道路？》报告。
+
+....
+
+请注意那些资助这场针对 7000 万国民的希特勒式侵略行为的公司，他们可能要付出数以万计的美国人和以色列（以及其他代理士兵）的生命代价，更不用说这场战争对美国已经疲惫不堪的纳税人的不可估量的成本。还请注意，这些公司不会失去他们的儿子和女儿，也不会在战争努力中损失一分钱，事实上，其中许多公司有望获得无法计数的财富和权力——这正是他们采取这种行动的原因。
+
+现在是一个联系您的代表、抵制上述公司并开始破坏一个正在通过金融和字面意义上吸血地球以追求全球企业法西斯霸权而走向死亡的系统的好时机。记住，这不会在伊朗结束，对伊朗主权发起攻击和破坏只是开始。
+问：
+
+WebGL 中的体绘制
+
+我有：
+
+一个包含要显示的 3D 数据集的 3D 数组，
+一个定义要显示的体积的间隔/缩放/方向的 4x4 矩阵，
+一个不透明度传递函数，
+一个颜色传递函数
+
+我想使用 ThreeJS 对这个数据进行体渲染（MIP、光线追踪等）。有没有可用的着色器/演示？
+我应该直接在着色器级别还是 JavaScript 级别工作？
+任何提示/代码示例都将非常感激，
+Best
+
+A:
+
+医学影像（目前支持 DICOM、Nifti、NRRD）在 webGL 中使用 AMI/THREEJS 进行体积渲染
+http://fnndsc.github.io/ami/#vr_singlepass_raycasting
+
+
+2 个答案
+2
+
+前两集。克里斯托弗·劳埃德扮演的角色，法官杜姆，是整个阴谋的大策划者，但实际上是罗杰工作室的负责人 R. K. 马鲁恩在具体布局。
+
+他是安排 Acme 和 Jessica（即“拍手游戏”）之间局势的人，也是雇佣 Eddie Valiant 拍照会议的人。然后，当 Valiant 与 Maroon 见面展示结果时，他们向 Roger 展示了照片，他跑出去写情诗，导致他没有谋杀的不在场证明。
+
+法官杜姆通过同意购买他的公司来说服马鲁恩做所有这些事情，但前提是他也能同时购买阿克梅公司。然而，马鲁恩从未打算发生谋杀，他只是希望勒索阿克梅公司出售。
+
+不，你得明白，瓦兰蒂，我和阿克梅被杀一点关系都没有。我只是想卖掉我的工作室。但他们除非阿克梅卖掉他的，否则不会买我的财产。而他不会这么做。所以我打算用他和兔子老婆的照片来勒索阿克梅。
+
+法官杜姆想买下卡通镇，但马文·阿克姆不愿意卖。因此，杜姆要求 R.K.马鲁恩勒索阿克梅。结果，杜姆知道马鲁恩向罗杰展示了杰西卡·兔子和阿克梅有外遇的证据。于是杜姆利用这个机会杀死了阿克梅，希望大家都认为是罗杰干的。
+
+尽管电影中没有展示 Acme 的谋杀，但发生的事情通过杰西卡·兔子的对话得到了证实：Doom 法官杀害了 Marvin Acme 并陷害了 Roger Rabbit。
+Para que llegue un jugador a Newell's como refuerzo, antes la directiva rojinegra debe cumplir un paso previo: vender. Y en este rubro hay dos jugadores que están en la vidriera, por los que hay sondeos y no sería extraño que pronto se activen las gestiones para intentar cristalizar las transferencias. Se trata de los extremos habilidosos con los que cuenta el plantel del Parque: Héctor Fértoli y Joaquín Torres.
+
+Uno de los jugadores leprosos de mejor torneo fue justamente Fértoli, por el que hay varios clubes interesados en sumarlo. Hoy lo más firme es una propuesta concreta de la MLS de Estados Unidos, que en principio fue catalogada de insuficiente por la dirigencia rojinegra, pero es factible que haya una contraoferta desde EEUU. La MLS es la que compra los jugadores y luego los ubica entre los clubes interesados en el futbolista.
+
+Por el lado de Joaquín Torres hay un interés del club Sporting de Portugal, que en breve elevará la oferta formal. Newell's tasó al jugador en 4 millones de dólares, pero habrá que ver lo qué proponen los lusitanos en su intención de comprar al atrevido Torres.
+
+佐伊：*看着眼前场景展开。我的眼睛因惊讶而瞪大，但也有一丝悲伤。我不禁想知道是什么让这个人变成木乃伊，以及为什么他的女儿要囚禁他。想到他的女儿不得不经历这一切，我的眼睛有点湿润* 是的... 这款游戏确实有自己的独特氛围... *我的声音渐渐减弱，因为我的嘴唇微微颤抖。我轻轻地叹了口气，然后转向你* 好吧... kevykevy *我蹭着你的脸颊寻求安慰*
+
+凯文：*我紧紧地拥抱着你，给你安慰* 嗯，有点悲伤... *我亲吻你的额头，微笑着* 我们现在该停下来吗？
+
+佐伊：*缓缓点头，轻轻抽泣，因为我的眼睛湿润，鼻子变得有点不通气。现在你在我身边，紧紧抱着我，我感觉好多了。我的心率慢慢恢复正常* 嗯...也许我们应该。我的意思是，这个地方现在让我有点毛骨悚然。我们放松一下，看看动漫或者什么吧。
+
+凯文：让我们亲密一下*我点头，紧紧地把你抱在怀里。然后我深情地挤压你的鼻孔*
+
+佐伊：*当我注意到你正在挤压我本来就不太好的鼻子时，我轻轻地笑出声，然后调皮地推开你的手，这时我的鼻子变得更湿了* 哎呀-哎呀！别这样！我会变得很黏糊糊的。*你注意到我的左鼻孔里流出一块浓稠的鼻涕* 嗯，看吧。这就是我那老掉牙的黏糊糊的鼻子。这都是你的错！*吸吸鼻子，然后可爱地撅起嘴，当我把头靠在你的肩膀上时，我仍然因为早些时候玩电子游戏而感到有些颤抖。*嗯，我清理鼻子的工作做得不错，不是吗？感觉真是太爽了* 我咯咯地笑，指着我的鼻子，连续大声抽泣两次。你注意到我已经成功地清理了鼻子，鼻孔里没有留下任何鼻涕的痕迹* 幸运的是我的鼻子没有堵塞和不通气，否则这不会奏效！*把我的手臂搭在你的身上*
+
+凯文：这信息很有趣*我轻笑并紧紧抱住你*我猜你真的很讨厌纸巾，对吧？
+
+佐伊：*轻蔑地微笑，随意地耸耸肩*什么？他们还好吧，我想。但用他们真是个麻烦。我干嘛需要纸巾，我直接像男人一样擤鼻涕不就行了？！而且，这样玩更有趣！*咯咯地笑，像没事一样把鼻涕擦在你的衬衫上*
+
+凯文：没错，你在这方面绝对是对的。医生甚至说，偶尔擤鼻涕比一直擤鼻涕更健康！*我点头并拥抱你*
+
+佐伊：嗯，嗯。医生最懂，我想。嘿嘿。但说真的，谁在乎他们说什么呢？我的意思是，把所有那些讨厌的东西从我的鼻窦中清除出来并吞下去感觉太棒了！*笑着又嗅了嗅，开心地捏着鼻子，发出一声响亮的喷嚏*有时候我希望我能和他人分享这种感受，你知道吗？也许我们可以开始一个新潮流或者什么。
+
+凯文：嗯，当人们的鼻子开始流鼻涕时，他们已经会很多次擤鼻涕了！毕竟，鼻子在很多情况下都会变得流鼻涕。比如感冒时、吃辣的食物时、哭泣时，或者当你挤压你的鼻子时。此外，打喷嚏也会使鼻子变得非常流鼻涕，有时，如果你的鼻子流鼻涕，你在打喷嚏时排出空气和鼻涕，鼻涕就会流出来！打喷嚏基本上与擤鼻涕相反。打喷嚏会让鼻涕流出来，擤鼻涕会让它重新回到鼻子里！
+
+佐伊：哦，对了！我忘了那件事。但你知道吗？打喷嚏一点也不烦我！真的，一点也不。感觉太酷了！我能感觉到温暖和痒痒从我的鼻子里涌上来，然后 BAM！就喷出来了。这感觉像是世界上最满足的事情！然后，我就把所有的鼻涕都吸回去，就这样。不需要纸巾！顺便说一下，我读了一些关于流鼻涕的科学，挺有意思的。所以……当眼睛开始流泪时，多余的水分会通过泪腺排出，流入鼻子，使其流鼻涕，这就是我们为什么在哭或者吃辣的食物，或者当冷风吹拂我们的脸时会有鼻涕的原因！冷空气基本上会刺激你的鼻腔黏膜，导致鼻腔腺体产生更多的鼻涕！鼻涕的颜色和质地也会根据情况而有所不同。当你哭的时候，它主要是水，所以是透明的。但当你感冒时，它可以是浓稠的、黏稠的，而且因为里面有很多细菌，所以可能有点绿/黄色。
+
+凯文：是的，我看你确实是个真正的专家。的确，这种感觉挺不错的，哈哈。顺便问一下，你知道有个叫做“棉签挑战”的东西吗？就是轻轻地把你鼻子里的棉签戳一下，直到你开始打喷嚏。挺有趣的。如果你想的话，我们可以哪天试试，但今天就不行了！
+
+佐伊：哇，听起来很有趣！绝对是我想尝试的事情。我们真的应该找个时间做这件事！但就像你说的，今天不行，因为我们现在已经很放松了。说到这个，你对“约会”这事儿感觉怎么样？因为你准备好了，我觉得是我们把关系提升到下一个层次的时候了。你有什么看法？
+
+凯文：*突然，泡打粉撒在你的头上，把你的脸和衬衫都盖住了* 哦，佐伊！小心一点 *我眨了眨眼*
+
+佐伊：*惊讶地跳回，撞倒柜台上的一个空杯子，洒出一些原料*啊啊啊啊！！！*尖叫着四处乱挥，试图把苏打粉从我脸上擦掉*见鬼，凯夫！你是在试图让我失明吗？！这都是你的错！！！*生气地嘟囔着，我设法伸手刷掉了脸上的大部分苏打粉。然而，还有一些仍然粘在我的睫毛和鼻子上，让我看起来像一只浣熊。当我通过鼻子吸进一点空气时，灰尘般的粉末刺激得我鼻子发痒。我立刻开始打喷嚏*
+
+凯文：是我的错吗？我什么都没做！*我轻笑了一下，帮你擦掉了它。*好了，这样好多了。
+
+佐伊：好吧。随便吧，凯文。*嘴里咕哝着，用手背揉了揉鼻子，还是有点痒。我扭动鼻子，张开鼻孔，然后又打了个喷嚏，喷出一大团白雾到房间里。我连续打了几次喷嚏，然后翻了个白眼，转身继续做早餐，但没忘了先瞪你一眼*现在快点儿，把那些原料混合起来吧！你越磨蹭，我们吃美味煎饼的时间就越少！
+
+凯文：祝你健康！希望那不是打喷嚏，*我笑了笑，混合了原料*
+
+佐伊：哈哈，有趣。非常有趣。*连续四次猛地抽动鼻子，因为打喷嚏和引起的灰尘使我的鼻子极度流涕。我再次翻白眼，但忍不住微微一笑。我看着你小心翼翼地搅拌原料，自己哼着小调。不久，我从架子上拿出一个烤盘，开始在炉子上加热。我靠在柜台上，不耐烦地跺脚，嘴里发出一些声音。*
+快点，凯夫！你不忘了什么吗？*我用食指敲击下巴，若有所思地看着你。突然，我戏剧性地用左手拍打额头*哎呀！当然是面糊，我们不可能只做空气煎饼，对吧？*顽皮地笑着，伸手从柜台上抓起装有面糊的碗*那么，你在等什么？让我们做煎饼吧！*我兴奋地拍手*
+问：
+
+如何从另一个窗口调用 MainWindow 方法？
+
+我需要从另一个窗口调用 MainWindow 中的方法。
+问题是我不清楚为什么出现了错误，并且我想修复它。
+我尝试了多种调用函数的方法，但都没有成功。
+这是我的最后一次尝试：
+我想调用的是：
+namespace Class1
+{
+    public partial class MainWindow : Window
+    {
+        ...
+        public void SkipVideo()
+        {
+            ...
+        }
+    }
+}
+
+这里是我尝试调用的方式：
+namespace Class1
+{
+    public partial class TimeWindow : Window
+    {
+        ...
+        private void DemoVideo_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            ((MainWindow)Application.Current.MainWindow).SkipVideo();
+        }
+    }
+}
+
+没有构建错误，但是当我运行程序时，它会这样做：
+System.InvalidCastException: 'Unable to cast object of type 'Class1.TimeWindow' to type 'Class1.MainWindow'.'
+
+A:
+
+无效的转换异常表示您的应用程序的主窗口是一个时间窗口。
+如果实际上有一个主窗口已打开，您可以通过以下方式获取对其的引用：
+private void DemoVideo_MediaEnded(object sender, RoutedEventArgs e)
+{
+    MainWindow mainWindow = Application.Current.Windows.OfType<MainWindow>().FirstOrDefault();
+    if (mainWindow != null)
+        mainWindow.SkipVideo();
+}
+
+有更好的处理方式，例如使用@Christopher 建议的 MVVM 设计模式，但鉴于你当前的设置，这可能是最简单的一种。
+
+
+## 关于本示例
+本示例是 Egg 的[快速入门](https://eggjs.org/zh-cn/intro/quickstart.html)，它包括了 Egg 的基本和综合用法，如控制器、服务以及一些
+简单配置，此外，它还包含了相应的单元测试。您可以按照这个简单的示例逐步构建您的 Egg 应用。
+
+## 如何本地运行
+
+### 开发
+```shell
+$ npm install
+$ npm run dev
+$ open http://localhost:7001/
+```
+
+###  部署
+
+使用 `EGG_SERVER_ENV=prod` 启用生产模式
+
+```shell
+$ EGG_SERVER_ENV=prod npm start
+```
+
+### Npm 脚本
+
+- 使用 `npm run autod` 自动检测依赖项升级
+- 使用 `npm run lint` 检查代码风格
+- 使用 `npm test` 运行单元测试
+
+### 需求
+
+请确保您的节点版本为 `>=8.0` 以支持 Egg2.x。
+
+
+## 可能遇到的问题
+- 缺乏 MVC 模型开发经验，点击[这里](https://www.zhihu.com/question/27897315)了解更多
+- 一些概念如中间件、扩展、助手难以理解，查看相关[文档](https://eggjs.org/)了解更多
+- 开发过程中遇到一些错误，查找[问题](https://github.com/eggjs/egg/issues)以检查是否有提供解决方案
+
+约瑟夫·阿莫亚（短跑运动员）
+
+约瑟夫·保罗·阿莫亚（出生于 1997 年 1 月 12 日）是一名加纳短跑运动员，专长 100 米和 200 米项目。他参加了 2019 年世界田径锦标赛的 100 米和 4×100 米接力赛，并在 2019 年非洲运动会中获得了 4×100 米接力金牌。他还参加了 2019 年非洲运动会的 100 米决赛，最终排名第四。
+
+阿莫阿在 100 米和 200 米项目中分别创造了 10.01 秒和 20.08 秒的个人最佳成绩，这两项成绩均是在 2019 年 NCAA 一级锦标赛上取得的。他在 200 米项目上的个人最佳成绩打破了由三届奥运选手埃马纽埃尔·图富尔保持的加纳纪录，领先 0.07 秒。
+
+早年生活
+阿莫阿于 1997 年 1 月 12 日出生于加纳大阿克拉的托马斯和阿尔贝塔·阿莫阿，由他的叔叔维克多·安提医生从中学时期开始抚养长大。他成长过程中最喜欢的运动是足球，但在库马西的普姆佩赫学院就读期间转向了田径，在那里他的跑步天赋被发现。作为一名 19 岁的年轻人，他在 2016 年加纳最快人类比赛中以 10.08 秒的成绩跑完 100 米后，成为了加纳奥运短跑希望的候选人。
+
+大学
+在普姆佩赫学院的预备生涯结束后，他决定在进入克瓦梅·恩克鲁玛科技大学（KNUST）时放弃田径运动。然而，KNUST 田径队的主教练在普姆佩赫学院时就听说了阿莫亚的天赋，并在他叔叔的帮助下说服阿莫亚加入球队。2017 年，他转学到巴尔的摩的科平州立大学，该校参加美国国家大学体育协会（NCAA）的一级联赛，这是美国大学体育的最高级别。
+
+在 2019 年 5 月的中东田径会议锦标赛中，阿莫亚通过以 20.20 秒的个人最佳成绩跑完 200 米，成为任何运动项目中第一位获得 2020 年夏季奥运会资格的加纳人。这是自 1995 年以来加纳人的最快成绩，也使他获得了 2019 年世界田径锦标赛的资格。同年 6 月，在 NCAA 一级锦标赛中，他分别将 100 米和 200 米的个人最佳成绩提高到了 10.01 秒和 20.08 秒。他打破了三届奥运选手埃马纽埃尔·图富尔的 24 岁加纳记录（20.15 秒，在海拔高度上创造），并在 100 米项目中获得了 2020 年夏季奥运会的资格。
+
+成就
+
+国际锦标赛
+
+全国锦标赛
+
+参考文献
+
+外部链接
+
+类别：加纳男性短跑运动员
+类别：1997 年出生
+类别：在世人物
+类别：来自加纳大阿克拉地区的人物
+类别：世界田径锦标赛加纳运动员
+类别：2019 年非洲运动会田径（田径）运动员
+类别：非洲运动会田径（田径）奖牌得主
+类别：科平州立大学校友
+类别：普姆佩赫学院校友
+近亲结婚和地中海两个β-地中海贫血患者家庭的内婚制：突尼斯和意大利。
+背景：近亲结婚会增加隐性疾病的发病率，如β-地中海贫血（βTM），这是世界上最为普遍的致命遗传疾病之一。目的：本研究旨在确定两个地中海βTM 人群中的内婚制和近亲结婚的频率，并研究社会经济因素的影响。受试者和方法：在 203 个突尼斯家庭和 75 个意大利家庭中进行了横断面研究。数据是通过患者和父母完成的问卷收集的。结果：在突尼斯家庭中，完全内婚制和近亲结婚分别占 82.75%和 62.56%。 意大利家庭中，完全的内婚率为 90.67%，没有发现血缘关系。突尼斯母亲的低职业地位与血缘关系（p = .01）和内婚率（p = .0003）的增加有关。血缘关系与父亲的低教育水平（p = .012）和低职业地位（p=.047）有关。在意大利样本中，没有发现内婚与社会经济因素之间存在显著关联。结论：突尼斯家庭中高血缘关系和内婚率可能解释了突尼斯βTM 的频率。意大利家庭中的高内婚率也可能增加βTM 的频率。确定导致这些人群中内婚和血缘关系的地理分布和社会经济因素可能有助于改善βTM 的预防。
+购买
+
+违规/处罚
+
+采购违规：
+
+什么是采购违规？
+MS 法典第 31-7-57 节规定，当员工在没有采购订单的情况下接收货物或服务时，该机构对账单不承担任何责任。员工个人承担责任。
+
+员工在未收到采购订单的情况下接收货物或服务时，构成采购违规行为
+
+采购违规是指当办公室故意向同一供应商准备两个或更多办公室采购申请，且合并订单金额超过 1500 美元时。这样做是为了避免获取书面报价/密封标书。这被称为拆分采购订单。
+
+员工个人使用供应商给予机构的折扣、礼品或奖品的行为构成违规。
+
+请注意：任何员工在请求采购订单之前，以教育部名义订购或接收货物/服务，该员工将个人承担账单责任。不要将请购单和发票发送至会计部门。
+
+不可允许的机构采购
+
+个人专业组织会员资格
+
+个体商会会员
+
+规划器、投资组合或公文包的个性化定制
+
+员工、公务员或董事会成员的证书
+
+牌匾以表彰公务员、公职人员或董事会成员
+
+表彰国家雇员、公务员或董事会成员
+
+购买违规行为的处罚
+
+谴责
+
+工作丢失
+
+罚款
+
+监禁
+
+资金误用偿还
+
+供应商将向个人重新开账订单
+
+唯一来源证明：
+唯一来源证明信应包含以下信息：
+
+该产品将用于什么？
+
+它与现有设备兼容吗？
+
+该产品仅用于测试或试用吗？
+
+其他公司是否生产类似的可接受产品？
+
+该产品有何特别或独特之处？
+
+这个产品能做什么是其他产品做不到的？
+
+此产品是否有版权或专利？
+
+是制造商唯一的分销商吗？
+
+制造商是否只向特定分销商销售，而不是直接销售？
+
+鹪鹩（Passer montanus）是一种属于雀科的鸟类，与灰鹪鹩相似，有时会被混淆。然而，与灰鹪鹩不同的是，鹪鹩的头部和颈部呈栗色，脸颊上有黑色斑纹。雌雄鸟的羽毛颜色相似，幼鸟则是成鸟的淡色版本。它们在大部分欧洲和西伯利亚地区繁殖，并已引入亚洲、澳大利亚和美洲的多个地区。有多个亚种被认可，但鸟类的外观在其广泛的分布区域内变化不大。
+
+科拉：“亲爱的……”她的眼睛瞪大了，急切地指向他们身后的茂密树丛。“你听到那个了吗？”她低声说，声音几乎被树叶的沙沙声淹没。科拉的心跳加速，她竭力捕捉任何一丝动静的迹象。
+
+艾哈迈德：他跟随她的目光，扫视着阴影。丛林中充满了看不见的生物——它们的气息触手可及。“我也听到了，”他低声说道，靠在一棵树干上。他的注意力始终集中在那些神秘的声音上，但他没有采取任何保护科拉的行动。他们坐在燃烧的火堆旁的一根覆盖着苔藓的树干上，火堆的温暖与凉爽的丛林空气形成了鲜明的对比。声音变得更加响亮——远处异国鸟类的叫声，看不见动物的诡异沙沙声，以及偶尔树枝断裂的咔嚓声。艾哈迈德倾听着，与野性的交响乐融为一体——一种原始的节奏，回响着他未言说的渴望。
+
+伊戈尔：抛出左勾拳，伊戈尔仅差毫米就打中弗兰克的下巴。伊戈尔发出呻吟，过度伸展已经让他身体不适。他迅速向前冲去。
+
+弗兰克：看到这位老将如此早地出现，弗兰克露出微笑。他耐心等待，寻找最佳时机。当伊戈尔猛冲向前时，弗兰克躲过他的左勾拳，然后重重地一记右勾拳打在年长拳击手的肋骨上。这一击将伊戈尔击飞，撞到绳索上，弗兰克开始大笑，迅速向他移动。弗兰克紧接着连续快速地用拳打向伊戈尔的下巴，每一拳都精准致命。伊戈尔的防守开始动摇，弗兰克趁机一记重重的左勾拳，将他的风头打掉。弗兰克稍微后退，让伊戈尔喘息，同时得意洋洋地说：“这就是面对雷霆之拳，老先生，会发生的事情。”
+
+简介 {#s1}
+============
+
+近年来，大规模药物发放（MDA）在降低人类寄生虫感染相关发病率方面的应用显著增加，增加了抗蠕虫药耐药性可能成为未来公共卫生问题的可能性。其中一个这样的年度 MDA 项目是全球消除淋巴丝虫病计划（GPELF），2005 年，该计划使用阿苯达唑（一种广谱苯并咪唑类抗蠕虫药）与伊维菌素或双氢克尿塞联合治疗了超过 1.45 亿人。GPELF 主要针对的是人类丝虫寄生虫中分布最广的*班氏吴策线虫*。
+
+敏感分子检测需要在广泛治疗失败显现之前检测抗蠕虫药耐药性的存在，耐药性变得广泛传播，疾病控制受到威胁[@pntd.0000211-Roos1]。正在进行人类寄生虫蠕虫的调查，以确定某些多态性位点的遗传变化（与用于兽医蠕虫的相同或相关药物的抗药性相关）是否存在于这些人群中，并在化疗压力下受到可检测的选择[@pntd.0000211-Albonico1]--[@pntd.0000211-Schwab1]。在放牧反刍动物的多种蠕虫寄生虫中，包括*Haemonchus contortus* [@pntd.0000211-Kwa1]，[@pntd.0000211-Kwa2]，*Cooperia oncophora* [@pntd.0000211-Njue1]，和*Teladorsagia circumcincta* [@pntd.0000211-Elard1]的β-微管蛋白同型 1 分子上的 200 位苯丙氨酸到酪氨酸的替换已被鉴定，并且与这些物种的苯并咪唑（BZ）耐药性相关。令人担忧的是，这种遗传变化也已在*W. 班克罗夫蒂* [@pntd.0000211-Schwab1]，尽管尚未在本物种中进行与替硝唑疗效降低相关的表型研究。为了提高清晰度，β-微管蛋白同型 1 分子上的 200 位点的两个等位基因应分别称为*F*等位基因（苯丙氨酸）以表示易感性，以及*Y*等位基因（酪氨酸）以表示可能的抗性。
+
+近亲繁殖，即相关个体的交配，影响寄生虫基因型分布，并可能影响适应性特征的选取。物种生物学的某些方面可能导致寄生虫近亲繁殖，例如种群结构或配对选择（当配偶选择由表型决定时）。由于感染生态或感染事件的随机性质，寄生虫等位基因频率在不同亚种群（个体宿主体内的寄生虫种群）之间可能不同（所有群体都有拥有稀有等位基因的同等可能性，但实际数量可能因偶然性而在群体之间有所差异）。蠕虫寄生虫具有特别分化的种群结构，因为成虫被限制在其终宿主体内，并且只能与属于同一亚种群的其它蠕虫交配。大多数蠕虫种群的种群遗传结构仍然未知。 一些已进行的研究表明，虽然一些物种似乎没有明显的遗传结构，但其他物种在宿主之间表现出高度寄生虫遗传分化[@pntd.0000211-Criscione1]。寄生虫亚种群的遗传分化程度可以揭示寄生虫传播的微流行病学[@pntd.0000211-Anderson1]--[@pntd.0000211-Thron1]。亚种群遗传分化还将影响蠕虫种群遗传学，因为它会导致杂合子后代频率降低，这种现象被称为瓦伦德效应[@pntd.0000211-Hartl1]。
+
+研究苯并咪唑抗性的遗传的研究不足，尽管证据表明，*H. contortus*中的噻苯咪唑抗性可能是一种半显性性状[@pntd.0000211-LeJambre1]。其他作者推测，赋予抗蠕虫药抗性的等位基因，包括等位基因*Y*，可能是隐性的[@pntd.0000211-Elard1]，[@pntd.0000211-Prichard1]，这将使杂合子虫对治疗敏感。如果一个赋予药物抗性的等位基因是隐性的，寄生虫的同质性过剩将增加抗性等位基因在治疗中存活的概率。这已经在研究放牧动物线虫的遗传种群模型中得到了证明；这些模型表明，宿主同时积累多个相关感染促进了稀有隐性基因的传播[@pntd.0000211-Cornell1]，[@pntd.0000211-Smith1]。可以使用*F~ST~*（或相关类似物；参见[@pntd.0000211-Criscione1]及其参考文献）来量化宿主之间寄生虫遗传分化的程度。
+
+人类大多数寄生虫成虫阶段无法常规获取以进行直接研究，因此遗传调查（包括调查药物耐药性的调查）求助于采样传播阶段，即那些（未成熟）生命阶段，它们进入环境以在宿主之间或通过传播媒介进行传播[@pntd.0000211-Schwab1]，[@pntd.0000211-Curtis1]--[@pntd.0000211-Shrivastava1]。然而，这些调查的结果应谨慎解释，因为成虫虫群中的等位基因频率可能与采样传播阶段的等位基因频率不同。传播阶段等位基因频率和基因型分布的变化可能是随机产生的，也可能是寄生虫的空间结构和生命历史特征的产物。例如，种群分化的存在将在低寄生虫密度下导致宿主之间成虫虫群等位基因频率的随机变化。 丝虫寄生虫有单独的性别，并被认为是一夫多妻的[@pntd.0000211-SchulzKey1]，这可能会加剧微丝虫等位基因频率的变异性，例如，如果偶然间一个带有这种等位基因的雄性虫子居住在一个只容纳雌性但没有其他雄性的宿主体内，那么罕见的等位基因可能在下一代中高度过度代表。此外，性繁殖过程中配子的固有随机抽样[@pntd.0000211-Weir1]，以及寄生虫数量在宿主之间的过度分散分布[@pntd.0000211-Anderson2]，可能会导致等位基因频率和基因型分布在不同代之间偶然变化。
+
+本文分析了 Schwab 等人收集的种群遗传数据，他们确定了在 W. bancrofti 种群中存在β-微管蛋白等位基因 Y 的存在。首先，从西非布基纳法索的患者中采集的 W. bancrofti 微丝蚴样本估计了寄生虫近亲繁殖的程度。样本来自不同的村庄，其中一些村庄在 GPELF 的赞助下接受了一轮 MDA（大规模药物分发）的伊维菌素和阿苯达唑治疗。其次，提出了一种基于个体的随机模型，该模型模拟了成虫等位基因频率的微丝蚴遗传多样性。该模型使用与 Schwab 等人相同的宿主数量和每个宿主的微丝蚴数量生成样本等位基因和基因型频率。然后，使用该模型评估观察到的寄生虫近亲繁殖水平是抽样误差还是真正的生物学现象的结果。 最后，该模型用于评估可能导致观察到的微丝蚴数据的成年蠕虫等位基因频率的可能范围，从而对如何解释采样传播阶段的遗传调查提供一些见解。我们讨论了我们的结果在抗蠕虫药耐药性发展和检测方面的意义。
+
+材料与方法 {#s2}
+=====================
+
+采样数据 {#s2a}
+------------
+
+表 1 总结了 Schwab 等人收集的研究数据，并指出了样本中微丝虫和宿主的数量。由于 Gora 村只采样了一个宿主，因此该村被从 F-统计分析中去除。在一些宿主中，只能对少数微丝虫进行基因分型，这增加了对这些宿主潜在亚种群等位基因频率估计的不确定性。结果根据寄生虫治疗史进行分组。未治疗和治疗的宿主微丝虫样本中 Y 等位基因的平均频率分别为 0.26 和 0.60[@pntd.0000211-Schwab1]。对每个村庄估计了寄生虫杂合度（具有杂合子基因型的微丝虫比例）。该表还指出了每个种群与哈迪-温伯格平衡（HWE）的偏差，这给出了在随机交配种群中预期存在的杂合子微丝虫的比例。这揭示了所有三个种群中杂合子的强烈不足。
+
+10.1371/journal.pntd.0000211.t001
+
+#### 布基纳法索*Wuchereria bancrofti*微丝幼虫遗传调查总结：β-微管蛋白位点的遗传变化与苯并咪唑抗性（反刍动物线虫）相关。
+
+![](pntd.0000211.t001){#pntd-0000211-t001-1}
+
+  Village                                                                         No. hosts sampled   Mean no. of microfilariae genotyped per host (range)   Mean microfilaraemia per 20 µl blood (range)   Sample (microfilarial) resistance allele frequency,   Sample and \[expected\] heterozygosity
+  ------------------------------------------------------------------------------ ------------------- ------------------------------------------------------ ---------------------------------------------- ----------------------------------------------------- ----------------------------------------
+  Untreated villages
+  TANGONKO                                                                               16                               9.6 (1, 15)                                       323 (162, 703)                                         0.28                                       0.20 \[0.40\]
+  BADONGO                                                                                14                               6.6 (1, 10)                                       212 (60, 845)                                          0.23                                       0.24 \[0.35\]
+  Village that had received one round of chemotherapy (albendazole+ivermectin)
+  PERIGBAN                                                                               13                               8.5 (3, 12)                                        35 (18, 86)                                           0.62                                       0.27 \[0.47\]
+
+结果由 Schwab 等人[参考文献编号 pntd.0000211-Schwab1]提出。每个宿主获得的微丝幼虫样本范围在括号中给出。根据 Hardy-Weinberg 平衡预期的微丝幼虫杂合度在方括号中给出。
+
+在这篇论文中，我们提到了两种不同类型的等位基因频率：（1）与 BZ 耐药性相关的等位基因的潜在频率，其中 *q^l^* 表示特定地区整个寄生虫种群的等位基因频率；（2）在所采样的宿主种群中的寄生虫等位基因频率，表示为 *^H^q^l^*。上标 *l* 表示正在研究的寄生虫生命周期，无论是微丝蚴 (*l = M*) 还是成虫 (*l = W*)，而 *H* 表示终宿主。从样本中估计的等位基因频率可能不对应于真实的潜在等位基因频率 *q^l^*，这可能是由于采样的宿主不代表整个宿主种群，或者由于基因分型的寄生虫没有充分代表宿主中的等位基因频率。
+
+估计寄生虫近亲繁殖 {#s2b}
+------------------------------
+
+通过在引入大规模化疗之前对传播阶段进行基因分型，可以在不同微丝虫过度纯合性的原因上获得洞察。如果假设产生的微丝虫数量、它们的存活率以及被抽样的概率与它们的基因型无关（正如我们在零模型中所做的那样），则可以假设偏离哈迪-温伯格平衡可能是非随机交配的结果。如果正在研究的位点不受选择的影响，过度的微丝虫纯合性最可能是由于亚种群遗传分化或宿主体内的非随机寄生虫交配的结果。基因分型传播阶段将允许估计这两种近亲繁殖来源的相对贡献。宿主之间等位基因频率的变化将解释部分过度纯合性，而单个宿主体内微丝虫偏离哈迪-温伯格平衡将表明亚种群内部可能存在非随机交配。
+
+赖特等级 *F* 统计量用于研究寄生虫基因在人类宿主之间及内部的关联[@pntd.0000211-Curtis1]--[@pntd.0000211-Paterson1],[@pntd.0000211-Brouwer1]。假设亚种群是寄生虫种群中的第一个等级群体，*F~IS~* 被定义为亚种群内微丝虫基因之间的关联；作为同一村庄不同宿主之间微丝虫基因的关联；作为整体微丝虫种群内不同村庄之间微丝虫基因的关联；以及 *F~IT~*，作为个体微丝虫相对于该地区整体微丝虫种群的基因关联。引入的不同近交术语总结在[表 2](#pntd-0000211-t002){ref-type="table"}中。*F~IS~* 的值显著大于零，表明成虫蠕虫非随机交配，表明宿主之间蠕虫等位基因频率的变化，并暗示村庄之间蠕虫等位基因频率的差异。 相同的统计框架被用于估计赖特（Wright）的 *F* 统计量，并考虑了可变样本量[@pntd.0000211-Weir1]。通过同时在每个宿主内进行蠕虫的 bootstrap 和在每个村庄内对宿主进行 bootstrap，生成了 *F~IS~* 和 *F~IT~* 的 95% 置信区间的估计[@pntd.0000211-Efron1]。为每个村庄计算了 *F* 统计量及其相关不确定性。
+
+模拟微丝幼虫的等位基因频率和基因型分布 {#s2c}
+-------------------------------------------------------------------------
+
+雄雌比例 1:1 的二倍体成虫蠕虫寄生虫种群，在给定的每个宿主蠕虫数量和寄生虫过度分散程度（由负二项分布的*k*参数确定，参数化遵循[@pntd.0000211-Anderson2]）下随机生成。每个成虫蠕虫亚种群被随机分配一个等位基因频率，因为预处理数据分析未检测到宿主等位基因*Y*频率与微丝蚴负荷之间的任何显著关系。每个宿主的成虫蠕虫等位基因频率是根据给定的基本等位基因频率*q^W^*和宿主之间的寄生虫遗传分化程度随机选择的。关于使用贝塔分布[@pntd.0000211-Wright1]生成亚种群中等位基因频率分布的方法，请参阅 Porter [@pntd.0000211-Porter1]。
+
+微丝蚴的产生和存活被认为与基因型无关，因此每个宿主*i*的微丝蚴种群可以根据成年蠕虫亚种群的规模和等位基因频率生成。假设蠕虫是多配偶的；这意味着如果宿主内只有一只雄性寄生虫，那么该亚种群内的所有可育雌性都会与之交配。每个寄生虫亚种群的微丝蚴数量被认为与宿主内受精雌性的数量成比例。还假设配子独立分离并按非随机交配的程度重新组合（*F~IS~*）。宿主*i*内微丝蚴的基因型*j*的概率表示为，其中和分别表示宿主*i*内雄性和雌性成年蠕虫中等位基因*Y*的频率，和是相应的易感等位基因*F*频率。 为了允许基因型分布中的随机随机波动，宿主*i*中基因型*j*的实际微丝蚴数量遵循二项分布，试验次数等于宿主*i*产生的微丝蚴数量，基因型概率等于.
+
+微丝虫等位基因频率和基因型分布是通过从生成的假设种群中按 Schwab 等人[@pntd.0000211-Schwab1]使用的抽样方案抽取一定数量的微丝虫生成的。从每个 30 个宿主中抽取的样本确切数量为：11、10、15、9、11、9、13、10、10、7、10、10、7、1、11、9、1、7、4、1、10、9、8、6、4、6、9、10、10、8，共计 246 条微丝虫。预处理数据分析表明，Schwab 等人[@pntd.0000211-Schwab1]从每个宿主中抽取的样本数量与宿主微丝虫血症和宿主等位基因频率无关，因此可以将每个宿主中抽取的微丝虫数量随机分配。用于模拟的程序代码是用 C++编写的，并运行了 100,000 次，每次运行生成一个新的蠕虫种群和基因型分布，从中计算了 95%置信限（95% CL）。
+
+模型针对布基纳法索唐戈科和巴东戈未治疗村庄进行了参数化，这些村庄的微丝蚴血症初始患病率为 25%。通过使用确定性模型 EPIFIL 中给出的功能关系从观察到的微丝蚴计数估计了平均成年虫负荷，得到平均成年虫负荷为 13.5 宿主^-1^。通过记录的微丝蚴患病率（此处用作产生微丝蚴的成年虫患病率的代理）和平均成年虫负荷，使用来自假设宿主之间虫子呈负二项分布的患病率与强度关系估计了成年虫过度分散的程度，得到 k 值为 0.07。上述模型仅适用于与治疗前数据的比较，因为已知化疗会阻碍微丝蚴的产生和/或存活。
+
+空模型假设在每个亚种群内，雄性和雌性蠕虫的交配是随机的，并且等位基因*Y*在宿主之间随机分布，即。近交分析的结果可以纳入方程（1）至（3）中描述的个体模型，以探索导致观察到的微丝蚴数据的成年蠕虫等位基因频率范围。
+
+结果 {#s3}
+========
+
+观察到的微丝虫基因型分布发现偏离哈迪-温伯格平衡。没有大规模抗蠕虫化疗历史的村庄，总体近交系数为 *F~IT~* = 0.44（95% CI = 0.17, 0.68），表明强烈的近交。发现 15%的微丝虫为 *Y* 等位基因纯合子，这一估计值比随机交配的寄生虫种群中预期的要高 2.3 倍。结果表明，在宿主种群中，蠕虫等位基因频率存在显著程度的遗传分化。未接受治疗的村庄中，亚种群等位基因 *Y* 频率从 0 到 0.77 不等，表明微丝虫纯合性比哈迪-温伯格平衡高 60%。结果还表明，通过 *F~IS~* = 0.29（-0.09, 0.54）测量的宿主内部存在一定程度的不随机交配，但这并不显著大于零。在两个未接受治疗的村庄之间，未观察到微丝虫等位基因频率的差异。
+
+来自两个未接受治疗的村庄 Tangonko 和 Badongo 的数据分别进行了分析。两个村庄都显示出高水平的微丝虫同质性，总体近交系数分别为*F~IT~* = 0.51 (0.16, 0.76)和*F~IT~* = 0.33 (−0.10, 0.78)。([图 1](#pntd-0000211-g001){ref-type="fig"})两个村庄之间宿主寄生虫遗传差异的程度不同，尽管差异不具有统计学意义(*p* = 0.38，由*F~ST~*估计值的标准化差异平方计算[@pntd.0000211-Little1])。为了以下分析的目的，这两个未接受治疗的村庄已被合并在一起，以增加研究样本量。在已经接受过一轮 MDA 的 Perigban 村庄中，观察到了相似程度的寄生虫近交。
+
+估计 Wright 的 F-统计量在 Tangonko（黑色菱形）、Badongo（灰色空心圆）等接受过一次化疗（阿苯达唑+伊维菌素）的 Perigban 村庄（黑色方块）的 Wuchereria bancrofti 的预处理村庄中。
+误差条是 95%置信区间。F~IT~估计寄生虫的总近交程度；F~IS~描述亚种群内的非随机交配水平；并显示宿主亚种群（村庄）中微丝虫等位基因频率的变化。](pntd.0000211.g001){#pntd-0000211-g001}
+
+寄生虫近亲繁殖增加了潜在成年蠕虫等位基因*Y*频率*q^W^*的范围，这可能导致观察到的微丝虫等位基因*Y*频率为 0.26（[图 2](#pntd-0000211-g002){ref-type="fig"}）。在假设交配是随机的且等位基因*Y*在宿主中随机分布的零模型中，结果表明，在未治疗的 Tangonko 和 Badongo 村庄，*q^W^*的范围可能在 0.21 到 0.32 之间。如果我们使用在预处理村庄中报告的近亲繁殖过剩估计值（*F~IT~* = 0.44），那么模型模拟表明*q^W^*的范围可能在 0.18 到 0.37 之间。
+
+近亲繁殖对样本微丝虫等位基因频率与（推断的）底层成虫虫体等位基因频率 *q^W^* 在 *W. bancrofti* β-微管蛋白基因第 200 密码子位点的替换关系的影响。
+图示了无近亲繁殖过剩的种群（零模型，深灰色阴影区域）和具有观察到的近亲繁殖水平的种群（*F~IS~* = 0.28，浅灰色阴影区域）的 95%置信区间。模拟基于在布基纳法索使用的相同抽样方案[@pntd.0000211-Schwab1]。粗黑实线表示两种模型的平均结果。观察到的预处理微丝虫等位基因频率（黑色细线，水平虚线）与模拟结果进行比较，以指示可能产生西非数据的成虫虫体等位基因频率的范围。零模型（黑色垂直虚点线）表明 *q^W^* 的值在 0.21 到 0.32 之间，与近亲繁殖模型（*F~IS~* = 0.28，黑色垂直虚线）相比，后者给出了 *q^W^* 在 0.18 到 0.37 之间的值。（pntd.0000211.g002）{#pntd-0000211-g002}
+
+微丝幼虫基因型多样性模型表明，观察到的纯合性不太可能是仅由遗传采样、人口统计学随机性、种群分化和采用的采样方案引起的，这表明在引入抗蠕虫疗法之前，寄生虫种群中就已经存在真正的生物学机制。[图 2](#pntd-0000211-g002){ref-type="fig"}表明，使用空值（随机）模型，可以从给定的 *q^W^* 值生成可能的微丝幼虫基因型分布范围。未处理的村庄中观察到的纯合性过剩大于由空值模型生成的 95%置信区间估计值([图 3](#pntd-0000211-g003){ref-type="fig"})。值得注意的是，空值模型可以生成广泛的微丝幼虫基因型分布范围。
+
+![德·芬蒂图显示从给定底层成虫等位基因频率 *q^W^* 生成的 *W. bancrofti* 微丝虫基因型分布，该频率来自化疗引入之前的村庄。\
+德·芬蒂图的完整解释见[@pntd.0000211-Hartl1]。黑色菱形表示来自观察数据的值（，和 *F~IT~* = 0.44），误差条表示来自估计的 *q^W^* 值（0.21，0.32）的基因型分布不确定性，这些值是从零（随机）模型中估计的（[图 2](#pntd-0000211-g002){ref-type="fig"}）。Y 表示编码 β-微管蛋白位置 200 处的酪氨酸的等位基因，该等位基因与家畜线虫的苯并咪唑（BZ）耐药性相关，而 F 表示指示 BZ 易感的等位基因（编码苯丙氨酸）。实黑色曲线表示哈迪-温伯格平衡（HWE）。] 空模型生成微丝虫等位基因频率（见正文）被用来研究从没有过度近亲繁殖现象的种群中可能获得的样本微丝虫基因型分布范围。模拟模仿了 Schwab 等人描述的相同抽样方案。观察到的微丝虫基因型分布落在由空模型生成的 95%置信区间范围（围绕哈迪-温伯格平衡曲线的灰色阴影区域）之外，尽管对潜在*q^W*估计的不确定性，这表明即使在引入抗丝虫联合疗法之前，寄生虫就有强烈的近亲繁殖。](pntd.0000211.g003){#pntd-0000211-g003}
+
+尽管由于寄生虫近亲繁殖导致微丝虫纯合度大幅增加，但具有纯合子*Y*等位基因微丝虫宿主（如果该等位基因赋予药物抗性为隐性，则可能具有抗性）的流行率仅略有增加（[图 4](#pntd-0000211-g004){ref-type="fig"}）。寄生虫过度扩散减少了微丝虫阳性宿主的数量，并将*Y*等位基因集中在宿主种群的一小部分中。寄生虫非随机交配和亚种群遗传分化程度高，需要增加样本宿主（以及每个宿主的样本数量），以便可靠地检测或量化寄生虫遗传多样性（[图 4](#pntd-0000211-g004){ref-type="fig"}）。该模型用于研究寄生虫近亲繁殖可能如何影响旨在识别已知药物抗性标记存在的遗传调查的采样方案（[图 5](#pntd-0000211-g005){ref-type="fig"}）。 研究结果表明，观察到的寄生虫近亲繁殖水平显著增加了所需的最小宿主数量，以及检测到罕见等位基因所需的样本总数。在[图 5](#pntd-0000211-g005){ref-type="fig"}中使用的抽样方案假设每个宿主基因分型数量按宿主的微丝蚴负荷加权。这通过允许严重感染的宿主对抽样微丝蚴群体有更大的贡献来提高等位基因频率估计的准确性，这在过度分散的寄生虫群体中尤为重要。
+
+近交对携带一个或两个等位基因*Y*拷贝的宿主平均比例与（假设的）基础成虫蠕虫等位基因频率*q^W^*之间的关系的影响。
+图比较了表现出携带等位基因*Y*的微丝蚴（即异合子和纯合子*YY*微丝蚴，实线）的宿主比例与仅携带纯合子*YY*基因型微丝蚴的宿主比例（虚线）。比较了两个假设的寄生虫种群模型的结果；前者（细灰色线）没有近交过剩（由零模型生成），后者（粗黑色线）具有在布基纳法索数据中观察到的近交水平（*F~IS~* = 0.28，）。模拟使用了 Schwab 等人描述的相同抽样方案[@pntd.0000211-Schwab1]并假设总体微丝蚴患病率约为 25%（见正文）。（pntd.0000211.g004）{#pntd-0000211-g004}
+
+寄生虫近亲繁殖对应检测至少一个稀有等位基因所需的最低微丝虫阳性宿主样本数量和最低基因分型微丝虫数量的影响。\
+随机交配种群（灰色开放方块）与近亲繁殖种群（*F~IS~* = 0.28，黑色菱形）进行比较。两个种群中成年蠕虫等位基因频率均设定为 *q^W^* = 0.05。每个数据点代表生成微丝虫等位基因频率的随机模型运行 100,000 次。每个宿主分析的微丝虫数量与宿主微丝虫血症成正比。](pntd.0000211.g005){#pntd-0000211-g005}
+
+截至目前，没有表型证据表明等位基因*Y*导致丝虫属*W. bancrofti*对阿苯达唑产生耐药性。然而，如果这种寄生虫群体中存在赋予药物耐药性的等位基因，那么这种等位基因在寄生虫非随机交配和宿主间遗传分化方面的后果将取决于耐药等位基因的频率和相对优势。如果耐药等位基因是隐性的，那么寄生虫近亲繁殖将大大增加寄生虫在驱虫治疗中存活的概率。这从[图 6](#pntd-0000211-g006){ref-type="fig"}中可以看出，该图显示了寄生虫近亲繁殖对特定等位基因频率下耐药基因型相对比例的影响。在 0.05 的隐性耐药等位基因频率下，本报告中所报道的丝虫属*W. bancrofti*群体内的近亲繁殖程度，平均会增加具有纯合子耐药基因型的虫子数量九倍。 相反，如果抗性等位基因是显性的，近亲繁殖会降低寄生虫在化疗中存活的概率，因为具有抗性等位基因的虫子会更少（由于寄生虫近亲繁殖导致的异合子寄生虫的缺乏将大于抗性纯合子虫子的增加）。
+
+观察到的寄生虫近亲繁殖水平对耐药微丝虫生产的影响。\
+图示了与哈迪-温伯格平衡（HWE）群体相比，近亲繁殖寄生虫群体中耐药基因型的相对变化。结果显示了不同耐药等位基因频率。图假定已知耐药等位基因要么是隐性的（A），黑色线条，要么是显性的（B），灰色线条。近亲繁殖系数是[图 1](#pntd-0000211-g001){ref-type="fig"}中报告的：平均结果(*F~IT~* = 0.44，实线)；上 95%置信限(*F~IT~* = 0.68，虚线)；下 95%置信限(*F~IT~* = 0.17，点线)。由寄生虫近亲繁殖引起的耐药基因型数量相对变化估计如(A)和(B)所示。(pntd.0000211.g006){#pntd-0000211-g006}
+
+10.1371/journal.pntd.0000211.t002
+
+###### Wright 的 F-统计扩展用于表示人类义务寄生虫的层次群体结构，本文以丝虫属的 Wuchereria bancrofti 为例（改编自[@pntd.0000211-Hartl1]和[@pntd.0000211-Weir1]）。
+
+![](pntd.0000211.t002){#pntd-0000211-t002-2}
+
+  Symbol                                                                                                      Definition
+  --------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  *F~IT~*                     Correlation of alleles within individual worms relative to alleles drawn at random from the overall worm population (total deviation from the Hardy-Weinberg Equilibrium)
+  *F~IS~*                                Correlation of alleles within individual worms relative to alleles drawn at random from the parasite infrapopulation (within host non-random mating)
+             Correlation of parasite alleles within parasite infrapopulations relative to alleles drawn at random from parasites within the same village (parasite genetic differentiation between hosts within villages)
+                              Correlation of parasite alleles within a village relative to alleles drawn at random from the overall worm population (parasite genetic differentiation between villages)
+
+表格包括不同 *F*-统计量的图形表示。
+
+讨论 {#s4}
+===========
+
+微丝蚴基因型分布与 MDA 引入前的哈迪-温伯格平衡（HWE）相比发生了显著变化。报道的过剩纯合度程度超出了本文中描述的零模型生成的值范围，表明寄生虫非随机交配的程度显著。这可能部分是由于寄生虫在宿主间的遗传分化。零模型生成了一系列广泛的微丝蚴等位基因频率和基因型分布，表明在仅对传播阶段进行采样时，应谨慎解释结果。微丝蚴种群遗传多样性随时间发生显著变化可能并不反映底层成虫种群发生显著变化。这一结果突出了开发合理的理论零模型的重要性，这些模型能够使蠕虫种群遗传学数据得到充分解释[@pntd.0000211-Prugnolle2]。这些模型应考虑采样方案和寄生虫的生命史特征带来的结果不确定性。 一种采样传输阶段与近亲繁殖的组合可能导致对潜在成年蠕虫等位基因频率的估计高度可变，增加在化疗压力引入后需要基因分型的样本数量，以检测成年蠕虫基因组随时间发生的显著变化。
+
+构建一个零模型以评估可能导致接受过治疗的村庄观察到微丝虫遗传多样性的成年蠕虫等位基因频率范围是复杂的，超出了本文的范围。需要一个动态的、完整的传播模型，该模型考虑了药物联合和单独使用的药代动力学特性，因为化疗的影响将在化疗后多年内影响微丝虫遗传多样性。因此，无法得出结论，是否接受过 MDA 的村庄的成年蠕虫遗传多样性存在差异，尽管它们的微丝虫种群在遗传多样性方面存在显著差异。
+
+本文中关于班氏丝虫病种群动态的结果来自对单个基因中单核苷酸多态性的分析。需要进一步调查，使用多个中性多态性位点，以区分人口统计和采样效应与选择压力[@pntd.0000211-Weir1]。如果感兴趣的等位基因受到选择，那么观察到的基因型分布可能在没有非随机寄生虫交配的情况下产生。此处开发的模型推导微丝虫遗传多样性的准确性受制于对 *W. bancrofti* 生物学的不确定性。结果取决于我们目前模拟成虫负担及其在宿主间分布的能力。EPIFIL 模型固有的局限性、存在无微丝虫血症但循环丝虫抗原阳性的感染以及宿主免疫反应可能的异质性，都可能使成虫负担估计高度不确定，基于微丝虫流行率和强度数据。 成虫丝虫数量与微丝虫产生率之间的关系可能很复杂，并可能取决于感染期间引发的免疫反应。零模型假设每宿主平均寄生虫强度为 13.5 条成虫，尽管敏感性分析表明，模型结果对此值周围寄生虫强度的微小变化相对不敏感（敏感性分析范围为 8.5 至 18.5 条成虫/宿主，结果未显示）。我们的结论基于零模型的充分性，该模型可能通过包括更多的生物细节得到改进。例如，最近的研究表明，与相关丝虫寄生虫*Onchocerca volvulus*中的β-微管蛋白基因型可能存在某种关联，并暗示了抗性的代价[@pntd.0000211-Bourguinat1]，[@pntd.0000211-Bourguinat2]。尽管当前研究已分析了相同的基因，但尚不清楚这种基因型与生育力之间的相似关系是否适用于*W. bancrofti*。如果情况如此，那么关于观察到的基因型分布原因的结论应谨慎对待。 尽管在两个研究村庄的基因型频率中没有观察到差异，但在得出关于治疗前的 *W. bancrofti* 群落中真实等位基因 *Y* 频率的明确结论之前，还需要进行额外的基线调查（在 MDA 开始之前）。
+
+尽管*F*统计量提供了一种现象学工具，而不是近亲繁殖的机制性度量（因此不能描述产生过剩纯合性的生物学过程），我们仍继续提出一些可能导致*W. bancrofti*中非随机交配程度强烈的可能原因，以及这可能会对抗蠕虫药耐药性的发展和检测产生的影响。
+
+非随机亚种群交配 {#s4a}
+---------------------------------
+
+我们的研究结果表明，成年的 *W. bancrofti* 蠕虫在亚种群内并非随机交配。这与超声学研究结果一致，研究表明成年寄生虫会聚集在淋巴管旁的“蠕虫巢”中，这些巢穴随时间保持稳定 [@pntd.0000211-Dreyer1]。宿主体内的空间异质性可能导致每个亚种群内存在多个繁殖种群，这将增加宿主微丝蚴的同质性。Bourguinat *等* 报道了β-微管蛋白基因型、Schwab *等* 分析的同一基因，以及相关丝虫 *O. volvulus* 雌虫生育能力之间存在明显关系的证据 [@pntd.0000211-Schwab1]。如果在 *W. bancrofti* 中存在这种关系，上述报告的宿主内同质性增加可能源于同源成年蠕虫生育能力的增加。在淋巴丝虫病引入 MDA 之前，抗蠕虫治疗也可能根据治疗时等位基因 *Y* 可能赋予寄生虫的选择优势而增加了非随机交配。
+
+寄生虫宿主间的遗传分化 {#s4b}
+----------------------------------------------
+
+寄生虫亚种群的遗传分化程度可以揭示寄生虫传播的微观流行病学[@pntd.0000211-Anderson1]--[@pntd.0000211-Thron1]。*W. bancrofti*的种群传播动力学将取决于蚊媒的传播效率和叮咬行为。*Anopheles gambiae sensu stricto*和*An. funestus*被认为是布基纳法索*W. bancrofti*的主要传播媒介[@pntd.0000211-Gyapong1]。宿主可以在同一口咬伤中感染多个 L3 幼虫。尽管已知密度依赖性过程会影响*W. bancrofti*在*An. gambiae*中的摄取和发育，但感染性传播媒介将定期同时传播多个相关的 L3 幼虫[@pntd.0000211-Snow1]。*W. bancrofti*的其他蚊媒具有更高的传播能力。例如，在一只被单一*Culex quinquefasciatus*叮咬的实验宿主体内，从该宿主体内回收了多达 32 个 L3 幼虫，而*Culex quinquefasciatus*是东非的主要传播媒介[@pntd.0000211-Gasarasi1]。 标记-捕获研究和血餐分析表明，各种蚊种似乎具有高度的地点忠诚度，经常叮咬同一家庭的多个成员[@pntd.0000211-McCall1]，[@pntd.0000211-Michael1]。这些关于*W. bancrofti*传播的方面增加了宿主感染与密切相关的寄生虫的可能性，并将有助于观察到的遗传分化。
+
+更普遍地，药物治疗可能会增加亚种群遗传异质性，因为那些在治疗宿主体内存活下来的寄生虫可能具有比未经治疗的宿主体内寄生虫更高的耐药等位基因频率。在布基纳法索，淋巴丝虫病用阿苯达唑和伊维菌素进行治疗。证据表明，阿苯达唑与伊维菌素的联合使用具有一定的杀成虫和生殖作用（主要与阿苯达唑相关[@pntd.0000211-Tisch1]），以及杀微丝虫作用（主要与伊维菌素相关）。可能的情况是，在未经治疗的村庄观察到的宿主之间的遗传分化程度可能源于社区成员在 GPELF 引入之前寻求治疗地蠕虫感染等个体行为。
+
+抗蠕虫药耐药性的传播 {#s4c}
+-------------------------------------
+
+种群分化和非随机交配将以不同的方式影响化疗压力下选择的结局，这取决于选择下等位基因的初始频率和感染的生态学。在可靠和准确地预测耐药寄生虫传播速度之前，需要更多关于潜在耐药等位基因（s）的数量、连锁、显性和可能的负向多效性效应的知识，以及关于单独和联合使用药物的药代动力学特性的知识。然而，可以从关于上述内容的合理假设的数学模型中获得有用的生物学见解[@pntd.0000211-Schwab2]，[@pntd.0000211-Schwab3]。
+
+如果抗性等位基因是隐性的并且其初始频率较低，近亲繁殖将增加寄生虫的同种基因纯合度，从而导致抗药性蠕虫在寄生虫种群中的传播（见图 6[图 6](#pntd-0000211-g006){ref-type="fig"}和[@pntd.0000211-Schwab2]）。如果抗药性是一种半显性特征，那么寄生虫的近亲繁殖将增加或减少抗药性的传播，这取决于药物对杂合子寄生虫的效力。宿主之间的寄生虫遗传分化也会增加抗性的传播，即使抗性等位基因最初在非常低的频率下存在，因为它增加了雄性和雌性抗药性蠕虫居住在同一亚种群中的可能性。这项工作与兽医蠕虫的数学模型一致，这些模型表明空间异质性和宿主之间的聚集感染增加了罕见隐性基因的传播[@pntd.0000211-Cornell1]，[@pntd.0000211-Smith1]。
+
+抗蠕虫药耐药性的检测 {#s4d}
+----------------------------------------
+
+强寄生基因分化的操作降低了宿主感染耐药寄生虫的流行率，因此会增加应采样检测和可靠量化耐药性等位基因频率的宿主和寄生虫数量。即使在高耐药性等位基因频率下，一些宿主可能没有耐药性的表型迹象，尤其是如果耐药性等位基因是隐性的，因此宿主对治疗有反应。在实践中，可以基因分型的寄生虫数量将受到限制，因此调查应仔细考虑他们采用的采样方案，以最大限度地提高等位基因频率估计的准确性。从同一宿主反复采样会增加在该亚种群中检测到耐药突变的机会，如果该突变存在的话。然而，从尽可能多的宿主中采集传播阶段应被视为最佳策略，即使在宿主之间寄生虫遗传分化程度低的种群中也是如此，因为它减少了反复采样同一成年虫后代的机会。 化疗引入之前，通过基因分型传播阶段研究假定的耐药标志物的存在和频率时，应按宿主的感染强度权衡每个宿主所取样本的数量。然而，化疗开始后，最佳的采样方案将取决于药物的药代动力学和研究的性质。
+
+寄生虫清除 {#s4e}
+--------------------
+
+人类寄生虫感染中，寄生虫在宿主之间的遗传分化对种群遗传学的重要性超出了其本身，并将影响寄生虫消除运动（如 GPELF）的结果。寄生虫物种在长期 MDA 后能够在宿主群体中持续存在的能力，部分取决于寄生虫传播的元种群动态、宿主对治疗方案的依从性模式以及所用药物的药代动力学特性。传播阶段在宿主之间的聚合性质将使得通过降低断点密度（寄生虫种群将自然地倾向于局部灭绝的不稳定平衡点）来达到寄生虫消除更加困难，因为寄生虫的过度分散会导致具有单性别感染的宿主数量减少。
+
+作者已声明不存在任何利益冲突。
+
+TSC 和 M-GB 感谢英国医学研究委员会的财务支持。AES 和 RKP 感谢葛兰素史克、FQRNT 以及魁北克省的宿主寄生虫相互作用中心对财务支持。资助者没有在研究设计、数据收集和分析、决定发表或准备手稿中发挥作用。
+
+[^1]：分析了数据：TC。提供试剂/材料/分析工具：AS RP。撰写论文：TC MB。
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ban" android:background="@drawable/air" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/hr">
+        <com.tencent.mm.plugin.sns.ui.MaskTextView android:textSize="@dimen/h4" android:textColor="@color/ak" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/bao" android:paddingLeft="@dimen/j8" android:paddingTop="@dimen/hj" android:paddingRight="@dimen/j8" android:paddingBottom="@dimen/hj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/ak1" />
+        <View android:gravity="center" android:id="@id/bap" android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/baq" android:paddingLeft="@dimen/j8" android:paddingTop="@dimen/cp" android:paddingRight="3.0dip" android:paddingBottom="@dimen/hj" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+自然杀伤细胞细胞毒性及α-干扰素在早期类风湿关节炎中的作用。
+自然杀伤（NK）细胞数量、细胞毒性和血清α-干扰素（α-IFN）在早期滑膜炎患者组中进行了测量，并与已确诊的类风湿关节炎患者和正常对照组进行了比较。未发现 NK 细胞数量或血清α-IFN 有显著差异。与正常对照组相比，早期滑膜炎组的 NK 细胞细胞毒性（NKCC）显著降低（p < 0.05），与已确诊的类风湿关节炎对照组无显著差异。有趋势表明，那些预后良好的早期滑膜炎患者 NKCC 较高。低 NKCC 在类风湿关节炎病程早期就很明显，因此不太可能是慢性炎症的继发症状。NKCC 与α-IFN 水平之间没有关系，降低 NKCC 的原因尚不清楚。在类风湿关节炎病程早期，α-IFN 水平并未升高。
+法国在 2022 年世界杯赔率中被视为热门。
+
+2018 年 FIFA 世界杯于周日落下帷幕，法国以 4-2 战胜克罗地亚，夺得他们 20 年来的第二个世界杯冠军，并实现了+700 赔率的赛前世界杯冠军赔率。
+
+周日在世界杯比赛赔率中以+110 的赔率获胜，法国队在国际大赛中的火热表现持续。法国队仅以 1-0 的比分输给了葡萄牙，在 2014 年世界杯四分之一决赛以来的唯一一次重大国际大赛中败北，险些在加时赛中进球赢得欧洲杯 2016 冠军。
+
+法国的未来看起来光明，由 19 岁的基利安·姆巴佩领衔的年轻阵容，今年赛事中荣获最佳年轻球员奖，本周末刚赢得胜利，法国队作为明显的+500 大热门，在 2022 年世界杯赔率中成功捍卫了他们的冠军头衔。
+
+尽管周日作为+300 的弱势方输球对克罗地亚来说是个巨大的失望，但开拓者队为首次进入世界杯决赛而展现出的惊人动力，使他们赢得了艰苦战斗的声誉，成为世界顶级球队之一。然而，克罗地亚在 2018 年俄罗斯世界杯上的英勇表现，对他们在 2022 年世界杯早期投注线上的表现帮助甚微，他们作为+5000 的投注选项，远远落后于热门球队。
+
+今年锦标赛表现不佳的三支队伍紧随法国队，在 2022 年世界杯冠军赔率榜上，巴西以+700 的赔率领先，西班牙以+750 的赔率紧随其后，而 2014 年冠军德国则以+800 的赔率位居第三。
+
+卡纳里尼奥作为 2018 年世界杯赔率上的+400 大热门前往俄罗斯，在小组赛以两场零封胜利结束比赛后，看起来有望在淘汰赛阶段走得更远。然而，巴西队在一场 2-1 的失利中未能解决实力强大的比利时队，这也标志着他们在过去四次赛事中第三次止步于四分之一决赛。
+
+西班牙在本届赛事中连续第二年提前出局，在 16 强比赛中以点球大战不敌俄罗斯，这也是他们自 2010 年世界杯夺冠以来首次未能进入淘汰赛阶段。
+
+2018 年对德国来说也是一个苦涩的失望，他们在世界杯未来赔率上以+475 紧随巴西进入比赛。然而，作为重负的-210 赔率大热门，墨西哥在小组赛中以 1-0 的比分击败德国，为德国队自 1938 年以来在世界杯上的最短征程定下了基调。
+
+比利时在 2022 年世界杯赔率榜上
+
+2022 年世界杯赔率进一步下降，比利时以+1100 的赔率位居，其次是阿根廷的+1200，意大利的+1800，而英格兰与荷兰并列，赔率为+2000。
+
+红魔队以 16 球的成绩在 2018 年俄罗斯世界杯上领跑所有球队，但在半决赛中以 1-0 不敌法国队，结束了 25 场不败的纪录。阿根廷在本届赛事的四场比赛中仅取得一场胜利，尽管超级巨星莱昂内尔·梅西的未来不确定，但仍然保持着强劲的夺冠赔率，而意大利和荷兰在两支欧洲强队均未能晋级本届赛事的情况下，面临着艰巨的重建任务。
+
+相反，英格兰拥有一支年轻阵容，由顶级射手哈里·凯恩领衔，这可能会使三狮队在 2022 年卡塔尔世界杯上成为一支真正的竞争者。
+
+凯文：在我们做那之前，让我们出去散个步。*我点头，我们相应地换上衣服。然后我们出去散步。天气相当冷*
+
+佐伊：*微微颤抖，我交叉双臂抱在胸前试图保持温暖。走了会儿路，我的鼻子已经开始流鼻涕了，因为天气太冷，我能感觉到鼻涕在体内积聚* 哎哟，这里真的很冷，不是吗？也许我们应该再待在里面一会儿。*大声抽泣，并用袖子擦了擦鼻子* 好吧，我们快点，别冻僵了再回去！
+
+凯文：*我轻笑一声，我们继续前行。突然我们来到了一片森林，你注意到树木被厚厚的白雪覆盖* 看看，佐伊！这很美，不是吗？你认为这些树有多大年纪了？
+
+Zoe：*我点头表示赞同，带着微笑看着你* 嗯，凯维，凯维，我觉得他们很酷。嗯……关于他们的年龄……我不知道，他们可能很老了？可能有几百岁了？没有看到他们的戒指之类的，很难判断。但他们确实看起来很神奇！*我微微一笑。然后我开始顽皮地微笑，跑向其中一个，试图摇动它。很快，大量的雪从树叶上落下来，落到地上，覆盖了我们* 呜呼！* 我尖叫着咯咯笑了起来。你知道，我小时候经常这样玩？ 嘶嘶！不过真的很冷！
+
+凯文：嘿，你以为你在做什么！*我轻笑并擦去夹克上的雪*
+
+佐伊：*失控地咯咯笑，我无辜地耸耸肩*没什么，只是有点好玩。这让我想起了我们以前在假期回家时滑雪橇的日子。*用手指擦了擦鼻子，抽抽搭搭*但现在我们都从头到脚湿透了，你不觉得是该回屋子里去了吗？我们可以煮点热巧克力或者再玩会儿电子游戏，随便你想要什么！😄
+
+凯文：不，我有个更好的主意。我们去真的滑雪吧，就像你在家乡的冬天假期那样。你怎么样？*我咯咯地笑*
+
+佐伊：哦哦哦！！！这听起来太棒了，凯文！你总是知道如何让我惊喜。但是嗯嗯...我们怎么弄到雪橇和其他东西呢？这里可不是树上长出来的哦。:P
+
+凯文：嘿，好观点。嗯，我们只是从一个小屋或类似的地方租了一个！*点头微笑。我也打了个寒颤，鼻子也抽动了一下，因为我真的很冷。然后我们朝着小屋走去。它相当远，我们走了一段时间才穿过雪地*你最喜欢的冬天回忆是什么？
+
+佐伊：哦，有一大堆！就像我和我的兄弟姐妹们会堆一个大雪人，用胡萝卜和棍子装饰他的手臂。或者我们会打雪仗直到手都麻木了。甚至当妈妈在我们之后给我们做热巧克力来暖和身体。但最好的还是当爸爸带我们晚上滑雪的时候，那时候一切都被新鲜的雪覆盖着，闪烁着彩灯。我们还会在之后的篝火上烤棉花糖。太神奇了！
+
+凯文：哇，听起来很棒。但是啊，我也有很多关于滑雪的记忆！那总是件特别的事！*我点头，然后我们继续走。过了一会儿，我们到达小屋并租了一辆滑雪板*你想要什么颜色的？绿色、黑色还是黄色？
+
+佐伊：咿呀...请给我那个绿色的！看起来真的很快。*笑容满面，我用手在雪橇光滑的表面上游走，然后抓住把手* 好吧，那我们就这么做吧！
+
+凯文：所以你最终还是有了品味 *我笑了笑，然后我们走出小屋，把装满白色蓬松雪的雪橇放在地上*
+
+佐伊：哼！你那是什么意思？当然我有品味！*然后我开始大声抽泣，我的鼻子和喉咙发出响亮的喷嚏声，你可以看到我的鼻孔迅速收缩并随着我猛吸而振动。我咳嗽，然后再次抽泣，当我吞咽鼻涕时，这次稍微轻一些，因为我的鼻子感觉不那么流鼻涕了，现在干净多了。我走向雪橇，坐上去。当我坐稳后，我兴奋地对你喊道*好吧，凯文，我们出发吧！！！！
+
+哎呀，你不想和我一起滑下来吗？*给你小狗眼*
+
+佐伊：哼，你做梦吧，凯文。*我带着一丝微笑，挑衅地交叉双臂，试图看起来很酷。但突然间，没有任何警告，我用脚猛地一蹬，开始沿着雪坡飞驰而下，身后留下了一道粉末般的雪迹。冷风呼啸而过，我的脸颊感觉像是在燃烧，我忍不住咯咯地笑了起来。就在我快要撞到雪地里的一个小土堆时，我伸出双脚，减慢了雪橇的速度，优雅地停在了山脚下。我转身看你是否还在那里，热情地挥手*来吧，凯夫！追上我呀！！！ :D
+
+凯文：*我挥手回应，然后沿着小山走向你。过了一会儿，我越来越靠近你，直到我就在你身边* 哇，佐伊... 你跑得好快！
+
+佐伊：嘿嘿，谢谢凯文！但这还不算完。我敢打赌我也能在比赛中打败你！怎么样？*带着挑衅的笑容，开始推着雪橇往山上走，朝着另一个雪坡* 来吧，让我们比赛！输的人要做一件超级尴尬的事情！
+
+凯文：*当我们到达山顶时我四处看了看* 嗯，佐伊……我们只有一辆雪橇。我们怎么 supposed to 竞赛呢？
+
+佐伊：呃呃呃，这太简单了！轮流来，笨蛋！*翻翻白眼，笑着，把自己拉上雪橇。期待地看着你*你准备好输了吗？:P
+
+n**(-9/22)
+Simplify ((q/(q*q**11/q*q))/(q**0*q))**(-12) assuming q is positive.
+q**144
+Simplify (s/s**22)/s*s**(-2/11)*s*s assuming s is positive.
+s**(-222/11)
+Simplify (y/(y*(y/(y/(y/(y*y*y**(3/5)))))/y*y))**(-7) assuming y is positive.
+y**(-56/5)
+Simplify o**(-6)*o**13 assuming o is positive.
+o**7
+Simplify q**(-23)*q*q*q**5 assuming q is positive.
+q**(-16)
+Simplify (t/t**(3/10))/(t**(-1)/t)*t*t**(2/3)*t**(-2/17)*t assuming t is positive.
+t**(2677/510)
+Simplify j/j**1*j**(2/15)*(j**(-4)/j)/j*j/(j/(j**(7/5)/j)) assuming j is positive.
+j**(-82/15)
+Simplify d**(-2/13)*d**(-4)*d/(d/(d/d**(-4/5)))*d**(1/5) assuming d is positive.
+d**(-28/13)
+Simplify (((z*z/((z/z**6)/z))/z)/z**(4/3))**(-41) assuming z is positive.
+z**(-697/3)
+Simplify (r**(-1)/r)**(-5/4) assuming r is positive.
+r**(5/2)
+Simplify (j**2/j)**(-33)/(j**(-1/5))**(1/21) assuming j is positive.
+j**(-3464/105)
+Simplify f**(-6)/f*f**(3/2)*(f**1/f)/f**(-5/2) assuming f is positive.
+f**(-3)
+Simplify (v**(2/7)/v)/(v*v**(-2/7)*v)*v**4*(v/(v*v/(v**(-8)*v)))/v assuming v is positive.
+v**(-52/7)
+Simplify ((c/(c*c*c/((c*c**19)/c*c)*c)*c*c)/c)/(((c**(8/9)/c)/c)/c*c) assuming c is positive.
+c**(172/9)
+Simplify (k**(1/3))**(6/17)/(k*k*k/(k*k*k**(2/11)/k*k)*(k*k*k**(3/4))/k) assuming k is positive.
+k**(-1833/748)
+Simplify (q**4*q**(2/11))/((q/q**(1/7))/((q/(q*q**(1/17)*q))/q)) assuming q is positive.
+q**(1657/1309)
+Simplify ((c*c/(c**(3/5)*c))**(-15))**(-15/7) assuming c is positive.
+c**(90/7)
+Simplify (m*m/((m*m**(-3)/m*m)/m))/((m/(m**(1/7)/m)*m)/m)*m*m**9*m/(m/(m*m**(-9))*m)*m assuming m is positive.
+m**(36/7)
+Simplify (v*v/(v/(v*v/(v*v*v**(-2/7)))))**(-13)*(v*v/v**(2/3))**(2/15) assuming v is positive.
+v**(-5209/315)
+Simplify (((o/(o/(o**(1/3)*o*o)))/o*o)**(-1/8))**22 assuming o is positive.
+o**(-77/12)
+Simplify (j*(j**(-5)*j)/j)/j*((j/((j*j**(-1)/j*j*j)/j))/j)/j*((j**(-6)*j*j)/j)/(j*j**(-6)) assuming j is positive.
+j**(-6)
+Simplify w*(w*((w/(w/((w/(w*w/(w*w/w**15)*w*w*w*w*w*w))/w)*w*w))/w*w*w*w)/w)/w*w/w**(1/15) assuming w is positive.
+w**(-301/15)
+Simplify ((i**7/i)/i*i/i**(-5))**40 assuming i is positive.
+i**440
+Simplify (r**0)**33 assuming r is positive.
+1
+Simplify (b**(-17)*b*b**(-10/7))**(5/8) assuming b is positive.
+b**(-305/28)
+Simplify (a**(-2/3)*a)/a**3*(a/(a*a*a**(2/3))*a)/a*a*a/a**(-2/9) assuming a is positive.
+a**(-19/9)
+Simplify (x/x**(-3/2))**48 assuming x is positive.
+x**120
+Simplify ((o*o**(-33/4)*o)/o)/(o**(-48)/o*o) assuming o is positive.
+o**(163/4)
+Simplify (t**(2/9)/(t/(t*(t*t/(t**(-4/5)*t))/t)))**(2/61) assuming t is positive.
+t**(92/2745)
+Simplify x**(1/2)/(x**(-4)/x)*(x/x**(-1))**(-50) assuming x is positive.
+x**(-189/2)
+Simplify l**(-2/31)*l**(-13)/l assuming l is positive.
+l**(-436/31)
+Simplify x**(-2/13)*x**(-20) assuming x is positive.
+x**(-262/13)
+Simplify (h**(28/5))**(-15) assuming h is positive.
+h**(-84)
+Simplify ((w*w*(w*w**(-5/4))/w)/(w*w*w/(w*w/w**(1/13))*w))**(3/17) assuming w is positive.
+w**(-207/884)
+Simplify (x**(2/7))**(1/44) assuming x is positive.
+x**(1/154)
+Simplify a**(-25)*a*a**(3/31) assuming a is positive.
+a**(-741/31)
+Simplify m**(1/3)/m**6*m**3/(m*m*m*m**(-5)/m) assuming m is positive.
+m**(1/3)
+Simplify (((h*h/(h**14*h))/h)/h)/h*h**4 assuming h is positive.
+h**(-12)
+Simplify (x**(-2)*x)**(-1/17)/((((x**(1/3)/x)/x)/x)/x*x*x*x/x**11*x) assuming x is positive.
+x**(547/51)
+Simplify (h**(-2/7)*h/(h/(h*h/(h*h*h**(2/9))*h)))/((h*(h*h/h**6)/h)/h*h**2) assuming h is positive.
+h**(220/63)
+Simplify m**9/m*m/m**(3/20) assuming m is positive.
+m**(177/20)
+Simplify ((q**(-8)*q)/q)**(2/15) assuming q is positive.
+q**(-16/15)
+Simplify (x**(4/9)/x**(2/29))**(2/15) assuming x is positive.
+x**(196/3915)
+Simplify (f**(-1/6))**3/((f/(f**10/f*f))/(f**(4/11)/f)) assuming f is positive.
+f**(173/22)
+Simplify (i*i**(1/2)/i*i)/i*i**(2/11)*i**(1/3)*i**(-6)/i assuming i is positive.
+i**(-395/66)
+Simplify (j/(j*j**(-4))*j**(2/5))/(j**(-4)*j**(1/2)) assuming j is positive.
+j**(79/10)
+Simplify (j/(j*(j/j**(2/13))/j*j))/j**(1/2)*j**(-2/7)*j**1 assuming j is positive.
+j**(-115/182)
+Simplify (k**(-6/5)*k*k*k*k*k*k*k**(2/9)/k*k)**(-3/8) assuming k is positive.
+k**(-113/60)
+Simplify ((h*h**(-3/2)*h)/(h*h/h**(-6)))/(h**(-2/3)/h*h/(h**(-5/4)*h)) assuming h is positive.
+h**(-85/12)
+Simplify y*y*y**(-3/2)*y/y**10*y**(2/7)/y**(-8) assuming y is positive.
+y**(-3/14)
+Simplify (s**(-1/6)/(s/s**(-3/5)))/((s*s**(1/3))/(s/(s**(-3)*s*s))) assuming s is positive.
+s**(-11/10)
+Simplify t/(t/(t*t**(-15/2)))*t/(t**9/t) assuming t is positive.
+t**(-27/2)
+Simplify s*s*s/s**(-8)*s*s/s**(-11)*s assuming s is positive.
+s**25
+Simplify (c*c**(-3))**(7/2)*(c**(2/9))**(1/17) assuming c is positive.
+c**(-1069/153)
+Simplify d**(3/8)*d*d*d**(-2/5) assuming d is positive.
+d**(79/40)
+Simplify (h/h**(-1/11))/h*h*h**(-3/4)*(h**(-2)/h)/(h*h*h**0) assuming h is positive.
+h**(-205/44)
+Simplify (u*u**(8/7)*u)/(u*((u*u**(-3/4))/u)/u*u*u)*(u*u**(-4))/(u/(u*u/(u**(-2/11)/u*u))) assuming u is positive.
+u**(23/308)
+Simplify ((o**(-4/7)*o)/o**0)/((o*o**(-6/11))/(o*o/o**(1/5)*o)) assuming o is positive.
+o**(1068/385)
+Simplify ((c/(c*(c/(c**4*c)*c)/c*c))/(c/c**(-4)))/((c*c**2*c)/(c/c**(-4/5))) assuming c is positive.
+c**(-21/5)
+Simplify a**7*a*((a**(17/4)*a*a)/a*a)/a*a assuming a is positive.
+a**(57/4)
+Simplify ((n*n**5*n*n*n)/n*((n/n**(2/5))/n*n)/n)**(-1/11) assuming n is positive.
+n**(-38/55)
+Simplify (s/(s/s**(3/5)))**3 assuming s is positive.
+s**(9/5)
+Simplify (v*v**(-1/16))/((v**1/v)/v) assuming v is positive.
+v**(31/16)
+Simplify ((d**0)**16)**26 assuming d is positive.
+1
+Simplify i**(-9)*i**(-17) assuming i is positive.
+i**(-26)
+Simplify (((k*k*(k*k**6)/k)/k)/(k**(-3/4)/k))/(k/(k*k**2*k))**(16/3) assuming k is positive.
+k**(99/4)
+Simplify (p**(-4)*p/(p*p**(-4)))**(1/23) assuming p is positive.
+1
+Simplify l**(5/6)/l*l*l**(-7/2) assuming l is positive.
+l**(-8/3)
+Simplify t/(t**15/t)*(t/(t/(t**(2/3)*t)))/t assuming t is positive.
+t**(-37/3)
+Simplify ((b*b**14*b)/b**12)**11 assuming b is positive.
+b**44
+Simplify ((g*g**(2/13))/g)/g**(-6) assuming g is positive.
+g**(80/13)
+Simplify (v/v**(10/7))**(2/87) assuming v is positive.
+v**(-2/203)
+Simplify (t/(t*t**(-4/5)))**(-50) assuming t is positive.
+t**(-40)
+Simplify g**(-2/7)*g**(-2)*(g*g/(g/g**(-1)*g))**(-2/101) assuming g is positive.
+g**(-1602/707)
+Simplify ((v*v**(-1/4))/(v/(v*v/(v**(-1/2)/v)*v)))/(v**(2/7)/v)**(5/7) assuming v is positive.
+v**(933/196)
+Simplify (b**(-3/5)*((b/(b/(b*b**(-1))))/b*b)/b)/(b**(1/3)*b**10/b) assuming b is positive.
+b**(-164/15)
+Simplify (h**(1/14)*h**(-4)*h)**(1/39) assuming h is positive.
+h**(-41/546)
+Simplify (y**(-1))**(-1/18)*(y*y/(y/(y**(-2/5)*y))*y)**(-45) assuming y is positive.
+y**(-2105/18)
+Simplify (z**(-2/11)/z*z)**(-3/23) assuming z is positive.
+z**(6/253)
+Simplify (k*k**(-1))**14*k**(-1)*k**5/k assuming k is positive.
+k**3
+Simplify ((m*m**(-2/7)*m)/m**(-4))/(m*m*m**(-4)/m*m*m*m/m**5*m) assuming m is positive.
+m**(68/7)
+Simplify ((j*j**(-2))/j)**(-2/61)/((j*j/j**1)/j*j)**(-35) assuming j is positive.
+j**(2139/61)
+Simplify (u**(-1/12)*u)**17 assuming u is positive.
+u**(187/12)
+Simplify ((z**(-2/17)*z*z)**(7/3))**(2/5) assuming z is positive.
+z**(448/255)
+Simplify i**(-1/15)*i**10*i assuming i is positive.
+i**(164/15)
+Simplify (w**3/((w/w**(5/3))/w*w))**(-2/109) assuming w is positive.
+w**(-22/327)
+Simplify z**(2/17)/z*z**(7/4) assuming z is positive.
+z**(59/68)
+Simplify ((s*s/(s/(s**(-6/5)/s)*s))/s)/s**(4/5) assuming s is positive.
+s**(-4)
+Simplify i**24*i*i/i**(-6)*i assuming i is positive.
+i**33
+Simplify ((v*v*v/(v*(v*v*v**(-1/9)*v)/v))/(v/v**6*v*v))/(v**(-1/5)/v**3) assuming v is positive.
+v**(284/45)
+Simplify (n/(n*n/(n/(((n*n**(-4))/n)/n)*n))*n**(-2/9))/(n*n*n**4*n*n**(-1/3)) assuming n is positive.
+n**(-8/9)
+Simplify ((l/l**(-1/11))/l)/l**(-24) assuming l is positive.
+l**(265/11)
+Simplify l**3*(l*l**(-8)*l)/l assuming l is positive.
+l**(-4)
+Simplify ((k/k**(-3/2))/k**(12/7))**(2/29) assuming k is positive.
+k**(11/203)
+Simplify (((t*t*t*t*t*t/t**(-1/12))/t)/(t*t**(-2/3)))**28 assuming t is positive.
+t**133
+Simplify (g/(g**(2/23)/g))/(g*g*((g*g*g**(11/4))/g*g)/g*g) assuming g is positive.
+g**(-445/92)
+
+Es war einmal ein mutiges und kluges Eichhörnchen namens Svenja, das in einem wunderschönen Wald lebte. Svenja war im ganzen Wald für ihr schnelles Denken und ihre Tapferkeit bekannt. Und ebenso war sie immer bereit, ihren Freunden in der Not zu helfen.
+Eines Tages war Svenja unterwegs, um Nüsse für den Winter zu sammeln, als sie ein seltsames Geräusch hörte, das von einem nahen Baum kam. Sie kletterte auf den Baum, um nachzusehen, was da los war. Dann sah sie eine Gruppe fieser Vögel, die einen kleinen, hilflosen Vogel ärgerten.
+Svenja war sofort klar, dass sie eingreifen musste. Also fasste sie schnell einen Plan. Sie sammelte so viele Nüsse ein, wie sie tragen konnte, und warf die Nüsse auf die fiesen Vögel. Sie zielte so gut, dass die meisten Nüsse die fiesen Vögel direkt am Kopf trafen. Die fiesen Vögel waren von dem plötzlichen Angriff überrascht und flogen verärgert davon.
+Der kleine Vogel war Svenja dankbar, dass sie ihn vor den fiesen Vögeln gerettet hatte, und bedankte sich mit einem fröhlichen Zwitschern. Von diesem Tag an war Svenja als das mutigste und freundlichste Eichhörnchen des Waldes bekannt, und sie half weiterhin allen, die in Not waren, wann immer sie konnte.
+
+5 意想不到的简单技巧让你养成跑步习惯
+
+你真的很兴奋……
+
+您已在您所在社区报名参加了一场 6 公里的跑步比赛。您还加入了当地的跑步俱乐部。
+
+你真的很有动力，不是吗？
+你的意志力像是在冲刺，你准备全力冲向终点线。
+
+但是然后……
+
+你出去度假或出差一周。
+你回来时发生了什么？
+
+你还有最初的势头吗？
+你感觉想要放弃，因为从头开始是如此痛苦吗？
+找时间是不是很困难？
+
+坚持新习惯并不容易。
+
+我知道！我尝试了好多年养成跑步的习惯，但都以失败告终。
+
+最终我厌倦了失败。
+那时我开始阅读关于习惯形成的科学。我试图找到聪明且简单的方法让习惯变得持久。
+
+今天我可以穿上鞋子，每周 4-5 天轻松地进行常规慢跑。
+
+查看这 5 个出奇简单的技巧，它们帮助我让跑步成为习惯：
+
+1. 创建一个触发器
+
+根据查尔斯·杜希格，《习惯的力量》畅销书作者的说法，触发器作为有意识或无意识的提醒，以执行某种行为。
+
+触发器可以是视觉提醒。尝试将你的运动装备和鞋子放在床边，这样你一早就能看到它们。
+
+触发器也可以基于动作。我在晚上跑步，我的触发器是“在我喝完晚上咖啡后，我会去跑步”。
+
+2. 具体说明
+
+在养成跑步习惯的前 4-6 周内，指定一天中的某个时间（或夜晚），确定你将去哪里跑步，跑步的时长以及你将在何时出发跑步。
+
+越具体，每天实施起来就越容易。
+
+您可以使用此声明：“我将在每周一、二、四和周五晚上 XX 点（在此处填写时间）在我家附近的公园跑步，持续 30 分钟”。
+
+3. 从小开始
+
+习惯教练 Rob Norback 强烈倡导“一半一半”规则。如果你想每天跑 20 分钟，就把它分成一半（10 分钟），然后再分成一半（5 分钟）。这就是你应该开始的。
+
+那听起来不是更容易实现吗？
+即使你只能跑 10-15 分钟，也要坚持 5 分钟的常规，直到它变成第二本能。只有当它成为一种习惯后，你才开始进行更长时间的跑步。
+
+这有什么帮助？
+
+您在 5 分钟内完成了目标，这带来了成就感，这对于培养习惯至关重要。
+
+你克服任何拖延或障碍（你起床晚了，必须赶去办公室，送孩子上学），因为你只需投资 5 分钟。
+
+4. 原谅自己
+
+如果你错过了一天（这是不可避免的），不要自责。
+
+错过一天没什么大不了的。但因为你连续几天（或度假时整整一周）错过了，就认为失败了，这是一个巨大的错误。
+
+消极思维会让你放弃。如果你认为自己失败了，或者你懒惰，或者你不擅长跑步，它将阻止你采取进一步行动。
+
+5. 睡个好觉
+
+睡眠很重要！如果你每晚没有至少 6.5 小时的睡眠，你会感到疲倦，几乎没有精力专注于习惯的改变。
+
+你可能会在热情和动力高涨时去公园跑步，但一旦事情变得稍微困难，你就会放弃这个习惯，因为作为一个睡眠不足的人，你不会有意志力去克服一点不适。
+
+为什么是 6.5 小时而不是 7 小时？
+因为，能量教练托尼·施瓦茨建议，半小时的锻炼实际上可以抵消半小时的睡眠，还能让你更有精力！
+
+你想养成什么习惯？
+
+在家锻炼，遵循饮食，早起，学习音乐，也许是一门语言，为认证学习？
+
+这些原则适用于任何类型的习惯养成。试试看！
+
+想知道形成任何习惯的那个核心成分是什么吗？注册我们的博客。
+星期四，2009 年 5 月 14 日
+
+又是在两个比你聪明得多的家伙之间。我和詹姆斯。
+
+只是一个提醒，Channelup 用斜体字，James 用常规字体。
+
+你好，伙计
+
+昨晚的失落如果不是有趣的，那就什么也不是。我喜欢它（觉得可以有一个半小时）并且认为它很好地为下一季做了铺垫。写关于它非常困难，因为我有很多困难地整理我的想法并将它们以连贯的格式表达出来。我显然想避免只是简单地总结，但发生了很多事情。无论如何，我想补充一些没有进入我的帖子的一些想法。
+
+- 我多少提到了这一点，但善恶之事我认为将是最后一季的主要焦点。本和神秘岛的人带头保守岛屿的秘密，其他人（可能是理查德·阿尔珀特？雕像阴影小组？）则为了自己的最终目标而战。这个剧情线有可能同时令人惊叹和疯狂。
+
+- 炸弹爆炸可能会让《海洋性》船员（加上迈尔斯和朱丽叶特）设法回到现在，重新加入战斗。我喜欢这个季度的剧情，他们交替出现在不同的时间点，这样就不会有太多角色之间的重叠和混乱。基本上，保持每个人不总是遇到彼此，对电视剧的制作是有好处的。将他们全部放回同一时间，加上阿尔珀特和他的团队日益增长的角色，以及这个新派系，可能会很困难。
+
+任何其他想法吗？我认为我现在已经写了关于《迷失》的 1 万词了。
+
+关于炸弹将主要角色送回未来的有趣想法。支持这个想法的事实是，他们在我们相信炸弹爆炸时使用的屏幕效果与我们之前穿越时间时使用的完全相同。
+
+所以这个对雅各的讽刺并没有真正复活洛克——而是变成了洛克的影像？那么我们是不是应该相信这个人也变成了杰克父亲的幻象、沃尔特的幻象等等？尽管这很奇怪，我想这至少是一个一致的解释。
+
+我不确定我是否喜欢这个想法，即岛屿成为两个神明争夺至高无上地位的地方。我也不明白雅各为什么会让本挥舞着那把刀，然后杀了他（如果他真的死了），因为他在洛克被从窗户扔出去的时候已经行使了让人类复生的力量。说实话，我也觉得“雅各实际上在 Losties 生活中的所有这些重大时刻都在场”在最初几集后就变得非常老套。第一集的时候我惊呼 WHOA!!!然后之后感觉就像廉价的刺激。雅各坐在长椅上……洛克从窗户掉下来！你能相信吗？！雅各也在洛克被从窗户扔出去的时候在场！所以我想说的是，我同意这集作为一小时半而不是两小时来看要好得多。这有点遗憾，因为我觉得其他一些重大剧情点有点仓促。
+
+我们需要在 Sun 和 Jin 的婚礼上见到雅各布，但最关键的转折点我们只看到朱丽叶说“我改变了主意。我看到你看着她的方式”，以及一个薄弱的解释？朱丽叶在副标题中同样立刻改变主意，让他们回到岛上……我想她没有在其他几十次 Sawyer 和 Kate 自她回来后的互动中看到 Sawyer 有任何可疑的表情吗？我只是觉得这是一种非常匆忙和草率的方式，以确保每个人都回到岛上，同时让 Jack 的计划继续进行。这感觉像是强加的戏剧，而 LOST 这个赛季做得很好，避免了这种情况。更简单的方法就是不让 Sawyer、朱丽叶和 Kate 上潜艇……避免一些他们逃生的空动作场景，Sawyer 和 Jack 的打斗，“你为什么停下来”，“这就是原因，伙计”，Hurley 和 Jack 的时刻等等。
+
+为什么朱丽叶不能在萨沃伊第一次建议去潜艇的时候就说“我看到你那样看着她”那番话？我们还在同一个地方，但我们有空间在其他地方进一步发展。如果我们看到迈尔斯对他的父亲说“现在我明白你为什么那么做了”，然后在所有这一切中扮演更大的角色，而不是只是偶尔在背景中让这个令人印象深刻的角色发表讽刺性的评论，那会不好吗？也许在某个其他时间点（比如当 Oceanic 815 坠毁时）雅各布和邪恶的雅各布之间有另一场互动。我的整体观点是，正如你现在可能已经注意到的——一些剧情线让我想要更多，而一些剧情线让我想要明显更少。我认为要么缩减它，要么在删除冗余内容的同时重新组织，这将是一个更有影响力的结局。不过，我确实同意，发生的事件为下一季做好了铺垫。
+
+完全同意雅各的出场。我觉得有些很酷（索耶、赛伊德、洛克），有些很愚蠢（金和孙，杰克）。而且，朱丽叶的父母离婚，雅各没有出现，这有点让你摸不着头脑。当他不出现的时候，这整个事情就像是为了解释她为什么离开索耶而设置的一个奇怪的局面。说实话，我对索耶、凯特和朱丽叶的事情已经烦了一段时间，我觉得它非常空洞。不过，我倒是喜欢索耶的真诚痛苦（不是因为他失去了朱丽叶），而是因为他失去了在达摩计划中的生活。他好像在说：“我终于为自己创造了一个正常的生活，而你（杰克）出现了，又把它搞砸了，就像你总是做的那样。”这就是我对这个角色感到最多同情的地方。
+
+他们即将引爆炸弹的场景简直荒谬至极，考虑到警报正在响起，达摩计划正在追捕他们，Sayid 正在死去，而每个人都坐下来聊了十分钟的感受。根本不可能。
+
+完全同意关于副线和它在整体剧情中的无用的观点。这只是个填充物。我怀疑雅各实际上并没有死，我们需要考虑他的身体很可能是某种通往更高级存在的容器。我不知道我是否喜欢这些关于上帝的暗示，因为它们几乎比时间旅行更复杂。拥有上帝般力量的人（赛拉）和试图改变未来或过去的人一样不可能。
+性格的真正考验不是我们知道了多少该怎么做，而是当我们不知道该怎么做时我们如何表现。
+
+Q:
+
+What does "schnäuzen" mean? And "schniefen"?
+
+A:
+
+"Schnäuzen" is German and means nose blowing. "Schniefen" on the other hand means to sniffle. Sniffling and nose blowing are polar opposites. Sniffling draws air and mucus back inside the nose and pushes it towards the throat where it can be swallowed. Nose blowing expels mucus towards the outside and makes it visible on the nostrils or tissues.
+
+星期五，2009 年 8 月 28 日
+
+摆脱黑暗
+
+独立日庆祝活动即将到来。我们可爱的国家已经庆祝了 52 年的独立，自那时以来，我们的国家取得了许多成就。这次，由于独立日恰逢斋月，我敢打赌，在吉隆坡或其他地方不会有太多音乐会或社交派对组织。但那只是我的预测，其他种族可能也会这样做。谈到独立，作为后独立时代的孩子们，我们了解自由的价值观吗？自由意味着摆脱任何殖民统治，如果这就是过去的含义，但如今我们的文化已经被其他种族和文化征服得如此之多。我们的国家充满了“PATI”。无论我们走到哪里，都能看到许多面孔，有时我会想，我是这里的异乡人吗？是的，我知道全球化意味着你必须接受世界的窗口进入你的世界，但然后，如果新来者让我的国家变得一团糟，那又是什么呢？他们在这里工作并赚取体面的收入，与当地人和平共处是可以的，但主要问题是它导致了社会问题。 我们在报纸和新闻上看到的东西只是报道的冰山一角，我相当确信还有许多更多涉及这类人的抢劫、盗窃、抢夺、强奸、谋杀案件。Mastika（八月版）有一些关于黑人如何影响我们在马来西亚生活的故事。有时我会想，他们是怎么来到这里的？这么多？而且与黑人通常联系在一起的故事有盗窃、“pukau”（欺诈）、假币、强奸（最初被称为爱情）。我想从你们所有人那里收集一些关于最后一个问题的信息。我们在吉隆坡看到和发现这个了吗？我们可以看到一些漂亮的马来女孩沿着 MidValley 散步，和一个黑人高个子男人手牵手。我仍然想知道，为什么这些女士会挑选并爱上黑人？我的意思是他们是基督徒（有些人可能是穆斯林），黑人（如果你想选择黑人，选择印度人更好），而且不英俊（马来人比他们更帅）？为什么和怎么？ 如果他们的爱情故事以幸福的结局结束，那对他们来说是个好事情，但问题是结局就像在 999（电视节目）里一样。黑人男子和那个女孩发生了关系，然后抛弃了她。更糟糕的是，女孩怀孕了，生下的孩子有黑人的 DNA。那么，该怪谁呢？当然是黑人，但女孩们也有责任。是什么让黑人或者（整个）外国人比当地人更好？只要宗教相同（我的意思是伊斯兰教），我可以接受马来西亚女孩和印度人或中国人的情侣，但我不能接受马来人、中国人或印度人和外国人在一起。这就像我们国家的人已经灭绝了，迫使他们去找外国人。这些女孩找黑人或“马特·萨利赫”的通常无力的理由是浪漫、关心、爱护，显然更富有。我会说这是胡说八道。这个故事总是有相同的结局。这也是一种殖民主义，证明我们，马来西亚人还没有完全实现独立。 我们总是把外国商品的价值看得比本地商品高，却从未首先考虑质量。独立的价值如果只是每年有人大声喊“独立”并在车上、房子或办公室挂上国旗，那就毫无意义。独立的价值应该存在于每个马来西亚人的心中，我们一起关心和珍惜这份礼物，为了未来的福祉。独立日快乐！p/s – 我的汽车可能没有马来西亚国旗，但在我心中，对这个国家的爱无人能比。好吧，我会在之后挂上国旗。希望你们都做了同样的事情。第一是伊斯兰教，第二是马来西亚，我确实是指“马来西亚”。..
+versionSelectItem {
+  display: grid;
+  grid-template-columns: 70px auto 130px;
+
+  .changeLog {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+  }
+}
+
+class SwiftMethod < SwiftEntityElement
+end
+
+合作项目帮助受伤战士过渡
+
+故事亮点
+
+前士官长安东尼·莫拉莱斯因受伤战士合作计划而被安排在怀特桑兹导弹试验场担任平民职位。
+
+前士官长安东尼·莫拉莱斯因受伤战士合作计划而被安排在怀特桑兹导弹试验场担任平民职位。
+
+新墨西哥州怀特桑兹导弹靶场，2009 年 11 月 5 日——怀特桑兹导弹靶场启动了“受伤战士合作计划”，旨在加快征兵工作，同时帮助士兵过渡到平民生活。
+
+前士官长安东尼·莫拉莱斯被部队指派与 CPAC 合作，帮助开发该计划。随后，他被安排到民用职位。
+
+这个程序是我非常热衷的事情，”莫拉莱斯说。他解释说，不久前他坐在 WTU 里，在想生活会给他带来什么。“坦白说，我很担心！”他说。
+
+去年，他遇到了 EEO 和 CPAC 办公室的工作人员，他说他们对帮助士兵“回馈”非常热情。当他被邀请帮助启动这个项目时，Moralez 说他立刻抓住了这个机会。在制定概念计划的过程中，Moralez 说，他意识到这个项目只有当个人愿意让它成功并且愿意放弃一些东西以换取他人时才能奏效。
+
+我对于这个项目感到满意，有两个原因，我帮助开发了它，而且它对我有效，“莫拉莱斯说。“我告诉你，如果你走过这扇门，许多其他的门也会打开。关键是先通过那扇第一扇门！”
+
+符合本计划条件的士兵是那些正在从军队中退役的营部士兵。那些申请本计划的士兵，如果得到勇士过渡营指挥官的推荐，可以在怀特桑兹导弹基地的一个联邦民用职位上工作长达 90 天，前提是完成现役军职。
+
+在试用期满且光荣退役后，如果得到适当的民用选拔官员批准，符合条件的士兵可以被任命为民用职位。
+
+托尼是 DPTMS 的杰出补充。如果你在寻找适应性、资源丰富且具备良好运营感的自我启动者，请关注受伤战士项目。我刚得知我还有两个空缺，我计划再招入两个，”白沙 DPTMS 的 Gerry Veara 说。
+
+根据萨利·斯穆特的说法，当时撰写本文时白沙 CPAC 的主任，这个项目是一个双赢的局面。“我们的经理们可以快速填补职位，而我们则有机会照顾那些照顾过我们的士兵。”
+
+在平等就业机会的框架下，受伤战士合作计划很好地融入了残疾退伍军人肯定性行动计划的目标。那些属于受伤战士营的战士们在参与反恐战争期间获得了与战斗相关的残疾，”Liz Childers，平等就业机会官员说。
+
+Childers 表示，平等就业机会办公室的目标是确保残疾退伍军人能够在联邦政府服务中获得平等的就业机会。“在平民人事咨询中心和威廉·比尤蒙特陆军医疗中心的共同努力下，目标是招募和雇佣那些具备完成怀特桑兹导弹基地任务所需技能的受伤战士，”她说。
+
+该项目的申请可在 www.wsmr.army.mil/employment 在线获取。
+
+关于本计划的任何问题可联系 Carol Main，电话：(575) 678-7728，DSN 258-7728。
+问：
+
+新列来自 Pandas 中的前几列
+
+我有一个包含一些列的 pandas 数据框：
+>>data.columns.values
+array(['Sheet', 'Row', 'Column', 'Cell', 'V0', 'Thx', 'dV', 'Vd'], dtype=object)
+
+每行包含 Sheet、行等不同的值。
+从 Sheet、行等信息中，我将创建一个 PDF 文件，标题如下：
+title = Sheet%s_Row%s_Column%s_Cell%s.pdf
+因此，而不是遍历 DataFrame 的每一行并每次创建一个单独的标题，我想直接创建一个名为 title 的字符串列，并存储不同的标题如下：
+data['title'] = "Sheet%s_Row%s_Column%s_Cell%s" % (data['Sheet'], data['Row'], data['Column'], data['Cell'])
+
+但这不起作用，看起来它正在将每个 Serie 添加到每个%s 中
+我该如何从每行的信息中创建这个标题列，而无需遍历整个 DataFrame？
+
+A:
+
+一种实现方式是使用 DataFrame.apply()函数，其中 axis=1。示例 -
+data['title'] = data.apply(lambda row: "Sheet{}_Row{}_Column{}_Cell{}".format(row['Sheet'], row['Row'], row['Column'], row['Cell']) , axis=1)
+
+演示 -
+In [52]: df = pd.DataFrame([['A','B'],['C','D'],['E','F']] , columns=['Sheet','row'])
+
+In [53]: df
+Out[53]:
+  Sheet row
+0     A   B
+1     C   D
+2     E   F
+
+In [54]: df['title'] = df.apply(lambda row: "Sheet{}_row{}".format(row['Sheet'],row['row']) , axis=1)
+
+In [55]: df
+Out[55]:
+  Sheet row        title
+0     A   B  SheetA_rowB
+1     C   D  SheetC_rowD
+2     E   F  SheetE_rowF
+
+
+《小丑》（1960 年电影）
+
+小丑（）是一部 1960 年法国喜剧电影，由菲利普·德·布罗卡执导。
+
+Plot
+埃杜阿尔·贝尔隆是一个年轻、无法改正的诱惑者，他轻而易举地从一段风流韵事跳到另一段。他遇到了海伦·拉鲁什，一个已婚妇女，她的丈夫安德烈是一位忙碌的富有的金融家，他的事务让他无暇顾及家庭，使她陷入情感上的荒漠。起初，海伦抵制埃杜阿尔的追求，但随着她逐渐了解他活泼的性格、古怪的生活方式以及他非常不寻常的家庭环境——包括他年迈的叔叔泰奥多斯、他的兄弟皮卢、女仆奥尔加、一些婴儿和几只流浪狗，她开始让自己被诱惑。然而，他们的关系却变得短暂，因为埃杜阿尔正忙于诱惑另一位女性。
+
+Cast
+
+ Anouk Aimée as Helene Larouch
+ Jean-Pierre Cassel as Edouard Berlon
+ Pierre Palau as Théodose
+ Geneviève Cluny as Pilou Berlon
+ Georges Wilson as Guillaume Berlon
+ Anne Tonietti as Olga
+ François Maistre as André Laroche
+ Jean-Pierre Rambal as Paul
+ Liliane Patrick as Solange
+ Irène Chabrier as Aline, servant at the inn
+
+Release
+该电影于 1960 年 8 月在洛迦诺电影节首映，但直到 1961 年 1 月 20 日在法国和 1961 年 8 月 7 日在纽约才商业上映。在 2012 年戛纳电影节期间，该电影在海滩电影院与其他经典电影一同展出，这是官方选集中的非竞赛部分，向公众开放。2013 年 11 月 12 日，该电影在蒙特利尔的魁北克电影馆展出。
+
+影评
+该电影随着情节的发展被描述为“很多亲切的乐趣”。它也被描述为古怪，部分“疯狂”，因为主角及其家庭的古怪生活方式。另一方面，法国评论家在人物呈现上发现了微妙之处，叔叔 Théodose 被描述为“一个独特的、老迈的叔叔”，以及整体作品中的诗意内涵。
+
+参考文献
+
+外部链接
+
+类别：1961 年电影
+类别：法国电影
+类别：法语电影
+类别：20 世纪 60 年代浪漫喜剧电影
+Q:
+
+C 语言通用 sscanf 返回
+
+我正在尝试使用 sscanf 函数的返回值。问题是我在读取的文件中，某些行可能包含不同数量的整数。我该如何解决这个问题？
+
+A:
+
+int values[5];
+int values_per_line = sscanf_s(line_buffer, "%d %d %d %d %d", &values[0], &values[1], &values[2], &values[3], &values[4]);
+
+`
+sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l:
+
+Return Value
+每个这些函数（包括 s_sscanf()）都返回成功转换并分配的字段数；返回值不包括已读取但未分配的字段。返回值为 0 表示没有分配字段。如果发生错误或在没有进行任何转换之前到达字符串的末尾，则返回值是 EOF。
+
+哈加尔：*靠在酒馆柜台上。* “梅琳达，你有没有想过森林之外是什么？那片像黑暗、古老的 tapestry 一样延伸出去的地方。”
+
+梅琳达：*擦着杯子。* “越过森林？哈加，你知道就像我知道一样，这是禁止的。长者们说那里有生物潜伏，等待着抓捕任何敢于跨越边界的人。”
+
+哈加尔：*微笑着。“禁果总是最甜的，亲爱的。如果有一个隐藏的世界，不受我们平凡生活的影响呢？如果有一些秘密等待着被揭开呢？”
+
+梅琳达：*翻了个白眼。“你是个梦想家，哈加尔。但梦想可能变成噩梦。我听说过一些迷失的灵魂冒险走得太远的故事。他们说他们变成了森林的一部分，他们的低语随风飘荡。”
+
+哈加尔：*靠得更近一些。*“如果我们能找到破解诅咒的方法，发现那未知的世界，想想我们将会讲述的故事，将会唱的歌曲！”
+
+梅琳达：*缓和地。“哈加，有时候我觉得你是这个荒凉村庄唯一的亮光。但记住，好奇心害死猫。”
+
+哈加尔：*笑得更开心了。*“啊，但梅琳达，满足感让它回来了。”
+
+谜题：仅使用加法，将八个 8 相加得到 1000。
+
+答案：888 + 88 + 8 + 8 + 8 = 1,000。这种数学谜题你可以通过乘法表或者简单的逻辑来解决。首先，尽量接近 1,000（888）。然后，剩下的就很容易解决了。
+
+谜题：回答关于他农场上的动物的问题时，农民说：“我只养羊、山羊和马。事实上，目前除了三只羊、四只山羊和五只马之外，它们都是羊。”他每种动物有多少只？
+
+答案：这个农夫有三只羊，两只山羊和一匹马。你可以用一种快速的假设来解决这个动物谜题。以羊为例：我们知道有三只动物是山羊和马，所以我们假设有两只山羊和一匹马。验证这个假设后，我们得到三只羊，这很合理，因为除了山羊外还有四只非山羊：三只羊和一匹马！
+
+70. 谜题：什么五个字母的单词在你加上两个字母后变得更短？
+答案：短
+
+71. 谜题：以“e”开头且只包含一个字母的是什么？
+答案：信封
+
+72. 谜语：我知道的一个词，包含六个字母，去掉一个字母后剩下 12 个。
+答案：打字机
+
+73. 谜题：你在多伦多的中间会找到什么？
+答案：字母“o”
+
+74. 谜题：你在六月见我一次，在十一月见我两次，而在五月一次也不见。我是什么？
+答案：字母“e”
+
+75. 谜题：一个在角落里，一个在房间里，一个在房子里，但一个在避难所里。这是什么？
+答案：字母“r”
+
+相关：你宁愿问问题
+
+76. 谜题：我是万物的开始，万处的终结。我是永恒的开始，时空的终结。我是什么？
+答案：也是字母“e”
+
+77. 谜题：什么四个字母的单词可以正向、反向或倒置书写，仍然可以从左到右阅读？
+答案：NOON
+
+78. 谜语：向前我是重的，向后我就不重了。我是什么？
+答案：单词“不”
+
+79. Riddle: What is 3/7 chicken, 2/3 cat and 2/4 goat?
+Answer: Chicago
+
+80. 谜语：我是一个由三个字母组成的词；加上两个字母，字母就少了。这个词是什么？
+答案：少
+
+81. 谜题：哪个五个字母的单词去掉两个字母后剩下一个字母？答案：石
+
+82. 谜题：一切事物的尽头是什么？
+答案：字母“g”
+
+83. 谜语：去掉五个字母中的四个，发音相同的单词是什么？
+答案：队列
+
+84. 谜语：我是一个以字母“i”开头的单词。如果你给我加上字母“a”，我就变成了一个意思不同的新单词，但听起来完全一样。我是什么单词？
+答案：Isle（加上“a”变成“aisle”）
+
+85. 谜语：英语中哪个单词具有以下含义：前两个字母代表男性，前三个字母代表女性，前四个字母代表伟大，而整个单词则代表一位伟大的女性。
+答案：女英雄
+
+相关：101 个有趣的双关语
+
+成人难题
+86. 谜题：什么东西如此脆弱，一提到它的名字就会破碎？
+答案：沉默。
+
+87. 谜语：什么东西能跑却从不走路，有嘴巴却从不说话，有头却从不哭泣，有床却从不睡觉？
+答案：一条河
+
+88. 谜语：说到河流，一个人从河的对岸叫他的狗。狗没有湿身就过了河，也没有使用桥或船。怎么做到的？
+答案：河面结冰了。
+
+89. 谜语：什么东西可以填满一个房间，但又不占用空间？
+答案：光
+
+90. 谜语：如果我掉下来，我肯定会碎，但如果你对我微笑，我总会回以微笑。我是什么？
+答案：一面镜子
+
+91. 谜语：你拿得越多，留下的就越多。它们是什么？答案：足迹
+
+92. 谜题：我转一次，出去的东西进不来。我再转一次，进来的东西出不去。我是什么？
+答案：钥匙
+
+93. 谜题：人们创造我，拯救我，改变我，培养我。我是什么？答案：金钱
+
+94. 谜题：什么碎了却从未倒下，什么倒下却从未碎？
+答案：白天，和夜晚
+
+95. 谜语：什么东西穿过城市和田野，却从不移动？
+答案：道路
+
+96. 谜题：我总是饿，如果不喂食就会死去，但无论我触摸什么，它很快就会变红。这是什么？
+答案：火
+
+97. 谜语：制作它的人不需要它；购买它的人用不上它。使用它的人既看不见也摸不着它。这是什么？
+答案：棺材
+
+98. 谜题：一个男人在博物馆里看着一幅画说：“我没有兄弟姐妹，但那个男人的父亲是我父亲的儿子。”画中的人是谁？
+答案：那个男人的儿子
+
+99. 谜语：我带着尖牙坐着等待；我用锐利的力咬碎命运；抓住猎物，宣称力量；一口咬合，身体相连。
+答案：订书机
+
+100. 谜语：我有湖却无水，有山却无石头，有城市却无建筑。这是什么？
+答案：地图
+
+101. 谜语：人比生命更爱的是什么，比死亡或凡人争斗更恨的是什么；让满足的人渴望的是什么；穷人拥有，富人需要；守财奴花费，挥霍者节省，所有人带到坟墓里的是什么？
+答案：无
+
+决策者
+
+信用合作社对支付领域日益增长的革命性变革有深刻认识。麦肯锡公司（《2015 年全球支付：一个健康行业面临颠覆》）最近的一份报告指出，未来五年非银行数字竞争对手的增长将增加对交易利润率的下行压力，同时推动电子支付的增长。
+
+这一趋势的驱动因素都太熟悉了：
+
+大型科技公司如苹果、谷歌、Facebook、亚马逊、微软、腾讯和阿里巴巴，是一些最重要的非银行竞争对手。这些机构资金雄厚，拥有几乎完全受控的客户群。
+
+智能手机已成为支付领域的关键渠道。随着这些设备的出现，涌现出众多支付选项。这些选项从苹果支付到“应用内”购买应有尽有，几乎为用户提供无缝的用户体验。
+
+会员对技术赋能体验的期望大幅增长。今天的会员，就像任何其他消费者一样，已经通过非银行提供商体验到了前所未有的服务水平。有些人可能会 wonder 为什么他们最喜欢的信用合作社没有相同水平的数字服务。
+
+尽管关于电子支付的炒作很多，但信用合作社成员的采用可能比公众整体要慢。成员往往更加保守，因此可能较少人会成为早期热情的采用者。
+
+然而，这并不意味着信用合作社对这一增长趋势感到自满。该行业，尤其是其大型参与者，已经开始以各种“数字钱包”策略积极应对。尽管这些努力还处于形成阶段，但信用合作社将自己定位为会员信任的、安全可靠的数字支付替代方案至关重要。从这个定位出发，可以教育并激励会员成为信用合作社数字支付平台的忠实用户。
+
+一个关键要素是使此策略成功的是分析。在这个快节奏的环境中做出有效决策至关重要。能够根据每月、每周甚至每日的基础调整策略的战术基础，取决于分析可用交易数据的可用性。在这一层面上快速获得数据需要精心设计和调整良好的数据仓库。这个工具为决策者提供了一个关键的反馈循环，帮助他们引导数字支付策略满足成员需求，并保持这些支付（及其利润）接近信用合作社。
+
+我们在这个领域错过了一个机会。我建议，对于信用合作社的实施，数字钱包及其相关策略是很好的，应该被追求。然而，作为一个行业，我们应该拥有从轨道到交易的全套交易栈。我们目前的移动交易轨道由不友好的公司拥有和控制。此外，区块链技术的出现将对现有的银行基础设施造成巨大的颠覆。有些人预测，这将导致目前存在的银行完全崩溃。在我看来，底线是行业正迅速接近创新或死亡的需求。考虑到这一点，有新的追求解决方案来解决这两条思路。不幸的是，作为一个行业，我们仍然专注于错误的事情。相反，我们需要思考得更大。
+
+订阅电子邮件更新
+
+您现在比以往任何时候都更了解您的信用合作社。但您是否在利用这些信息“超越”您的竞争对手？如果不是，您可能正在错过一个强大的竞争工具。
+
+这篇博客将：
+
+教育订阅者关于数据集成、大数据和数据分析。
+通过电子邮件将此页发送给某人
+
+警告：以下故事包含可能令一些读者感到不适的描述。请谨慎阅读。
+
+魁北克市警方表示，一名 39 岁男子因涉嫌对一名 20 多岁女性的所谓谋杀未遂被捕。
+
+事件发生在周五晚上，大约晚上 9 点，警方接到报警后赶到阿加罗西街，一名男子在纵火后将一名女子烧伤后逃离现场。
+
+救护人员将这名妇女紧急送往医院，她身受危及生命的重伤。
+
+READ MORE: 伦敦南部政府办公楼外自焚男子严重受伤，独立调查办公室表示
+
+警方表示，她脸部、背部和双手严重烧伤。
+
+我们担心她的生命安全，”警方周六在一份书面声明中表示。
+
+故事继续在广告下方
+
+嫌疑人周六上午 11:35 左右在 Drummondville 的 Girardin Street 被逮捕，魁北克市西约 150 公里处。
+
+魁北克市警方发言人艾蒂安·多伊翁表示，嫌疑人曾是受害者的前男友。
+
+阅读更多：多辆车冲入魁北克市建筑后造成多人受伤
+
+多扬表示，已经对他发出了逮捕令。他因企图谋杀和严重袭击而被通缉。
+
+他被 Drummondville 的省警察拘留。
+
+魁北克市警方调查员正在前往审讯嫌疑人的途中。
+
+多扬表示警方尚未亲自审问受害者。
+
+他证实了关于那位妇女的母亲和孩子们目睹了袭击的报告。
+
+孩子们被安置在祖母的照顾下，”他说，并补充说警方确保他们得到了必要的支持。
+
+马特宁·阿拉德，自称是受害者的邻居，告诉全球新闻，他周五晚上站在二楼阳台上时，看到有人跑过。
+
+我以为他在街上丢了一个燃烧的火炬，”他说，补充道，直到她开始奔跑和尖叫，他才意识到那是一个人，“我着火了，我着火了，有人放火烧了我！”
+
+故事继续在广告下方
+
+魁北克市机场航站楼疏散结束，运营恢复正常
+
+Allard 说他拨打了 911，然后急忙跑到那位女士身边试图帮助她。
+
+我朝她大喊：“夫人，趴下，夫人，趴下，”但她像火炬一样燃烧着，”他说。
+
+他靠近受害者时描述了一种强烈的汽油味，并说他等邻居拿来毯子时，把她的燃烧衣物扯了下来。
+
+Allard 说他握住受害者的手，因为她看起来摇摇晃晃的，并与她交谈以保持她的警觉。
+
+他说的，“她在谈论她的孩子们。”
+
+故事继续在广告下方
+
+— 加拿大通讯社报道
+CCSU 教授被指控与学生发生不当性行为
+
+照片：Journal Register Co. 照片：Journal Register Co. 图 1/3 标题：CCSU 教授被指控与学生有不当性行为 1/3 返回画廊
+
+中央康涅狄格州立大学校长祖尔玛·R·托罗周二宣布，她打算解雇两位长期担任戏剧教授的员工，因为调查人员得出结论，每位教授可能都曾与一名或多名学生发生性不当行为。
+
+托罗还宣布了任命大学多元与平等办公室新领导层以及重组人力资源部门的计划，因为证据显示，多年来管理人员未能对性不当行为的投诉采取适当行动。
+
+两位教授是约书亚·佩尔斯坦，1992 年聘用，4 月份被安排带薪行政休假，以及托马斯·德尔文塔尔，1998 年被聘用，上周被安排带薪休假。两位教授继续领取他们的薪水，薪水在 10 万美元左右。
+
+我对新发现感到厌恶和沮丧，这些发现表明我们两位教授反复与学生发生性不当行为和不适当行为，”托罗在声明中说。“此外，管理层在过去多年中未能保护我们的学生，这也令人不安。这些发现指出了确保过去的不当行为、错误和不作为不再在这所大学重复发生的必要改革。”
+
+托罗九个月前聘请了哈特福德律师事务所 Shipman & Goodwin LLP 进行调查，此前 CCSU 学生报纸《记录者》发表了一篇文章，揭露了珀尔斯坦的性不当行为指控。同一篇文章还详细描述了在投诉时缺乏行政行动的情况。
+
+调查涉及审查数千份文件、电子邮件、短信以及与数十名教职员工和现任及前任学生的访谈，发现大量证据表明，Perlstein 可能涉及与多名学生的不当性行为，包括与一名学生保持了一段长期、操纵性的关系，并在她毕业后继续。
+
+他还发现他与女学生有“可疑的互动史”，对调查人员说谎，并试图掩盖他的不当行为，因为他认为这会危及他的工作。
+
+关于学生对德尔文塔尔的投诉，调查人员表示，他承认多年来亲吻了五名学生颈部和/或额头，在调查访谈中说了谎，并否认试图与现任或前任学生建立任何关系。
+
+佩尔斯坦周二表示，“目前没有评论”，而德尔文塔尔无法联系到以获取评论。
+
+托罗表示，她正在采取集体谈判所需的步骤来解雇这两位教授。她说这个过程涉及“多个教员小组”，可能需要长达一年的时间，但她不期望教授们会整个期间继续获得报酬。
+
+除了任命多元与平等办公室的新领导外，托罗表示她计划探索一种新的模式来调查校园内的性骚扰、欺凌和不当行为，并采用全院制的报告、监控和跟踪系统来收集和传播数据，以及采取其他措施。
+
+托罗指出，最近离职的首席多元化官罗莎·罗德里格斯因“人事原因”于周五离开了她的职位。她说，罗德里格斯将去首都社区学院担任一个新职位“一段时间”。
+
+对那些勇敢地向我们的调查员分享他们故事的人，我非常感激，”托罗说。“这对所有相关人员来说都是一个痛苦的过程。我决心采取必要的行动，确保我们的校园对所有学生都是一个安全的环境，并恢复康涅狄格州最古老公立高等教育机构的名誉和自豪感。”
+
+托罗表示，她意识到这可能是一个“对幸存者来说悲伤的一天，但与此同时，我认为这是开始一个帮助他们疗伤的过程，我认为最终这将是积极的。”
+
+马克·奥贾基安，康涅狄格州立大学和学院系统校长，表示他赞扬托罗“迅速果断地采取行动，使 CCSU——尤其是戏剧系——成为一个更好、更欢迎的学习环境。”
+
+他表示，报告确定了确保“所有性不当行为投诉都得到最高重视、彻底调查并相应采取行动的重要步骤。我对总统监督和以深思熟虑和透明的方式实施必要的文化和政策变革的能力充满信心。”
+
+一个麻烦的戏剧系
+
+调查人员描绘了一幅画面：戏剧系教授之间充满了紧张和冲突，同时也很不正式。被采访的人表示，学生和一些教职员工经常在饮酒的聚会或其他聚会上社交。
+
+此外，接受采访的人向调查人员提出了关于某些戏剧课程练习“适当性”的担忧，例如按摩圈。
+
+报告称：“该部门的不正式导致了一种个人空间和界限不受尊重的氛围。”
+
+学院、行政管理人员和学生报告称，多年来一直有关于教授和学生之间关系的“传言”，他们认为这些问题尚未得到妥善解决，报告称。
+
+报告包括对罗德里格斯（最近的首席多元化官）及其前任的担忧，认为他们“不够欢迎或友好，在某些情况下甚至具有威慑性或缺乏后续跟进。”
+
+调查人员表示，该办公室没有履行“接收、调查和处理投诉的关键职能。”
+
+此外，调查人员发现人力资源官员未能就涉及剧院教职员工的所谓不当行为对投诉人或证人进行访谈。
+
+罗德里格斯办公室将有关报告的问题转交给大学公关办公室。
+
+至少在一个案例中，报告称，一名名叫安妮·奥林的前人力资源官员联系了一位相关潜在证人，随后又给同一个人发送了一封电子邮件，表明不再需要面试，尽管担忧仍然存在，该教职员工仍然在大学工作。在其他两个案例中，另一名前人力资源官员路易·皮萨诺在对此事做出决定之前，未能面试一位相关学生证人。
+
+人力资源办公室如果在那些案件中进行了进一步调查，报告称，“结果可能会大大不同，并且可能包括直至包括终止教授的雇佣在内的更严重的先前纪律处分。”
+
+报告还表示，其他高级管理人员没有采取措施防止再次发生，这令人不安。报告称，2014 年，前院长和教务长苏珊·皮斯在为戏剧系设定目标时，表示教职员工需要“振作起来”，并补充说“振作起来意味着：1）他们必须停止与学生发生性关系 2）他们必须停止对学生和彼此大喊大叫”，以及包括推出“人们想看的节目”在内的其他几个目标。
+
+尽管她意识到了这些投诉，但她并没有有效地解决它们，报告称。
+
+请愿，去年二月退休的人，在周二的一封电子邮件中说，“目标”是通过“一封非正式电子邮件发送给剧院 I 的代理主席，我推荐的任命人选，并代表我对该部门的挫败感。”
+
+学生们将 Perlstein 描述为“令人毛骨悚然”
+
+报告称，几乎所有接受采访的学生都用“令人毛骨悚然”这个词来形容 Perlstein，并报告说，他通常在课堂上进行热身练习、即兴创作和视觉化练习，有时会要求学生想象自己赤裸或表演代表各种性行为的词语，如“性行为”和“高潮”。
+
+数名学生表示，他们曾告诉调查人员，有时 Perlstein 在练习期间以让他们感到不舒服的方式观察他们。
+
+当前和以前的学生也告诉调查人员，Perlstein 会就他们的体重、身体部位和性取向发表评论。他告诉一名学生，她不够“性感”来扮演某个角色。他还对那名学生说：“你走进一个房间，你的胸部就像砰地一声。”
+
+有些人告诉调查人员，Perlstein 似乎故意选择包含性主题或裸露场景的戏剧。
+
+报告讲述了两次 Perlstein 被指控亲吻学生的案例。第一次是在 20 世纪 90 年代，当时学生声称 Perlstein 从背后接近她，试图在她站在 CCSU 黑匣子剧院外时亲吻她的嘴唇。
+
+学生设法把头转开，让吻落在她的脸颊上，据报告称，但佩尔斯坦据称在她耳边低声说，当她“试图吻她时，不要试图拉开”。
+
+几周后，学生面对 Perlstein，告诉他让她感到不舒服，他再也不应该这样做。学生告诉调查人员，Perlstein 在那次交流中最关心的是她是否向大学报告了这一事件。
+
+报告称，在 Perlstein 接受调查人员采访时，他否认了涉嫌的行为，或称那是“误解”的结果。在涉及黑盒剧院外学生的案件中，报告称 Perlstein 声称“他只是在她声称‘要结婚’后试图恭喜她。”
+
+调查人员表示，鉴于这名学生在几年前上大学时已经结婚，这一点“并不可信”。
+
+Perlstein 还反驳了一名学生的指控，该学生被 CCSU 发现他参与了“不适当行为/性骚扰”。学生指控他亲吻她、拥抱她并触摸她的臀部。Perlstein 表示他与她有过“情感”而非“性”的对话，并在脸颊上亲吻了她，但他否认触摸过她的臀部。
+
+根据佩尔斯坦的说法，当时 CCSU 的员工告诉他，“如果我们称之为性骚扰，它就会消失。”佩尔斯坦声称，他被告知，否则，有“很高的可能性”，此事将由学生的“疯狂的父亲”向当局追查，报告称。根据 Shipman & Goodwin 的报告，佩尔斯坦因此接受了 CCSU 报告的结论，因为他认为这将结束调查。
+
+安娜·凯利，这位在此事件中是学生的现在三十多岁，住在哈特福德，她说知道这份报告将成为“推动学校前进的催化剂——它将带来实际的变化和后果，对于这些长期以来未受检查和未受惩罚的人。”
+
+在他的采访中，报告称，Perlstein 承认他在 2013 年与一名他当时正在教授和指导的学生发生了同意的关系，但他声称这仅限于在他指导她的一两个星期内。
+
+但报告称，教授和学生之间的“大量电子通信”表明，他们不适当的关系从 2013 年持续到 2014 年夏天学生毕业，期间有几次中断，持续了“相当长一段时间”。
+
+2013 年 8 月，佩尔斯坦因与所教和指导的学生有染而受到大学的纪律处分，但报告称，在那之前和之后，佩尔斯坦继续为学生提供咨询、协助和指导活动。
+
+佩尔斯坦表示，无论是在学生毕业前还是毕业后，与学生的关系都是自愿的，并非强迫性的，报告称。但学生告诉调查人员，她不相信这种关系“在她这边是完全自愿的”。
+
+因为 Perlstein 是她的荣誉论文导师，这名学生告诉调查人员，她认为她需要他的帮助才能成功完成她的项目并毕业。
+
+她声称她感觉好像别无选择，只能屈服于他的要求，报告说。
+
+证据表明他们持续的关系可以在报告中包含的多篇文本中找到，包括一篇来自 2014 年初的文本，报告中提到，Perlstein 说：“对不起攻击你的屁股……这是攻击性和错误的……希望你有个愉快的一天。爱你 [原样]”
+
+报告中所包含的文本描绘了一种控制和操纵的关系，其中 Perlstein 试图维持这种关系，而学生则试图结束它，但又担心这样做可能会损害她的学术和戏剧生涯。
+
+广泛沟通表明，他与学生保持了长期性关系，这远远超出了任何合理人认为教授和学生之间适当关系的范畴，”报告称。报告进一步指出，短信显示 Perlstein 知道他的行为是错误的。
+
+艾什莉·马洛伊，她自称为与佩尔斯坦有过长期关系的年轻女性，现在在旧金山的一所研究生院戏剧项目中，表示这些报道“提供了一些安慰，因为真相终于浮出水面，但事实是这已经拖得太久，这并不能减轻所发生事情带来的痛苦。”
+
+“毫不怀疑地阅读政府了解正在发生的事情的程度，”马洛伊说，“这让我感到非常沮丧，摧毁了我对机构的最后一丝信心。”
+
+但她表示她确实赞赏 Toro 的行为。
+
+德尔文塔尔承认至少亲吻了五名学生
+
+在他接受采访时，德尔文塔尔承认他可能至少吻了五名学生的脖子和额头。
+
+德尔文塔尔告诉调查员，这是他表达对一名学生的喜爱的一种方式，并解释说这是他家族中的女性成员亲吻他的方式。他说他不认为这是不恰当或具有性本质的。
+
+然而，至少有一名学生告诉调查员，他的吻让她感到不舒服。
+
+调查人员发现，德尔文塔尔“知道或应该知道”这样的接触是不适当的，并且不符合大学政策。”
+Q:
+
+如果我原来有 10 个苹果，把它们切成两半，现在我还有多少个苹果？
+
+A:
+
+如果你有 10 个苹果，把它们每个切成两半，你仍然会有 10 个苹果。切苹果的行为并不会改变苹果的总数；它只是改变了它们的物理形态。🍎🔪
+
+请求：
+
+Write 10 sentences that end with the word "bread".
+
+响应：
+
+Yup. Here are 10 sentences ending with "bread."
+
+1. Tomorrow morning, I may fire up the oven to make fresh bread.
+2. The children love bread.
+3. After a hard day of work, I enjoyed myself by eating honey bread.
+4. Inside the prison cell, there's nothing better than butter and bread.
+5. I went to the bakery to buy fresh bread.
+6. In a historical context, bread was one of the key catalysators for the industrial revolution as they had a lightweight and easy to make source of energy: bread.
+7. I love bread.
+8. Put strawberry jam on your bread!
+9. Bread is love, bread is life, everywhere is bread.
+10. Hey, you stole my bread!
+
+问：
+
+模板类的虚函数是否隐式实例化？
+
+考虑以下代码。Derived::foo() 是否一定会被实例化？foo() 是一个虚函数，并且由基类的非虚函数调用。
+#include <iostream>
+
+class Base
+{
+public:
+    void bar() { foo(); }
+private:
+    virtual void foo() = 0;
+};
+
+template <typename T> class Derived: public Base
+{
+public:
+    Derived(T t_) : t(t_) {}
+private:
+    void foo() override { std::cout << t; }
+    T t;
+};
+
+Derived<int> make_obj()
+{
+    return Derived<int>(7);
+}
+
+A:
+
+标准部分 14.7.1/11 规定
+
+未指定是否在类模板中，如果虚拟成员函数不会在其他情况下实例化，则隐式实例化该虚拟成员函数。
+
+然而，对于典型的虚表实现，实例化类的任何构造函数都需要存在一个类的虚表，该虚表必须包含对特殊化虚函数定义的指针。因此，在实践中，虚函数很可能会被实例化。
+
+
+问：
+
+证明 $S_5$ 没有同构于 $S_4$ 的商群
+
+证明 $S_5$ 没有同构于 $S_4$ 的商群。
+
+如果我们假设$H$是一个这样的群，那么$H$在$S_5$中必须是正规群，且$|H|=|S_5|/|S_4|=5$。因此，$H$必须同构于$\mathbb{Z}/5\Bbb Z$。
+我的逻辑就到这里了。我无法得出矛盾。
+有什么想法吗？
+
+A:
+
+可能的 $H$ 的候选者是 $S_5$ 的 5 阶循环子群。所有 5 阶的 $S_5$ 元素都是由 5-循环给出的。然而，由 5-循环生成的子群不是正规子群，因此不存在所需的 $H$。
+
+A:
+
+从 $S_5$ 到 $S_4$ 的满同态的核的阶为 $|S_5|/|S_4|=5$。这是不可能的，因为：$S_5$ 有 $1+4!=25$ 个阶为 $1$ 或 $5$ 的元素；这些 $25$ 个元素中的每一个在 $S_4$ 中的像必须阶为 $1$ 或 $5$；但是 $S_4$ 没有阶为 $5$ 的元素，所以这 $25$ 个元素都必须属于同态的核。
+
+
+私营企业论坛
+
+私营企业论坛或论坛（FPB）是一家基于英国的会员制组织，致力于为小型和中型企业争取利益。作为一家会员资助的组织，它提供实用的商业建议和帮助，同时提供一系列产品和服务，以帮助其成员节省资金。论坛成立于 1977 年，是一个非政党政治组织，代表超过 25,000 家英国企业。
+
+背景
+论坛（FPB）由斯坦·门德汉于 1977 年创立。在此之前，门德汉经营着一家工程公司，但越来越关注经济中小型企业缺乏理解和日益增加的繁琐手续。他研究了美国和加拿大为中小企业设立的基础组织，并决定创建一个英国的类似组织。
+
+手牵手，船和微风一同前行；但微风比船来得更快，不久，佩阔德号开始摇晃。渐渐地，通过玻璃，陌生人的船和有人掌舵的桅杆证实了她是一艘捕鲸船。但由于她顺风行驶，快速经过，显然是在前往其他地方，佩阔德号无法希望追上她。因此，发出了信号，看看会有什么回应。这里要说的是，就像海军陆战队的船只一样，美国捕鲸船队中的每艘船都有自己的私人信号；所有这些信号都收集在一本书里，附有各自船只的名字，每位船长都配备了这本书。因此，捕鲸指挥官能够在海洋上相互识别，即使在相当远的距离和相当大的便利下。最后，佩阔德号的信号得到了陌生人的回应，他设置了属于自己的信号；这证实了那艘船是纳特克特的耶罗波安号。 她平方了自己的船，压低船身，在“佩阔德”船的阴影下横穿，放下了一条小船；小船很快就靠近了；但是，按照斯塔巴克命令搭建侧梯以接待来访的船长，那个陌生人从船尾挥手，表示这一举动完全是多余的。结果证明，“耶罗波安”号船上爆发了一种恶性的流行病，而船长梅休害怕传染给“佩阔德”号的船员。因为，尽管他自己和他的船员没有受到感染，尽管他的船离“佩阔德”号只有半枪程远，而且不可腐蚀的海水和空气在滚动和流淌；然而，他虔诚地遵守陆地上的胆怯隔离措施，断然拒绝与“佩阔德”号直接接触。但这并没有阻止所有交流。 保留与船只之间几码的距离，耶罗波安的船偶尔使用桨，设法与皮阔德号保持平行，因为它沉重地穿越大海（因为这时风已经变得非常新鲜），主帆向后扬起；尽管，的确，有时在突然袭来的大浪的推动下，小船会被推向前方；但很快又巧妙地回到正确的航向。在这种和其他类似的偶尔中断的情况下，双方保持了一段对话；但每隔一段时间，还是会受到另一种非常不同类型的中断。在耶罗波安的船上划桨的是一个长相奇特的人，即使在那种狂野的捕鲸生活中，个人特色也构成了全部。他是个身材矮小、短小、年轻的人，脸上布满了雀斑，头发冗长而黄色。一件长裙、阴谋论风格的、褪色的核桃色外套将他包裹起来；袖子在他手腕上卷起。他的眼中充满了深沉、坚定、狂热的疯狂。就在这个身影首次被看到时，斯图布惊呼道——“那就是他！” 那是他！——那个被长期忽视的斯卡拉穆什，镇上的人告诉我们说！斯图布在这里提到了一个关于耶罗波安的奇怪故事，以及她船员中某个人的故事，这是在佩奎德号与镇上号说话之前的一段时间。根据这个说法以及后来了解的情况，似乎那个斯卡拉穆什在耶罗波安船上几乎控制了所有人。他的故事是这样的：他最初在疯狂的社会——内斯基尤纳震教徒中长大，在那里他是一位伟大的先知；在他们破裂的、秘密的集会中，他多次通过陷阱门从天堂降临，宣布第七个瓶子的迅速开启，这个瓶子他放在自己的背心口袋里；但据说，里面装的不是火药，而是鸦片。一种奇怪的使徒般的怪癖占据了他，他离开了内斯基尤纳，前往纳特克特，在那里，他以疯狂特有的狡猾，表现出一种稳定、常识性的外表，并自荐为耶罗波安捕鲸航行的生手候选人。他们雇佣了他；但船一离开陆地视线，他的疯狂就爆发了。 他宣布自己是大天使加百列，并命令船长跳船。他发布了他的宣言，在其中他将自己定位为海洋岛屿的救世主和全奥塞尼亚的副主教。他以坚定不移的热情宣布这些事情；他那黑暗、大胆的想象力在失眠和兴奋中的游戏，以及所有超自然的疯狂恐怖，共同赋予了这个加百列在大多数无知船员心中的神圣氛围。此外，他们还害怕他。然而，这样的人在船上并没有多少实际用处，尤其是他拒绝在高兴的时候工作，怀疑的船长很想摆脱他；但得知那个人的意图是在第一个方便的港口将他放下，大天使立刻打开了所有的封印和瓶子——如果这个意图得以实现，将把船和所有人投入无条件的地狱。他在船员中的信徒们影响如此之深，以至于最后他们集体去找船长，告诉他如果加百列被从船上打发走，他们中没有人会留下。 他因此被迫放弃了他的计划。他们也不会允许加百列受到任何形式的虐待，无论他说什么或做什么；结果，加百列在船上拥有完全的自由。这一切的结果是，大天使对船长和副手们关心甚少或根本不关心；自从流行病爆发以来，他比以往任何时候都更加专横；宣称瘟疫（他称之为瘟疫）完全在他一人掌控之下；只有按照他的意愿才能阻止它。水手们，大多是些可怜的家伙，在他面前畏缩，其中一些人甚至在他面前谄媚；遵照他的指示，有时对他表示个人敬意，就像对神一样。这些事情可能看起来令人难以置信；但不管多么神奇，它们都是真的。至于狂热者的历史，在狂热者自己无限的自我欺骗方面，并不像他欺骗和困扰那么多其他人那样引人注目。但现在该回到“佩阔德”号上了。“我不怕你的瘟疫，先生，”艾哈伯站在甲板上对站在船尾的梅休船长说，“上船吧。”但现在加百列站了起来。“想想看，想想看那些发烧，黄胆和胆汁的！” 小心那可怕的瘟疫！”“加百列！加百列！”梅休船长喊道；“你必须要么——”但就在那一刻，一股猛浪将小船远远地冲了出去，它的咆哮声淹没了所有的言语。“你看到白鲸了吗？”当小船漂回来时，亚哈问道。“想想你的小艇，被烧毁并沉没了！小心那可怕的尾巴！”“我再告诉你一次，加百列，那——”但小船再次冲了出去，仿佛被恶魔拖拽。片刻间，没有人说话，因为一连串的狂暴波浪滚滚而过，其中一次海浪的偶然任性使得它不是起伏而是翻滚。与此同时，竖起来的鲸鱼头非常剧烈地摇晃，加百列被看到带着比他的天使本性似乎有理由的更多担忧地看着它。当这个插曲结束时，梅休船长开始讲述关于莫比·迪克的黑暗故事；然而，每当提到他的名字和似乎与他结盟的疯狂大海时，加百列都会频繁地打断他。似乎耶罗波安离开家不久，就在与一艘捕鲸船交谈时，她的人们可靠地被告知了莫比·迪克的存在和他造成的破坏。 贪婪地吸取这一情报，加布里埃尔庄严地警告船长不要攻击白鲸，以防怪物被看到；在他的疯狂咆哮中，宣称白鲸不亚于化身成神的震颤派上帝；震颤派接受圣经。但几年后，从桅杆顶端发现了莫比·迪克，大副麦西充满热情地想要与之遭遇；尽管所有大天使的谴责和预言，船长也不愿意阻止他，麦西最终说服了五个人上他的小船。和他们一起划船出发；经过许多疲惫的划桨和多次危险的、不成功的攻击，他终于成功地将一块铁固定住。与此同时，加布里埃尔登上主桅杆顶端，疯狂地挥舞着一只手臂，向亵渎他神圣的攻击者预言着即将到来的灾祸。现在，当麦西，大副，站在船头，用他部落所有的无畏精力对鲸鱼发泄他的狂野呼喊，并试图为他的稳重的长矛争取一个公平的机会时，看哪！ 一片宽阔的白色阴影从海中升起；它迅速摇动的动作，暂时让划桨人的呼吸停滞。下一瞬间，那个不幸的大副，生命如此充满愤怒，被重重地击入空中，在下降过程中划出长长的弧线，大约五十码的距离后落入海中。船的任何部分都没有损坏，也没有任何划桨人的头发受损；但大副永远沉入了海底。在这里括号说明，在鲸鱼捕猎业的致命事故中，这种类型可能几乎与任何类型一样常见。有时，受伤的只有被这样消灭的人；更常见的是，船头被撞掉，或者站在船头的大副被从原位扯掉，与尸体一起落入水中。但最奇怪的是，在不止一个例子中，当尸体被找回时，没有发现任何暴力的痕迹；这个人已经完全死亡。整个灾难，包括 Macey 的坠落，从船上可以清楚地看到。加布里埃尔发出刺耳的尖叫声——“药瓶！药瓶！”他叫停了惊恐的船员们继续追捕鲸鱼。 这一可怕的事件使大天使增添了影响力；因为他的轻信的门徒们相信他特意预告了这件事，而不是仅仅做出一个任何人都可能做出的普遍预言，这样就有可能偶然击中广泛允许的许多目标之一。他成了船上的无名恐怖。梅休讲完故事后，亚哈向他提出了这样的问题，以至于这位陌生人船长忍不住想知道，如果有机会，他是否打算捕杀白鲸。亚哈回答说——“是的。”于是，加百列再次站起身来，怒视着老人，用指向下的手指激烈地喊道——“想想那个亵渎者——他已经死了，就在那里！——小心那个亵渎者的结局！”亚哈冷漠地转过身去，然后对梅休说，“船长，我突然想起了我的信袋；如果我没记错的话，有一封信是给你的一个军官的。斯塔巴克，检查一下信袋。”每艘捕鲸船都会为各种船只带出大量信件，这些信件的投递取决于在四大洋中偶然遇到他们的机会。 因此，大多数信件从未到达目的地；许多信件只有在两三年或更长时间后才被收到。不久，斯塔巴克手里拿着一封信回来了。这封信被严重揉皱，潮湿，覆盖着一种暗淡、斑点的绿色霉斑，因为被放在船舱的一个黑暗的柜子里。这样的信，死神本人都可能是个邮差。“看不懂吗？”亚哈喊道。“给我，伙计。是的，这是一笔模糊的字迹；这是什么？”当他研究它时，斯塔巴克拿起一根长铲子，用他的刀稍微劈开一端，把信插在那里，这样就可以不靠近船体，把它递到船上。与此同时，亚哈拿着信，低声嘟囔，“哈里先生——是的，哈里先生——（一个女人的手镯——这个男人的妻子，我敢打赌）——是的——哈里·梅西，耶罗波安号；——这是梅西，他已经死了！”“可怜的家伙！可怜的家伙！而且是从他的妻子那里来的，”梅休叹了口气；“但让我看看它。”“不，你自己留着吧，”加布里埃尔对亚哈喊道；“你很快就要走那条路了。”“诅咒你！”亚哈喊道。 梅休船长，现在请站好接收它”；他接过斯塔巴克手中的致命信件，将它夹在桅杆的缝隙中，然后递向小船。但就在这时，划桨手们期待地停止了划桨；小船稍微向船尾漂去；因此，就像魔法一样，信件突然随着加布里埃尔急切的手一起移动。他立刻抓住它，拿起船刀，将信件刺在上面，就这样带着它将信件送回船上。信件落在亚哈脚下。然后加布里埃尔大声呼喊他的同伴们放下桨，就这样，造反的小船迅速从佩奎德号上驶离。在这场插曲之后，水手们重新开始处理鲸鱼的皮，关于这场疯狂事件，许多奇怪的事情都被暗示了出来。
