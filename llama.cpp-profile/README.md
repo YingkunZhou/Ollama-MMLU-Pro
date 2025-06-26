@@ -6,9 +6,9 @@ export BUILD_DIR=<your build folder in llama.cpp>
 export LD_LIBRARY_PATH=${ROOT_DIR}/${BUILD_DIR}/bin
 
 make clean
-OPT="-O3" make
+make
 # OPT="-g" make
-./layer-compute-bench -m <your model path>/Meta-Llama-3.1-8B-Instruct-Q2_K.gguf -p 0 -n 64 -t 8 -ngl 3
+./layer-compute-bench -m <your model path>/Meta-Llama-3.1-8B-Instruct-Q2_K.gguf -l blk.0.attn_q.weight -p 0 -n 64 -t 8 -ngl 3
 ```
 
 ## sample result
