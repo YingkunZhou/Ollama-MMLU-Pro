@@ -28,24 +28,24 @@ static void Q2_K_weight_gemv(
 
     const int chunk_size = 64;
     assert((ne0 / chunk_size) * chunk_size == ne0);
+    // attempt to reduce false-sharing (does not seem to make a difference)
     float tmp[chunk_size];
     int64_t nchunk = ne0 / chunk_size;
     assert(nchunk >= nth);
 
+    const char * src0_row = (const char*)src0->data;
+    const char * src1_col = (const char*)params->wdata;
+    float * dst_col = (float*)dst->data;
+
     int current_chunk = ith;
     while (current_chunk < nchunk) {
         const int64_t ir0_start = chunk_size * current_chunk;
-        // attempt to reduce false-sharing (does not seem to make a difference)
-        const char * src0_row = (const char*)src0->data;
-        const char * src1_col = (const char*)params->wdata;
-        float * dst_col = (float*)dst->data;
         for (int64_t ir0 = ir0_start; ir0 < ir0_start + chunk_size; ir0++) {
-            vec_dot_q2_K_q8_K(ne00, tmp, src0_row + ir0*nb01, src1_col);
+            vec_dot_q2_K_q8_K(ne00, &tmp[ir0-ir0_start], src0_row + ir0*nb01, src1_col);
         }
         memcpy(&dst_col[ir0_start], tmp, chunk_size * sizeof(float));
         current_chunk = atomic_fetch_add_explicit(&params->threadpool->current_chunk, 1, memory_order_relaxed);
     }
-
 }
 
 static void layer_weight_gemv_test(void * data, int node_n) {
@@ -62,7 +62,6 @@ static void layer_weight_gemv_test(void * data, int node_n) {
         /*.wdata     =*/ cplan->work_data,
         /*.threadpool=*/ tp,
     };
-    assert(node_n < cgraph->n_nodes && atomic_load_explicit(&tp->abort, memory_order_relaxed) != node_n);
     struct ggml_tensor * node = cgraph->nodes[node_n];
     Q2_K_weight_gemv(&params, node);
     assert(!cplan->abort_callback);

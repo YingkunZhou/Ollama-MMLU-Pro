@@ -26,6 +26,7 @@
 #include <thread>
 #include <unordered_map>
 #include <unordered_set>
+#include <mutex>
 
 #include <unistd.h>
 #include <sys/types.h>
@@ -41,6 +42,7 @@ extern "C" {
 void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int node_n);
 }
 
+bool floatArraysEqual(const float* arr1, const float* arr2, size_t size, float epsilon);
 bool parse_cpu_mask(const std::string & mask, bool(&boolmask)[GGML_MAX_N_THREADS]);
 bool set_process_priority(enum ggml_sched_priority prio);
 int32_t cpu_get_num_math();
@@ -928,7 +930,7 @@ static cmd_params parse_cmd_params(int argc, char ** argv) {
 
 struct cmd_params_instance {
     std::string        model;
-    std::vector<std::string> layer;
+    std::vector<std::string> layers;
     int                n_prompt;
     int                n_gen;
     int                n_depth;
@@ -952,6 +954,7 @@ struct cmd_params_instance {
     bool               use_mmap;
     bool               embeddings;
     bool               no_op_offload;
+    ggml_backend_sched_eval_callback cb_eval;
 
     llama_model_params to_llama_mparams() const {
         llama_model_params mparams = llama_model_default_params();
@@ -992,6 +995,7 @@ struct cmd_params_instance {
         cparams.embeddings   = embeddings;
         cparams.op_offload   = !no_op_offload;
         cparams.swa_full     = false;
+        cparams.cb_eval      = cb_eval;
 
         return cparams;
     }
@@ -1030,7 +1034,7 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
             }
             cmd_params_instance instance = {
                 /* .model        = */ m,
-                /* .layer        = */ params.layer,
+                /* .layers       = */ params.layer,
                 /* .n_prompt     = */ n_prompt,
                 /* .n_gen        = */ 0,
                 /* .n_depth      = */ nd,
@@ -1054,6 +1058,7 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
                 /* .use_mmap     = */ mmp,
                 /* .embeddings   = */ embd,
                 /* .no_op_offload= */ nopo,
+                /* .cb_eval= */       nullptr
             };
             instances.push_back(instance);
         }
@@ -1064,7 +1069,7 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
             }
             cmd_params_instance instance = {
                 /* .model        = */ m,
-                /* .layer        = */ params.layer,
+                /* .layers       = */ params.layer,
                 /* .n_prompt     = */ 0,
                 /* .n_gen        = */ n_gen,
                 /* .n_depth      = */ nd,
@@ -1088,6 +1093,7 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
                 /* .use_mmap     = */ mmp,
                 /* .embeddings   = */ embd,
                 /* .no_op_offload= */ nopo,
+                /* .cb_eval= */       nullptr
             };
             instances.push_back(instance);
         }
@@ -1098,7 +1104,7 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
             }
             cmd_params_instance instance = {
                 /* .model        = */ m,
-                /* .layer        = */ params.layer,
+                /* .layers       = */ params.layer,
                 /* .n_prompt     = */ n_pg.first,
                 /* .n_gen        = */ n_pg.second,
                 /* .n_depth      = */ nd,
@@ -1122,6 +1128,7 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
                 /* .use_mmap     = */ mmp,
                 /* .embeddings   = */ embd,
                 /* .no_op_offload= */ nopo,
+                /* .cb_eval= */       nullptr
             };
             instances.push_back(instance);
         }
@@ -1209,7 +1216,7 @@ struct test {
         std::strftime(buf, sizeof(buf), "%FT%TZ", gmtime(&t));
         test_time = buf;
         samples_ns = 0;
-        for (const auto& layer_name: inst.layer) {
+        for (const auto& layer_name: inst.layers) {
             layers.push_back(layer_info{
                 /*.name = */layer_name,
                 /*.size = */0,
@@ -1869,3 +1876,88 @@ struct ggml_backend_cpu_context {
     ggml_abort_callback abort_callback;
     void *              abort_callback_data;
 };
+
+bool floatArraysEqual(const float* arr1, const float* arr2, size_t size, float epsilon = 1e-6f) {
+    for (size_t i = 0; i < size; ++i) {
+        if (std::fabs(arr1[i] - arr2[i]) > epsilon) {
+            return false;
+        }
+    }
+    return true;
+}
+
+struct Stats {
+    std::vector<char> input_act;
+    std::vector<char> output_act;
+};
+
+class ActCollector {
+public:
+    ActCollector() = default;
+    void set_layers(std::vector<std::string> layers) { for (auto l: layers) m_stats.insert(std::make_pair(l, Stats{}));}
+    struct Stats get_layer(std::string layer_name) { return m_stats[layer_name]; }
+    bool collect_activations(struct ggml_tensor * t, bool ask, void * user_data);
+private:
+    std::unordered_map<std::string, Stats> m_stats;
+    std::mutex                             m_mutex;
+};
+
+// remove any prefix and suffixes from the name
+// CUDA0#blk.0.attn_k.weight#0 => blk.0.attn_k.weight
+static std::string filter_tensor_name(const char * name) {
+    std::string wname;
+    const char * p = strchr(name, '#');
+    if (p != NULL) {
+        p = p + 1;
+        const char * q = strchr(p, '#');
+        if (q != NULL) {
+            wname = std::string(p, q - p);
+        } else {
+            wname = p;
+        }
+    } else {
+        wname = name;
+    }
+    return wname;
+}
+
+bool ActCollector::collect_activations(struct ggml_tensor * t, bool ask, void * user_data) {
+    GGML_UNUSED(user_data);
+
+    const struct ggml_tensor * src0 = t->src[0];
+    const struct ggml_tensor * src1 = t->src[1];
+    std::string wname = filter_tensor_name(src0->name);
+
+    // when ask is true, the scheduler wants to know if we are interested in data from this tensor
+    // if we return true, a follow-up call will be made with ask=false in which we can do the actual collection
+    if (ask) {
+        for (const auto& pair : m_stats) {
+            if (pair.first == wname) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    std::lock_guard<std::mutex> lock(m_mutex);
+    const size_t src1_nbytes = ggml_nbytes(src1);
+    const size_t data_nbytes = ggml_nbytes(t);
+    m_stats[wname].input_act.resize(src1_nbytes);
+    m_stats[wname].output_act.resize(data_nbytes);
+    // copy the data from the GPU memory if needed
+    if (!ggml_backend_buffer_is_host(src1->buffer)) {
+        ggml_backend_tensor_get(src1, m_stats[wname].input_act.data(), 0, src1_nbytes);
+    }
+    else {
+        memcpy(m_stats[wname].input_act.data(), (const char *) src1->data, src1_nbytes);
+    }
+
+    if (!ggml_backend_buffer_is_host(t->buffer)) {
+        ggml_backend_tensor_get(t, m_stats[wname].output_act.data(), 0, data_nbytes);
+    }
+    else {
+        memcpy(m_stats[wname].output_act.data(), (const char *) t->data, data_nbytes);
+    }
+
+    return true;
+}

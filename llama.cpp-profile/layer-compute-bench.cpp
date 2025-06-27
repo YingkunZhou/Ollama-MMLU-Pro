@@ -1,5 +1,11 @@
 #include "layer-compute-bench.h"
 
+static ActCollector g_collector;
+
+static bool zyk_collect_activations(struct ggml_tensor * t, bool ask, void * user_data) {
+    return g_collector.collect_activations(t, ask, user_data);
+}
+
 static void test_gen(llama_context * ctx, int n_gen, int n_threads,
     uint64_t &samples_ns, std::vector<struct layer_info> &layers) {
     llama_set_n_threads(ctx, n_threads, n_threads);
@@ -33,14 +39,21 @@ static void test_gen(llama_context * ctx, int n_gen, int n_threads,
         cplan.abort_callback_data = cpu_ctx->abort_callback_data;
 
         for (int node_n = 0; node_n < cgraph->n_nodes; node_n++) {
-            struct ggml_tensor * weight = cgraph->nodes[node_n]->src[0];
+            struct ggml_tensor * node = cgraph->nodes[node_n];
+            struct ggml_tensor * weight = node->src[0];
             for (auto &layer: layers) {
                 if (layer.name == weight->name) {
                     layer.n_params = weight->ne[0]*weight->ne[1];
                     layer.size = weight->nb[2];
+                    struct ggml_tensor * input = node->src[1];
+                    struct Stats stat = g_collector.get_layer(layer.name);
+                    assert(stat.input_act.size() == ggml_nbytes(input));
+                    memcpy(input->data, stat.input_act.data(), ggml_nbytes(input));
                     t_start = get_time_ns();
                     layer_compute(cgraph, &cplan, node_n);
                     layer.samples_ns += get_time_ns() - t_start;
+                    assert(stat.output_act.size() == ggml_nbytes(node));
+                    assert(floatArraysEqual((float*)stat.output_act.data(), (float*)node->data, ggml_nelements(node)));
                     break;
                 }
             }
@@ -86,7 +99,9 @@ int main(int argc, char ** argv) {
 
     std::vector<cmd_params_instance> params_instances = get_cmd_params_instances(params);
 
-    const auto & inst = params_instances[0];
+    auto inst = params_instances[0];
+    g_collector.set_layers(inst.layers);
+    inst.cb_eval = zyk_collect_activations;
     llama_model * lmodel = llama_model_load_from_file(inst.model.c_str(), inst.to_llama_mparams());
     llama_context * ctx = llama_init_from_model(lmodel, inst.to_llama_cparams());
     test t(inst, lmodel, ctx);
