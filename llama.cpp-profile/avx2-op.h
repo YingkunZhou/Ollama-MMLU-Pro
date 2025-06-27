@@ -114,7 +114,7 @@ static void vec_dot_q2_K_q8_K(int n, float * GGML_RESTRICT s, const void * GGML_
             __m256i p2 = _mm256_maddubs_epi16(q2_2, q8_2);
             __m256i p3 = _mm256_maddubs_epi16(q2_3, q8_3);
 
-            __m256i scales = j? \
+            const __m256i scales = j? \
             _mm256_broadcastsi128_si256(_mm256_extracti128_si256(all_scales, 1)):\
             _mm256_broadcastsi128_si256(_mm256_extracti128_si256(all_scales, 0));
             p0 = _mm256_madd_epi16(_mm256_shuffle_epi8(scales, get_scale_shuffle_q2k(0)), p0);
