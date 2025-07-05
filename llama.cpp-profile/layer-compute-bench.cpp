@@ -6,9 +6,10 @@ static bool zyk_collect_activations(struct ggml_tensor * t, bool ask, void * use
     return g_collector.collect_activations(t, ask, user_data);
 }
 
-static void test_gen(llama_context * ctx, int n_gen, int n_threads,
+static void test_gen(llama_context * ctx, int n_gen,
     uint64_t &samples_ns, std::vector<struct layer_info> &layers) {
-    llama_set_n_threads(ctx, n_threads, n_threads);
+    // very important, otherwise will fault
+    llama_memory_clear(llama_get_memory(ctx), false);
 
     const llama_model * model   = llama_get_model(ctx);
     const llama_vocab * vocab   = llama_model_get_vocab(model);
@@ -21,7 +22,7 @@ static void test_gen(llama_context * ctx, int n_gen, int n_threads,
         t_start = get_time_ns();
         llama_batch batch = llama_batch_get_one(&token, 1);
         const int ret = ctx->decode(batch);
-        assert(ret == 0);
+        assert(ret == 0); // line 12
         samples_ns += get_time_ns() - t_start;
 
         ggml_backend_sched_t sched = ctx->get_sched();
@@ -78,7 +79,6 @@ int main(int argc, char ** argv) {
     cmd_params params = parse_cmd_params(argc, argv);
 
     auto * cpu_dev = ggml_backend_dev_by_type(GGML_BACKEND_DEVICE_TYPE_CPU);
-
     auto * cpu_reg = ggml_backend_dev_backend_reg(cpu_dev);
     auto * ggml_threadpool_new_fn = (decltype(ggml_threadpool_new) *) ggml_backend_reg_get_proc_address(cpu_reg, "ggml_threadpool_new");
     auto * ggml_threadpool_free_fn = (decltype(ggml_threadpool_free) *) ggml_backend_reg_get_proc_address(cpu_reg, "ggml_threadpool_free");
@@ -100,9 +100,9 @@ int main(int argc, char ** argv) {
     std::vector<cmd_params_instance> params_instances = get_cmd_params_instances(params);
 
     auto inst = params_instances[0];
-    g_collector.set_layers(inst.layers);
-    inst.cb_eval = zyk_collect_activations;
+    // construct llama_model instance from static gguf file
     llama_model * lmodel = llama_model_load_from_file(inst.model.c_str(), inst.to_llama_mparams());
+    // construct llama_context instance for dynamic running environment
     llama_context * ctx = llama_init_from_model(lmodel, inst.to_llama_cparams());
     test t(inst, lmodel, ctx);
     struct ggml_threadpool_params tpp = ggml_threadpool_params_default(t.n_threads);
@@ -112,10 +112,26 @@ int main(int argc, char ** argv) {
     tpp.prio       = params.prio;
     struct ggml_threadpool * threadpool = ggml_threadpool_new_fn(&tpp);
     llama_attach_threadpool(ctx, threadpool, NULL);
-
     llama_memory_clear(llama_get_memory(ctx), false);
-    test_gen(ctx, t.n_gen, t.n_threads, t.samples_ns, t.layers);
+    llama_set_n_threads(ctx, t.n_threads, t.n_threads); // TODO: maybe pp and tg can be different
 
+    const llama_model * model   = llama_get_model(ctx);
+    const llama_vocab * vocab   = llama_model_get_vocab(model);
+    const int32_t       n_vocab = llama_vocab_n_tokens(vocab);
+    ggml_backend_sched_t sched  = ctx->get_sched();
+    g_collector.set_layers(inst.layers);
+    if (t.n_gen > 0) {
+        llama_token token = llama_vocab_get_add_bos(vocab) ? llama_vocab_bos(vocab) : std::rand() % n_vocab;
+        llama_batch batch = llama_batch_get_one(&token, 1);
+        // warmup
+        sched->is_alloc = true;
+        sched->callback_eval = zyk_collect_activations;
+        const int ret = ctx->decode(batch);
+        assert(ret == 0);
+        // begin testing
+        ggml_backend_sched_set_eval_callback(sched, 0, 0);
+        test_gen(ctx, t.n_gen, t.samples_ns, t.layers);
+    }
     p->print_test(t);
     fflush(p->fout);
     llama_perf_context_print(ctx);

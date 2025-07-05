@@ -954,7 +954,6 @@ struct cmd_params_instance {
     bool               use_mmap;
     bool               embeddings;
     bool               no_op_offload;
-    ggml_backend_sched_eval_callback cb_eval;
 
     llama_model_params to_llama_mparams() const {
         llama_model_params mparams = llama_model_default_params();
@@ -995,7 +994,6 @@ struct cmd_params_instance {
         cparams.embeddings   = embeddings;
         cparams.op_offload   = !no_op_offload;
         cparams.swa_full     = false;
-        cparams.cb_eval      = cb_eval;
 
         return cparams;
     }
@@ -1058,7 +1056,6 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
                 /* .use_mmap     = */ mmp,
                 /* .embeddings   = */ embd,
                 /* .no_op_offload= */ nopo,
-                /* .cb_eval= */       nullptr
             };
             instances.push_back(instance);
         }
@@ -1093,7 +1090,6 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
                 /* .use_mmap     = */ mmp,
                 /* .embeddings   = */ embd,
                 /* .no_op_offload= */ nopo,
-                /* .cb_eval= */       nullptr
             };
             instances.push_back(instance);
         }
@@ -1128,7 +1124,6 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
                 /* .use_mmap     = */ mmp,
                 /* .embeddings   = */ embd,
                 /* .no_op_offload= */ nopo,
-                /* .cb_eval= */       nullptr
             };
             instances.push_back(instance);
         }
@@ -1865,7 +1860,6 @@ struct ggml_backend_sched {
 
     int debug;
 };
-
 struct ggml_backend_cpu_context {
     int                 n_threads;
     ggml_threadpool_t   threadpool;
