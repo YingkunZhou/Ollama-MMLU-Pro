@@ -72,16 +72,16 @@ static void layer_weight_gemv_test(void * data, int node_n, struct ggml_tensor *
     ggml_barrier(state->threadpool);
 }
 
-void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node) {
+uint64_t layer_cpu_compute(struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node) {
     int n_threads = cplan->n_threads;
     struct ggml_threadpool * threadpool = cplan->threadpool;
     // Reset some of the parameters that need resetting
     // No worker threads should be accessing the parameters below at this stage
-    threadpool->cgraph           = cgraph;
     threadpool->cplan            = cplan;
     threadpool->current_chunk    = 0;
     threadpool->abort            = -1;
     threadpool->ec               = GGML_STATUS_SUCCESS;
+    uint64_t t_start = get_time_ns();
     if (n_threads > 1) {
         #pragma omp parallel num_threads(n_threads)
         {
@@ -99,4 +99,5 @@ void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int n
         layer_weight_gemv_test(&threadpool->workers[0], node_n, node);
     }
     assert(threadpool->ec == GGML_STATUS_SUCCESS);
+    return get_time_ns() - t_start;
 }

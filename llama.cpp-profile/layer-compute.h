@@ -15,6 +15,7 @@
 #include "vec.h"
 #include "ops.h"
 #include "ggml.h"
+#include <time.h>
 
 // Note: once we move threading into a separate C++ file
 // will use std::hardware_destructive_interference_size instead of hardcoding it here
@@ -63,4 +64,10 @@ struct ggml_compute_state {
     int ith;
 };
 
-void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node);
+static uint64_t get_time_ns(void) {
+    struct timespec ts;
+    clock_gettime(CLOCK_REALTIME, &ts); // 或者 CLOCK_MONOTONIC
+    return (uint64_t)ts.tv_sec * 1000000000ULL + (uint64_t)ts.tv_nsec;
+}
+
+uint64_t layer_cpu_compute(struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node);

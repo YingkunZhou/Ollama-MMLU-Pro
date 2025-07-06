@@ -1,14 +1,13 @@
 #include "layer-compute-bench.h"
 
-static ActCollector g_collector;
-
 static bool zyk_collect_activations(struct ggml_tensor * t, bool ask, void * user_data) {
     return g_collector.collect_activations(t, ask, user_data);
 }
 
-static void test_cpu_layer(llama_context * ctx, std::vector<struct layer_info> &layers,
-                           bool input_restore, bool output_store) {
+static void test_layer(llama_context * ctx, std::vector<struct layer_tinfo> &layers,
+                           bool use_cpu_backend, bool no_warmup=false) {
     ggml_backend_sched_t sched = ctx->get_sched();
+
     // static enum ggml_status ggml_backend_sched_compute_splits(ggml_backend_sched_t sched)
     // assert the cpu backend split is always the first
     struct ggml_backend_sched_split * split = &sched->splits[0];
@@ -22,22 +21,19 @@ static void test_cpu_layer(llama_context * ctx, std::vector<struct layer_info> &
     cplan.abort_callback      = cpu_ctx->abort_callback;
     cplan.abort_callback_data = cpu_ctx->abort_callback_data;
 
-    if (input_restore) {
-        uint64_t t_start;
-        for (int node_n = 0; node_n < cgraph->n_nodes; node_n++) {
-            struct ggml_tensor * node = cgraph->nodes[node_n];
-            struct ggml_tensor * weight = node->src[0];
-            for (auto &layer: layers) {
+    if (sched->n_splits == 1) { // only use cpu backend
+        for (auto &layer: layers) {
+            for (int node_n = 0; node_n < cgraph->n_nodes; node_n++) {
+                struct ggml_tensor * node = cgraph->nodes[node_n];
+                struct ggml_tensor * weight = node->src[0];
                 if (layer.name == weight->name) {
                     struct Stats stat = g_collector.get_layer(layer.name);
                     struct ggml_tensor * input = node->src[1];
                     assert(stat.input_act.size() == ggml_nbytes(input));
                     memcpy(input->data, stat.input_act.data(), ggml_nbytes(input));
-                    t_start = get_time_ns();
 
-                    layer_compute(cgraph, &cplan, node_n, 0);
+                    layer.samples_ns += layer_cpu_compute(&cplan, node_n, nullptr);
 
-                    layer.samples_ns += get_time_ns() - t_start;
                     assert(stat.output_act.size() == ggml_nbytes(node));
                     assert(floatArraysEqual((float*)stat.output_act.data(), (float*)node->data, ggml_nelements(node)));
                     break;
@@ -46,48 +42,59 @@ static void test_cpu_layer(llama_context * ctx, std::vector<struct layer_info> &
         }
     }
     else {
+        assert(sched->n_copies == 1 && sched->n_backends == 2);
         struct ggml_backend_sched_split * split = &sched->splits[1];
         struct ggml_tensor * src0 = split->inputs[0];
         struct ggml_tensor * src1 = split->inputs[1];
         assert(layers.size() == 1 && layers[0].name == src0->name);
         assert(cgraph->nodes[cgraph->n_nodes-1] == src1);
-
-        struct ggml_tensor * output = ggml_mul_mat(ctx->get_ctx_compute(), src0, src1);
-        const size_t output_nbytes = ggml_nbytes(output);
-        struct Stats stat = g_collector.get_layer(layers[0].name);
+        struct Stats stat = g_collector.get_layer(src0->name);
+        const size_t output_nbytes = ggml_nbytes(split->graph.nodes[0]);
+        const size_t output_nelements = ggml_nelements(split->graph.nodes[0]);
         assert(stat.output_act.size() == output_nbytes);
-
+        stat.n_params = src0->ne[0]*src0->ne[1];
+        stat.size = src0->nb[2];
         std::vector<char> result;
         result.resize(output_nbytes);
-        output->data = (void *) result.data();
+        const char* env_epsilon = std::getenv("EPSILON");
+        float epsilon = env_epsilon? std::atof(env_epsilon) : 1e-6f;
 
-        cplan.work_size = MAX(cplan.work_size, ggml_row_size(GGML_TYPE_Q8_K, ggml_nelements(src1)));
-        if (cpu_ctx->work_size < cplan.work_size) {
-            delete[] cpu_ctx->work_data;
-            cpu_ctx->work_data = new uint8_t[cplan.work_size];
-            cpu_ctx->work_size = cplan.work_size;
-        }
-        cplan.work_data = (uint8_t *)cpu_ctx->work_data;
+        if (use_cpu_backend) {
+            struct ggml_tensor * output = ggml_mul_mat(ctx->get_ctx_compute(), src0, src1);
+            output->data = (void *) result.data();
 
-        layer_compute(cgraph, &cplan, -1, output);
+            cplan.work_size = MAX(cplan.work_size, ggml_row_size(GGML_TYPE_Q8_K, ggml_nelements(src1)));
+            if (cpu_ctx->work_size < cplan.work_size) {
+                delete[] cpu_ctx->work_data;
+                cpu_ctx->work_data = new uint8_t[cplan.work_size];
+                cpu_ctx->work_size = cplan.work_size;
+            }
+            cplan.work_data = (uint8_t *)cpu_ctx->work_data;
 
-        if (output_store) {
+            layer_cpu_compute(&cplan, -1, output);
+
+            if (no_warmup) { // validate the output result
+                assert(floatArraysEqual((float*)stat.output_act.data(), (float*)output->data, output_nelements, epsilon));
+                return;
+            }
             memcpy(stat.output_act.data(), output->data, output_nbytes);
         }
-        else { // validate the output result
-            const char* env_epsilon = std::getenv("EPSILON");
-            if (env_epsilon != nullptr) {
-                assert(floatArraysEqual((float*)stat.output_act.data(), (float*)output->data, ggml_nelements(output), std::atof(env_epsilon)));
-            }
-            else {
-                assert(floatArraysEqual((float*)stat.output_act.data(), (float*)output->data, ggml_nelements(output)));
-            }
+        else {
+            int split_backend_id = split->backend_id;
+            ggml_backend_t split_backend = sched->backends[split_backend_id];
+            struct ggml_tensor * src0_cpy = sched->hv_tensor_copies[2*ggml_hash_find(&sched->hash_set, src0)+split_backend_id];
+            struct ggml_tensor * src1_cpy = sched->hv_tensor_copies[2*ggml_hash_find(&sched->hash_set, src1)+split_backend_id];
+
+            layers[0].samples_ns += layer_gpu_compute(src0, src1, src0_cpy, src1_cpy, split->graph.nodes[0], split_backend->context);
+
+            ggml_backend_tensor_get(split->graph.nodes[0], result.data(), 0, output_nbytes);
+            assert(floatArraysEqual((float*)stat.output_act.data(), (float*)split->graph.nodes[0]->data, output_nelements, epsilon));
         }
     }
 }
 
 static void test_gen(llama_context * ctx, int n_gen,
-    uint64_t &samples_ns, std::vector<struct layer_info> &layers) {
+    uint64_t &samples_ns, std::vector<struct layer_tinfo> &layers) {
     // very important, otherwise will fault
     llama_memory_clear(llama_get_memory(ctx), false);
 
@@ -101,10 +108,14 @@ static void test_gen(llama_context * ctx, int n_gen,
     for (int i = 0; i < n_gen; i++) {
         t_start = get_time_ns();
         llama_batch batch = llama_batch_get_one(&token, 1);
+
         const int ret = ctx->decode(batch);
+
         assert(ret == 0); // line 12
         samples_ns += get_time_ns() - t_start;
-        test_cpu_layer(ctx, layers, true, false);
+
+        test_layer(ctx, layers, false);
+
         llama_synchronize(ctx);
         token = std::rand() % n_vocab;
     }
@@ -176,18 +187,12 @@ int main(int argc, char ** argv) {
         assert(ret == 0);
         // if model is running on gpu
         if (model->dev_layer(0) != cpu_dev) {
-            test_cpu_layer(ctx, t.layers, false, !params.no_warmup);
+            test_layer(ctx, t.layers, true, params.no_warmup);
             // if just checkout the CPU and GPU output result
             if (params.no_warmup) return 0;
         }
         // begin testing
         test_gen(ctx, t.n_gen, t.samples_ns, t.layers);
-    }
-
-    for (auto &layer: t.layers) {
-        struct Stats stat = g_collector.get_layer(layer.name);
-        layer.n_params = stat.n_params;
-        layer.size = stat.size;
     }
 
     p->print_test(t);

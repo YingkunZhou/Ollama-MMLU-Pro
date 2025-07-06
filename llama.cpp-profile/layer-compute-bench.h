@@ -40,13 +40,34 @@
 #include "llama-model.h"
 
 extern "C" {
-void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node);
+uint64_t layer_cpu_compute(struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node);
+uint64_t layer_gpu_compute(ggml_tensor * src0_cpu, ggml_tensor * src1_cpu, ggml_tensor * src0, ggml_tensor * src1, ggml_tensor * dst, void * context);
 }
 
 bool floatArraysEqual(const float* arr1, const float* arr2, size_t size, float epsilon);
 bool parse_cpu_mask(const std::string & mask, bool(&boolmask)[GGML_MAX_N_THREADS]);
 bool set_process_priority(enum ggml_sched_priority prio);
 int32_t cpu_get_num_math();
+
+struct Stats {
+    uint64_t size;
+    uint64_t n_params;
+    std::vector<char> input_act;
+    std::vector<char> output_act;
+};
+
+class ActCollector {
+public:
+    ActCollector() = default;
+    void set_layers(std::vector<std::string> layers) { for (auto l: layers) m_stats.insert(std::make_pair(l, Stats{}));}
+    struct Stats get_layer(std::string layer_name) { return m_stats[layer_name]; }
+    bool collect_activations(struct ggml_tensor * t, bool ask, void * user_data);
+private:
+    std::unordered_map<std::string, Stats> m_stats;
+    std::mutex                             m_mutex;
+};
+
+static ActCollector g_collector;
 
 // utils
 static uint64_t get_time_ns() {
@@ -1134,10 +1155,8 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
     return instances;
 }
 
-struct layer_info {
+struct layer_tinfo {
     std::string name;
-    uint64_t size;
-    uint64_t n_params;
     uint64_t samples_ns;
     double ts;
 };
@@ -1146,7 +1165,7 @@ struct test {
     const std::string        cpu_info;
     const std::string        gpu_info;
     std::string              model_filename;
-    std::vector<struct layer_info> layers;
+    std::vector<struct layer_tinfo> layers;
     std::string              model_type;
     uint64_t                 model_size;
     uint64_t                 model_n_params;
@@ -1213,10 +1232,8 @@ struct test {
         test_time = buf;
         samples_ns = 0;
         for (const auto& layer_name: inst.layers) {
-            layers.push_back(layer_info{
+            layers.push_back(layer_tinfo{
                 /*.name = */layer_name,
-                /*.size = */0,
-                /*.n_params = */0,
                 /*.samples_ns = */0,
                 /*.ts = */0.0
             });
@@ -1601,16 +1618,17 @@ struct markdown_printer : public printer {
 
         for (auto layer: t.layers) {
             fprintf(fout, "|");
+            struct Stats stat = g_collector.get_layer(layer.name);
             for (const auto & field : fields) {
                 std::string value;
                 char        buf[128];
                 if (field == "model") {
                     value = layer.name;
                 } else if (field == "size") {
-                    snprintf(buf, sizeof(buf), "%.2f MiB", layer.size / 1024.0 / 1024.0);
+                    snprintf(buf, sizeof(buf), "%.2f MiB", stat.n_params / 1024.0 / 1024.0);
                     value = buf;
                 } else if (field == "params") {
-                    snprintf(buf, sizeof(buf), "%.2f M", layer.n_params / 1e6);
+                    snprintf(buf, sizeof(buf), "%.2f M", stat.size / 1e6);
                     value = buf;
                 } else if (field == "backend") {
                     value = test::get_backend();
@@ -1880,24 +1898,6 @@ bool floatArraysEqual(const float* arr1, const float* arr2, size_t size, float e
     }
     return true;
 }
-
-struct Stats {
-    uint64_t size;
-    uint64_t n_params;
-    std::vector<char> input_act;
-    std::vector<char> output_act;
-};
-
-class ActCollector {
-public:
-    ActCollector() = default;
-    void set_layers(std::vector<std::string> layers) { for (auto l: layers) m_stats.insert(std::make_pair(l, Stats{}));}
-    struct Stats get_layer(std::string layer_name) { return m_stats[layer_name]; }
-    bool collect_activations(struct ggml_tensor * t, bool ask, void * user_data);
-private:
-    std::unordered_map<std::string, Stats> m_stats;
-    std::mutex                             m_mutex;
-};
 
 // remove any prefix and suffixes from the name
 // CUDA0#blk.0.attn_k.weight#0 => blk.0.attn_k.weight
