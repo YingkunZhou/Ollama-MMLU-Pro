@@ -37,9 +37,10 @@
 #include "ggml-backend-impl.h"
 #include "llama.h"
 #include "llama-context.h"
+#include "llama-model.h"
 
 extern "C" {
-void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int node_n);
+void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node);
 }
 
 bool floatArraysEqual(const float* arr1, const float* arr2, size_t size, float epsilon);
@@ -1881,6 +1882,8 @@ bool floatArraysEqual(const float* arr1, const float* arr2, size_t size, float e
 }
 
 struct Stats {
+    uint64_t size;
+    uint64_t n_params;
     std::vector<char> input_act;
     std::vector<char> output_act;
 };
@@ -1927,6 +1930,9 @@ bool ActCollector::collect_activations(struct ggml_tensor * t, bool ask, void * 
     if (ask) {
         for (const auto& pair : m_stats) {
             if (pair.first == wname) {
+                struct Stats stat = pair.second;
+                stat.n_params = src0->ne[0]*src0->ne[1];
+                stat.size = src0->nb[2];
                 return true;
             }
         }

@@ -63,4 +63,4 @@ struct ggml_compute_state {
     int ith;
 };
 
-void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int node_n);
+void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node);

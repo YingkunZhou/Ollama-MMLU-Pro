@@ -48,7 +48,7 @@ static void Q2_K_weight_gemv(
     }
 }
 
-static void layer_weight_gemv_test(void * data, int node_n) {
+static void layer_weight_gemv_test(void * data, int node_n, struct ggml_tensor * node) {
     struct ggml_compute_state * state = (struct ggml_compute_state *) data;
     struct ggml_threadpool    * tp    = state->threadpool;
 
@@ -62,13 +62,17 @@ static void layer_weight_gemv_test(void * data, int node_n) {
         /*.wdata     =*/ cplan->work_data,
         /*.threadpool=*/ tp,
     };
-    struct ggml_tensor * node = cgraph->nodes[node_n];
-    Q2_K_weight_gemv(&params, node);
+    if (node) {
+        Q2_K_weight_gemv(&params, node);
+    }
+    else {
+        Q2_K_weight_gemv(&params, cgraph->nodes[node_n]);
+    }
     assert(!cplan->abort_callback);
     ggml_barrier(state->threadpool);
 }
 
-void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int node_n) {
+void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node) {
     int n_threads = cplan->n_threads;
     struct ggml_threadpool * threadpool = cplan->threadpool;
     // Reset some of the parameters that need resetting
@@ -88,11 +92,11 @@ void layer_compute(struct ggml_cgraph * cgraph, struct ggml_cplan * cplan, int n
                 atomic_store_explicit(&threadpool->n_threads_cur, n_threads, memory_order_relaxed);
             }
 
-            layer_weight_gemv_test(&threadpool->workers[omp_get_thread_num()], node_n);
+            layer_weight_gemv_test(&threadpool->workers[omp_get_thread_num()], node_n, node);
         }
     } else {
         atomic_store_explicit(&threadpool->n_threads_cur, 1, memory_order_relaxed);
-        layer_weight_gemv_test(&threadpool->workers[0], node_n);
+        layer_weight_gemv_test(&threadpool->workers[0], node_n, node);
     }
     assert(threadpool->ec == GGML_STATUS_SUCCESS);
 }
