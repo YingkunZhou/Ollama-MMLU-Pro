@@ -3,7 +3,7 @@
 ```bash
 export ROOT_DIR=${PWD}
 export LLAMA_CPP_DIR=<your llama.cpp path>/llama.cpp # e.g. /tmp/llama.cpp
-export BUILD_DIR=<your cpu build folder in llama.cpp> # e.g. cpu_build
+export BUILD_DIR=<your cuda build folder in llama.cpp> # e.g. cuda_build
 ```
 
 ## build llama.cpp with cuda backend
@@ -31,11 +31,12 @@ cmake --build cpu_build --config Release -j $(nproc)
 ### GPU
 
 ```bash
+cd ${ROOT_DIR}
 make clean
-make layer-gpu-bench
-# make
-# OPT="-g" make
-export LD_LIBRARY_PATH=${ROOT_DIR}/${BUILD_DIR}/bin
+make
+# make layer-gpu-bench
+# FLAGS="-g" make
+export LD_LIBRARY_PATH=${LLAMA_CPP_DIR}/${BUILD_DIR}/bin
 EPSILON=0.032 ./layer-gpu-bench -m <your model path>/Meta-Llama-3.1-8B-Instruct-Q2_K.gguf -l blk.0.attn_q.weight -p 0 -n 128 -t 1
 ```
 
@@ -48,10 +49,11 @@ EPSILON=0.032 ./layer-gpu-bench -m <your model path>/Meta-Llama-3.1-8B-Instruct-
 ### CPU
 
 ```bash
+cd ${ROOT_DIR}
 make clean
-NOGPU="-DNOGPU" make layer-cpu-bench
-# OPT="-g" NOGPU="-DNOGPU" make layer-cpu-bench
-export LD_LIBRARY_PATH=${ROOT_DIR}/cpu_build/bin
+FLAGS="-DNOGPU -O3" make layer-cpu-bench
+# FLAGS="-DNOGPU -g" make layer-cpu-bench
+export LD_LIBRARY_PATH=${LLAMA_CPP_DIR}/cpu_build/bin
 ./layer-cpu-bench -m <your model path>/Meta-Llama-3.1-8B-Instruct-Q2_K.gguf -l blk.0.attn_q.weight -p 0 -n 64 -t 8 -ngl 0 --no-warmup
 ```
 
