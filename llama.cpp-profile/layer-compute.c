@@ -48,13 +48,10 @@ static void Q2_K_weight_gemv(
     }
 }
 
-static void layer_weight_gemv_test(void * data, int node_n, struct ggml_tensor * node) {
+static void layer_weight_gemv_test(void * data, struct ggml_tensor * node) {
     struct ggml_compute_state * state = (struct ggml_compute_state *) data;
     struct ggml_threadpool    * tp    = state->threadpool;
-
-    const struct ggml_cgraph * cgraph = tp->cgraph;
     const struct ggml_cplan  * cplan  = tp->cplan;
-
     struct ggml_compute_params params = {
         /*.ith       =*/ state->ith,
         /*.nth       =*/ atomic_load_explicit(&tp->n_threads_cur, memory_order_relaxed),
@@ -62,17 +59,12 @@ static void layer_weight_gemv_test(void * data, int node_n, struct ggml_tensor *
         /*.wdata     =*/ cplan->work_data,
         /*.threadpool=*/ tp,
     };
-    if (node) {
-        Q2_K_weight_gemv(&params, node);
-    }
-    else {
-        Q2_K_weight_gemv(&params, cgraph->nodes[node_n]);
-    }
+    Q2_K_weight_gemv(&params, node);
     assert(!cplan->abort_callback);
     ggml_barrier(state->threadpool);
 }
 
-uint64_t layer_cpu_compute(struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node) {
+uint64_t layer_cpu_compute(struct ggml_cplan * cplan, struct ggml_tensor * node) {
     int n_threads = cplan->n_threads;
     struct ggml_threadpool * threadpool = cplan->threadpool;
     // Reset some of the parameters that need resetting
@@ -92,11 +84,11 @@ uint64_t layer_cpu_compute(struct ggml_cplan * cplan, int node_n, struct ggml_te
                 atomic_store_explicit(&threadpool->n_threads_cur, n_threads, memory_order_relaxed);
             }
 
-            layer_weight_gemv_test(&threadpool->workers[omp_get_thread_num()], node_n, node);
+            layer_weight_gemv_test(&threadpool->workers[omp_get_thread_num()], node);
         }
     } else {
         atomic_store_explicit(&threadpool->n_threads_cur, 1, memory_order_relaxed);
-        layer_weight_gemv_test(&threadpool->workers[0], node_n, node);
+        layer_weight_gemv_test(&threadpool->workers[0], node);
     }
     assert(threadpool->ec == GGML_STATUS_SUCCESS);
     return get_time_ns() - t_start;

@@ -235,11 +235,15 @@ static __global__ void mul_mat_vec_q(
     }
 }
 
-uint64_t layer_gpu_compute(ggml_tensor * src0_cpu, ggml_tensor * src1_cpu, ggml_tensor * src0, ggml_tensor * src1, ggml_tensor * dst, void * context) {
+extern "C" uint64_t layer_gpu_compute(ggml_tensor * src0_cpu, ggml_tensor * src1_cpu, ggml_tensor * src0, ggml_tensor * src1, ggml_tensor * dst, void * context, void * data) {
     ggml_backend_cuda_context * cuda_ctx = (ggml_backend_cuda_context *) context;
+    cudaStream_t stream = cuda_ctx->stream();
+    CUDA_CHECK(cudaStreamSynchronize(stream));
     // copy src0 to gpu backend
     CUDA_CHECK(cudaMemcpyAsync((char *)src0->data, src0_cpu->data, ggml_nbytes(src0), cudaMemcpyHostToDevice, cudaStreamPerThread));
     CUDA_CHECK(cudaStreamSynchronize(cudaStreamPerThread));
+
+    CUDA_CHECK(cudaStreamSynchronize(stream));
     // copy src1 to gpu backend
     CUDA_CHECK(cudaMemcpyAsync((char *)src1->data, src1_cpu->data, ggml_nbytes(src1), cudaMemcpyHostToDevice, cudaStreamPerThread));
     CUDA_CHECK(cudaStreamSynchronize(cudaStreamPerThread));
@@ -265,7 +269,6 @@ uint64_t layer_gpu_compute(ggml_tensor * src0_cpu, ggml_tensor * src1_cpu, ggml_
     uint64_t t_start = get_time_ns();
     assert(src1->type == GGML_TYPE_F32 && dst->type  == GGML_TYPE_F32);
     GGML_TENSOR_BINARY_OP_LOCALS;
-    cudaStream_t stream = cuda_ctx->stream();
     // If src0 is a temporary compute buffer, clear any potential padding.
     ///here we don't have padding, so no need to clear
     // const int64_t ne10_padded = GGML_PAD(ne10, MATRIX_ROW_PADDING);
@@ -312,7 +315,7 @@ uint64_t layer_gpu_compute(ggml_tensor * src0_cpu, ggml_tensor * src1_cpu, ggml_
     // const int warp_size = ggml_cuda_info().devices[device].warp_size; = 32
     // const mmvq_parameter_table_id table_id = get_device_table_id(ggml_cuda_info().devices[device].cc); = 0
     const int channel_ratio = ne2 / ne02;
-    const int sample_ratio  = ne3  / ne03;
+    const int sample_ratio  = ne3 / ne03;
     ///switch (ncols_dst) { //ncols_dst=1
     constexpr int c_ncols_dst = 1;
     const int64_t nblocks = (ne01 + calc_rows_per_block(c_ncols_dst) - 1) / calc_rows_per_block(c_ncols_dst);
@@ -325,6 +328,8 @@ uint64_t layer_gpu_compute(ggml_tensor * src0_cpu, ggml_tensor * src1_cpu, ggml_
             channel_ratio, s02, s12, s2,
             sample_ratio, s03, s13, s3);
 
-    cudaStreamSynchronize(cuda_ctx->stream());
-    return get_time_ns() - t_start;
+    cudaStreamSynchronize(stream);
+    uint64_t t_ns = get_time_ns() - t_start;
+    ggml_backend_tensor_get(dst, data, 0, ggml_nbytes(dst));
+    return t_ns;
 }

@@ -40,8 +40,8 @@
 #include "llama-model.h"
 
 extern "C" {
-uint64_t layer_cpu_compute(struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node);
-uint64_t layer_gpu_compute(ggml_tensor * src0_cpu, ggml_tensor * src1_cpu, ggml_tensor * src0, ggml_tensor * src1, ggml_tensor * dst, void * context);
+uint64_t layer_cpu_compute(struct ggml_cplan * cplan, struct ggml_tensor * node);
+uint64_t layer_gpu_compute(ggml_tensor * src0_cpu, ggml_tensor * src1_cpu, ggml_tensor * src0, ggml_tensor * src1, ggml_tensor * dst, void * context, void * data);
 }
 
 bool floatArraysEqual(const float* arr1, const float* arr2, size_t size, float epsilon);
@@ -60,7 +60,7 @@ class ActCollector {
 public:
     ActCollector() = default;
     void set_layers(std::vector<std::string> layers) { for (auto l: layers) m_stats.insert(std::make_pair(l, Stats{}));}
-    struct Stats get_layer(std::string layer_name) { return m_stats[layer_name]; }
+    struct Stats& get_layer(std::string layer_name) { return m_stats[layer_name]; }
     bool collect_activations(struct ggml_tensor * t, bool ask, void * user_data);
 private:
     std::unordered_map<std::string, Stats> m_stats;
@@ -976,6 +976,7 @@ struct cmd_params_instance {
     bool               use_mmap;
     bool               embeddings;
     bool               no_op_offload;
+    ggml_backend_sched_eval_callback cb_eval;
 
     llama_model_params to_llama_mparams() const {
         llama_model_params mparams = llama_model_default_params();
@@ -1016,6 +1017,7 @@ struct cmd_params_instance {
         cparams.embeddings   = embeddings;
         cparams.op_offload   = !no_op_offload;
         cparams.swa_full     = false;
+        cparams.cb_eval      = cb_eval;
 
         return cparams;
     }
@@ -1078,6 +1080,7 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
                 /* .use_mmap     = */ mmp,
                 /* .embeddings   = */ embd,
                 /* .no_op_offload= */ nopo,
+                /* .cb_eval= */       nullptr
             };
             instances.push_back(instance);
         }
@@ -1112,6 +1115,7 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
                 /* .use_mmap     = */ mmp,
                 /* .embeddings   = */ embd,
                 /* .no_op_offload= */ nopo,
+                /* .cb_eval= */       nullptr
             };
             instances.push_back(instance);
         }
@@ -1146,6 +1150,7 @@ static std::vector<cmd_params_instance> get_cmd_params_instances(const cmd_param
                 /* .use_mmap     = */ mmp,
                 /* .embeddings   = */ embd,
                 /* .no_op_offload= */ nopo,
+                /* .cb_eval= */       nullptr
             };
             instances.push_back(instance);
         }
@@ -1625,10 +1630,10 @@ struct markdown_printer : public printer {
                 if (field == "model") {
                     value = layer.name;
                 } else if (field == "size") {
-                    snprintf(buf, sizeof(buf), "%.2f MiB", stat.n_params / 1024.0 / 1024.0);
+                    snprintf(buf, sizeof(buf), "%.2f MiB", stat.size / 1024.0 / 1024.0);
                     value = buf;
                 } else if (field == "params") {
-                    snprintf(buf, sizeof(buf), "%.2f M", stat.size / 1e6);
+                    snprintf(buf, sizeof(buf), "%.2f M", stat.n_params / 1e6);
                     value = buf;
                 } else if (field == "backend") {
                     value = test::get_backend();
@@ -1928,13 +1933,11 @@ bool ActCollector::collect_activations(struct ggml_tensor * t, bool ask, void * 
     // when ask is true, the scheduler wants to know if we are interested in data from this tensor
     // if we return true, a follow-up call will be made with ask=false in which we can do the actual collection
     if (ask) {
-        for (const auto& pair : m_stats) {
-            if (pair.first == wname) {
-                struct Stats stat = pair.second;
-                stat.n_params = src0->ne[0]*src0->ne[1];
-                stat.size = src0->nb[2];
-                return true;
-            }
+        if (m_stats.find(wname) != m_stats.end()) {
+            struct Stats* stat = &g_collector.get_layer(wname);
+            stat->n_params = src0->ne[0]*src0->ne[1];
+            stat->size = src0->nb[2];
+            return true;
         }
         return false;
     }

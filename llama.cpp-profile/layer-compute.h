@@ -66,8 +66,8 @@ struct ggml_compute_state {
 
 static uint64_t get_time_ns(void) {
     struct timespec ts;
-    clock_gettime(CLOCK_REALTIME, &ts); // 或者 CLOCK_MONOTONIC
+    clock_gettime(CLOCK_MONOTONIC, &ts);
     return (uint64_t)ts.tv_sec * 1000000000ULL + (uint64_t)ts.tv_nsec;
 }
 
-uint64_t layer_cpu_compute(struct ggml_cplan * cplan, int node_n, struct ggml_tensor * node);
+uint64_t layer_cpu_compute(struct ggml_cplan * cplan, struct ggml_tensor * node);
