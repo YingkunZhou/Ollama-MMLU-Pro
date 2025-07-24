@@ -59,7 +59,9 @@ static void layer_weight_gemv_test(void * data, struct ggml_tensor * node) {
         /*.wdata     =*/ cplan->work_data,
         /*.threadpool=*/ tp,
     };
-    Q2_K_weight_gemv(&params, node);
+    if (node->src[0]->type == GGML_TYPE_Q2_K) {
+        Q2_K_weight_gemv(&params, node);
+    }
     assert(!cplan->abort_callback);
     ggml_barrier(state->threadpool);
 }

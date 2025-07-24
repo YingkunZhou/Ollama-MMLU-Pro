@@ -162,5 +162,8 @@ cython_debug/
 #.idea/
 
 eval_results/
-llama.cpp
 models
+*.o
+layer-cpu-bench
+layer-gpu-bench
+.gdb_history
