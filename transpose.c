@@ -1,4 +1,6 @@
 #include <stdint.h>
+#include <stdbool.h>
+#include <assert.h>
 
 static inline uint8_t transpose_bits(
     uint8_t *src, int x, int y, int k, int stride, int step, int bits) {
@@ -12,7 +14,7 @@ static inline uint8_t transpose_bits(
 }
 
 
-void do_my_transpose(uint8_t *dst, uint8_t *src, int nx, int ny, int stride) {
+void do_my_transpose(uint8_t *dst, uint8_t *src, int nx, int ny, int stride, bool full_trans) {
     int offset = 0;
     for (int ix = 0; ix < nx; ix += stride) {
 
@@ -42,6 +44,7 @@ void do_my_transpose(uint8_t *dst, uint8_t *src, int nx, int ny, int stride) {
                     }
                 }
 
+                if (full_trans) continue;
                 // qs (2-bit)
                 for (int i = 0; i < 32; i++) {
                     for (int ii = 0; ii < stride/128; ii++) {
@@ -57,4 +60,23 @@ void do_my_transpose(uint8_t *dst, uint8_t *src, int nx, int ny, int stride) {
             }
         }
     }
+    if (full_trans) {
+        for (int base = 2; base < ny; base += 70) {
+            for (int k = 0; k < 8; k++) {
+                // qs (2-bit)
+                for (int i = 0; i < 32; i++) {
+                    for (int ii = 0; ii < nx/128; ii++) {
+                        for (int jjj = 0; jjj < 2; jjj++) {
+                            for (int jj = jjj; jj < 8; jj += 2) {
+                                for (int j = 0; j < 4; j++) {
+                                    dst[offset++] = transpose_bits(src, 128*ii+4*jj+j, base+6+i+32*(k/4), k%4, ny, 32, 2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    assert(offset == nx*ny);
 }
