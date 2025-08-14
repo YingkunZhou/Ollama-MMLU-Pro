@@ -134,3 +134,48 @@ static void vec_dot_q2_K_q8_K(int n, float * GGML_RESTRICT s, const void * GGML_
 
     *s = hsum_float_8(acc);
 }
+
+void Q2_K_weight_gemv(
+        const struct ggml_compute_params * params,
+              struct ggml_tensor * dst) {
+    const struct ggml_tensor * src0 = dst->src[0];
+    const struct ggml_tensor * src1 = dst->src[1];
+
+    GGML_TENSOR_BINARY_OP_LOCALS
+    assert(ne1 == 1 && ne11 == 1);
+    assert(ne0 == ne01 && ne00 == ne10);
+
+    const int ith = params->ith;
+    const int nth = params->nth;
+
+    quantize_row_q8_K(
+        (float *)((char *)src1->data + ith*nb11/nth),
+        (void *) ((char *)params->wdata + ith*ne10*ggml_type_size(GGML_TYPE_Q8_K)/nth/ggml_blck_size(GGML_TYPE_Q8_K)),
+        ne10/nth);
+    if (ith == 0) {
+        // Every thread starts at ith, so the first unprocessed chunk is nth.  This save a bit of coordination right at the start.
+        atomic_store_explicit(&params->threadpool->current_chunk, nth, memory_order_relaxed);
+    }
+    ggml_barrier(params->threadpool);
+
+    const int chunk_size = 64;
+    assert((ne0 / chunk_size) * chunk_size == ne0);
+    // attempt to reduce false-sharing (does not seem to make a difference)
+    float tmp[chunk_size];
+    int64_t nchunk = ne0 / chunk_size;
+    assert(nchunk >= nth);
+
+    const char * src0_row = (const char*)src0->data;
+    const char * src1_col = (const char*)params->wdata;
+    float * dst_col = (float*)dst->data;
+
+    int current_chunk = ith;
+    while (current_chunk < nchunk) {
+        const int64_t ir0_start = chunk_size * current_chunk;
+        for (int64_t ir0 = ir0_start; ir0 < ir0_start + chunk_size; ir0++) {
+            vec_dot_q2_K_q8_K(ne00, &tmp[ir0-ir0_start], src0_row + ir0*nb01, src1_col);
+        }
+        memcpy(&dst_col[ir0_start], tmp, chunk_size * sizeof(float));
+        current_chunk = atomic_fetch_add_explicit(&params->threadpool->current_chunk, 1, memory_order_relaxed);
+    }
+}

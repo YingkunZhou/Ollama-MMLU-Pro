@@ -68,7 +68,8 @@ static void test_layer(llama_context * ctx, std::vector<struct layer_tinfo> &lay
         std::vector<char> result;
         size_t output_nbytes;
 
-        dst = ggml_mul_mat(ctx->get_ctx_compute(), src0, src1);
+        dst = ggml_mul_mat(ctx->get_gf_res_reserve()->get_ctx(), src0, src1);
+
         output_nbytes = ggml_nbytes(dst);
         if (no_warmup) {
             result.resize(output_nbytes);
