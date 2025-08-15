@@ -141,6 +141,28 @@ static void test_gen(llama_context * ctx, int n_gen,
     }
 }
 
+static void test_prompt(llama_context * ctx, int n_round,
+    uint64_t &samples_ns, std::vector<struct layer_tinfo> &layers, llama_batch batch) {
+
+    uint64_t t_start;
+    for (int i = 0; i < n_round; i++) {
+        // very important, otherwise will fault
+        llama_memory_clear(llama_get_memory(ctx), false);
+
+        t_start = get_time_ns();
+        const int ret = ctx->decode(batch);
+        assert(ret == 0);
+        llama_synchronize(ctx);
+        samples_ns += get_time_ns() - t_start;
+
+        test_layer(ctx, layers);
+    }
+    for (auto &layer: layers) {
+        samples_ns /= n_round;
+        layer.ts = 1e9 * batch.n_tokens * n_round / layer.samples_ns;
+    }
+}
+
 int main(int argc, char ** argv) {
     // try to set locale for unicode characters in markdown
     setlocale(LC_CTYPE, ".UTF-8");
@@ -209,6 +231,19 @@ int main(int argc, char ** argv) {
         }
         // begin testing
         test_gen(ctx, t.n_gen, t.samples_ns, t.layers);
+    }
+    else if (t.n_prompt > 0) {
+        std::vector<llama_token> tokens(t.n_batch);
+        tokens[0] = llama_vocab_get_add_bos(vocab) ? llama_vocab_bos(vocab) : std::rand() % n_vocab;
+        for (int i = 1; i < t.n_prompt; i++) tokens[i] = std::rand() % n_vocab;
+        llama_batch batch = llama_batch_get_one(tokens.data(), t.n_prompt);
+        // CPU must params.no_warmup == true in order to enable callback func
+        assert(model->dev_layer(0) != cpu_dev || params.no_warmup);
+        // warmup without considering params.no_warmup
+        assert(0 == ctx->decode(batch));
+        llama_synchronize(ctx);
+        // begin testing
+        test_prompt(ctx, params.n_gen[0], t.samples_ns, t.layers, batch);
     }
 
     p->print_test(t);
