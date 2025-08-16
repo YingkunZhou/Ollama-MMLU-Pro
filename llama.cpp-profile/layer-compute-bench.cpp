@@ -43,6 +43,7 @@ static void test_layer(llama_context * ctx, std::vector<struct layer_tinfo> &lay
                     assert(stat.input_act.size() == ggml_nbytes(input));
                     memcpy(input->data, stat.input_act.data(), ggml_nbytes(input));
 
+                    // for (int kkkk = 0; kkkk < 4; ++kkkk) layer_cpu_compute(&cplan, cgraph->nodes[node_n]);
                     layer.samples_ns += layer_cpu_compute(&cplan, cgraph->nodes[node_n]);
 
                     assert(stat.output_act.size() == ggml_nbytes(node));

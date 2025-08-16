@@ -1,4 +1,4 @@
-LLAMA_CPP_DIR ?= $(PWD)/../../llama.cpp
+LLAMA_CPP_DIR ?= $(PWD)/../llama.cpp
 BUILD_DIR ?= build
 FLAGS ?= -O3
 
