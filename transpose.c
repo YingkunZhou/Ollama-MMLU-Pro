@@ -64,11 +64,14 @@ void do_my_transpose(uint8_t *dst, uint8_t *src, int nx, int ny, int stride, int
                     b12b76b140b204|b13.|b14..|b15..|<3*4B>|| //128bit
                 */
                 for (int i = 0; i < 32; ++i) {
-                    for (int ii = 0; ii < stride*2/avxlen; ++ii) {
+                    for (int ii = 0; ii < stride/(avxlen/2); ++ii) { // avxlen/2 2b-weights in a avx register
                         for (int basej = 0; basej < avxlen/128; ++basej) { // loop for 128b lanes
                             for (int stepj = 0; stepj < 4; ++stepj) { // 4x4B
                                 for (int j = 0; j < 4; ++j) {
-                                    dst[offset++] = transpose_bits(src, /*col_id=*/ix+128*ii+4*basej+(avxlen/32)*stepj+j, /*row_id*/base+6+i+32*(k/4), k%4, ny, avxlen/8, 2);
+                                    dst[offset++] = transpose_bits(src,
+                                        /*col_id=*/ ix+(avxlen/2)*ii+4*basej+(avxlen/32)*stepj+j,
+                                        /*row_id*/ base+6+i+32*(k/4),
+                                        k%4, ny, avxlen/8, 2);
                                 }
                             }
                         }
@@ -82,11 +85,14 @@ void do_my_transpose(uint8_t *dst, uint8_t *src, int nx, int ny, int stride, int
             for (int k = 0; k < 8; k++) {
                 // qs (2-bit)
                 for (int i = 0; i < 32; ++i) {
-                    for (int ii = 0; ii < nx*2/avxlen; ++ii) {
+                    for (int ii = 0; ii < nx/(avxlen/2); ++ii) { // avxlen/2 2b-weights in a avx register
                         for (int basej = 0; basej < avxlen/128; ++basej) { // loop for 128b lanes
                             for (int stepj = 0; stepj < 4; ++stepj) { // 4x4B
                                 for (int j = 0; j < 4; ++j) {
-                                    dst[offset++] = transpose_bits(src, /*col_id=*/128*ii+4*basej+(avxlen/32)*stepj+j, /*row_id*/base+6+i+32*(k/4), k%4, ny, avxlen/8, 2);
+                                    dst[offset++] = transpose_bits(src,
+                                        /*col_id=*/ (avxlen/2)*ii+4*basej+(avxlen/32)*stepj+j,
+                                        /*row_id*/ base+6+i+32*(k/4),
+                                        k%4, ny, avxlen/8, 2);
                                 }
                             }
                         }
