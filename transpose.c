@@ -26,7 +26,6 @@ void do_my_transpose(uint8_t *dst, uint8_t *src, int nx, int ny, int stride, int
         // loop for supergroup
         for (int base = 2; base < ny; base += 70) {
             for (int k = 0; k < 8; k++) {
-
                 // extra (1-bit)
                 // AVX256: unpack 8*1bit b0b1b2b3b4b5b6b7
                 // AVX512: unpack 16*1bit b0b2b4b6b8b10b12b14|b1b3b5b7b9b11b13b15
@@ -51,8 +50,9 @@ void do_my_transpose(uint8_t *dst, uint8_t *src, int nx, int ny, int stride, int
                         dst[offset++] = transpose_bits(src, ix+i+j, base+2+k/2, k%2, ny, avxlen/64, 4);
                     }
                 }
-
-                if (full_trans) continue;
+            }
+            if (full_trans) continue;
+            for (int k = 0; k < 8; k++) {
                 // qs (2-bit)
                 /* avx256:
                     b0b32b64b96 |b1b33b65b97 |b2b34b66b98 |b3b35b67b99 |<3*4B>|| //128bit
