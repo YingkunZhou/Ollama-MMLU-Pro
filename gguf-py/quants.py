@@ -15,7 +15,7 @@ def quant_shape_to_byte_shape(shape: Sequence[int], quant_type: GGMLQuantization
     block_size, type_size = GGML_QUANT_SIZES[quant_type]
     if shape[-1] % block_size != 0:
         raise ValueError(f"Quantized tensor row size ({shape[-1]}) is not a multiple of {quant_type.name} block size ({block_size})")
-    if quant_type == GGMLQuantizationType.IQ2_KS or quant_type == GGMLQuantizationType.IQ2_KL:
+    if quant_type == GGMLQuantizationType.IQ2_KS or quant_type == GGMLQuantizationType.IQ2_KL or quant_type == GGMLQuantizationType.IQ2_KS_T:
         return (*shape[:-1], 2 + shape[-1] // block_size * type_size)
     elif quant_type == GGMLQuantizationType.IQ4_KS:
         return (*shape[:-1], 4 + shape[-1] // block_size * type_size)

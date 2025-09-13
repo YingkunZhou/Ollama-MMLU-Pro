@@ -277,7 +277,7 @@ class GGUFReader:
             np_dims = tuple(reversed(dims.tolist()))
             block_size, type_size = GGML_QUANT_SIZES[ggml_type]
             n_bytes = n_elems * type_size // block_size
-            if ggml_type == GGMLQuantizationType.IQ2_KS or ggml_type == GGMLQuantizationType.IQ2_KL:
+            if ggml_type == GGMLQuantizationType.IQ2_KS or ggml_type == GGMLQuantizationType.IQ2_KL or ggml_type == GGMLQuantizationType.IQ2_KS_T:
                 n_bytes += 2 * int(dims[1])
             elif ggml_type == GGMLQuantizationType.IQ4_KS:
                 n_bytes += 4 * int(dims[1])

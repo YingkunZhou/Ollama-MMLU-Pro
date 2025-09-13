@@ -18,7 +18,7 @@ void do_my_transpose(uint8_t *dst, uint8_t *src, int nx, int ny, int stride, int
     int offset = 0;
     for (int ix = 0; ix < nx; ix += stride) {
 
-        // loop for d (128*2)
+        // loop for d (stride*2)
         for (int i = 0; i < stride*2; i++) {
             dst[offset++] = src[(ix + i/2) * ny + i%2];
         }
