@@ -17,7 +17,7 @@ def quant_shape_to_byte_shape(shape: Sequence[int], quant_type: GGMLQuantization
         raise ValueError(f"Quantized tensor row size ({shape[-1]}) is not a multiple of {quant_type.name} block size ({block_size})")
     if quant_type == GGMLQuantizationType.IQ2_KS or quant_type == GGMLQuantizationType.IQ2_KL or quant_type == GGMLQuantizationType.IQ2_KS_T:
         return (*shape[:-1], 2 + shape[-1] // block_size * type_size)
-    elif quant_type == GGMLQuantizationType.IQ4_KS:
+    elif quant_type == GGMLQuantizationType.IQ4_KS or quant_type == GGMLQuantizationType.IQ2_KT:
         return (*shape[:-1], 4 + shape[-1] // block_size * type_size)
     return (*shape[:-1], shape[-1] // block_size * type_size)
 
@@ -26,7 +26,7 @@ def quant_shape_from_byte_shape(shape: Sequence[int], quant_type: GGMLQuantizati
     block_size, type_size = GGML_QUANT_SIZES[quant_type]
     if quant_type == GGMLQuantizationType.IQ2_KS or quant_type == GGMLQuantizationType.IQ2_KL or quant_type == GGMLQuantizationType.IQ2_KS_T:
         return (*shape[:-1], (shape[-1] - 2) // type_size * block_size)
-    elif quant_type == GGMLQuantizationType.IQ4_KS:
+    elif quant_type == GGMLQuantizationType.IQ4_KS or quant_type == GGMLQuantizationType.IQ2_KT:
         return (*shape[:-1], (shape[-1] - 4) // type_size * block_size)
     if shape[-1] % type_size != 0:
         raise ValueError(f"Quantized tensor bytes per row ({shape[-1]}) is not a multiple of {quant_type.name} type size ({type_size})")
@@ -160,7 +160,7 @@ class __Quant(ABC):
         if cls.qtype == GGMLQuantizationType.IQ2_KS or cls.qtype == GGMLQuantizationType.IQ2_KL:
             d, rows = np.hsplit(rows, [2])
             d = d.view(np.float16).astype(np.float32)
-        elif cls.qtype == GGMLQuantizationType.IQ4_KS:
+        elif cls.qtype == GGMLQuantizationType.IQ4_KS or cls.qtype == GGMLQuantizationType.IQ2_KT:
             d, rows = np.hsplit(rows, [4])
             d = d.view(np.float32)
         n_blocks = rows.size // cls.type_size
@@ -1324,6 +1324,55 @@ class IQ2_KS(__Quant, qtype=GGMLQuantizationType.IQ2_KS):
         qs = qs + 5 * extra.reshape(n_blocks, -1, 1)
 
         return (dl * qs).reshape((n_blocks, -1))
+
+class IQ2_KT(__Quant, qtype=GGMLQuantizationType.IQ2_KT):
+
+    @classmethod
+    def vectorized_process_ql_values(cls, ql_values):
+        n_values = len(ql_values)
+        ka = np.uint32(0xCBAC1FED)
+
+        # 初始化结果数组
+        all_results = np.zeros((n_values, 8), dtype=np.int32)
+
+        # 当前值数组
+        current_vals = np.array(ql_values, dtype=np.uint32)
+
+        # 处理每个QL值8次
+        for j in range(8):
+            current_vals = (ka * current_vals).astype(np.uint32) & np.uint32(0xFFFFFFFF)
+            byte0 = (current_vals >> 0) & 0x3F
+            byte1 = (current_vals >> 8) & 0x3F
+            byte2 = (current_vals >> 16) & 0x3F
+            byte3 = (current_vals >> 24) & 0x3F
+
+            results = (byte0 + byte1 + byte2 + byte3) - 126
+            all_results[:, j] = results.astype(np.int32)
+
+        return all_results
+
+    @classmethod
+    def dequantize_blocks(cls, blocks: np.ndarray) -> np.ndarray:
+        # according to dequantize_row_iq2_kt_cuda in ggml/src/ggml-cuda/iqk_convert.cu
+        n_blocks = blocks.shape[0]
+        iq4k_values = np.array([
+            -127, -104, -83, -65, -49, -35, -22, -10,
+            1, 13, 25, 38, 53, 69, 89, 113,
+            -123, -100, -79, -61, -45, -31, -18, -6,
+            5, 17, 29, 42, 57, 73, 93, 117
+        ], dtype=np.int8)
+        scales, ql = np.hsplit(blocks, [QK_K // 64])
+        scales= np.tile(scales, 2) >> np.array([0,0,0,0,4,4,4,4], dtype=np.uint8)
+        scales = ((iq4k_values[scales.reshape((n_blocks, -1)) & np.uint8(0x0F)].reshape(scales.shape)) * 1.05).astype(np.float32)
+        scales = np.repeat(scales, 32).reshape(n_blocks,-1)
+
+        # ql
+        ql = ql.reshape(n_blocks,-1).view(np.uint16)
+        ql = ql.astype(np.uint32) + 4096
+        tmp = (cls.vectorized_process_ql_values(ql.flatten())).reshape(n_blocks,-1)
+        return (tmp * scales).astype(np.float32)
+
+
 
 class IQ2_KL(__Quant, qtype=GGMLQuantizationType.IQ2_KL):
     kvalues = (0xe9c1, 0x0dc1, 0xc1d8, 0xf6d8, 0x0dd8, 0x2fd8, 0xd8e9, 0xe9e9,
