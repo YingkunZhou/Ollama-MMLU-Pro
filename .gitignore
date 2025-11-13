@@ -167,3 +167,7 @@ models
 layer-cpu-bench
 layer-gpu-bench
 .gdb_history
+
+benchmark/*.txt
+benchmark/*.ans
+benchmark/*/*.log
