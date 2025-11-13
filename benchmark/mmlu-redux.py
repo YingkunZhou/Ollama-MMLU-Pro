@@ -42,5 +42,5 @@ if __name__ == "__main__":
         prompt = format_mmlu_question(single_question)
         line_texts.append(prompt.replace('\n', '\\n').replace('\r', '\\r'))
 
-    with open('tmp.txt', 'w') as f:
+    with open('mmlu-redux.txt', 'w') as f:
         f.write('\n'.join(line_texts))
