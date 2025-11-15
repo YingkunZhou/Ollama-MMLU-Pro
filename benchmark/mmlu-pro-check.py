@@ -16,7 +16,7 @@ def extract_mcq(text):
 import glob
 
 if __name__ == "__main__":
-    logfiles = {"computer_science": "/tmp/tmp.log"}
+    logfiles = {}
     if len(sys.argv) > 1:
         logfile = sys.argv[1]
         if logfile[-1] == '*':
@@ -24,9 +24,11 @@ if __name__ == "__main__":
         else:
             loglist = [logfile]
         for l in loglist:
-            match = re.search(r'mmlu-pro-(.+)\.txt', l)
+            match = re.search(r'mmlu-pro-(.+)\.log', l)
             assert match, "the log file name must be mmlu-pro-*"
             logfiles[match.group(1)] = l
+    else:
+        logfiles = {"computer_science": "/tmp/tmp.log"}
 
     df = load_dataset('TIGER-Lab/MMLU-Pro', split="test")
     score = 0.0

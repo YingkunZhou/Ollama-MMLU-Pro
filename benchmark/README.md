@@ -9,7 +9,7 @@ mainly refered benchmark-eval repositories:
 
 ## HumanEval (Coding)
 
-## LiveCodeBench (Coding)
+## LiveCodeBench (Coding, Reasoning)
 
 ## Winogrande (MCQ/Prefill)
 
@@ -17,10 +17,10 @@ mainly refered benchmark-eval repositories:
 
 ## MMLU-Redux (MCQ)
 
-## MMLU-Pro (MCQ, Reasoning)
+## MMLU-Pro (MCQ)
 
-## GPQA-Diamond (MCQ, Reasoning)
+## GPQA-Diamond (MCQ Reasoning)
 
-## GSM8K (Math, Reasoning)
+## GSM8K (Math, Reasoning?)
 
 ## AIME-2025 (Math, Reasoning)

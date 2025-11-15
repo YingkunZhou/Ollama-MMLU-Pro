@@ -171,3 +171,6 @@ layer-gpu-bench
 benchmark/*.txt
 benchmark/*.ans
 benchmark/*/*.log
+
+exllamav3
+ik_llama.cpp
