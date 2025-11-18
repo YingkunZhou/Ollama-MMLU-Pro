@@ -30,7 +30,7 @@ if __name__ == "__main__":
             response = ''.join(lines[indexresp[i]+1:indexresp[i+1]])
 
         extracted_answer = extract_mcq(response)
-        correct_answer = df[i]['answerKey']
+        correct_answer = df[i]['answerKey'].strip()
         score += 1.0 if extracted_answer == correct_answer else 0.0
 
     print(score/len(df))

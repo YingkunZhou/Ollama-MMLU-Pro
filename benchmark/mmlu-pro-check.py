@@ -39,7 +39,7 @@ if __name__ == "__main__":
         i = 0
         for single_question in df:
             example_categy = single_question["category"].replace(' ', '_')
-            correct_answer = single_question["answer"]
+            correct_answer = single_question["answer"].strip()
             if category == example_categy:
                 if i == len(indexresp) - 1:
                     response = ''.join(lines[indexresp[i]+1:])

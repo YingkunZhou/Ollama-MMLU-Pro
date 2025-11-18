@@ -7,11 +7,7 @@ mainly refered benchmark-eval repositories:
 5. [chigkim/Ollama-MMLU-Pro](https://github.com/chigkim/Ollama-MMLU-Pro)
 6. [Qwen3 Standardize Output Format](https://huggingface.co/Qwen/Qwen3-32B)
 
-## HumanEval (Coding)
-
-## LiveCodeBench (Coding, Reasoning)
-
-## Winogrande (MCQ/Prefill)
+## ~~Winogrande (MCQ/Prefill)~~
 
 ## ARC-Challenge (MCQ)
 
@@ -19,8 +15,39 @@ mainly refered benchmark-eval repositories:
 
 ## MMLU-Pro (MCQ)
 
+Reasoning
+
+- law
+- engineering
+- history?
+- computer science
+
 ## GPQA-Diamond (MCQ Reasoning)
 
-## GSM8K (Math, Reasoning?)
+## GSM8K (Math)
 
-## AIME-2025 (Math, Reasoning)
+- Reasoning?
+
+## AIME-2025 (Math Reasoning)
+
+- non-Reasoning?
+
+## HumanEval (Coding)
+
+## LiveCodeBench (Coding, Reasoning)
+
+# non-Reasoning
+
+1. ARC-Challenge (1172)
+2. MMLU-Redux (5700)
+3. MMLU-Pro (12032)
+4. GSM8K (1319)
+5. HumanEval (164)
+
+# Reasoning
+
+1. MMLU-Pro -- law (1101)
+2. MMLU-Pro -- engineering (969)
+3. GPQA-Diamond (198)
+4. AIME-2025 (30)
+5. LiveCodeBench (175)
