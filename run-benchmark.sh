@@ -94,7 +94,7 @@ log_command $DUMPLOG \
 
 ### command example
 # CUDA_VISIBLE_DEVICES=0
-# ./run-benchmark.sh phi-4 BF16 humaneval
+# SUFFIX="-greedy" ./run-benchmark.sh phi-4 BF16 humaneval
 # ./run-benchmark.sh phi-4 BF16 humaneval 50 0.5
 # THINK="\" /no_think"\" ./run-benchmark.sh Qwen3-14B BF16 humaneval 20 0.7 8192 0.8
 # SUFFIX="-think" THINK="\" /think"\" ./run-benchmark.sh Qwen3-14B BF16 humaneval 20 0.6 16384 0.95

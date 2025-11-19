@@ -96,7 +96,7 @@ log_command $DUMPLOG \
 
 ### command example
 # CUDA_VISIBLE_DEVICES=0
-# ./run-speculative-benchmark.sh phi-4 IQ2_K humaneval
+# SUFFIX="-greedy" ./run-speculative-benchmark.sh phi-4 IQ2_K humaneval
 # ./run-speculative-benchmark.sh phi-4 IQ2_K humaneval 50 0.5
 # THINK="\" /no_think"\" ./run-speculative-benchmark.sh Qwen3-14B IQ2_K humaneval 20 0.7 8192 0.8
 # SUFFIX="-think" THINK="\" /think"\" ./run-speculative-benchmark.sh Qwen3-14B IQ2_K humaneval 20 0.6 16384 0.95
