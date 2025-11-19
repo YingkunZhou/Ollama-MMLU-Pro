@@ -57,7 +57,7 @@ TOP_K=${4:-1}
 TEMPERATURE=${5:-0.0}
 CTX=${6:-8192}
 TOP_P=${7:-1.0}
-PENALTY=${8:-0.2}
+PENALTY=${8:-0.0}
 MIN_P=${9:-0.0}
 
 SAMPLING_FLAG=""
@@ -95,20 +95,4 @@ log_command $DUMPLOG \
         $SAMPLING_FLAG $SYSF_FLAG $THINK_FLAG
 
 ### command example
-# CUDA_VISIBLE_DEVICES=0
-# SUFFIX="-greedy" ./run-speculative-benchmark.sh phi-4 IQ2_K humaneval
-# ./run-speculative-benchmark.sh phi-4 IQ2_K humaneval 50 0.5
-# THINK="\" /no_think"\" ./run-speculative-benchmark.sh Qwen3-14B IQ2_K humaneval 20 0.7 8192 0.8
-# SUFFIX="-think" THINK="\" /think"\" ./run-speculative-benchmark.sh Qwen3-14B IQ2_K humaneval 20 0.6 16384 0.95
-# THINK="\" /no_think"\" ./run-speculative-benchmark.sh Qwen3-32B IQ2_K humaneval 20 0.7 8192 0.8
-# SUFFIX="-think" THINK="\" /think"\" ./run-speculative-benchmark.sh Qwen3-32B IQ2_K humaneval 20 0.6 16384 0.95
-# SYSF=phi4-system.txt ./run-speculative-benchmark.sh Phi-4-reasoning-plus IQ2_K humaneval 50 0.8 16384 0.95
-# SYSF=mistral-system.txt ./run-speculative-benchmark.sh Mistral-Small-3.2-24B-Instruct-2506 IQ2_K humaneval 50 0.15
-# SYSF=magistral-system.txt ./run-speculative-benchmark.sh Magistral-Small-2509 IQ2_K humaneval 50 0.7 16384 0.95
-### https://www.reddit.com/r/LocalLLaMA/comments/1j9hsfc/gemma_3_ggufs_recommended_settings/
-### https://huggingface.co/google/gemma-3-27b-it/blob/main/generation_config.json
-# ./run-speculative-benchmark.sh gemma-3-27b-it IQ2_K humaneval 64 1.0 8192 0.95
-### https://huggingface.co/unsloth/Llama-3.3-70B-Instruct/blob/main/generation_config.json
-# ./run-speculative-benchmark.sh Llama-3.3-70B Q4_K_M humaneval 50 0.6 8192 0.9
-# SYSF=no-think.txt ./run-speculative-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M humaneval
-# ./run-speculative-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M humaneval 50 0.6 16384 0.95
+# please refer to run-benchmark.sh
