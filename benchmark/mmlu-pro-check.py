@@ -25,7 +25,7 @@ if __name__ == "__main__":
             loglist = [logfile]
         for l in loglist:
             match = re.search(r'mmlu-pro-(.+)\.log', l)
-            assert match, "the log file name must be mmlu-pro-*"
+            assert match, 'the log file name must be "mmlu-pro-*"'
             logfiles[match.group(1)] = l
     else:
         logfiles = {"computer_science": "/tmp/tmp.log"}
@@ -34,7 +34,10 @@ if __name__ == "__main__":
     score = 0.0
     total = 0.0
     for category, logfile in logfiles.items():
-        lines = open(logfile).readlines()
+        sub_score = 0.0
+        sub_total = 0.0
+        # FIXME: why ignore?
+        lines = open(logfile, errors='ignore').readlines()
         indexresp = [i for i, line in enumerate(lines) if '>>>>>>>>>>>>>>>>>>>>' in line]
         i = 0
         for single_question in df:
@@ -48,8 +51,11 @@ if __name__ == "__main__":
 
                 extracted_answer = extract_mcq(response)
                 total += 1.0
+                sub_total += 1.0
                 score += 1.0 if extracted_answer == correct_answer else 0.0
+                sub_score += 1.0 if extracted_answer == correct_answer else 0.0
                 # print(i, extracted_answer, correct_answer)
                 i += 1
+        print("%-20s: %s" % (category, sub_score/sub_total))
 
     print(score/total)

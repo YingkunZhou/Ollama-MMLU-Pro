@@ -38,20 +38,20 @@ Reasoning
 
 # non-Reasoning
 
-1. ARC-Challenge (1172)
-2. MMLU-Redux (5700)
-3. MMLU-Pro (12032)
-4. GPQA-Diamond (198)
-5. GSM8K (1319)
-6. AIME-2025 (30)
-7. HumanEval (164)
-8. LiveCodeBench (175)
+- ~~ARC-Challenge (1172)~~
+- ~~GSM8K (1319)~~
+1. MMLU-Redux (5700)
+2. MMLU-Pro (12032)
+3. GPQA-Diamond (198)
+4. AIME-2025 (30)
+5. HumanEval (164)
+6. LiveCodeBench (175)
 
 # Reasoning
 
 1. MMLU-Pro -- law (1101)
 2. MMLU-Pro -- engineering (969)
-3. MMLU-Pro -- computer_science (410) represent the mmlu-pro average score
+3. MMLU-Pro -- computer_science (410)
 4. GPQA-Diamond (198)
 5. AIME-2025 (30)
 6. LiveCodeBench (175)

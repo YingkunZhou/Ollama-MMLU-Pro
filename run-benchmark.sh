@@ -16,9 +16,9 @@ echo "Usage: $0 <MODEL_NAME> <QUANT_TYPE> <BENCHMARK_NAME> <TOP_K> <TEMPERATURE>
 # ----------- benchmark list -----------
 BENCHMARK_LIST=(
     aime2025
-    arc-challenge
+    # arc-challenge
     gpqa-diamond
-    gsm8k
+    # gsm8k
     humaneval
     livecodebench-lite
     mmlu-pro-biology
@@ -74,6 +74,11 @@ if [ -n "$THINK" ]; then
     THINK_FLAG="-tk $THINK"
 fi
 
+SPARSE_THRESHOLD=""
+if [ -n "$SPARSE_THRESHOLD" ]; then
+    SPARSE_FLAG="--threshold $SPARSE_THRESHOLD"
+fi
+
 # ----------- benchmarking -----------
 DUMPLOG="${OUT_DIR}/${BENCHMARK_NAME}.log"
 
@@ -90,7 +95,7 @@ log_command $DUMPLOG \
         --temp $TEMPERATURE \
         --presence-penalty $PENALTY \
         -ngl 99 -t 1 -fa --seed 42 \
-        $SAMPLING_FLAG $SYSF_FLAG $THINK_FLAG
+        $SAMPLING_FLAG $SYSF_FLAG $THINK_FLAG $SPARSE_FLAG
 
 ### command example
 # CUDA_VISIBLE_DEVICES=0
@@ -98,35 +103,33 @@ log_command $DUMPLOG \
 
 ### [Phi-4 Technical Report](https://arxiv.org/pdf/2412.08905)
 ### https://huggingface.co/microsoft/phi-4#input-formats
-# SYSF=phi4-system.txt ./run-benchmark.sh phi-4 BF16 humaneval 50 0.5
+#No.1 SYSF=phi4-system.txt ./run-benchmark.sh phi-4 BF16 humaneval 50 0.5
 
 ### https://huggingface.co/microsoft/Phi-4-reasoning-plus#usage
 ### https://huggingface.co/microsoft/Phi-4-reasoning-plus#input-formats
-# SYSF=phi4rp-system.txt ./run-benchmark.sh Phi-4-reasoning-plus BF16 humaneval 50 0.8 16384 0.95
+#No.2 SYSF=phi4rp-system.txt ./run-benchmark.sh Phi-4-reasoning-plus BF16 aime2025 50 0.8 32768 0.95
 
-### https://huggingface.co/Qwen/Qwen3-8B-GGUF#best-practices
-### https://huggingface.co/Qwen/Qwen3-8B-GGUF#switching-between-thinking-and-non-thinking-mode
-# THINK="\" /no_think"\" ./run-benchmark.sh Qwen3-14B BF16 humaneval 20 0.7 8192 0.8 1.5
-# SUFFIX="-think" THINK="\" /think"\" ./run-benchmark.sh Qwen3-14B BF16 humaneval 20 0.6 16384 0.95 1.5
-# THINK="\" /no_think"\" ./run-benchmark.sh Qwen3-32B BF16 humaneval 20 0.7 8192 0.8 1.5
-# SUFFIX="-think" THINK="\" /think"\" ./run-benchmark.sh Qwen3-32B BF16 humaneval 20 0.6 16384 0.95 1.5
+### https://huggingface.co/Qwen/Qwen3-32B-GGUF#best-practices
+### https://huggingface.co/Qwen/Qwen3-32B-GGUF#switching-between-thinking-and-non-thinking-mode
+#No.3 THINK="\" /no_think"\" ./run-benchmark.sh Qwen3-32B BF16 humaneval 20 0.7 8192 0.8 1.5
+#No.4 SUFFIX="-think" THINK="\" /think"\" ./run-benchmark.sh Qwen3-32B BF16 aime2025 20 0.6 32768 0.95 1.5
 
 ### https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506#usage
 ### https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/main/SYSTEM_PROMPT.txt
-# SYSF=mistral-system.txt ./run-benchmark.sh Mistral-Small-3.2-24B-Instruct-2506 BF16 humaneval 50 0.15
+#No.5 SYSF=mistral-system.txt ./run-benchmark.sh Mistral-Small-3.2-24B-Instruct-2506 BF16 humaneval 50 0.15
 
 ### https://huggingface.co/mistralai/Magistral-Small-2509#sampling-parameters
 ### https://huggingface.co/mistralai/Magistral-Small-2509/blob/main/SYSTEM_PROMPT.txt
-# SYSF=magistral-system.txt ./run-benchmark.sh Magistral-Small-2509 BF16 humaneval 50 0.7 16384 0.95
+#No.6 SYSF=magistral-system.txt ./run-benchmark.sh Magistral-Small-2509 BF16 aime2025 50 0.7 32768 0.95
 
 ### https://www.reddit.com/r/LocalLLaMA/comments/1j9hsfc/gemma_3_ggufs_recommended_settings/
 ### https://huggingface.co/google/gemma-3-27b-it/blob/main/generation_config.json
 ### https://docs.unsloth.ai/models/gemma-3-how-to-run-and-fine-tune
-# ./run-benchmark.sh gemma-3-27b-it BF16 humaneval 64 1.0 8192 0.95
+#No.7 ./run-benchmark.sh gemma-3-27b-it BF16 humaneval 64 1.0 8192 0.95
 
 ### https://huggingface.co/unsloth/Llama-3.3-70B-Instruct/blob/main/generation_config.json
-# ./run-benchmark.sh Llama-3.3-70B Q4_K_M humaneval 50 0.6 8192 0.9
+#No.8 ./run-benchmark.sh Llama-3.3-70B Q4_K_M humaneval 50 0.6 8192 0.9
 
 ### https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5#quick-start-and-usage-recommendations
-# SYSF=no-think.txt ./run-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M humaneval
-# ./run-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M humaneval 50 0.6 16384 0.95
+#No.9 SYSF=no-think.txt ./run-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M humaneval
+#No.10 ./run-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M aime2025 50 0.6 32768 0.95

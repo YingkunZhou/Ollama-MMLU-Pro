@@ -1,0 +1,124 @@
+diff --git a/tools/imatrix/imatrix.cpp b/tools/imatrix/imatrix.cpp
+index cf07d99d..21678d82 100644
+--- a/tools/imatrix/imatrix.cpp
++++ b/tools/imatrix/imatrix.cpp
+@@ -37,9 +37,17 @@ static const char * const LLM_KV_IMATRIX_DATASETS    = "imatrix.datasets";
+ static const char * const LLM_KV_IMATRIX_CHUNK_COUNT = "imatrix.chunk_count";
+ static const char * const LLM_KV_IMATRIX_CHUNK_SIZE  = "imatrix.chunk_size";
+ 
++#define DUMP_ACTIVATION 0
++#define DUMP_THRESHOLDS 1
+ struct Stats {
+     std::vector<float>   values;
+     std::vector<int64_t> counts;
++#if DUMP_ACTIVATION || DUMP_THRESHOLDS
++    std::vector<float> activations;
++#endif
++#if DUMP_THRESHOLDS
++    std::vector<float> top_k;
++#endif
+ };
+ 
+ struct tensor_statistics {
+@@ -216,6 +224,26 @@ static void compute_cossim(std::vector<tensor_statistics> & tstats) {
+     }
+ }
+ 
++#if DUMP_THRESHOLDS
++static void bucket_process(const std::vector<float>& arr, std::vector<float>& top_k) {
++    const size_t CHUNK = 1024;
++    size_t N = arr.size();
++    size_t num_groups = N / CHUNK;
++
++    for (size_t g = 0; g < num_groups; g++) {
++        const float* base = arr.data() + g * CHUNK;
++
++        float tmp[CHUNK];
++        std::copy(base, base + CHUNK, tmp);
++
++        int pos_median = CHUNK/2;
++        std::nth_element(tmp, tmp + pos_median, tmp + CHUNK);
++        float median = tmp[pos_median];
++        top_k.push_back(median);
++    }
++}
++#endif
++
+ bool IMatrixCollector::collect_imatrix(struct ggml_tensor * t, bool ask, void * user_data) {
+     GGML_UNUSED(user_data);
+ 
+@@ -340,6 +368,12 @@ bool IMatrixCollector::collect_imatrix(struct ggml_tensor * t, bool ask, void *
+         if (e.values.empty()) {
+             e.values.resize(src1->ne[0] * n_mat, 0);
+             e.counts.resize(n_mat, 0);
++#if DUMP_ACTIVATION
++            e.activations.resize(src1->ne[0]*src1->ne[1]);
++#elif DUMP_THRESHOLDS
++            e.activations.resize(src1->ne[0]);
++            e.top_k.clear();
++#endif
+         }
+         else if (e.values.size() != (size_t)(src1->ne[0] * n_mat)) {
+             LOG_ERR("%s: inconsistent size for %s (%d vs %d)\n", __func__, wname.c_str(), (int)e.values.size(), (int)(src1->ne[0] * n_mat));
+@@ -349,6 +383,9 @@ bool IMatrixCollector::collect_imatrix(struct ggml_tensor * t, bool ask, void *
+             LOG_ERR("%s: inconsistent expert count for %s (%d vs %d)\n", __func__, wname.c_str(), (int)e.counts.size(), (int)n_mat);
+             exit(1); //GGML_ABORT("fatal error");
+         }
++#if DUMP_THRESHOLDS
++        e.activations.assign(e.activations.size(), 0.0f);
++#endif
+         LOG_DBGV(2, "%s[%d]: %32s, %s, %5d x %5d x %5d, %d\n", __func__, m_last_chunk, wname.c_str(), ggml_op_name(t->op), (int)src1->ne[0], (int)src1->ne[1], (int)src1->ne[2], (int)src1->type);
+         for (int64_t i3 = 0; i3 < src1->ne[3]; ++i3) {
+             for (int64_t i2 = 0; i2 < src1->ne[2]; ++i2) {
+@@ -358,13 +395,29 @@ bool IMatrixCollector::collect_imatrix(struct ggml_tensor * t, bool ask, void *
+                 for (int64_t row = 0; row < src1->ne[1]; ++row) {
+                     const float * x = (const float *) (data + row * src1->nb[1] + i2 * src1->nb[2] + i3 * src1->ne[3]);
+                     e.counts[mat_id]++;
++#if DUMP_ACTIVATION
++                    auto activations = e.activations.data() + i11*src1->ne[0];
++#elif DUMP_THRESHOLDS
++                    auto activations = e.activations.data();
++#endif
+                     for (int64_t j = 0; j < src1->ne[0]; ++j) {
+                         e.values[mat_start + j] += x[j] * x[j];
++#if DUMP_ACTIVATION
++                        activations[j] = x[j]*x[j];
++#elif DUMP_THRESHOLDS
++                        activations[j] += x[j]*x[j];
++#endif
+                         if (!std::isfinite((float)e.values[j])) {
+                             LOG_ERR("%f detected in %s\n", (float)e.values[j], wname.c_str());
+                             exit(1);
+                         }
+                     }
++#if DUMP_THRESHOLDS
++                    if (row%5 == 4) {
++                        bucket_process(e.activations, e.top_k);
++                        e.activations.assign(e.activations.size(), 0.0f);
++                    }
++#endif
+                 }
+                 const int32_t n_chunk = e.counts[mat_id] / chunk_size;
+                 if (n_chunk > m_last_chunk) {
+@@ -466,6 +519,21 @@ void IMatrixCollector::save_imatrix_legacy(int32_t ncall) const {
+                 tmp[i] = (value / count) * static_cast<float>(ncall);
+             }
+             out.write((const char *) tmp.data(), nval * sizeof(float));
++#if DUMP_ACTIVATION
++            int nact = stat.activations.size();
++            out.write((const char *) &nact, sizeof(nact));
++            out.write((const char*)stat.activations.data(), nact*sizeof(float));
++#elif DUMP_THRESHOLDS
++            size_t index0 = std::ceil(0.1 * stat.top_k.size());
++            std::vector<float> temp0 = stat.top_k;
++            std::nth_element(temp0.begin(), temp0.begin() + index0, temp0.end());
++            out.write((const char *)&temp0[index0], sizeof(float));
++
++            size_t index1 = std::ceil(0.9 * stat.top_k.size());
++            std::vector<float> temp1 = stat.top_k;
++            std::nth_element(temp1.begin(), temp1.begin() + index1, temp1.end());
++            out.write((const char *)&temp1[index1], sizeof(float));
++#endif
+         }
+     }
+ 

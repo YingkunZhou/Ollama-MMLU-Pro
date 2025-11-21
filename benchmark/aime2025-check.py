@@ -34,7 +34,8 @@ if __name__ == "__main__":
     df2 = pandas.read_json(path2, lines=True)
     questions = [row.to_dict() for _, row in df1.iterrows()] + [row.to_dict() for _, row in df2.iterrows()]
 
-    lines = open(logfile).readlines()
+    # FIXME: why ignore?
+    lines = open(logfile, errors='ignore').readlines()
     indexresp = [i for i, line in enumerate(lines) if '>>>>>>>>>>>>>>>>>>>>' in line]
     score = 0.0
     assert len(indexresp) == len(questions)

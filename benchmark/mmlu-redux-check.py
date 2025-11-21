@@ -52,7 +52,8 @@ if __name__ == "__main__":
         df = load_dataset(dataset_name, subj, split="test")
         full_questions += [example for example in df]
 
-    lines = open(logfile).readlines()
+    # FIXME: why ignore?
+    lines = open(logfile, errors='ignore').readlines()
     indexresp = [i for i, line in enumerate(lines) if '>>>>>>>>>>>>>>>>>>>>' in line]
 
     score = 0.0

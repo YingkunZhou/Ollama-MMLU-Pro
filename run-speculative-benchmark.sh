@@ -16,9 +16,9 @@ echo "Usage: $0 <MODEL_NAME> <QUANT_TYPE> <BENCHMARK_NAME> <TOP_K> <TEMPERATURE>
 # ----------- benchmark list -----------
 BENCHMARK_LIST=(
     aime2025
-    arc-challenge
+    # arc-challenge
     gpqa-diamond
-    gsm8k
+    # gsm8k
     humaneval
     livecodebench-lite
     mmlu-pro-biology
@@ -75,6 +75,11 @@ if [ -n "$THINK" ]; then
     THINK_FLAG="-tk $THINK"
 fi
 
+SPARSE_THRESHOLD=""
+if [ -n "$SPARSE_THRESHOLD" ]; then
+    SPARSE_FLAG="--threshold $SPARSE_THRESHOLD"
+fi
+
 # ----------- benchmarking -----------
 DUMPLOG="${OUT_DIR}/${BENCHMARK_NAME}.log"
 
@@ -92,7 +97,7 @@ log_command $DUMPLOG \
         --presence-penalty $PENALTY \
         -ngl 99 -ngld 99 -t 8 -fa --seed 42 \
         --draft-max 4 --draft-min 4 --draft-p-min 0.0 \
-        $SAMPLING_FLAG $SYSF_FLAG $THINK_FLAG
+        $SAMPLING_FLAG $SYSF_FLAG $THINK_FLAG $SPARSE_FLAG
 
 ### command example
 # please refer to run-benchmark.sh

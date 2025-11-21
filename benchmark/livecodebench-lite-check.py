@@ -838,7 +838,8 @@ if __name__ == "__main__":
         logfile = sys.argv[1]
 
     df = load_dataset("livecodebench/code_generation_lite", version_tag="v6", split="test")
-    lines = open(logfile).readlines()
+    # FIXME: why ignore?
+    lines = open(logfile, errors='ignore').readlines()
     indexresp   = [i for i, line in enumerate(lines) if '>>>>>>>>>>>>>>>>>>>>' in line]
     references  = []
     predictions = []

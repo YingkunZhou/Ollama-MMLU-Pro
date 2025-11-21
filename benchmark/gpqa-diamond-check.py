@@ -21,7 +21,8 @@ if __name__ == "__main__":
 
     current_dir = Path(__file__).resolve().parent
     answers = open(current_dir / "gpqa-diamond.ans").readlines()
-    lines   = open(logfile).readlines()
+    # FIXME: why ignore?
+    lines = open(logfile, errors='ignore').readlines()
     indexresp = [i for i, line in enumerate(lines) if '>>>>>>>>>>>>>>>>>>>>' in line]
     score = 0.0
     assert len(indexresp) == len(answers)
