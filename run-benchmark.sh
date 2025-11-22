@@ -6,8 +6,9 @@ log_command() {
     local cmd="$*"
 
     echo "\$ $cmd" | tee "$log_file"
-    echo "Test Time: $(LC_TIME=en_US.UTF-8 date '+%a %b %d %H:%M:%S %Z %Y')" | tee -a "$log_file"
+    echo "Test Time begin: $(LC_TIME=en_US.UTF-8 date '+%a %b %d %H:%M:%S %Z %Y')" | tee -a "$log_file"
     eval "$cmd" | tee -a "$log_file"
+    echo "Test Time end: $(LC_TIME=en_US.UTF-8 date '+%a %b %d %H:%M:%S %Z %Y')" | tee -a "$log_file"
 }
 
 # ----------- parameter process -----------
@@ -131,5 +132,4 @@ log_command $DUMPLOG \
 #No.8 ./run-benchmark.sh Llama-3.3-70B Q4_K_M humaneval 50 0.6 8192 0.9
 
 ### https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5#quick-start-and-usage-recommendations
-#No.9 SYSP="\"/no_think"\" ./run-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M humaneval
-#No.10 ./run-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M aime2025 50 0.6 32768 0.95
+#No.9 ./run-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M aime2025 50 0.6 32768 0.95

@@ -6,8 +6,9 @@ log_command() {
     local cmd="$*"
 
     echo "\$ $cmd" | tee "$log_file"
-    echo "Test Time: $(LC_TIME=en_US.UTF-8 date '+%a %b %d %H:%M:%S %Z %Y')" | tee -a "$log_file"
+    echo "Test Time begin: $(LC_TIME=en_US.UTF-8 date '+%a %b %d %H:%M:%S %Z %Y')" | tee -a "$log_file"
     eval "$cmd" | tee -a "$log_file"
+    echo "Test Time end: $(LC_TIME=en_US.UTF-8 date '+%a %b %d %H:%M:%S %Z %Y')" | tee -a "$log_file"
 }
 
 # ----------- parameter process -----------
@@ -106,3 +107,4 @@ log_command $DUMPLOG \
 
 ### command example
 # please refer to run-benchmark.sh
+## if consider sparsity, use SUFFIX="-sparse" SPARSE_THRESHOLD=xxx

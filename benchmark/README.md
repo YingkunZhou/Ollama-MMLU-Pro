@@ -41,7 +41,14 @@ Reasoning
 - ~~ARC-Challenge (1172)~~
 - ~~GSM8K (1319)~~
 1. MMLU-Redux (5700)
-2. MMLU-Pro (12032)
+2. MMLU-Pro (~~12032~~ 5102)
+    - computer_science (410)
+    - engineering (969)
+    - health (818)
+    - history (381)
+    - law (1101)
+    - other (924)
+    - philosophy (499)
 3. GPQA-Diamond (198)
 4. AIME-2025 (30)
 5. HumanEval (164)
