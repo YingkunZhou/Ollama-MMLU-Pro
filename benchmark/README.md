@@ -49,9 +49,9 @@ Reasoning
 
 # Reasoning
 
-1. MMLU-Pro -- law (1101)
-2. MMLU-Pro -- engineering (969)
-3. MMLU-Pro -- computer_science (410)
-4. GPQA-Diamond (198)
-5. AIME-2025 (30)
-6. LiveCodeBench (175)
+- ~~MMLU-Pro -- law (1101)~~
+- ~~MMLU-Pro -- engineering (969)~~
+1. MMLU-Pro -- computer_science (410)
+2. GPQA-Diamond (198)
+3. AIME-2025 (30)
+4. LiveCodeBench (175)

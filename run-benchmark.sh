@@ -74,11 +74,6 @@ if [ -n "$THINK" ]; then
     THINK_FLAG="-tk $THINK"
 fi
 
-SPARSE_THRESHOLD=""
-if [ -n "$SPARSE_THRESHOLD" ]; then
-    SPARSE_FLAG="--threshold $SPARSE_THRESHOLD"
-fi
-
 # ----------- benchmarking -----------
 DUMPLOG="${OUT_DIR}/${BENCHMARK_NAME}.log"
 
@@ -95,7 +90,7 @@ log_command $DUMPLOG \
         --temp $TEMPERATURE \
         --presence-penalty $PENALTY \
         -ngl 99 -t 1 -fa --seed 42 \
-        $SAMPLING_FLAG $SYSF_FLAG $THINK_FLAG $SPARSE_FLAG
+        $SAMPLING_FLAG $SYSF_FLAG $THINK_FLAG
 
 ### command example
 # CUDA_VISIBLE_DEVICES=0

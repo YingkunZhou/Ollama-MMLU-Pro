@@ -75,7 +75,7 @@ if [ -n "$THINK" ]; then
     THINK_FLAG="-tk $THINK"
 fi
 
-SPARSE_THRESHOLD=""
+SPARSE_FLAG=""
 if [ -n "$SPARSE_THRESHOLD" ]; then
     SPARSE_FLAG="--threshold $SPARSE_THRESHOLD"
 fi
