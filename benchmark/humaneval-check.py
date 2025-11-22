@@ -6,6 +6,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from human_eval.execution import check_correctness  # , unsafe_execute
 from human_eval.evaluation import estimate_pass_at_k
 import numpy as np
+from statistic import statistic
 
 def find_code(completion):
     pattern = re.compile(r"```python\n(.*?)```", re.DOTALL)
@@ -65,4 +66,6 @@ if __name__ == "__main__":
     correct = np.array(correct)
     pass_at_k = {f'pass@1': estimate_pass_at_k(total, correct, 1).mean()}
     pass_rate = pass_at_k['pass@1']
-    print(pass_rate)
+    print(f"score: {pass_rate*100:.1f}")
+    tokens_list, _ = statistic(logfile)
+    assert len(tokens_list) == len(df)

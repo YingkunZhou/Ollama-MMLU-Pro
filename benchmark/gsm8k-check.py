@@ -1,6 +1,7 @@
 from datasets import load_dataset
 import re
 import sys
+from statistic import statistic
 
 def normalize_number(s):
     match = re.match(r"\d+", s)  # match digits from the start
@@ -61,4 +62,6 @@ if __name__ == "__main__":
         correct_answer = extract_ans(df[i]['answer'])
         score += 1.0 if extracted_answer == correct_answer else 0.0
 
-    print(score/len(df))
+    print(f"score: {score/len(df)*100:.1f}")
+    tokens_list, _ = statistic(logfile)
+    assert len(tokens_list) == len(df)

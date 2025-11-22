@@ -25,6 +25,7 @@ from types import ModuleType
 
 # used for testing the code that reads from input
 from unittest.mock import mock_open, patch
+from statistic import statistic
 
 prompt_template='You are an expert Python programmer. Please solve the following programming question.\n### Question:\n{question_content}\n\n{format_prompt} ### Answer: (use the provided format with backticks)'
 
@@ -866,4 +867,6 @@ if __name__ == "__main__":
         num_process_evaluate=1,
     )
     pass_rate = metrics['pass@1'] / 100  # convert to point scale
-    print(pass_rate)
+    print(f"score: {pass_rate*100:.1f}")
+    tokens_list, _ = statistic(logfile)
+    assert len(tokens_list) == len(df)

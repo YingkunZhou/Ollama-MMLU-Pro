@@ -1,5 +1,6 @@
 import re
 import sys
+from statistic import statistic
 
 def extract_mcq(text):
     pattern = r"(?i:Answer)\s*:\s*\$*\s*\\?(?:boxed\s*)?\{?([A-D])\}?\s*\$*"
@@ -36,4 +37,6 @@ if __name__ == "__main__":
         correct_answer = answers[i].strip()
         score += 1.0 if extracted_answer == correct_answer else 0.0
 
-    print(score/len(answers))
+    print(f"score: {score/len(answers)*100:.1f}")
+    tokens_list, _ = statistic(logfile)
+    assert len(tokens_list) == len(answers)

@@ -1,6 +1,7 @@
 import re
 import sys
 from datasets import load_dataset
+from statistic import statistic
 
 def extract_mcq(text):
     pattern = r"(?i:Answer)\s*:\s*\$*\s*\\?(?:boxed\s*)?\{?([A-J])\}?\s*\$*"
@@ -33,6 +34,8 @@ if __name__ == "__main__":
     df = load_dataset('TIGER-Lab/MMLU-Pro', split="test")
     score = 0.0
     total = 0.0
+    tokens_list = []
+    accpet_ratio = []
     for category, logfile in logfiles.items():
         sub_score = 0.0
         sub_total = 0.0
@@ -56,6 +59,14 @@ if __name__ == "__main__":
                 sub_score += 1.0 if extracted_answer == correct_answer else 0.0
                 # print(i, extracted_answer, correct_answer)
                 i += 1
-        print("%-20s: %s" % (category, sub_score/sub_total))
+        print(f"{category:<20s}: {sub_score/sub_total*100:.1f}")
+        subtokens_list, subaccpet_ratio = statistic(logfile)
+        assert len(subtokens_list) == len(indexresp)
+        tokens_list += subtokens_list
+        if subaccpet_ratio != None:
+            accpet_ratio += subaccpet_ratio
 
-    print(score/total)
+    print(f"score: {score/total*100:.1f}")
+    print(f"average tokens/question: {sum(tokens_list) / len(tokens_list):.1f}")
+    if len(accpet_ratio):
+        print(f"average accept ratio: {sum(accpet_ratio) / len(accpet_ratio):.1f}%")

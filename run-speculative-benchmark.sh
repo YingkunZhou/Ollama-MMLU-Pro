@@ -70,6 +70,11 @@ if [ -n "$SYSF" ]; then
     SYSF_FLAG="-sysf $SYSF"
 fi
 
+SYSP_FLAG=""
+if [ -n "$SYSP" ]; then
+    SYSP_FLAG="-sys $SYSP"
+fi
+
 THINK_FLAG=""
 if [ -n "$THINK" ]; then
     THINK_FLAG="-tk $THINK"
@@ -97,7 +102,7 @@ log_command $DUMPLOG \
         --presence-penalty $PENALTY \
         -ngl 99 -ngld 99 -t 8 -fa --seed 42 \
         --draft-max 4 --draft-min 4 --draft-p-min 0.0 \
-        $SAMPLING_FLAG $SYSF_FLAG $THINK_FLAG $SPARSE_FLAG
+        $SAMPLING_FLAG $SYSF_FLAG $SYSP_FLAG $THINK_FLAG $SPARSE_FLAG
 
 ### command example
 # please refer to run-benchmark.sh

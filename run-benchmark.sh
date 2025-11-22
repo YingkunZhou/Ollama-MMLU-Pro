@@ -69,6 +69,11 @@ if [ -n "$SYSF" ]; then
     SYSF_FLAG="-sysf $SYSF"
 fi
 
+SYSP_FLAG=""
+if [ -n "$SYSP" ]; then
+    SYSP_FLAG="-sys $SYSP"
+fi
+
 THINK_FLAG=""
 if [ -n "$THINK" ]; then
     THINK_FLAG="-tk $THINK"
@@ -90,7 +95,7 @@ log_command $DUMPLOG \
         --temp $TEMPERATURE \
         --presence-penalty $PENALTY \
         -ngl 99 -t 1 -fa --seed 42 \
-        $SAMPLING_FLAG $SYSF_FLAG $THINK_FLAG
+        $SAMPLING_FLAG $SYSF_FLAG $SYSP_FLAG $THINK_FLAG
 
 ### command example
 # CUDA_VISIBLE_DEVICES=0
@@ -126,5 +131,5 @@ log_command $DUMPLOG \
 #No.8 ./run-benchmark.sh Llama-3.3-70B Q4_K_M humaneval 50 0.6 8192 0.9
 
 ### https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5#quick-start-and-usage-recommendations
-#No.9 SYSF=no-think.txt ./run-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M humaneval
+#No.9 SYSP="\"/no_think"\" ./run-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M humaneval
 #No.10 ./run-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M aime2025 50 0.6 32768 0.95
