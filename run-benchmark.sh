@@ -57,7 +57,8 @@ TOP_K=${4:-1}
 TEMPERATURE=${5:-0.0}
 CTX=${6:-8192}
 TOP_P=${7:-1.0}
-PENALTY=${8:-0.0}
+# consistent with llama.cpp default setting
+PENALTY=${8:-0.1}
 MIN_P=${9:-0.0}
 
 SAMPLING_FLAG=""
@@ -129,7 +130,7 @@ log_command $DUMPLOG \
 #No.7 ./run-benchmark.sh gemma-3-27b-it BF16 humaneval 64 1.0 8192 0.95
 
 ### https://huggingface.co/unsloth/Llama-3.3-70B-Instruct/blob/main/generation_config.json
-#No.8 ./run-benchmark.sh Llama-3.3-70B Q4_K_M humaneval 50 0.6 8192 0.9
+#No.8 ./run-benchmark.sh Llama-3.3-70B-Instruct Q4_K_M humaneval 50 0.6 8192 0.9
 
 ### https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5#quick-start-and-usage-recommendations
 #No.9 ./run-benchmark.sh Llama-3_3-Nemotron-Super-49B-v1_5 Q4_K_M aime2025 50 0.6 32768 0.95
