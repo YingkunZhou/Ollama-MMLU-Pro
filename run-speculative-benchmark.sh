@@ -59,7 +59,8 @@ TEMPERATURE=${5:-0.0}
 CTX=${6:-8192}
 TOP_P=${7:-1.0}
 PENALTY=${8:-0.0}
-MIN_P=${9:-0.0}
+# consistent with llama.cpp default setting
+MIN_P=${9:-0.05}
 
 SAMPLING_FLAG=""
 if [ "$TOP_K" -eq 1 ]; then

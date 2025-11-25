@@ -57,8 +57,9 @@ TOP_K=${4:-1}
 TEMPERATURE=${5:-0.0}
 CTX=${6:-8192}
 TOP_P=${7:-1.0}
+PENALTY=${8:-0.0}
 # consistent with llama.cpp default setting
-PENALTY=${8:-0.1}
+# MIN_P=${9:-0.05}
 MIN_P=${9:-0.0}
 
 SAMPLING_FLAG=""
@@ -113,8 +114,8 @@ log_command $DUMPLOG \
 
 ### https://huggingface.co/Qwen/Qwen3-32B-GGUF#best-practices
 ### https://huggingface.co/Qwen/Qwen3-32B-GGUF#switching-between-thinking-and-non-thinking-mode
-#No.3 THINK="\" /no_think"\" ./run-benchmark.sh Qwen3-32B BF16 humaneval 20 0.7 8192 0.8 1.5
-#No.4 SUFFIX="-think" THINK="\" /think"\" ./run-benchmark.sh Qwen3-32B BF16 aime2025 20 0.6 32768 0.95 1.5
+#No.3 THINK="\" /no_think"\" ./run-benchmark.sh Qwen3-32B BF16 humaneval 20 0.7 8192 0.8 1.5 0
+#No.4 SUFFIX="-think" THINK="\" /think"\" ./run-benchmark.sh Qwen3-32B BF16 aime2025 20 0.6 32768 0.95 1.5 0
 
 ### https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506#usage
 ### https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/main/SYSTEM_PROMPT.txt
