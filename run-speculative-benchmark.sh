@@ -87,6 +87,11 @@ if [ -n "$SPARSE_THRESHOLD" ]; then
     SPARSE_FLAG="--threshold $SPARSE_THRESHOLD"
 fi
 
+NGLD_FLAG="-ngld 0"
+if [ -n "$NGLD" ]; then
+    NGLD_FLAG="-ngld $NGLD"
+fi
+
 # ----------- benchmarking -----------
 DUMPLOG="${OUT_DIR}/${BENCHMARK_NAME}.log"
 
@@ -102,7 +107,7 @@ log_command $DUMPLOG \
         --min-p $MIN_P \
         --temp $TEMPERATURE \
         --presence-penalty $PENALTY \
-        -ngl 99 -ngld 99 -t 8 -fa --seed 42 \
+        -ngl 99 $NGLD_FLAG -t 8 -fa --seed 42 \
         --draft-max 4 --draft-min 4 --draft-p-min 0.0 \
         $SAMPLING_FLAG $SYSF_FLAG $SYSP_FLAG $THINK_FLAG $SPARSE_FLAG
 
