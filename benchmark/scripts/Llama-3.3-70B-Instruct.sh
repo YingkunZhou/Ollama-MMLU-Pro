@@ -2,6 +2,7 @@ export SUFFIX="-sparse"
 ### https://github.com/YingkunZhou/Ollama-MMLU-Pro/releases/download/v0.4/Llama-3.3-70B-Instruct-thresholds.txt
 export SPARSE_THRESHOLD=models/Llama-3.3-70B-Instruct-thresholds.txt
 EXE=./run-speculative-benchmark.sh
+# export NGLD=99
 QUANT_TYPE=$1
 
 $EXE Llama-3.3-70B-Instruct $QUANT_TYPE  aime2025 50 0.6 8192 0.9

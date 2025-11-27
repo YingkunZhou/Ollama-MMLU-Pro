@@ -3,6 +3,7 @@ export SUFFIX="-sparse"
 export SPARSE_THRESHOLD=models/Magistral-Small-2509-thresholds.txt
 ### https://github.com/YingkunZhou/Ollama-MMLU-Pro/releases/download/v0.4/magistral-system.txt
 export SYSF=magistral-system.txt
+# export NGLD=99
 EXE=./run-speculative-benchmark.sh
 QUANT_TYPE=$1
 

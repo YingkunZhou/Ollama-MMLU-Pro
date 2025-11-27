@@ -3,6 +3,7 @@ export SUFFIX="-sparse"
 export SPARSE_THRESHOLD=models/phi-4-thresholds.txt
 ### https://github.com/YingkunZhou/Ollama-MMLU-Pro/releases/download/v0.4/phi4-system.txt
 export SYSF=phi4-system.txt
+# export NGLD=99
 EXE=./run-speculative-benchmark.sh
 QUANT_TYPE=$1
 

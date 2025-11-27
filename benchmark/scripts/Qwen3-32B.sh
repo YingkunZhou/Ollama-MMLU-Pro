@@ -3,6 +3,7 @@ export SUFFIX="-sparse"
 export SPARSE_THRESHOLD=models/Qwen3-32B-thresholds.txt
 export THINK="\" /no_think"\"
 EXE=./run-speculative-benchmark.sh
+# export NGLD=99
 QUANT_TYPE=$1
 
 $EXE Qwen3-32B $QUANT_TYPE  aime2025 20 0.7 8192 0.8 1.5 0

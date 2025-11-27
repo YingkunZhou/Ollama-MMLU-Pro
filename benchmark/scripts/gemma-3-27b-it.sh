@@ -1,6 +1,7 @@
 export SUFFIX="-sparse"
 ### https://github.com/YingkunZhou/Ollama-MMLU-Pro/releases/download/v0.4/gemma-3-27b-it-thresholds.txt
 export SPARSE_THRESHOLD=models/gemma-3-27b-it-thresholds.txt
+# export NGLD=99
 EXE=./run-speculative-benchmark.sh
 QUANT_TYPE=$1
 

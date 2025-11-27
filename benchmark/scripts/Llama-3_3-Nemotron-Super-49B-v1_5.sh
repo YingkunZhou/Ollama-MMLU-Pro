@@ -1,6 +1,7 @@
 export SUFFIX="-sparse"
 ### https://github.com/YingkunZhou/Ollama-MMLU-Pro/releases/download/v0.4/Llama-3_3-Nemotron-Super-49B-v1_5-thresholds.txt
 export SPARSE_THRESHOLD=models/Llama-3_3-Nemotron-Super-49B-v1_5-thresholds.txt
+# export NGLD=99
 EXE=./run-speculative-benchmark.sh
 QUANT_TYPE=$1
 

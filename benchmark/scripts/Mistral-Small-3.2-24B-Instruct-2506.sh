@@ -4,6 +4,7 @@ export SPARSE_THRESHOLD=models/Mistral-Small-3.2-24B-Instruct-2506-thresholds.tx
 ### https://github.com/YingkunZhou/Ollama-MMLU-Pro/releases/download/v0.4/mistral-system.txt
 export SYSF=mistral-system.txt
 EXE=./run-speculative-benchmark.sh
+# export NGLD=99
 QUANT_TYPE=$1
 
 $EXE Mistral-Small-3.2-24B-Instruct-2506 $QUANT_TYPE  aime2025 50 0.15
