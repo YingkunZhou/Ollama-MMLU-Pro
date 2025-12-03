@@ -858,7 +858,7 @@ if __name__ == "__main__":
         elif len(indexlines) == 1:
             predictions.append([''.join(response[indexlines[0]+1:indexlines[0]+10])])
         else:
-            predictions.append([''.join(response[indexlines[0]+1:indexlines[1]])])
+            predictions.append([''.join(response[indexlines[-2]+1:indexlines[-1]])])
 
     metrics, eval_results, final_metadata = codegen_metrics(
         references,
