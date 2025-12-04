@@ -46,6 +46,9 @@ MODEL_NAME=${1:-"phi-4"}
 QUANT_TYPE=${2:-"Q4_K_M"}
 MODEL="models/${MODEL_NAME}-${QUANT_TYPE}.gguf"
 RDMODEL="models/${MODEL_NAME}-${QUANT_TYPE}-residual-IQ2_KS.gguf"
+# NEED to change llama.cpp/ggml/src/ggml-cuda/mask.cuh:16: DISABLE_FAST_GPU_VERIFY 0 --> 1
+# RDMODEL="models/${MODEL_NAME}-${QUANT_TYPE}-residual-IQ2_KS-T-avx256.gguf"
+# RDMODEL="models/${MODEL_NAME}-${QUANT_TYPE}-residual-IQ2_KS-T-avx512.gguf"
 BENCHMARK_NAME=${3:-"humaneval"}
 BENCHMARK="benchmark/${BENCHMARK_NAME}.txt"
 
@@ -92,6 +95,11 @@ if [ -n "$NGLD" ]; then
     NGLD_FLAG="-ngld $NGLD"
 fi
 
+KV_QUANT=""
+if [ -n "$KV_TYPE" ]; then
+    KV_QUANT="-ctk $KV_TYPE -ctv $KV_TYPE"
+fi
+
 # ----------- benchmarking -----------
 DUMPLOG="${OUT_DIR}/${BENCHMARK_NAME}.log"
 
@@ -109,7 +117,7 @@ log_command $DUMPLOG \
         --presence-penalty $PENALTY \
         -ngl 99 $NGLD_FLAG -t 8 -fa --seed 42 \
         --draft-max 4 --draft-min 4 --draft-p-min 0.0 \
-        $SAMPLING_FLAG $SYSF_FLAG $SYSP_FLAG $THINK_FLAG $SPARSE_FLAG
+        $SAMPLING_FLAG $SYSF_FLAG $SYSP_FLAG $THINK_FLAG $SPARSE_FLAG $KV_QUANT
 
 ### command example
 # please refer to run-benchmark.sh

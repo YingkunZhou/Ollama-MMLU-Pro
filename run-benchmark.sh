@@ -82,6 +82,16 @@ if [ -n "$THINK" ]; then
     THINK_FLAG="-tk $THINK"
 fi
 
+NGL_FLAG="-ngl 99"
+if [ -n "$NGL" ]; then
+    NGL_FLAG="-ngl $NGL"
+fi
+
+KV_QUANT=""
+if [ -n "$KV_TYPE" ]; then
+    KV_QUANT="-ctk $KV_TYPE -ctv $KV_TYPE"
+fi
+
 # ----------- benchmarking -----------
 DUMPLOG="${OUT_DIR}/${BENCHMARK_NAME}.log"
 
@@ -97,8 +107,8 @@ log_command $DUMPLOG \
         --min-p $MIN_P \
         --temp $TEMPERATURE \
         --presence-penalty $PENALTY \
-        -ngl 99 -t 1 -fa --seed 42 \
-        $SAMPLING_FLAG $SYSF_FLAG $SYSP_FLAG $THINK_FLAG
+        $NGL_FLAG -t 8 -fa --seed 42 \
+        $SAMPLING_FLAG $SYSF_FLAG $SYSP_FLAG $THINK_FLAG $KV_QUANT
 
 ### command example
 # CUDA_VISIBLE_DEVICES=0
