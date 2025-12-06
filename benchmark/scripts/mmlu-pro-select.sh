@@ -14,13 +14,13 @@ while getopts "m:q:k:" opt; do
 done
 
 python question-select.py \
-  -l "paper2-results/${model}-${quant}-spec-sparse/mmlu-pro-computer_science.log" \
-     "paper2-results/${model}-${quant}-spec-sparse/mmlu-pro-engineering.log" \
-     "paper2-results/${model}-${quant}-spec-sparse/mmlu-pro-health.log" \
-     "paper2-results/${model}-${quant}-spec-sparse/mmlu-pro-history.log" \
-     "paper2-results/${model}-${quant}-spec-sparse/mmlu-pro-law.log" \
-     "paper2-results/${model}-${quant}-spec-sparse/mmlu-pro-other.log" \
-     "paper2-results/${model}-${quant}-spec-sparse/mmlu-pro-philosophy.log" \
+  -l "results/${model}-${quant}-spec-sparse/mmlu-pro-computer_science.log" \
+     "results/${model}-${quant}-spec-sparse/mmlu-pro-engineering.log" \
+     "results/${model}-${quant}-spec-sparse/mmlu-pro-health.log" \
+     "results/${model}-${quant}-spec-sparse/mmlu-pro-history.log" \
+     "results/${model}-${quant}-spec-sparse/mmlu-pro-law.log" \
+     "results/${model}-${quant}-spec-sparse/mmlu-pro-other.log" \
+     "results/${model}-${quant}-spec-sparse/mmlu-pro-philosophy.log" \
   -i "mmlu-pro-computer_science.txt" \
      "mmlu-pro-engineering.txt" \
      "mmlu-pro-health.txt" \

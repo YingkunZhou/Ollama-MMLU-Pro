@@ -15,7 +15,7 @@ while getopts "m:q:k:" opt; do
 done
 
 python question-select.py \
-  -l "paper2-results/${model}-${quant}-spec-sparse/livecodebench-lite.log" \
+  -l "results/${model}-${quant}-spec-sparse/livecodebench-lite.log" \
   -i "livecodebench-lite.txt" \
   -k $k \
   -o "./test_question_select/${model}/${quant}/livecodebench-lite_order$k.txt"

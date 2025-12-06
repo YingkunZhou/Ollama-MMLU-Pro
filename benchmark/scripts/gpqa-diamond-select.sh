@@ -15,7 +15,7 @@ while getopts "m:q:k:" opt; do
 done
 
 python question-select.py \
-  -l "paper2-results/${model}-${quant}-spec-sparse/gpqa-diamond.log" \
+  -l "results/${model}-${quant}-spec-sparse/gpqa-diamond.log" \
   -i "gpqa-diamond.txt" \
   -k $k \
   -o "./test_question_select/${model}/${quant}/gpqa-diamond_order$k.txt"

@@ -1,0 +1,162 @@
+diff --git a/common/arg.cpp b/common/arg.cpp
+index 9e062ee..ebf518d 100644
+--- a/common/arg.cpp
++++ b/common/arg.cpp
+@@ -1178,6 +1178,20 @@ common_params_context common_params_parser_init(common_params & params, llama_ex
+             params.single_turn = true;
+         }
+     ).set_examples({LLAMA_EXAMPLE_MAIN}));
++    add_opt(common_arg(
++        {"-tk", "--think"}, "PROMPT",
++        "thinking mode prompt (default: none)",
++        [](common_params & params, const std::string & value) {
++            params.think_flag = value;
++        }
++    ).set_excludes({LLAMA_EXAMPLE_COMMON}));
++    add_opt(common_arg(
++        {"-bm", "--benchmark"}, "FNAME",
++        "a file containing the benchmark prompts (default: none)",
++        [](common_params & params, const std::string & value) {
++            params.benchmark = value;
++        }
++    ).set_excludes({LLAMA_EXAMPLE_COMMON}));
+     add_opt(common_arg(
+         {"-i", "--interactive"},
+         string_format("run in interactive mode (default: %s)", params.interactive ? "true" : "false"),
+diff --git a/common/chat.cpp b/common/chat.cpp
+index 41a5bb4..c04923d 100644
+--- a/common/chat.cpp
++++ b/common/chat.cpp
+@@ -19,9 +19,28 @@
+ #include <stdexcept>
+ #include <string>
+ #include <vector>
++#include <fstream>
+ 
+ using json = nlohmann::ordered_json;
+ 
++std::vector<std::string> readBenchmarkQFromFile(const std::string& filename) {
++    std::vector<std::string> result;
++    std::ifstream file(filename);
++    std::string line;
++
++    while (std::getline(file, line)) {
++        // replace "\\n" with '\n'
++        size_t pos = 0;
++        while ((pos = line.find("\\n", pos)) != std::string::npos) {
++            line.replace(pos, 2, "\n");
++            pos += 1;
++        }
++        result.push_back(line);
++    }
++
++    return result;
++}
++
+ static std::string format_time(const std::chrono::system_clock::time_point & now, const std::string & format) {
+     auto time = std::chrono::system_clock::to_time_t(now);
+     auto local_time = *std::localtime(&time);
+diff --git a/common/chat.h b/common/chat.h
+index 6085510..5846ca2 100644
+--- a/common/chat.h
++++ b/common/chat.h
+@@ -71,6 +71,8 @@ struct common_chat_msg {
+     }
+ };
+ 
++std::vector<std::string> readBenchmarkQFromFile(const std::string& filename);
++
+ struct common_chat_msg_diff {
+     std::string reasoning_content_delta;
+     std::string content_delta;
+diff --git a/common/common.h b/common/common.h
+index 179113a..bd3d6db 100644
+--- a/common/common.h
++++ b/common/common.h
+@@ -423,6 +423,8 @@ struct common_params {
+     bool no_host           = false; // bypass host buffer allowing extra buffers to be used
+ 
+     bool single_turn       = false; // single turn chat conversation
++    std::string benchmark  = "";    // path of benchmark prompts file
++    std::string think_flag = "";    // no_think string
+ 
+     ggml_type cache_type_k = GGML_TYPE_F16; // KV cache data type for the K
+     ggml_type cache_type_v = GGML_TYPE_F16; // KV cache data type for the V
+diff --git a/tools/main/main.cpp b/tools/main/main.cpp
+index 960ddbe..404abac 100644
+--- a/tools/main/main.cpp
++++ b/tools/main/main.cpp
+@@ -546,6 +546,57 @@ int main(int argc, char ** argv) {
+     console::set_display(console::prompt);
+     display = params.display_prompt;
+ 
++    std::vector<std::string> bench_questions;
++    size_t loop_size = 1;
++    if (!params.benchmark.empty()) {
++        GGML_ASSERT(params.prompt.empty());
++        params.single_turn = true;
++        params.interactive = false;
++        params.interactive_first = false;
++        params.conversation_mode = COMMON_CONVERSATION_MODE_DISABLED;
++        is_interacting = false;
++        waiting_for_first_input = false;
++        bench_questions = readBenchmarkQFromFile(params.benchmark);
++        loop_size = bench_questions.size();
++        common_chat_msg tmp_msg;
++        chat_msgs.push_back(tmp_msg);
++    }
++
++    for (size_t kk = 0; kk <= loop_size; ++kk) {
++        if (kk > 0 && !params.benchmark.empty()) {
++            const auto data = llama_perf_context(ctx);
++            LOG("prefill time  = %10.2f ms / %5d tokens (%8.2f ms per token, %8.2f tokens per second)\n",
++            data.t_p_eval_ms, data.n_p_eval, data.t_p_eval_ms / data.n_p_eval, 1e3 / data.t_p_eval_ms * data.n_p_eval);
++            LOG("decoding time = %10.2f ms / %5d tokens (%8.2f ms per token, %8.2f tokens per second)\n",
++            data.t_eval_ms, data.n_eval, data.t_eval_ms / data.n_eval, 1e3 / data.t_eval_ms * data.n_eval);
++        }
++        if (kk == loop_size) break;
++        llama_memory_clear(llama_get_memory(ctx), true); // FIXME
++        if (!params.benchmark.empty()) {
++            LOG("\n>>>>>>>>>>>>>>>>>>>> %ld <<<<<<<<<<<<<<<<<<<<\n", kk);
++            llama_perf_context_reset(ctx);
++            // initial the state
++            n_past             = 0;
++            n_remain           = params.n_predict;
++            n_consumed         = 0;
++            n_session_consumed = 0;
++            // consider the new message
++            common_chat_msg new_msg;
++            new_msg.role = "user";
++            new_msg.content = bench_questions[kk] + params.think_flag;
++            chat_msgs.back() = new_msg;
++            // construct the new inputs
++            common_chat_templates_inputs inputs;
++            inputs.use_jinja = g_params->use_jinja;
++            inputs.messages = chat_msgs;
++            inputs.add_generation_prompt = true; // TODO: !params.prompt.empty();
++            std::string single_prompt = common_chat_templates_apply(chat_templates.get(), inputs).prompt;
++            if (params.verbose_prompt) {
++                LOG_INF("format prompt question in text_data.txt: \"%s\"\n", single_prompt.c_str());
++            }
++            // TODO: true, true?
++            embd_inp = common_tokenize(ctx, single_prompt, true, true);
++        }
+     std::vector<llama_token> embd;
+ 
+     // single-token antiprompts
+@@ -735,6 +786,7 @@ int main(int argc, char ** argv) {
+         } else {
+             // some user input remains from prompt or interaction, forward it to processing
+             LOG_DBG("embd_inp.size(): %d, n_consumed: %d\n", (int) embd_inp.size(), n_consumed);
++            common_sampler_reset(smpl);
+             while ((int) embd_inp.size() > n_consumed) {
+                 embd.push_back(embd_inp[n_consumed]);
+ 
+@@ -991,6 +1043,7 @@ int main(int argc, char ** argv) {
+         LOG("\n%s: saving final output to session file '%s'\n", __func__, path_session.c_str());
+         llama_state_save_file(ctx, path_session.c_str(), session_tokens.data(), session_tokens.size());
+     }
++    }
+ 
+     LOG("\n\n");
+     common_perf_print(ctx, smpl);

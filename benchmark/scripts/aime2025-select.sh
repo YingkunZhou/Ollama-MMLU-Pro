@@ -15,7 +15,7 @@ while getopts "m:q:k:" opt; do
 done
 
 python question-select.py \
-  -l "paper2-results/${model}-${quant}-spec-sparse/aime2025.log" \
+  -l "results/${model}-${quant}-spec-sparse/aime2025.log" \
   -i "aime2025.txt" \
   -k $k \
   -o "./test_question_select/${model}/${quant}/aime2025_order$k.txt"

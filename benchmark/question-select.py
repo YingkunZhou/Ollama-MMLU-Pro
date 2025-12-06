@@ -61,8 +61,8 @@ def extract_lines_from_txt(input_file, line_indices, k=None):
 
 def main():
     parser = argparse.ArgumentParser(description='Question selection tool')
-    parser.add_argument('-l', '--logfile', nargs='+', default=['/home/lixiang/work/Ollama-MMLU-Pro/benchmark/paper2-results/Qwen3-32B-exl3-2.0bpw-spec-sparse/livecodebench-lite.log'])
-    parser.add_argument('-i', '--input', nargs='+', default=["/home/lixiang/work/Ollama-MMLU-Pro/benchmark/livecodebench-lite.txt"])
+    parser.add_argument('-l', '--logfile', nargs='+', default=['benchmark/results/Qwen3-32B-exl3-2.0bpw-spec-sparse/livecodebench-lite.log'])
+    parser.add_argument('-i', '--input', nargs='+', default=["benchmark/livecodebench-lite.txt"])
     parser.add_argument('-o', '--output', default="/tmp/tmp")
     parser.add_argument('-k', type=int, default=100)
     parser.add_argument('-s', '--save-figure', action='store_true')

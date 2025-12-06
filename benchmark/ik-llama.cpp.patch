@@ -1,0 +1,191 @@
+diff --git a/common/chat.cpp b/common/chat.cpp
+index 0ae044be..056bd238 100644
+--- a/common/chat.cpp
++++ b/common/chat.cpp
+@@ -18,9 +18,28 @@
+ #include <stdexcept>
+ #include <string>
+ #include <vector>
++#include <fstream>
+ 
+ using json = nlohmann::ordered_json;
+ 
++std::vector<std::string> readBenchmarkQFromFile(const std::string& filename) {
++    std::vector<std::string> result;
++    std::ifstream file(filename);
++    std::string line;
++
++    while (std::getline(file, line)) {
++        // replace "\\n" with '\n'
++        size_t pos = 0;
++        while ((pos = line.find("\\n", pos)) != std::string::npos) {
++            line.replace(pos, 2, "\n");
++            pos += 1;
++        }
++        result.push_back(line);
++    }
++
++    return result;
++}
++
+ static std::string format_time(const std::chrono::system_clock::time_point & now, const std::string & format) {
+     auto time = std::chrono::system_clock::to_time_t(now);
+     auto local_time = *std::localtime(&time);
+diff --git a/common/chat.h b/common/chat.h
+index cdea627a..9115512f 100644
+--- a/common/chat.h
++++ b/common/chat.h
+@@ -70,6 +70,8 @@ struct common_chat_msg {
+     }
+ };
+ 
++std::vector<std::string> readBenchmarkQFromFile(const std::string& filename);
++
+ struct common_chat_msg_diff {
+     std::string reasoning_content_delta;
+     std::string content_delta;
+diff --git a/common/common.cpp b/common/common.cpp
+index ad1bdce2..297b0033 100644
+--- a/common/common.cpp
++++ b/common/common.cpp
+@@ -1086,6 +1086,16 @@ bool gpt_params_find_arg(int argc, char ** argv, const std::string & arg, gpt_pa
+             params.image_max_tokens = std::stoi(argv[i]);
+         return true;
+     }
++    if (arg == "-tk" || arg == "--think") {
++        CHECK_ARG
++            params.think_flag = argv[i];
++        return true;
++    }
++    if (arg == "-bm" || arg == "--benchmark") {
++        CHECK_ARG
++            params.benchmark = argv[i];
++        return true;
++    }
+     if (arg == "-i" || arg == "--interactive") {
+         params.interactive = true;
+         return true;
+diff --git a/common/common.h b/common/common.h
+index e23e18b3..5279e117 100644
+--- a/common/common.h
++++ b/common/common.h
+@@ -277,6 +277,8 @@ struct gpt_params {
+     bool only_active_exps  = true;  // if true, offload only active experts (relevant only for hybrid CPU/GPU)
+     bool merge_qkv         = false; // if true, merge separate Q, K, V tensors into a single, contiguous tensor
+     bool k_cache_hadamard  = false; // if true, use Hadamard transform for the K-cache (only makes sense with quantized cache)
++    std::string benchmark  = "";    // path of benchmark prompts file
++    std::string think_flag = "";    // no_think string
+ 
+     std::string cache_type_k = "f16"; // KV cache data type for the K
+     std::string cache_type_v = "f16"; // KV cache data type for the V
+diff --git a/examples/main/main.cpp b/examples/main/main.cpp
+index d8f295f2..0626dbdd 100644
+--- a/examples/main/main.cpp
++++ b/examples/main/main.cpp
+@@ -482,6 +482,11 @@ int main(int argc, char ** argv) {
+     LOG_TEE("sampling: \n%s\n", llama_sampling_print(sparams).c_str());
+     LOG_TEE("sampling order: \n%s\n", llama_sampling_order_print(sparams).c_str());
+     LOG_TEE("generate: n_ctx = %d, n_batch = %d, n_predict = %d, n_keep = %d\n", n_ctx, params.n_batch, params.n_predict, params.n_keep);
++    struct llama_sampling_context * ctx_sampling = llama_sampling_init(llama_get_model_vocab(model), sparams);
++    if (!ctx_sampling) {
++        fprintf(stderr, "%s: failed to initialize sampling subsystem\n", __func__);
++        exit(1);
++    }
+ 
+     // group-attention state
+     // number of grouped KV tokens so far (used only if params.grp_attn_n > 1)
+@@ -538,6 +543,57 @@ int main(int argc, char ** argv) {
+     console::set_display(console::prompt);
+     display = params.display_prompt;
+ 
++    std::vector<std::string> bench_questions;
++    size_t loop_size = 1;
++    if (!params.benchmark.empty()) {
++        GGML_ASSERT(params.prompt.empty());
++        params.interactive = false;
++        params.interactive_first = false;
++        is_interacting = false;
++        waiting_for_first_input = false;
++        bench_questions = readBenchmarkQFromFile(params.benchmark);
++        loop_size = bench_questions.size();
++        common_chat_msg tmp_msg;
++        chat_msgs.push_back(tmp_msg);
++    }
++
++    for (size_t kk = 0; kk <= loop_size; ++kk) {
++        if (kk > 0 && !params.benchmark.empty()) {
++            const llama_timings data = llama_get_timings(ctx);
++            fprintf(stdout, "prefill time  = %10.2f ms / %5d tokens (%8.2f ms per token, %8.2f tokens per second)\n",
++            data.t_p_eval_ms, data.n_p_eval, data.t_p_eval_ms / data.n_p_eval, 1e3 / data.t_p_eval_ms * data.n_p_eval);
++            fprintf(stdout, "decoding time = %10.2f ms / %5d tokens (%8.2f ms per token, %8.2f tokens per second)\n",
++            data.t_eval_ms, data.n_eval, data.t_eval_ms / data.n_eval, 1e3 / data.t_eval_ms * data.n_eval);
++            fflush(stdout);
++        }
++        if (kk == loop_size) break;
++        llama_kv_cache_clear(ctx);
++        if (!params.benchmark.empty()) {
++            fprintf(stdout, "\n>>>>>>>>>>>>>>>>>>>> %ld <<<<<<<<<<<<<<<<<<<<\n", kk);
++            fflush(stdout);
++            llama_reset_timings(ctx);
++            // initial the state
++            n_past             = 0;
++            n_remain           = params.n_predict;
++            n_consumed         = 0;
++            n_session_consumed = 0;
++            // consider the new message
++            common_chat_msg new_msg;
++            new_msg.role = "user";
++            new_msg.content = bench_questions[kk] + params.think_flag;
++            chat_msgs.back() = new_msg;
++            // construct the new inputs
++            common_chat_templates_inputs inputs;
++            inputs.use_jinja = g_params->use_jinja;
++            inputs.messages = chat_msgs;
++            inputs.add_generation_prompt = true; // TODO: !params.prompt.empty();
++            std::string single_prompt = common_chat_templates_apply(chat_templates.get(), inputs).prompt;
++            if (params.verbose_prompt) {
++                LOG("format prompt question in text_data.txt: \"%s\"\n", single_prompt.c_str());
++            }
++            // TODO: true, true?
++            embd_inp = llama_tokenize(ctx, single_prompt, true, true);
++        }
+     std::vector<llama_token> embd;
+     std::vector<llama_token> embd_guidance;
+ 
+@@ -549,12 +605,6 @@ int main(int argc, char ** argv) {
+         antiprompt_ids.emplace_back(::llama_tokenize(ctx, antiprompt, false, true));
+     }
+ 
+-    struct llama_sampling_context * ctx_sampling = llama_sampling_init(llama_get_model_vocab(model), sparams);
+-    if (!ctx_sampling) {
+-        fprintf(stderr, "%s: failed to initialize sampling subsystem\n", __func__);
+-        exit(1);
+-    }
+-
+     if (llama_model_has_encoder(model)) {
+         int enc_input_size = embd_inp.size();
+         llama_token * enc_input_buf = embd_inp.data();
+@@ -768,6 +818,7 @@ int main(int argc, char ** argv) {
+         } else {
+             // some user input remains from prompt or interaction, forward it to processing
+             LOG("embd_inp.size(): %d, n_consumed: %d\n", (int) embd_inp.size(), n_consumed);
++            llama_sampling_reset(llama_get_model_vocab(model), ctx_sampling);
+             while ((int) embd_inp.size() > n_consumed) {
+                 embd.push_back(embd_inp[n_consumed]);
+ 
+@@ -972,7 +1023,6 @@ int main(int argc, char ** argv) {
+ 
+             if (n_past > 0 || waiting_for_first_input) {
+                 if (is_interacting) {
+-                    
+                     llama_sampling_reset(llama_get_model_vocab(model), ctx_sampling);
+                 }
+                 is_interacting = false;
+@@ -998,6 +1048,7 @@ int main(int argc, char ** argv) {
+         LOG_TEE("\n%s: saving final output to session file '%s'\n", __func__, path_session.c_str());
+         llama_state_save_file(ctx, path_session.c_str(), session_tokens.data(), session_tokens.size());
+     }
++    }
+ 
+     llama_print_timings(ctx);
+     write_logfile(ctx, params, model, input_tokens, output_ss.str(), output_tokens);

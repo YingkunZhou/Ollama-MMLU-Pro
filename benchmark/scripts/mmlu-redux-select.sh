@@ -15,7 +15,7 @@ while getopts "m:q:k:" opt; do
 done
 
 python mmlu-redux-select.py \
-  -l "paper2-results/${model}-${quant}-spec-sparse/mmlu-redux.log" \
+  -l "results/${model}-${quant}-spec-sparse/mmlu-redux.log" \
   -i "mmlu-redux.txt" \
   -k $k \
   -o "./test_question_select/${model}/${quant}/mmlu-redux_order$k.txt"
